@@ -103,8 +103,19 @@ def _validate_application(application: Any) -> dict[str, Any]:
             _require_text(bullet, f"{field}.bullets[{bullet_index}]")
 
     projects = _require_list(resume["projects"], "resume.projects", allow_empty=True)
-    if projects:
-        raise ValueError("resume.projects must be an empty array")
+    if len(projects) > 1:
+        raise ValueError("resume.projects may contain at most one project")
+    for index, project_value in enumerate(projects):
+        field = f"resume.projects[{index}]"
+        project = _require_mapping(project_value, field)
+        _require_exact_keys(project, field, {"name", "period", "bullets"})
+        _require_text(project["name"], f"{field}.name")
+        _require_text(project["period"], f"{field}.period", allow_empty=True)
+        bullets = _require_list(project["bullets"], f"{field}.bullets")
+        if len(bullets) != 2:
+            raise ValueError(f"{field}.bullets must contain exactly two items")
+        for bullet_index, bullet in enumerate(bullets):
+            _require_text(bullet, f"{field}.bullets[{bullet_index}]")
 
     education_entries = _require_list(resume["education"], "resume.education")
     for index, education_value in enumerate(education_entries):

@@ -86,7 +86,7 @@ class ProviderTests(unittest.TestCase):
 
 
 class ContractTests(unittest.TestCase):
-    def test_external_contract_rejects_extra_keys_and_nonempty_projects(self):
+    def test_external_contract_rejects_extra_keys_and_accepts_one_typed_project(self):
         from harness.models import Application
         from test_rendering import sample_application
         raw = sample_application()
@@ -95,7 +95,9 @@ class ContractTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             Application.model_validate(raw)
         raw.pop("debug")
-        raw["resume"]["projects"] = [{"name": "invented project"}]
+        raw["resume"]["projects"] = [{"name": "Local workflow prototype", "period": "", "bullets": ["Built a local workflow.", "Validated its output."]}]
+        Application.model_validate(raw)
+        raw["resume"]["projects"][0]["url"] = "invented"
         with self.assertRaises(ValueError):
             Application.model_validate(raw)
 

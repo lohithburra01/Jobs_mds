@@ -215,3 +215,58 @@ class Issue(StrictModel):
     instruction: str
     decision_ids: list[str] = Field(default_factory=list)
     unresolved: bool = True
+
+
+class Candidate(StrictModel):
+    id: str
+    employer_id: str
+    system_id: str
+    purpose: str
+    fact_ids: list[str] = Field(min_length=1)
+    metric_ids: list[str] = Field(default_factory=list)
+    boundary_ids: list[str] = Field(default_factory=list)
+    component_support: dict[str, str]
+    primary_component_id: str
+    target_terms: list[str] = Field(default_factory=list)
+    relevance: str
+    specificity: str
+    contextual_only: bool = False
+
+
+class Prototype(StrictModel):
+    id: str
+    name: str
+    period: str = ""
+    pattern_id: str
+    source_system_id: str
+    local_steps: list[str] = Field(min_length=1)
+    outputs: list[str] = Field(min_length=1)
+    target_terms: list[str] = Field(default_factory=list)
+    component_support: dict[str, str]
+    boundary_ids: list[str] = Field(default_factory=list)
+    restrictions: list[str] = Field(min_length=1)
+
+
+class Envelope(StrictModel):
+    id: str
+    kind: str
+    parent_id: str
+    role: str
+    purpose: str
+    source_fact_ids: list[str] = Field(default_factory=list)
+    source_metric_ids: list[str] = Field(default_factory=list)
+    boundary_ids: list[str] = Field(default_factory=list)
+    component_ids: list[str] = Field(default_factory=list)
+    target_terms: list[str] = Field(default_factory=list)
+    writing_guidance: str
+
+
+class Blueprint(StrictModel):
+    job: JobV3
+    skills: list[SkillItem]
+    skill_groups: list[SkillGroup]
+    candidates: list[Candidate] = Field(min_length=4)
+    prototype: Prototype
+    envelopes: list[Envelope] = Field(min_length=1)
+    fixed_fields: dict[str, Any]
+    unselected_reasons: dict[str, str] = Field(default_factory=dict)

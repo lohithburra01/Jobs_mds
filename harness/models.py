@@ -26,11 +26,17 @@ class Education(StrictModel):
     year: Text
 
 
+class Project(StrictModel):
+    name: Text
+    period: str
+    bullets: list[Text] = Field(min_length=2, max_length=2)
+
+
 class Resume(StrictModel):
     summary: Text
     skills: list[Skill] = Field(min_length=1)
     experience: list[Experience] = Field(min_length=4, max_length=4)
-    projects: list = Field(max_length=0)
+    projects: list[Project] = Field(max_length=1)
     education: list[Education] = Field(min_length=2, max_length=2)
 
 
