@@ -1,5 +1,5 @@
 {
-  "version": "prototype-2",
+  "version": "prototype-3",
   "calibration": "Uncalibrated first-run experiment; categorical gates are not an accuracy guarantee.",
   "priority": {
     "CORE": "A main responsibility or central outcome the employer explicitly hires this role to deliver.",
@@ -19,6 +19,39 @@
     "CONCRETE_WORK": "The source records a specific implemented artifact or action but no concrete consequence.",
     "GENERAL": "The source is mainly a broad capability description.",
     "UNCERTAIN": "Its specificity cannot be determined."
+  },
+  "skill_kind": {
+    "LANGUAGE": "Programming or query language.",
+    "INTERFACE": "API, protocol, or named interface form.",
+    "FRAMEWORK_LIBRARY": "Named software framework or library.",
+    "MODEL": "Specifically named model or model family.",
+    "PROVIDER": "Named AI model or service provider.",
+    "CLOUD_PLATFORM_SERVICE": "Named cloud platform or cloud service.",
+    "DATABASE_STORAGE": "Named database, vector store, or storage technology.",
+    "AUTOMATION_ORCHESTRATION": "Named workflow automation or orchestration technology.",
+    "DEPLOYMENT_TOOL": "Named container, cluster, infrastructure, or deployment tool.",
+    "DEVELOPMENT_TOOL": "Named source-control, testing, CI, or development tool.",
+    "METHOD_ARCHITECTURE": "Engineering method, architecture, or operating practice such as RAG, CI/CD, or MLOps.",
+    "DOMAIN": "Broad domain such as AI or automation; retain in context rather than a technology list.",
+    "UNSPECIFIED_FAMILY": "A broad implementation family such as LLMs or vector databases without a named vendor.",
+    "UNCERTAIN": "The JD passage does not permit a reliable classification."
+  },
+  "skill_relevance": {
+    "RELEVANT": "The JD uses this as an implementation skill or meaningful capability term.",
+    "IRRELEVANT": "The term is incidental, boilerplate, or not useful to this role's Skills hierarchy.",
+    "UNCERTAIN": "Relevance is unclear from the JD passage."
+  },
+  "skill_specificity": {
+    "SUITABLE": "The phrase has the right specificity, preserves the JD literal, and adds no unnamed vendor.",
+    "TOO_BROAD": "The phrase needs a concrete capability context without gaining an invented product.",
+    "OVERCLAIMED": "The phrase implies a vendor, model, breadth, or proficiency absent from the JD.",
+    "UNCERTAIN": "Specificity cannot be determined from the JD passage."
+  },
+  "skill_centrality": {
+    "CORE": "Central implementation term for the main workflow.",
+    "SUPPORTING": "Useful supporting implementation term.",
+    "PERIPHERAL": "Incidental or optional term.",
+    "UNCERTAIN": "Importance is unclear from the JD."
   },
   "checks": {
     "grounding": "Does this exact text stay within its own envelope's selected work and boundaries? Preserve employer, title, dates, ownership, business result, metric scope and product status. Do not borrow unrelated facts from another block. All JD tools may be retrofitted at appropriate workflow stages, even without employer-specific tool records; do NOT fail a tool substitution on that basis. Do fail a new substantive capability, inflated outcome, target presented as achieved, or invented metric. General positioning is allowed when supported by supplied identity/evidence.",

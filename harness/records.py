@@ -196,3 +196,22 @@ class JobV3(StrictModel):
     requirements: list[RequirementV3] = Field(min_length=1)
     components: list[Component] = Field(min_length=1)
     stack_items: list[SkillItem] = Field(default_factory=list)
+
+
+class DecisionCase(StrictModel):
+    id: str
+    node_id: str
+    dimension: str
+    state: dict[str, Any]
+    question: str
+    criteria: dict[str, str]
+    dependency_hash: str
+
+
+class Issue(StrictModel):
+    code: str
+    node_ids: list[str] = Field(min_length=1)
+    target_ids: list[str] = Field(default_factory=list)
+    instruction: str
+    decision_ids: list[str] = Field(default_factory=list)
+    unresolved: bool = True
