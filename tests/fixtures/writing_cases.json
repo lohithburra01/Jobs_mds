@@ -1,0 +1,13 @@
+{
+  "provenance": "Developer-authored expectations for regression discussion; not calibrated ground truth.",
+  "cases": [
+    {"id": "repeated-letter-story", "expected": "REDUNDANT", "description": "Opening and proof paragraph retell the same detailed accomplishment."},
+    {"id": "resume-letter-reuse", "expected": "ALLOWED", "description": "The proof paragraph may expand a resume example."},
+    {"id": "same-project-distinct-achievements", "expected": "DISTINCT", "description": "Two bullets from one project prove different changes."},
+    {"id": "jargon-hides-action", "expected": "ABSTRACT_LANGUAGE", "description": "Architecture nouns obscure who changed what."},
+    {"id": "useful-technical-detail", "expected": "PASS", "description": "A technical name explains how the result was achieved."},
+    {"id": "generic-closing", "expected": "WRONG_PARAGRAPH_JOB", "description": "Enthusiasm does not state a practical contribution."},
+    {"id": "justified-35-word-bullet", "expected": "NECESSARY", "description": "Necessary scope makes a 35-word bullet acceptable."},
+    {"id": "unsupported-result", "expected": "UNSUPPORTED_CLAIM", "description": "A result absent from the selected source must be removed."}
+  ]
+}

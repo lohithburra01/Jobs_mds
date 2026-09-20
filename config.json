@@ -1,0 +1,10 @@
+{
+  "writer_model": "deepseek/deepseek-chat-v3.1",
+  "classifier_model": "typesafe/jev-1.13",
+  "writing_version": 2,
+  "max_repairs": 2,
+  "max_requests": 80,
+  "canonical": "01-CANONICAL.md",
+  "engine": "00-APPLICATION-ENGINE.md",
+  "jobs_dir": "jobs"
+}

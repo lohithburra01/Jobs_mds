@@ -1,0 +1,62 @@
+{
+  "version": "prototype-2",
+  "calibration": "Uncalibrated first-run experiment; categorical gates are not an accuracy guarantee.",
+  "priority": {
+    "CORE": "A main responsibility or central outcome the employer explicitly hires this role to deliver.",
+    "SUPPORTING": "Relevant supporting work or a useful qualification, rather than the role's central deliverable.",
+    "PERIPHERAL": "Optional or incidental work with little bearing on the main role.",
+    "UNCERTAIN": "The JD does not establish its importance clearly."
+  },
+  "coverage": {
+    "DIRECT": "This evidence demonstrates substantially the same work at the relevant ownership/status/scope. Ignore vendor/tool differences: JD stack retrofit is explicitly authorized.",
+    "PARTIAL": "The source demonstrates some required work but not the full scope or relationship between components.",
+    "ADJACENT": "The source demonstrates a related engineering pattern that can support a clearly limited bridge, without claiming the missing work was done.",
+    "NO_SUPPORT": "This source does not support the required kind of work. A matching tool name is not substantive evidence.",
+    "UNCERTAIN": "The requirement or source is too ambiguous to determine support."
+  },
+  "specificity": {
+    "CONCRETE_OUTCOME": "The source records a specific result, scale, or operational consequence.",
+    "CONCRETE_WORK": "The source records a specific implemented artifact or action but no concrete consequence.",
+    "GENERAL": "The source is mainly a broad capability description.",
+    "UNCERTAIN": "Its specificity cannot be determined."
+  },
+  "checks": {
+    "grounding": "Does this exact text stay within its own envelope's selected work and boundaries? Preserve employer, title, dates, ownership, business result, metric scope and product status. Do not borrow unrelated facts from another block. All JD tools may be retrofitted at appropriate workflow stages, even without employer-specific tool records; do NOT fail a tool substitution on that basis. Do fail a new substantive capability, inflated outcome, target presented as achieved, or invented metric. General positioning is allowed when supported by supplied identity/evidence.",
+    "clarity": "Can a recruiter understand the main point on the first read? Technical product names are allowed. Fail vague promises, unexplained strings of abstract nouns, overloaded lists of claims, or generic transformation language that hides what was done. For a summary, require a clear professional identity; for a letter paragraph, require clear specific reasoning rather than generic enthusiasm.",
+    "purpose": "Does this text clearly serve its envelope's stated purpose using the selected work? A bullet must show a concrete action and supported outcome or operational consequence. A nonnumeric consequence is sufficient. Do not demand proof of a broader requirement that the envelope explicitly labels partial or adjacent. A summary should position the candidate without reciting metrics; letter paragraphs should make their assigned point."
+  },
+  "verdict": {
+    "PASS": "The supplied text meets this specific check.",
+    "FAIL": "The supplied text clearly violates this specific check.",
+    "UNCERTAIN": "The supplied information is insufficient or the judgment remains ambiguous; do not assume a pass."
+  },
+  "global_checks": {
+    "consistency": "Do the resume and cover letter preserve consistent work/status/metrics and avoid misleading combinations across employers? JD technology retrofit is allowed; that is not a contradiction.",
+    "readability": "Is the application clear, specific and readable, without overloaded prose or repeating the same accomplishment in several places? Summary may echo a capability but should not duplicate detailed employer achievements.",
+    "coverage": "Does the final application visibly represent the supported CORE requirements assigned in the plan, without counting keyword-only mentions as delivery evidence? Do not require unsupported gaps to be invented; evaluate only requirements that the plan assigns to selected evidence."
+  },
+  "issue_checks": {
+    "UNSUPPORTED_CLAIM": "Does the block stay within its own selected source and boundaries? JD tools may be retrofitted where they perform a real function and must not fail merely because employer-specific tool history is absent.",
+    "MULTIPLE_POINTS": "Does the block make one main assigned point rather than joining independent claims or an unnecessary list of implementation details?",
+    "NO_CONCRETE_CHANGE": "Does the block state an actual action and a specific output, result, scale, or operational consequence from its selected source? A concrete artifact is sufficient when no outcome is recorded.",
+    "ABSTRACT_LANGUAGE": "Can a recruiter understand who did what and what changed on the first read, without decoding stacked abstractions or broad promises?",
+    "WRONG_PARAGRAPH_JOB": "Does the block perform its exact planned role? Only the proof paragraph may retell the reserved detailed employer example."
+  },
+  "relationship": {
+    "DISTINCT": "The blocks make different useful points, even if they share vocabulary or come from the same project.",
+    "REDUNDANT": "The blocks retell substantially the same detailed accomplishment in the same document.",
+    "CONTRADICTORY": "The blocks make materially inconsistent claims about the same fact, status, scope, metric, or outcome.",
+    "UNCERTAIN": "The relationship cannot be determined from the supplied text."
+  },
+  "requirement_presence": {
+    "PRESENT": "The supported requirement is visibly represented at or below its allowed support ceiling.",
+    "PARTIAL": "The text represents part of the supported requirement but misses its assigned central point.",
+    "ABSENT": "The supported requirement is not visibly represented.",
+    "UNCERTAIN": "Its presence cannot be determined."
+  },
+  "expressed": {
+    "YES": "This bullet visibly expresses the requirement within its support ceiling.",
+    "NO": "This bullet does not visibly express the requirement.",
+    "UNCERTAIN": "Cannot determine whether it expresses the requirement."
+  }
+}
