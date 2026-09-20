@@ -1,0 +1,60 @@
+"""Create the labeled v3 one-page structure fixture; no model calls."""
+
+import json
+from pathlib import Path
+
+from pypdf import PdfReader
+
+from renderer.build import build_resume
+
+
+def main() -> None:
+    root = Path(__file__).resolve().parents[1]
+    out = root / "output" / "pdf"
+    out.mkdir(parents=True, exist_ok=True)
+    resume = {
+        "summary": "Offline structural fixture for a substantial AI engineering resume. It demonstrates the v3 hierarchy, all four employers, twelve concise experience bullets, one local project, and education without making a live job-fit or writing-quality claim.",
+        "skills": [
+            {"label": "Languages & interfaces", "value": "Python, SQL, TypeScript, APIs"},
+            {"label": "AI frameworks, models & providers", "value": "LangGraph, LangChain, OpenAI"},
+            {"label": "Deployment & practices", "value": "Docker, Kubernetes, CI/CD, MLOps"},
+        ],
+        "experience": [
+            {"title": "Manager, AI & Automation", "company": "Corominas Consulting", "period": "Jun 2026 - Sep 2026",
+             "bullets": ["Built a configurable multi-tenant workflow with explicit validation and approval states.",
+                         "Separated model orchestration from provider calls and controlled inference cost.",
+                         "Added visible agent actions, durable state, and human escalation for risky changes."]},
+            {"title": "AI Automation Engineer", "company": "Formula Dream", "period": "Mar 2026 - Jun 2026",
+             "bullets": ["Connected event triggers, scheduled recovery, structured generation, and publishing endpoints.",
+                         "Generated reusable workflow definitions instead of rebuilding interface steps manually.",
+                         "Converted repeated event operations into parameterized data-driven templates."]},
+            {"title": "AI Engineer", "company": "Think Round Inc.", "period": "Apr 2025 - Mar 2026",
+             "bullets": ["Built retained-context conversation behavior with memory and confidence handling.",
+                         "Placed fail-closed evaluation and safety routing before response release.",
+                         "Supported a shared platform structure for several specialized agents."]},
+            {"title": "Program Analyst", "company": "Cognizant Technology Solutions", "period": "Feb 2022 - Aug 2023",
+             "bullets": ["Built distributed ingestion pipelines supporting production-scale downstream analytics.",
+                         "Accelerated the data-to-KPI path through focused pipeline optimization.",
+                         "Applied validation and pipeline testing around explicit downstream data contracts."]},
+        ],
+        "projects": [{"name": "Local AI Workflow Prototype", "period": "", "bullets": [
+            "Implemented a small local JD-stack workflow with explicit inputs, state, and validation.",
+            "Produced inspectable output and a GitHub-ready implementation without employer metrics or scale.",
+        ]}],
+        "education": [
+            {"degree": "Master of Science - Data Science", "school": "Stevens Institute of Technology", "year": "2025"},
+            {"degree": "Bachelor of Technology - Mechanical Engineering", "school": "JNTU K", "year": "2022"},
+        ],
+    }
+    profile = {"name": "Lohith Burra - Offline V3 Layout Fixture", "location": "Mannheim, Germany", "phone": "+4915124223947"}
+    pdf = out / "v3_offline_layout_fixture.pdf"
+    build_resume(resume, profile, pdf)
+    pages = len(PdfReader(pdf).pages)
+    if pages != 1:
+        raise SystemExit(f"fixture rendered to {pages} pages")
+    (out / "v3_offline_layout_fixture.json").write_text(json.dumps({"profile": profile, "resume": resume}, indent=2) + "\n", encoding="utf-8")
+    print(pdf)
+
+
+if __name__ == "__main__":
+    main()

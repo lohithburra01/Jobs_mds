@@ -282,3 +282,12 @@ class AssessmentV3(StrictModel):
     text_hashes: dict[str, str]
     selected_ids: list[str]
     passed: bool
+
+
+class LayoutSelection(StrictModel):
+    selected_ids: list[str] = Field(min_length=4)
+    omitted: dict[str, str]
+    predicted_height_pt: float
+    available_height_pt: float
+    overflow_pt: float
+    checks: dict[str, Any]

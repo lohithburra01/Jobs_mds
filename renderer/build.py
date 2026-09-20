@@ -189,6 +189,27 @@ def _dated_heading(title: str, period: str, styles: Any) -> Table:
 def build_resume(
     data: dict[str, Any], profile: dict[str, str], output_path: Path
 ) -> None:
+    story = resume_flowables(data, profile)
+    document = SimpleDocTemplate(str(output_path), **resume_document_options(profile))
+    document.build(story)
+
+
+def resume_document_options(profile: dict[str, str]) -> dict[str, Any]:
+    """Single source for resume page geometry used by render and measurement."""
+    return {
+        "pagesize": letter,
+        "leftMargin": 0.5 * inch,
+        "rightMargin": 0.5 * inch,
+        "topMargin": 0.5 * inch,
+        "bottomMargin": 0.5 * inch,
+        "compress": 0,
+        "title": f'{profile["name"]} - Resume',
+        "author": profile["name"],
+    }
+
+
+def resume_flowables(data: dict[str, Any], profile: dict[str, str]) -> list[Any]:
+    """Build the exact story consumed by both PDF output and v3 fitting."""
     styles = _styles()
     story: list[Any] = [
         Paragraph(_plain(profile["name"]), styles["ResumeName"]),
@@ -233,18 +254,7 @@ def build_resume(
         )
         story.append(Paragraph(content, styles["ResumeBody"]))
 
-    document = SimpleDocTemplate(
-        str(output_path),
-        pagesize=letter,
-        leftMargin=0.5 * inch,
-        rightMargin=0.5 * inch,
-        topMargin=0.5 * inch,
-        bottomMargin=0.5 * inch,
-        compress=0,
-        title=f'{profile["name"]} - Resume',
-        author=profile["name"],
-    )
-    document.build(story)
+    return story
 
 
 def build_cover_letter(
