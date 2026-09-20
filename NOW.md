@@ -2,7 +2,7 @@
 
 ## Current task
 
-Writing v2 implementation and the two paid comparison experiments are complete. Read `WRITING-V2-RESULTS.md` for the concise evidence, then `README.md` for operation. Do not rerun paid calls or reopen stack retrofit. The next useful input is the user's blinded A/B judgment for Stibo and McKesson.
+The user reviewed the output and rejected the current resume structure. Do not run another paid job. First explain the existing harness and postmortem clearly. Then stop for the requested Astra switch before making structural design decisions. Read the newest corrections in `MEMORY.md`: full-page use, richer balanced evidence, categorized skills and one JD-specific retrofitted independent project are now required. The old no-project rules in the engine/canonical are stale relative to the user's direct instruction.
 
 User wants paste JD -> tailored resume and cover letter. Fit is based on work. Target technology retrofit is settled and mandatory; never ask for employer-specific tool history or an exhaustive technology list. Jev makes semantic decisions/checks, the writer creates prose, and the normal CLI is independent of Codex.
 
@@ -22,7 +22,7 @@ All eight final comparison PDFs are one page, selectable, at least 10 pt and vis
 
 ## Next action
 
-Ask the user to judge A/B/neither/tie for each case using the five plain questions in `WRITING-V2-RESULTS.md`. Do not reveal mappings before their choice. Stop after presenting outputs. If they want another writing iteration, the repeated failure pattern now requires a material prompt/architecture decision; follow their model preference and suggest Astra at that point.
+Give the user an ADHD-friendly visual explanation of every stage and gate, distinguish backend safeguards from actual resume quality, and state the root causes in the implementation. The blind review is superseded by the user's structural critique. After the explanation, the next work is a material redesign; the user previously required an immediate stop so they can switch from Sol to Astra for that decision.
 
 ## Operational notes
 
