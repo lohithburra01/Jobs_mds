@@ -1,6 +1,6 @@
 # What using the harness would look like
 
-Discussion proposal, 2026-09-19. These commands/screens describe the intended product; they are not implemented commands.
+Implemented CLI workflow, updated 2026-09-20. The normal path is paste JD -> saved local run -> resume PDF, cover-letter PDF, application JSON, and coverage report. It is not a chat agent.
 
 ## The thing you open
 
@@ -51,27 +51,11 @@ Progress messages are generated from program state. They are not a model narrati
 
 The writer creates. Jev makes semantic decisions and validates. Code runs the process. This is still a proposal to test, not a claim that readability can already be guaranteed by Jev.
 
-## Exactly where a question appears
+## Human input
 
-If essential information cannot be filled from setup/source facts and cannot safely be omitted, the program stops at a normal terminal input prompt. Example of a missing personal detail, not a tool question:
+There is no question screen in the current normal run. You paste the JD in the terminal and type `/done`; the harness continues without asking you to approve bullets, confirm technologies, or supervise Jev. Optional missing contact fields are omitted. A missing or uncertain core work component remains visible in `coverage.md` and produces `REVIEW_REQUIRED` instead of launching an interview with you or inventing evidence.
 
-```text
-One detail is missing for this Netherlands application:
-What correspondence address should appear on your resume?
-
-Type the address, or type /later to save and exit.
-> [your answer]
-
-Answer saved. Continuing...
-```
-
-The answer is typed after `>` in the same terminal. The program saves it to this job's local state. It is not necessary to open a second chat, edit an internal JSON, or contact a development agent.
-
-If the user types `/later`, work stays saved. `apply-job resume <job-id>` reopens the pending question and then continues. If the terminal closes unexpectedly, resume reconstructs the same pending state. Noninteractive file/pipeline runs must save pending questions and exit with a clear needs-input status, rather than hanging where no one can answer.
-
-The default scope of an answer is the current job. Saving a new personal fact for all future applications must be explicit; one answer must not silently rewrite the complete canonical. Fixed personal details should normally be resolved during setup, making this runtime path uncommon.
-
-Questions are not used to ask whether the user knows a JD tool, approve bullets, or compensate for a confused classifier. Missing optional details can be omitted. Model uncertainty triggers bounded repair/review status, not repeated demands that the user supervise the program.
+If you later choose to add or correct a durable personal fact, edit `canonical.yaml` outside the run and start a new application. Saved jobs keep their exact input snapshots. `resume` continues an interrupted run from its saved phase, pending response, attempts, and caches; it does not ask the same setup questions again.
 
 If the program cannot finish within its limits, it saves the draft and explains the actual problem. It must not print success or return a silently weakened application. The user can inspect/resume it later; this exceptional failure is distinct from an ordinary fact question.
 

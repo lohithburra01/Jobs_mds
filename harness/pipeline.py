@@ -233,6 +233,9 @@ def execute(root: Path, folder: Path):
     if job_version != current_version:
         raise ValueError(f"This saved job uses writing version {job_version}; current code uses version {current_version}. Start a new job so the benchmark and caches remain intact.")
     invalidate_release(store)
+    if current_version == 3:
+        from .pipeline_v3 import execute_v3
+        return execute_v3(root, folder)
     policy = load_policy(folder / "inputs" / "decisions.json")
     canonical = load_canonical(folder / "inputs" / "canonical.md")
     jd = (folder / "jd.md").read_text(encoding="utf-8")
@@ -300,7 +303,9 @@ def start(root: Path, jd_path: Path):
     inputs = folder / "inputs"
     inputs.mkdir(parents=True)
     (folder / "jd.md").write_text(jd_path.read_text(encoding="utf-8-sig"), encoding="utf-8")
-    for source, target in ((root / config["canonical"], "canonical.md"), (root / config["engine"], "engine.md"),
+    canonical_source = root / config["canonical"]
+    canonical_target = "canonical.yaml" if canonical_source.suffix.lower() in (".yaml", ".yml") else "canonical.md"
+    for source, target in ((canonical_source, canonical_target), (root / config["engine"], "engine.md"),
                            (root / "policy" / "decisions.json", "decisions.json"), (root / "config.json", "config.json")):
         shutil.copyfile(source, inputs / target)
     store = RunStore(folder)

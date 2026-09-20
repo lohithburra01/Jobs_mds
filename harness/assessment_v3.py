@@ -25,7 +25,8 @@ def _hash(value) -> str:
 
 def _case(case_id, node_id, dimension, state, question_text, criteria=VERDICT):
     return DecisionCase(id=case_id, node_id=node_id, dimension=dimension, state=state,
-                        question=question_text, criteria=criteria, dependency_hash=_hash(state))
+                        question=question_text, criteria=criteria,
+                        dependency_hash=_hash({"state": state, "question": question_text, "criteria": criteria}))
 
 
 def leaf_cases(blueprint: Blueprint, texts: dict[str, str]) -> list[DecisionCase]:
@@ -187,15 +188,28 @@ def parent_cases(blueprint: Blueprint, texts: dict[str, str], selected_ids: list
 
 def _run_cases(provider, cases: list[DecisionCase], batch_size=40) -> dict:
     answers = {}
+    store = getattr(provider, "store", None)
+    cache = store.state.setdefault("v3_case_cache", {}) if store is not None else {}
+    pending = []
     for case in cases:
         serialized = json.dumps(case.state, ensure_ascii=False)
         if len(serialized) > 75_000:
             raise ValueError(f"Decision case {case.id} exceeds 75000 serialized characters: {len(serialized)}")
-    for start in range(0, len(cases), batch_size):
-        batch = cases[start:start + batch_size]
+        cached = cache.get(case.id)
+        if cached and cached.get("dependency_hash") == case.dependency_hash:
+            answers[case.id] = cached["answer"]
+        else:
+            pending.append(case)
+    for start in range(0, len(pending), batch_size):
+        batch = pending[start:start + batch_size]
         questions = {case.id: choice(case.question, case.criteria) for case in batch}
         state = {"cases": {case.id: case.state for case in batch}}
-        answers.update(provider.decide(state, questions))
+        fresh = provider.decide(state, questions)
+        answers.update(fresh)
+        for case in batch:
+            cache[case.id] = {"dependency_hash": case.dependency_hash, "answer": fresh[case.id]}
+        if store is not None:
+            store.save()
     return answers
 
 

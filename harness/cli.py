@@ -51,10 +51,16 @@ def main(argv=None):
             folder, state = start(root, path.resolve())
         elif args.command == "inspect":
             state = json.loads((args.job / "run.json").read_text(encoding="utf-8"))
-            print(json.dumps({"status": state["status"], "role": state.get("job_model", {}).get("role"),
-                              "gaps": state.get("plan", {}).get("gaps", []), "blocks": {k: v["status"] for k, v in state.get("blocks", {}).items()},
+            coverage = state.get("coverage_summary", {})
+            gaps = [item["id"] for item in coverage.get("components", [])
+                    if item.get("priority") == "CORE" and item.get("status") != "Explicit"]
+            records = state.get("v3_text_records", state.get("blocks", {}))
+            print(json.dumps({"status": state["status"], "role": state.get("job_model_v3", state.get("job_model", {})).get("role"),
+                              "gaps": gaps or state.get("plan", {}).get("gaps", []), "blocks": {k: v["status"] for k, v in records.items()},
                               "global_checks": {k: v["choice"] for k, v in state.get("global_verdicts", {}).items()},
-                              "http_attempts": state["http_attempts"], "reported_cost_usd": state["cost_usd"]}, indent=2))
+                              "coverage_report": str(args.job / "coverage.md") if (args.job / "coverage.md").exists() else None,
+                              "http_attempts": state["http_attempts"], "logical_jev_questions": state.get("logical_jev_questions", 0),
+                              "reported_cost_usd": state["cost_usd"]}, indent=2))
             return 0
         elif args.command == "render":
             with job_lock(args.job):

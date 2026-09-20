@@ -128,6 +128,12 @@ class OpenRouter:
         return parsed
 
     def decide(self, state: dict, questions: dict) -> dict:
+        logical_hash = digest({"model": self.config["classifier_model"], "state": state, "questions": questions})
+        logical = self.store.state.setdefault("logical_jev_requests", {})
+        if logical_hash not in logical:
+            logical[logical_hash] = len(questions)
+            self.store.state["logical_jev_questions"] = self.store.state.get("logical_jev_questions", 0) + len(questions)
+            self.store.save()
         for attempt in range(3):
             result = self._call("https://openrouter.ai/api/alpha/decisions",
                                {"model": self.config["classifier_model"], "state": state, "questions": questions}, validation_retry=attempt)

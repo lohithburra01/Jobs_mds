@@ -1,6 +1,6 @@
 # Local application harness
 
-Paste a job description into PowerShell. The harness writes a tailored resume and cover letter, saves their JSON, and builds two PDFs. Jev chooses and checks; the writer produces prose. Writing v2 checks the complete application and repairs only diagnosed blocks, with one initial attempt plus at most two repairs per block. It is a working experiment, not a demonstrated improvement over a good one-shot prompt or human writing.
+Paste a job description into PowerShell. The harness writes a tailored resume and cover letter, saves their JSON, builds two PDFs, and writes a readable coverage report. Jev chooses and checks; the writer creates prose. Writing v3 uses one coherent initial creation call plus at most two shared targeted repair rounds. It is a working experiment, not a guarantee of ATS passage, recruiter response, or interview outcomes.
 
 ## Start on this computer
 
@@ -17,7 +17,7 @@ Paste the JD, then type `/done` on a separate line. Alternatively:
 & $python -m harness new --jd examples\stibo.jd.md
 ```
 
-The terminal shows progress and the saved job folder. Normal runs do not ask you to approve bullets. This is a command-line program, not a chat agent. There is currently **no interactive missing-fact question screen**: errors stop with saved progress; optional missing contacts are omitted. The question-and-answer interface in the earlier design is not implemented.
+The terminal shows progress and the saved job folder. Normal runs do not ask you to approve bullets or confirm JD tools. This is a command-line program, not a chat agent. Errors and unresolved decisions stop with saved progress and `REVIEW_REQUIRED`; optional missing contacts are omitted.
 
 ## Setup on another computer
 
@@ -30,7 +30,7 @@ Copy-Item .env.example .env
 
 Put the OpenRouter key in `.env` locally. Then run `python -m harness new` from this folder. The runtime calls OpenRouter directly and does not require Codex. Source excerpts and the JD are sent to the configured providers; execution and saved files remain local. API costs apply.
 
-`config.json` selects the writer and Jev models. The prototype allows one initial draft plus two repairs per block and at most 80 HTTP attempts per job. Invalid classifier responses and transient network failures also consume the HTTP budget. A repair rewrites only blocks with a specific local or relationship issue; passing blocks are retained. Stage usage baselines are persisted before calls so interruption and resume preserve cost attribution.
+`config.json` selects the writer and Jev models. V3 allows one complete initial draft plus two shared repair rounds and at most 80 HTTP attempts per job. Invalid responses and transient network failures consume the same budget. A repair rewrites only IDs named by a specific issue; passing text is retained. Stage usage and pending writer responses are persisted so interruption and resume preserve attempts, work, and cost attribution.
 
 ## Open, resume, or render a saved job
 
@@ -47,6 +47,7 @@ Put the OpenRouter key in `.env` locally. Then run `python -m harness new` from 
 Each job contains:
 
 - `application.json`: existing public renderer schema, with generated resume and letter.
+- `coverage.md` and `coverage.json`: every JD component, skill classification/group, employer allocation, project scope, unresolved issue, local PDF check, and usage count.
 - `profile.json`: header/contact details.
 - `renders/`: resume and cover-letter PDF revisions.
 - `run.json`: progress, block revisions, failures and reported API cost.
@@ -56,7 +57,7 @@ Each job contains:
 
 ## What the status means
 
-`ACCEPTED_EXPERIMENTAL` means the implemented checks passed. Jev judgments have not been calibrated against human-rated examples, so this is not a guarantee of writing quality or interview outcomes.
+`ACCEPTED_EXPERIMENTAL` means every required current child and parent decision passed, every core work component is explicit, and the final PDFs passed local layout checks. Jev judgments have not been calibrated against hiring outcomes.
 
 `REVIEW_REQUIRED` means PDFs were produced but at least one text or layout check failed. Inspect them anyway: a failed draft is useful evidence about what needs improving. The process exits with code 2. `STOPPED` means an error interrupted execution; inspect the saved folder and resume after fixing the cause. Ordinary errors exit with code 1.
 
@@ -64,12 +65,12 @@ The historical v1 Stibo run produced one-page PDFs for about $0.039, but failed 
 
 ## Current limits
 
-- Two live v2 runs still ended with abstract summary/letter language; the McKesson letter also repeated its proof example. The current repair prompts did not reliably resolve those issues within the fixed budget.
-- The planner uses a fixed allocation across four employers and the first available title variant. Harness skills are currently one flat list.
-- The original engine document is snapshotted for reference. Its full instructions are **not** automatically executable policy; only the implemented rules apply.
-- Missing email and links are omitted. Confirm these before using an application.
-- Automated PDF checks cover page count and selectable text, not every visual defect. The first real PDFs were also inspected as images.
-- Three attached JDs are saved as fixtures. Stibo and McKesson have paired one-shot controls; these are controlled writer baselines, not calibrated human-quality scores or a chat-session benchmark.
+- V3 has passed offline structural, hierarchy, resume-layout, interruption, and compatibility tests. It has not yet completed an authorized paid quality run.
+- `canonical.yaml` is the active source; the archived Markdown is provenance only.
+- Skills use item -> group -> whole-section checks. Experience uses bullet -> employer -> whole-section checks. A parent PASS never overrides a failed child.
+- Experience has no global bullet cap. Each employer has at most four, all four employers remain, and actual one-page ReportLab measurement selects the strongest fitting subset.
+- Every v3 resume includes one JD-relevant independent local/GitHub prototype with no invented date, URL, employer metric, or company scale.
+- Missing email and links are omitted. Automated PDF checks cover page count, selectable text, and fixed 10-point body type; the offline v3 fixture was also visually inspected.
 
 ## One-shot comparison
 
