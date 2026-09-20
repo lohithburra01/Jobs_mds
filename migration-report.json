@@ -1,0 +1,8 @@
+{
+  "archive_sha256": "aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460",
+  "expected_sha256": "aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460",
+  "invalid_source_refs": [],
+  "invalid_migration_entries": [],
+  "unmapped_nonblank_lines": [],
+  "complete": true
+}

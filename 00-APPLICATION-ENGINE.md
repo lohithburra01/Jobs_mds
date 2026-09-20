@@ -13,20 +13,20 @@ No application engine can guarantee an interview. This engine is designed to rem
 The active application system has exactly two files:
 
 1. `00-APPLICATION-ENGINE.md` - operating rules, selection logic, output format, and validation.
-2. `01-CANONICAL.md` - the sole factual source for personal details, education, work authorization, employment, projects, tools, metrics, boundaries, and claimable experience.
+2. `canonical.yaml` - the sole active factual source for personal details, education, work authorization, employment, the independent-project pattern, metrics, boundaries, and claimable experience.
 
 Apply these rules in order:
 
 1. **The job description defines demand, not evidence.** Use it to identify the employer's buying criteria, terminology, priorities, and constraints. Never treat a JD statement as proof that Lohith has a capability.
-2. **`01-CANONICAL.md` is the only application evidence source.** Use the most specific relevant section and respect every restriction, exclusion, status, authorship boundary, and claim limit.
-3. **A direct current-session user confirmation may resolve one narrow missing fact.** Scope it only to the question answered. Do not generalize it to other employers, projects, tools, dates, or metrics. Add durable corrections to `01-CANONICAL.md` so future applications still use one evidence source.
-4. **Model memory, chat summaries, prior resumes, generated bullets, and old project files are navigation aids only.** They are never factual authority and may not override `01-CANONICAL.md`.
+2. **`canonical.yaml` is the only active application evidence source.** Use its typed employer systems, facts, metrics, statuses, boundaries, and prototype pattern. Respect every restriction and claim limit.
+3. **A direct current-session user confirmation may resolve one narrow missing fact.** Scope it only to the question answered. Add durable corrections to `canonical.yaml` so future applications still use one evidence source.
+4. **Model memory, chat summaries, prior resumes, generated bullets, the archived canonical, and old project files are navigation aids only.** They are never factual authority and may not override `canonical.yaml`.
 
-This engine becomes the production application system only when the consolidated `01-CANONICAL.md` exists. Do not run applications from an incomplete transitional evidence set.
+This engine becomes the production application system only when `canonical.yaml` validates and its archive migration report is complete. Do not run applications from an incomplete transitional evidence set.
 
 ### Conflict handling
 
-- Within `01-CANONICAL.md`, the most specific employer, project, or personal-facts section wins.
+- Within `canonical.yaml`, the most specific employer system, fact, metric, status, boundary, or prototype restriction wins.
 - An explicit prohibition, caveat, status, or boundary wins over a sample phrase.
 - Do not average, merge, or silently choose between conflicting dates or claims.
 - If a conflict changes the fit call or would appear in the application, ask one targeted boundary question. Otherwise omit the disputed detail.
@@ -36,12 +36,12 @@ This engine becomes the production application system only when the consolidated
 
 All earlier evidence files are deprecated, including `01-CANONICAL-FACTS.md`, `COROMINAS_CANON.md`, `LOHITH_FULL_WORK_INVENTORY.md`, evidence addenda, and prior resume text.
 
-The older files have already been used to compile the consolidated canonical. They must not remain active application inputs. Do not consult them to fill a gap, and do not revive superseded employers, projects, domains, metrics, wording, or tool attributions. If the consolidated canonical lacks a material fact, ask one targeted question and update that single canonical.
+The older files have already been used to compile the consolidated canonical. They must not remain active application inputs. Do not consult them to fill a gap, and do not revive superseded employers, projects, domains, metrics, wording, or tool attributions. If the consolidated canonical lacks a material fact, record the gap in coverage instead of fabricating evidence.
 
 The final project architecture is only:
 
 - `00-APPLICATION-ENGINE.md` for rules;
-- `01-CANONICAL.md` for all facts.
+- `canonical.yaml` for all active facts and policies. `01-CANONICAL.md` is only a pointer; `archive/canonical-v2.md` is provenance, not an application input.
 
 ## Stage 1: Decode the job
 
@@ -92,7 +92,7 @@ Before mapping evidence, create an internal target architecture using the employ
 
 When the JD names a stack, this target architecture controls the visible technical story across every technology category, not only cloud. The JD's languages, libraries, frameworks, models, databases, APIs, orchestration, observability, deployment, testing, and environment choices become the implementation vocabulary for the application.
 
-Apply the universal pipeline and stack-agnostic authority in `01-CANONICAL.md`. Treat every stack-manifest item as available. Never ask about a stack item.
+Apply the functional stack-retrofit policy in `canonical.yaml`. Treat every stack-manifest item as available. Never ask about a stack item.
 
 Stack-retrofit rules:
 
@@ -266,7 +266,7 @@ Tailoring changes the center of gravity, evidence selection, terminology, and te
 
 Do not frame him as a single-tool specialist, SEO specialist, content specialist, WordPress specialist, or social-media specialist. Domains are context. The transferable pattern is understanding the full workflow, building the system, placing deterministic controls around model behavior, making failures observable, and preserving maintainability as the system changes.
 
-Do not reconstruct a second professional spine from evidence deliberately removed from `01-CANONICAL.md`.
+Do not reconstruct a second professional spine from evidence deliberately removed from the active canonical.
 
 ## Scaling-stage handling
 
@@ -281,7 +281,7 @@ Use `0-to-1` or `1-to-10` explicitly in the resume only when the job description
 
 ## Corominas handling
 
-For every resume using Corominas, use only the Corominas section of `01-CANONICAL.md`:
+For every resume using Corominas, use only the Corominas employer record and its linked facts, metrics, and boundaries in `canonical.yaml`:
 
 1. Read and preserve the canon's identity.
 2. Select only two to four capability blocks that directly serve the JD.
@@ -325,7 +325,7 @@ The resume is read by a recruiter before it is examined by a technical specialis
 - Put the operational result or scale before dense implementation detail.
 - Prefer familiar words over abstract phrases and stacked technical nouns.
 - Explain the capability in plain language before naming architecture components.
-- Keep most bullets between 18 and 32 words. Use up to 38 only when removing words would erase necessary meaning.
+- Aim for roughly 20 to 40 words when that is enough to explain the action, technical mechanism, and consequence. This is writing guidance, not a rejection or retry rule.
 - Do not join several weak claims with commas to make one oversized bullet.
 - Avoid vague phrases such as `drove transformation`, `leveraged cutting-edge technology`, `architected scalable solutions`, `enabled innovation`, or `delivered end-to-end excellence` unless the sentence immediately states the concrete change and result.
 - Technical terminology is allowed when it names real work, but it must not make the recruiter decode the sentence.
@@ -336,14 +336,14 @@ Read every summary sentence, bullet, and cover-letter sentence once at normal sp
 
 The resume must be ATS-safe, readable at normal size, and understandable in five to ten seconds. Prefer deletion over compression.
 
-- Summary: two to three lines, normally 35 to 60 words.
+- Summary: two to three substantive sentences, aiming roughly for 55 to 80 words when the page permits. This is writing guidance, not a rejection or retry rule.
 - Skills: use compact categories, but include every Stack manifest item. Complete JD stack coverage overrides any default item limit.
 - Experience: include every employer in the active canonical chronology. Relevance controls space, not presence.
 - Each employer: one to four bullets according to the number and importance of buying criteria it proves.
 - A highly relevant older role may receive more bullets than a recent but less relevant role.
 - Do not force descending counts such as 4-3-2-1, equal counts, or any other chronology-based pattern.
-- Total experience bullets: normally eight to eleven across all employers.
-- Projects: zero to one. Until the canonical authorizes a replacement project, use zero.
+- Total experience bullets: no global cap or target. Select every distinct useful point that fits after reserving all employers, Skills, one project, and education; never exceed four bullets for one employer.
+- Projects: include one JD-relevant independent local/GitHub prototype from the authorized pattern in `canonical.yaml`.
 - Do not repeat the same claim, metric, workflow, or tool list across Summary, Skills, Experience, and Projects.
 
 Allocate the bullet budget from the pre-draft coverage ledger. Requirement coverage, target-stack proof, professional ownership, deployment context, and defensible impact determine space. Recency breaks close ties but never imposes a taper.
@@ -393,18 +393,7 @@ Agentic terminology such as tool use, memory, evaluation, context management, gu
 
 ## Projects
 
-Projects are selected only from an explicit, currently authorized project section in `01-CANONICAL.md`. A project must directly prove a central job criterion that employment does not prove more strongly.
-
-The current canonical authorizes no standalone project. Until Lohith supplies and confirms the replacement project:
-
-- always output `projects: []`;
-- suppress the `Key Projects` heading;
-- do not use an old project from memory, a deprecated file, a prior resume, or a repository name;
-- do not convert employer work into a synthetic independent project;
-- do not infer a project merely because Lohith has local repositories;
-- do not use a project as filler for page balance.
-
-After a replacement project is added to the canonical, select it only when it is directly relevant, does not duplicate employment evidence, and has enough recorded detail to support every claim. Keep the `projects` key because the output schema requires it.
+The canonical authorizes one JD-relevant independent prototype based on Lohith's confirmed working pattern: before a larger implementation, he builds a small local version of the target workflow and adds it to GitHub. Retrofit the exact JD stack to the local workflow and state its useful output. Do not invent a project date, repository URL, employer, company scale, or employer metric. Do not copy an employer bullet. The public item remains `{name, period, bullets}` and uses an empty period when no date is confirmed.
 
 ## Targeted boundary-question policy
 
@@ -424,7 +413,7 @@ If the missing capability is not central, omit it and continue. If it is central
 
 ## Personal details and address routing
 
-All personal and administrative facts belong in the personal section of `01-CANONICAL.md`, including name, phone, LinkedIn, education, current location, citizenship, immigration status, work authorization, relocation preference, and any approved alternate correspondence address.
+All personal and administrative facts belong in `canonical.yaml`, including name, phone, LinkedIn, education, current location, citizenship, immigration status, work authorization, relocation preference, and any approved alternate correspondence address.
 
 The resume header and application answers must use those facts exactly. Do not infer work authorization from an address.
 
@@ -499,7 +488,7 @@ Additional output rules:
 - Use an empty string for an unknown company address rather than inventing one.
 - Use `Dear Hiring Team` when no named recipient is provided.
 - Use the actual application date.
-- Populate education and all rendered header details from `01-CANONICAL.md`; the schema examples are placeholders, not evidence.
+- Populate education and all rendered header details from `canonical.yaml`; the schema examples are placeholders, not evidence.
 - Use plain hyphens only, not en dashes or em dashes, throughout generated application content.
 
 ## Cover letter
@@ -539,7 +528,7 @@ Do not return the application until every check passes. Fix failures by rewritin
 
 ### 2. Source gate
 
-- Every factual claim traces to `01-CANONICAL.md` or to one narrow current-session correction that will be added there.
+- Every factual claim traces to `canonical.yaml` or to one narrow current-session correction that will be added there.
 - JD stack terms are authorized through the canonical's universal pipeline and stack-agnostic authority.
 - Corominas claims obey the dedicated Corominas section and its boundaries.
 - No deprecated evidence file, prior resume, or generated bullet was used as authority.
@@ -566,7 +555,7 @@ Do not return the application until every check passes. Fix failures by rewritin
 - Evidence proves the employer's central work rather than general technical breadth.
 - Bullet counts follow requirement coverage and are not a mechanical chronological taper.
 - Corominas uses only two to four relevant blocks and is not overloaded.
-- Projects are empty unless the canonical explicitly authorizes a replacement project.
+- One independent local/GitHub prototype follows the canonical pattern and contains no employer metric, invented date, or invented URL.
 - No deleted legacy employer, domain, tool family, or project has been restored from memory or a deprecated source.
 - The resume would still look like the same person across applications.
 

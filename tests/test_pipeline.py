@@ -135,7 +135,7 @@ class PlanningTests(unittest.TestCase):
     def test_plan_keeps_every_employer_and_does_not_force_unsupported_proof(self):
         from harness.planning import select_plan
         from harness.sources import load_canonical
-        canonical = load_canonical(ROOT / "01-CANONICAL.md")
+        canonical = load_canonical(ROOT / "archive" / "canonical-v2.md")
         requirements = [{"id": "r1", "text": "operational agents", "priority": "CORE"}, {"id": "r2", "text": "unsupported specialist work", "priority": "CORE"}]
         coverage = {e["id"]: {"r1": "DIRECT", "r2": "NO_SUPPORT"} for e in canonical["evidence"]}
         plan = select_plan(canonical, requirements, coverage)

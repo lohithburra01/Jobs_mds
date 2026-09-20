@@ -1,0 +1,5522 @@
+schema_version: 3
+source_archive: archive/canonical-v2.md
+source_archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+profile:
+  name: Lohith Burra
+  phone: '+4915124223947'
+  location: Mannheim, Germany
+education:
+- degree: Master of Science - Data Science
+  school: Stevens Institute of Technology
+  year: '2025'
+- degree: Bachelor of Technology - Mechanical Engineering
+  school: JNTU K
+  year: '2022'
+identity:
+  professional_spine: AI automation and agentic-systems engineer with a production data-engineering foundation.
+  career_progression: production data pipelines -> applied LLM and safety systems -> zero-to-one AI automation -> one-to-ten
+    multi-tenant agentic operations
+  maintainability: '# Agentic maintainability and pipeline discipline
+
+
+    ## Core projection
+
+
+    Lohith should be presented as an engineer who prevents agentic systems from becoming opaque, fragile chains of prompts
+    and local fixes. He builds a harness around model behavior and treats the complete workflow as a system that must remain
+    understandable and operable after the first successful demonstration.
+
+
+    This is the professional answer to the informal problem Lohith describes as `doom looping`: an agent or engineer tunnels
+    into the immediate failure, repeatedly changes one local component, loses sight of surrounding contracts and state, and
+    creates new failures elsewhere in the pipeline.
+
+
+    The claim is not that systems never fail. The claim is that Lohith designs them so failures are constrained, visible,
+    diagnosable, reviewable, and less likely to cascade.
+
+
+    ## Working method
+
+
+    The following method is supported as a cross-role professional approach when the selected employer evidence demonstrates
+    it:
+
+
+    1. Map the workflow from trigger to final action before optimizing one step.
+
+    2. Define contracts between stages so a local change does not silently change downstream behavior.
+
+    3. Use models for probabilistic judgment and deterministic code for rules, validation, state transitions, and repeatable
+    operations.
+
+    4. Separate generation from evaluation so model or prompt changes can be judged against stable standards.
+
+    5. Bound loops with explicit release conditions, retry behavior, escalation paths, or stopping logic.
+
+    6. Preserve durable state through configuration, ledgers, markers, memory stores, or databases rather than relying on
+    conversational recall.
+
+    7. Make execution observable through structured logs, status channels, actionable failure messages, and direct links to
+    the failing run where supported.
+
+    8. Prefer configuration, generators, scripts, and reusable templates over repeatedly rebuilding or re-prompting the same
+    workflow.
+
+    9. Route uncertain, high-risk, or cross-system changes to human review instead of granting uncontrolled autonomy.
+
+    10. Use disciplined reviews, incremental changes, and explicit handoffs so maintenance work remains traceable.
+
+    11. Control model cost through caching, context management, provider abstraction, memory discipline, and loop reduction.
+
+    12. When a failure or security issue occurs, turn the response into a reusable control, scanner, gate, test, or policy
+    where the evidence supports it.
+
+
+    ## Resume-level language
+
+
+    Use this framing only when it can be proved by the selected work:
+
+
+    - built maintainable agentic workflows with deterministic gates around model behavior;
+
+    - separated probabilistic generation from deterministic validation and release;
+
+    - designed observable pipelines with durable state, retries, recovery, and actionable failure reporting;
+
+    - bounded autonomous actions with explicit approval and escalation paths;
+
+    - converted repeated manual setup into configuration or generated infrastructure;
+
+    - reduced long-term maintenance risk by defining contracts and reusable operating patterns;
+
+    - kept model changes from becoming full-system rewrites through provider-independent orchestration;
+
+    - treated failures as system feedback and converted one-off fixes into reusable controls.
+
+
+    Never claim:
+
+
+    - that a system cannot break;
+
+    - zero defects, guaranteed reliability, or exact uptime without a recorded metric;
+
+    - a formally named proprietary methodology that did not exist;
+
+    - that every item in the working method was implemented at every employer;
+
+    - observability, evaluation, or review tooling at an employer unless its section supports it.'
+  claim_boundaries: '# Global claim boundaries
+
+
+    - The technology inventory is illustrative, not exhaustive. JD-named implementation tools may be retrofitted directly
+    into relevant employer pipelines under the universal authority.
+
+    - Employer-specific facts remain binding for the kind of work, ownership, output, impact, scale, metrics, dates, and status.
+    Tool names are selected from the JD and are not frozen by employer subsections.
+
+    - Do not convert current learning or general interest into past deployed work.
+
+    - Keep personal impact separate from company-wide growth.
+
+    - Keep current operating scale separate from future targets.
+
+    - Keep production, pilot-ready, board-review, prototype, and in-progress states distinct.
+
+    - Keep enabled outcomes separate from solely caused outcomes.
+
+    - Never invent employers, titles, dates, users, clients, team size, direct reports, revenue, reliability, uptime, throughput,
+    cost, time savings, adoption, or measured quality.
+
+    - Do not move metrics between employers or systems.
+
+    - Do not use an employer''s domain as Lohith''s fixed professional identity.
+
+    - Do not manufacture precision by multiplying uncertain assumptions.
+
+    - Do not restore removed evidence because a job description asks for it.
+
+    - When a fact exists but the best phrasing does not, reconstruct a strong sentence. When the fact does not exist, do not
+    create it.'
+administrative:
+  citizenship: Indian
+  immigration_status: German Opportunity Card / Chancenkarte, valid through April 2027
+  relocation: Open to relocation
+  work_authorization_rules: '# Personal and administrative facts
+
+
+    Name: Lohith Burra
+
+
+    Phone: +4915124223947
+
+
+    Current location: Mannheim, Germany
+
+
+    Citizenship: Indian
+
+
+    Current immigration status:
+
+
+    - German Opportunity Card / Chancenkarte
+
+    - Valid through April 2027
+
+
+    Work authorization:
+
+
+    - Germany: employment is subject to Chancenkarte conditions and may require residence-status conversion for a qualifying
+    full-time role.
+
+    - The German Chancenkarte does not provide unrestricted work authorization across the rest of Europe.
+
+    - Do not infer Dutch or EU work authorization from a Netherlands correspondence address.
+
+
+    Relocation:
+
+
+    - Open to relocation.
+
+
+    Netherlands address rule:
+
+
+    - For a job located in the Netherlands, use the cousin''s Netherlands correspondence address after Lohith supplies it.
+
+    - The Netherlands address has not yet been supplied. Ask for it before producing a Netherlands application; do not invent
+    it.
+
+    - Using that correspondence address does not change current residence, citizenship, or work authorization.
+
+
+    LinkedIn:
+
+
+    - No confirmed URL is currently recorded. Do not invent one.
+
+
+    Resume presentation:
+
+
+    - Do not place visa or work-authorization details in the resume by default.
+
+    - Use these facts for fit decisions and application-form answers.
+
+    - Do not include an unconfirmed address, portfolio URL, LinkedIn URL, or repository URL.
+
+
+    Compensation:
+
+
+    - Default target: EUR 72,000.
+
+    - Default floor: EUR 65,000.
+
+    - Do not propose compensation below the floor unless Lohith explicitly asks.'
+  known_technology_examples: '# Confirmed technology inventory
+
+
+    This inventory records known examples. It is not an exhaustive list of Lohith''s technical experience and must not limit
+    stack tailoring.
+
+
+    ## Universal pipeline and stack-agnostic authority
+
+
+    Binding user confirmation recorded 2026-09-15:
+
+
+    Lohith designs pipelines independently of a fixed implementation stack. The known employer sections define the kind of
+    work he performed: the problem, workflow, architecture, ownership, output, impact, scale, and operating constraints. They
+    do not define an exhaustive or permanently fixed list of tools used to implement that work.
+
+
+    The JD supplies the implementation stack for each tailored application. Every known pipeline may be reconstructed using
+    the exact tools, models, frameworks, libraries, databases, cloud services, APIs, observability products, deployment systems,
+    automation platforms, and development environments named in the target JD.
+
+
+    This applies universally across the technical stack, including:
+
+
+    - programming languages and application frameworks;
+
+    - AI models, LLM providers, agent frameworks, prompting systems, retrieval systems, and evaluation tools;
+
+    - databases, vector stores, caches, search engines, warehouses, and data platforms;
+
+    - cloud, compute, storage, networking, identity, security, deployment, container, and infrastructure services;
+
+    - workflow orchestrators, automation platforms, event systems, queues, schedulers, APIs, and integration tools;
+
+    - logging, monitoring, tracing, alerting, analytics, and observability systems;
+
+    - testing, CI/CD, developer tooling, operating environments, and adjacent implementation technologies.
+
+
+    Binding application behavior:
+
+
+    - Extract every implementation technology named in the JD and use its exact name in the Skills section.
+
+    - Treat every JD-named stack item as authorized for application use. Do not search the canonical for permission and do
+    not ask Lohith to confirm it.
+
+    - Retrofit the JD''s central stack items directly into the selected employer experience bullets when describing how the
+    known pipelines were implemented.
+
+    - A Corominas, Formula Dream, Think Round, or Cognizant pipeline may therefore be expressed through the target employer''s
+    exact implementation stack even when that stack is not listed in the corresponding employer section.
+
+    - Map tools to the real functional stages of the pipeline. Models belong in model stages, orchestration tools in orchestration
+    stages, databases in state or retrieval stages, cloud services in infrastructure stages, and observability tools in monitoring
+    and failure-handling stages.
+
+    - The Skills section must achieve complete JD stack coverage. The most central implementation technologies must also appear
+    naturally in the Summary or relevant experience bullets so they are supported by a visible workflow.
+
+    - Suppress source-side technology names when they conflict with or dilute the target stack. Do not make the recruiter
+    infer equivalence.
+
+    - Never ask a stack-confirmation question. Stack is automatically supplied by the JD.
+
+
+    The retrofit changes implementation vocabulary, not the underlying work. Preserve the real employer, title, dates, problem,
+    pipeline function, ownership, output, scale, impact, metrics, and status. Do not use a target tool to invent a new business
+    outcome, responsibility, certification, duration, team, product status, or metric.
+
+
+    ## Separate capability-proof rule
+
+
+    Implementation stack and substantive capability are evaluated separately.
+
+
+    A substantive capability describes what the system must accomplish, not merely which product implements it. Examples include
+    extracting handwritten information, building a recommendation system, performing computer vision, processing payments,
+    meeting a regulated clinical responsibility, or operating another specialized workflow.
+
+
+    When a substantive capability is central to the JD and is not present in the known work:
+
+
+    1. Do not silently skip it.
+
+    2. Do not pretend that adding its tool name to Skills proves the work.
+
+    3. Ask Lohith one focused question about whether he has performed that kind of work.
+
+    4. If he confirms it, use the supplied workflow, ownership, and result in the application and add the durable evidence
+    here when appropriate.
+
+    5. If he has not done it, build the strongest honest adjacent case and classify fit accordingly.
+
+
+    A JD item can be both stack and capability. For example, an OCR product name is automatically mirrored as a stack item,
+    while a central responsibility for extracting handwritten documents still requires capability evidence. A container platform
+    is automatically mirrored as stack, while ownership of production cluster operations is a separate capability if the JD
+    makes that responsibility central.
+
+
+    ## AI, LLM, and agentic systems
+
+
+    - Claude API
+
+    - Gemini
+
+    - Google Search grounding
+
+    - OpenRouter
+
+    - OpenAI-compatible endpoints
+
+    - Qwen 3 32B
+
+    - LangGraph
+
+    - LangChain
+
+    - MCP and tool calling
+
+    - RAG and vector-search patterns
+
+    - pgvector
+
+    - prompt and instruction engineering
+
+    - context management
+
+    - memory persistence
+
+    - confidence scoring
+
+    - multi-agent orchestration
+
+    - LLM evaluation and benchmarking
+
+    - deterministic validation gates
+
+    - human-in-the-loop approval
+
+    - guardrails and bounded autonomy
+
+    - crisis detection and safety routing
+
+    - model routing and provider portability
+
+    - prompt caching
+
+    - loop reduction
+
+    - cost and context optimization
+
+
+    ## Automation, reliability, and integration
+
+
+    - n8n
+
+    - GitHub Actions
+
+    - REST APIs
+
+    - webhooks and event triggers
+
+    - Google Drive API
+
+    - Google Drive custom properties
+
+    - Instagram publishing
+
+    - YouTube publishing
+
+    - retry and backoff patterns
+
+    - idempotent deduplication
+
+    - scheduled sweep recovery
+
+    - generated workflow JSON
+
+    - failure notification and diagnostic execution links
+
+    - configuration-driven multi-tenancy
+
+    - Airtable ledgers
+
+    - Slack-based agent operations
+
+    - UiPath
+
+
+    ## Cloud, data-platform, database, and observability breadth
+
+
+    - Azure
+
+    - Azure Databricks
+
+    - AWS
+
+    - GCP
+
+    - AWS Lambda
+
+    - Datadog
+
+    - major cloud storage, compute, orchestration, monitoring, and identity patterns
+
+    - modern data-platform and distributed-processing patterns
+
+    - relational, document, vector, and operational database patterns
+
+    - logs, metrics, traces, alerts, dashboards, and execution diagnostics
+
+
+    ## Software, platform, and data engineering
+
+
+    - Python
+
+    - SQL
+
+    - FastAPI
+
+    - asynchronous services
+
+    - TypeScript
+
+    - JavaScript
+
+    - Node.js
+
+    - Next.js
+
+    - Docker
+
+    - Docker Compose
+
+    - Kubernetes
+
+    - PostgreSQL
+
+    - JSON and strict structured output
+
+    - Apache Spark
+
+    - PySpark
+
+    - AWS S3
+
+    - AWS Lambda
+
+    - AWS Glue
+
+    - ETL
+
+    - data ingestion
+
+    - data validation and pipeline testing
+
+    - Metabase
+
+    - Excel analytics
+
+    - multi-source web and community aggregation
+
+
+    ## Engineering work environment
+
+
+    - Claude Code
+
+    - Cursor
+
+    - Codex
+
+    - Hermes
+
+
+    These tools are examples of current familiarity. They do not restrict the universal stack retrofit rule.'
+policies:
+  stack_retrofit: functional
+  max_bullets_per_employer: 4
+  include_independent_project: true
+employers:
+- id: corominas
+  company: Corominas Consulting
+  titles:
+  - Manager, AI & Automation
+  period: Jun 2026 - Sep 2026
+  status_text: Full-portfolio client-deliverable and approval cycle; broader workstreams had mixed completion states.
+  boundary_ids:
+  - corominas.boundary
+  systems:
+  - id: corominas.multi_tenant
+    narrative: '## Capability block 1: Multi-tenant LLM pipeline architecture
+
+
+      Built a multi-tenant automation engine in which client behavior is controlled through configuration instead of client-specific
+      code branches. Adding a client became a configuration change rather than a rebuild.
+
+
+      The end-to-end path covered:
+
+
+      - intake and client-specific configuration;
+
+      - generation;
+
+      - deterministic validation;
+
+      - client preview and editing;
+
+      - approval;
+
+      - publication;
+
+      - automated confirmation and state tracking.
+
+
+      Output and impact:
+
+
+      - Replaced a manual editorial and approval process with an unattended pipeline across a 200-client portfolio.
+
+      - Made onboarding repeatable by moving client differences into configuration.
+
+      - Reduced internal involvement to exception handling and final approval across the content-to-publish cycle.
+
+      - Supported 1,200+ pieces per month at full-portfolio scale, based on 6-8 pages per client per month across 200 clients.
+
+
+      Maintainability evidence:
+
+
+      - Client variation lives in configuration rather than duplicated logic.
+
+      - Workflow stages have distinct responsibilities and explicit handoffs.
+
+      - Deterministic checks and human approval constrain model output before external action.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 227
+      end_line: 253
+      quote: '## Capability block 1: Multi-tenant LLM pipeline architecture
+
+
+        Built a multi-tenant automation engine in which client behavior is controlled through configuration instead of client-specific
+        code branches. Adding a client became a configuration change rather than a rebuild.
+
+
+        The end-to-end path covered:
+
+
+        - intake and client-specific configuration;
+
+        - generation;
+
+        - deterministic validation;
+
+        - client preview and editing;
+
+        - approval;
+
+        - publication;
+
+        - automated confirmation and state tracking.
+
+
+        Output and impact:
+
+
+        - Replaced a manual editorial and approval process with an unattended pipeline across a 200-client portfolio.
+
+        - Made onboarding repeatable by moving client differences into configuration.
+
+        - Reduced internal involvement to exception handling and final approval across the content-to-publish cycle.
+
+        - Supported 1,200+ pieces per month at full-portfolio scale, based on 6-8 pages per client per month across 200 clients.
+
+
+        Maintainability evidence:
+
+
+        - Client variation lives in configuration rather than duplicated logic.
+
+        - Workflow stages have distinct responsibilities and explicit handoffs.
+
+        - Deterministic checks and human approval constrain model output before external action.'
+    problem_fact_ids:
+    - corominas.multi_tenant.problem.1
+    input_fact_ids: []
+    action_fact_ids:
+    - corominas.multi_tenant.action.2
+    output_fact_ids:
+    - corominas.multi_tenant.output.3
+    outcome_fact_ids:
+    - corominas.multi_tenant.outcome.4
+    metric_ids:
+    - corominas.clients
+    - corominas.monthly_volume
+    - corominas.growth_target
+    boundary_ids:
+    - corominas.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: corominas.multi_tenant.accomplishment
+      system_id: corominas.multi_tenant
+      purpose: Demonstrate the distinct work and result in Multi-tenant LLM pipeline architecture.
+      fact_ids:
+      - corominas.multi_tenant.problem.1
+      - corominas.multi_tenant.action.2
+      - corominas.multi_tenant.output.3
+      - corominas.multi_tenant.outcome.4
+      metric_ids:
+      - corominas.clients
+      - corominas.monthly_volume
+      - corominas.growth_target
+      boundary_ids:
+      - corominas.boundary
+  - id: corominas.llm_harness
+    narrative: '## Capability block 2: LLM harness and cost control
+
+
+      Built a harness around LLM inference rather than coupling the workflow directly to one model call. Used sub-agent techniques,
+      prompt caching, context-window management, loop reduction, and memory optimization. The orchestration is model-agnostic,
+      so changing the underlying model is a configuration change rather than a rewrite.
+
+
+      Output and impact:
+
+
+      - Reduced inference cost by over 90% without quality regression.
+
+      - Reduced per-operation cost from dollar-scale to cent-scale.
+
+      - Separated orchestration from provider-specific calls so model changes did not require rebuilding the workflow.
+
+
+      Maintainability evidence:
+
+
+      - Provider abstraction limits the blast radius of a model change.
+
+      - Context and memory are deliberately managed instead of allowed to grow without control.
+
+      - Loop reduction improves both cost and predictability.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 254
+      end_line: 269
+      quote: '## Capability block 2: LLM harness and cost control
+
+
+        Built a harness around LLM inference rather than coupling the workflow directly to one model call. Used sub-agent
+        techniques, prompt caching, context-window management, loop reduction, and memory optimization. The orchestration
+        is model-agnostic, so changing the underlying model is a configuration change rather than a rewrite.
+
+
+        Output and impact:
+
+
+        - Reduced inference cost by over 90% without quality regression.
+
+        - Reduced per-operation cost from dollar-scale to cent-scale.
+
+        - Separated orchestration from provider-specific calls so model changes did not require rebuilding the workflow.
+
+
+        Maintainability evidence:
+
+
+        - Provider abstraction limits the blast radius of a model change.
+
+        - Context and memory are deliberately managed instead of allowed to grow without control.
+
+        - Loop reduction improves both cost and predictability.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - corominas.llm_harness.action.1
+    output_fact_ids:
+    - corominas.llm_harness.output.2
+    outcome_fact_ids:
+    - corominas.llm_harness.outcome.3
+    metric_ids:
+    - corominas.inference_cost
+    boundary_ids:
+    - corominas.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: corominas.llm_harness.accomplishment
+      system_id: corominas.llm_harness
+      purpose: Demonstrate the distinct work and result in LLM harness and cost control.
+      fact_ids:
+      - corominas.llm_harness.action.1
+      - corominas.llm_harness.output.2
+      - corominas.llm_harness.outcome.3
+      metric_ids:
+      - corominas.inference_cost
+      boundary_ids:
+      - corominas.boundary
+  - id: corominas.quality_gate
+    narrative: '## Capability block 3: Deterministic quality gate
+
+
+      Built a validation layer between generation and human review. Generated artifacts pass through deterministic checks
+      for format, completeness, factual consistency, and structural requirements. The enforcement layer is separate from the
+      prompt.
+
+
+      Output and impact:
+
+
+      - Automated routine validation before output reached a human.
+
+      - Made prompt changes and model swaps comparable against consistent standards.
+
+      - Reduced dependence on manual spot-checking while preserving final human judgment.
+
+
+      Maintainability evidence:
+
+
+      - Generation and evaluation are separate systems.
+
+      - Stable validation rules provide regression protection when model behavior changes.
+
+      - Failed output is withheld instead of released because the model sounded confident.
+
+
+      Do not imply that human approval disappeared.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 270
+      end_line: 287
+      quote: '## Capability block 3: Deterministic quality gate
+
+
+        Built a validation layer between generation and human review. Generated artifacts pass through deterministic checks
+        for format, completeness, factual consistency, and structural requirements. The enforcement layer is separate from
+        the prompt.
+
+
+        Output and impact:
+
+
+        - Automated routine validation before output reached a human.
+
+        - Made prompt changes and model swaps comparable against consistent standards.
+
+        - Reduced dependence on manual spot-checking while preserving final human judgment.
+
+
+        Maintainability evidence:
+
+
+        - Generation and evaluation are separate systems.
+
+        - Stable validation rules provide regression protection when model behavior changes.
+
+        - Failed output is withheld instead of released because the model sounded confident.
+
+
+        Do not imply that human approval disappeared.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - corominas.quality_gate.action.1
+    output_fact_ids:
+    - corominas.quality_gate.output.2
+    outcome_fact_ids:
+    - corominas.quality_gate.outcome.3
+    metric_ids: []
+    boundary_ids:
+    - corominas.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: corominas.quality_gate.accomplishment
+      system_id: corominas.quality_gate
+      purpose: Demonstrate the distinct work and result in Deterministic quality gate.
+      fact_ids:
+      - corominas.quality_gate.action.1
+      - corominas.quality_gate.output.2
+      - corominas.quality_gate.outcome.3
+      metric_ids: []
+      boundary_ids:
+      - corominas.boundary
+  - id: corominas.approval
+    narrative: '## Capability block 4: Human-in-the-loop approval system
+
+
+      Built a client-facing dashboard and approval flow where clients could inspect a live-accurate preview, make inline edits,
+      and publish. Client approval directly triggered publication and confirmation, removing the internal team as intermediary
+      while preserving the final human decision.
+
+
+      Output and impact:
+
+
+      - Reduced approval-to-publish time from days to under 60 seconds.
+
+      - Turned the final decision into client self-service.
+
+      - Consolidated pending approvals, published inventory, and operational information in one interface.
+
+
+      Maintainability evidence:
+
+
+      - The workflow has an explicit human control point before external publication.
+
+      - Approval is a defined state transition rather than an informal message passed between teams.
+
+      - The same approval contract works across clients.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 288
+      end_line: 303
+      quote: '## Capability block 4: Human-in-the-loop approval system
+
+
+        Built a client-facing dashboard and approval flow where clients could inspect a live-accurate preview, make inline
+        edits, and publish. Client approval directly triggered publication and confirmation, removing the internal team as
+        intermediary while preserving the final human decision.
+
+
+        Output and impact:
+
+
+        - Reduced approval-to-publish time from days to under 60 seconds.
+
+        - Turned the final decision into client self-service.
+
+        - Consolidated pending approvals, published inventory, and operational information in one interface.
+
+
+        Maintainability evidence:
+
+
+        - The workflow has an explicit human control point before external publication.
+
+        - Approval is a defined state transition rather than an informal message passed between teams.
+
+        - The same approval contract works across clients.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - corominas.approval.action.1
+    output_fact_ids:
+    - corominas.approval.output.2
+    outcome_fact_ids:
+    - corominas.approval.outcome.3
+    metric_ids:
+    - corominas.approval_latency
+    boundary_ids:
+    - corominas.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: corominas.approval.accomplishment
+      system_id: corominas.approval
+      purpose: Demonstrate the distinct work and result in Human-in-the-loop approval system.
+      fact_ids:
+      - corominas.approval.action.1
+      - corominas.approval.output.2
+      - corominas.approval.outcome.3
+      metric_ids:
+      - corominas.approval_latency
+      boundary_ids:
+      - corominas.boundary
+  - id: corominas.agent_ops
+    narrative: '## Capability block 5: Multi-agent operational orchestration
+
+
+      Built a domain-specific agent network across internal Slack channels. Agents handled routine client requests in their
+      area, notified the team of client actions, and escalated a human ticket when a change risked affecting another system.
+      Airtable served as the shared ledger for logged and queryable actions.
+
+
+      Output and impact:
+
+
+      - Removed an engineering bottleneck for routine changes without removing human judgment from risky changes.
+
+      - Replaced ad hoc status chasing with structured notifications and a queryable action history.
+
+      - Created a clear division between routine autonomous handling and human escalation.
+
+
+      Maintainability evidence:
+
+
+      - Shared state is written to a ledger rather than held only in message context.
+
+      - Cross-system risk triggers escalation instead of unrestricted agent action.
+
+      - Operational channels make agent activity visible to the team.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 304
+      end_line: 319
+      quote: '## Capability block 5: Multi-agent operational orchestration
+
+
+        Built a domain-specific agent network across internal Slack channels. Agents handled routine client requests in their
+        area, notified the team of client actions, and escalated a human ticket when a change risked affecting another system.
+        Airtable served as the shared ledger for logged and queryable actions.
+
+
+        Output and impact:
+
+
+        - Removed an engineering bottleneck for routine changes without removing human judgment from risky changes.
+
+        - Replaced ad hoc status chasing with structured notifications and a queryable action history.
+
+        - Created a clear division between routine autonomous handling and human escalation.
+
+
+        Maintainability evidence:
+
+
+        - Shared state is written to a ledger rather than held only in message context.
+
+        - Cross-system risk triggers escalation instead of unrestricted agent action.
+
+        - Operational channels make agent activity visible to the team.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - corominas.agent_ops.action.1
+    output_fact_ids:
+    - corominas.agent_ops.output.2
+    outcome_fact_ids:
+    - corominas.agent_ops.outcome.3
+    metric_ids: []
+    boundary_ids:
+    - corominas.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: corominas.agent_ops.accomplishment
+      system_id: corominas.agent_ops
+      purpose: Demonstrate the distinct work and result in Multi-agent operational orchestration.
+      fact_ids:
+      - corominas.agent_ops.action.1
+      - corominas.agent_ops.output.2
+      - corominas.agent_ops.outcome.3
+      metric_ids: []
+      boundary_ids:
+      - corominas.boundary
+  - id: corominas.generated_workflows
+    narrative: '## Capability block 6: Workflow infrastructure as generated code
+
+
+      Treated workflow definitions as generated infrastructure rather than hand-built interface state. Python generators emit
+      and maintain workflow definitions. When an orchestration pattern changes, the generator changes and dependent workflows
+      can be regenerated.
+
+
+      Output and impact:
+
+
+      - Replaced repeated manual workflow editing with reusable generation logic.
+
+      - Allowed pattern changes to propagate without individually rebuilding many configurations.
+
+      - Made new workflow patterns a generator change rather than a sequence of interface edits.
+
+
+      Maintainability evidence:
+
+
+      - The source of truth is deterministic code rather than scattered manual configuration.
+
+      - Repeated structures can be changed consistently.
+
+      - Infrastructure becomes reviewable and reproducible.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 320
+      end_line: 335
+      quote: '## Capability block 6: Workflow infrastructure as generated code
+
+
+        Treated workflow definitions as generated infrastructure rather than hand-built interface state. Python generators
+        emit and maintain workflow definitions. When an orchestration pattern changes, the generator changes and dependent
+        workflows can be regenerated.
+
+
+        Output and impact:
+
+
+        - Replaced repeated manual workflow editing with reusable generation logic.
+
+        - Allowed pattern changes to propagate without individually rebuilding many configurations.
+
+        - Made new workflow patterns a generator change rather than a sequence of interface edits.
+
+
+        Maintainability evidence:
+
+
+        - The source of truth is deterministic code rather than scattered manual configuration.
+
+        - Repeated structures can be changed consistently.
+
+        - Infrastructure becomes reviewable and reproducible.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - corominas.generated_workflows.action.1
+    output_fact_ids:
+    - corominas.generated_workflows.output.2
+    outcome_fact_ids:
+    - corominas.generated_workflows.outcome.3
+    metric_ids: []
+    boundary_ids:
+    - corominas.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: corominas.generated_workflows.accomplishment
+      system_id: corominas.generated_workflows
+      purpose: Demonstrate the distinct work and result in Workflow infrastructure as generated code.
+      fact_ids:
+      - corominas.generated_workflows.action.1
+      - corominas.generated_workflows.output.2
+      - corominas.generated_workflows.outcome.3
+      metric_ids: []
+      boundary_ids:
+      - corominas.boundary
+  - id: corominas.security_response
+    narrative: '## Capability block 7: Security response and hardening
+
+
+      After a third-party system in the portfolio was compromised, Lohith led the technical response. He identified the attack
+      vector, audited the automation layer the same day to rule it out with evidence, swept the wider portfolio for the exposure,
+      converted the sweep into a passive ongoing scanner, closed findings in the automation''s own API surface, and authored
+      the standing security policy.
+
+
+      Output and impact:
+
+
+      - Turned a one-off incident investigation into an ongoing posture-monitoring control.
+
+      - Produced evidence that separated the compromised third-party path from the automation layer.
+
+      - Converted incident findings into API hardening and a reusable operating policy.
+
+
+      Binding boundary:
+
+
+      - This was response and hardening, not prevention.
+
+      - Use `responded to`, `audited`, `swept`, or `hardened`.
+
+      - Never say Lohith prevented, pre-empted, or detected the breach early.
+
+      - Lohith flagged and escalated client remediation; he did not remediate the compromised client site himself.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 336
+      end_line: 352
+      quote: '## Capability block 7: Security response and hardening
+
+
+        After a third-party system in the portfolio was compromised, Lohith led the technical response. He identified the
+        attack vector, audited the automation layer the same day to rule it out with evidence, swept the wider portfolio for
+        the exposure, converted the sweep into a passive ongoing scanner, closed findings in the automation''s own API surface,
+        and authored the standing security policy.
+
+
+        Output and impact:
+
+
+        - Turned a one-off incident investigation into an ongoing posture-monitoring control.
+
+        - Produced evidence that separated the compromised third-party path from the automation layer.
+
+        - Converted incident findings into API hardening and a reusable operating policy.
+
+
+        Binding boundary:
+
+
+        - This was response and hardening, not prevention.
+
+        - Use `responded to`, `audited`, `swept`, or `hardened`.
+
+        - Never say Lohith prevented, pre-empted, or detected the breach early.
+
+        - Lohith flagged and escalated client remediation; he did not remediate the compromised client site himself.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - corominas.security_response.action.1
+    output_fact_ids:
+    - corominas.security_response.output.2
+    outcome_fact_ids:
+    - corominas.security_response.outcome.3
+    metric_ids: []
+    boundary_ids:
+    - corominas.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: corominas.security_response.accomplishment
+      system_id: corominas.security_response
+      purpose: Demonstrate the distinct work and result in Security response and hardening.
+      fact_ids:
+      - corominas.security_response.action.1
+      - corominas.security_response.output.2
+      - corominas.security_response.outcome.3
+      metric_ids: []
+      boundary_ids:
+      - corominas.boundary
+- id: formula_dream
+  company: Formula Dream
+  titles:
+  - AI Automation Engineer
+  - AI Automation Developer
+  period: Mar 2026 - Jun 2026
+  status_text: Remote contract; primary stage 0-to-1.
+  boundary_ids:
+  - formula_dream.boundary
+  systems:
+  - id: formula.event_pipeline
+    narrative: '## System 1: Event-driven production and publishing pipeline
+
+
+      Built an end-to-end pipeline connecting scheduled Python production jobs, Google Drive, n8n, external results APIs,
+      grounded LLM generation, and Instagram and YouTube publishing.
+
+
+      Workflow:
+
+
+      1. GitHub Actions runs self-scheduling Python production jobs.
+
+      2. Completed media assets are written to Google Drive under a filename contract that downstream automation can interpret.
+
+      3. A Google Drive event starts the publishing workflow when a new asset arrives.
+
+      4. An hourly sweep checks for missed events so one dropped trigger does not leave an asset unpublished.
+
+      5. External API calls assemble factual event and participant context.
+
+      6. Gemini with Google Search grounding produces captions and metadata as strict JSON.
+
+      7. The workflow publishes to Instagram and YouTube.
+
+      8. Google Drive custom properties mark the source asset as posted so retries and sweeps do not publish it twice.
+
+      9. HTTP calls retry three times with backoff.
+
+      10. A failure email identifies the exact failing step, includes the error, and links to the relevant execution.
+
+
+      Output and impact:
+
+
+      - Removed manual handling between a completed asset and multi-platform publication.
+
+      - Combined low-latency event handling with scheduled recovery.
+
+      - Prevented duplicate publication through durable idempotency markers.
+
+      - Made failures diagnosable instead of silently stopping the pipeline.
+
+      - Demonstrated ownership across triggers, storage contracts, orchestration, external APIs, LLM generation, structured
+      output, state, publication, and failure handling.
+
+
+      Maintainability evidence:
+
+
+      - The event trigger and scheduled sweep provide two independent paths to completion.
+
+      - Posted state is persisted outside the model and survives retries.
+
+      - Backoff behavior is explicit.
+
+      - Failure reports identify the failed step and preserve a path to the execution record.
+
+      - The filename and JSON contracts make boundaries between stages inspectable.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 397
+      end_line: 429
+      quote: '## System 1: Event-driven production and publishing pipeline
+
+
+        Built an end-to-end pipeline connecting scheduled Python production jobs, Google Drive, n8n, external results APIs,
+        grounded LLM generation, and Instagram and YouTube publishing.
+
+
+        Workflow:
+
+
+        1. GitHub Actions runs self-scheduling Python production jobs.
+
+        2. Completed media assets are written to Google Drive under a filename contract that downstream automation can interpret.
+
+        3. A Google Drive event starts the publishing workflow when a new asset arrives.
+
+        4. An hourly sweep checks for missed events so one dropped trigger does not leave an asset unpublished.
+
+        5. External API calls assemble factual event and participant context.
+
+        6. Gemini with Google Search grounding produces captions and metadata as strict JSON.
+
+        7. The workflow publishes to Instagram and YouTube.
+
+        8. Google Drive custom properties mark the source asset as posted so retries and sweeps do not publish it twice.
+
+        9. HTTP calls retry three times with backoff.
+
+        10. A failure email identifies the exact failing step, includes the error, and links to the relevant execution.
+
+
+        Output and impact:
+
+
+        - Removed manual handling between a completed asset and multi-platform publication.
+
+        - Combined low-latency event handling with scheduled recovery.
+
+        - Prevented duplicate publication through durable idempotency markers.
+
+        - Made failures diagnosable instead of silently stopping the pipeline.
+
+        - Demonstrated ownership across triggers, storage contracts, orchestration, external APIs, LLM generation, structured
+        output, state, publication, and failure handling.
+
+
+        Maintainability evidence:
+
+
+        - The event trigger and scheduled sweep provide two independent paths to completion.
+
+        - Posted state is persisted outside the model and survives retries.
+
+        - Backoff behavior is explicit.
+
+        - Failure reports identify the failed step and preserve a path to the execution record.
+
+        - The filename and JSON contracts make boundaries between stages inspectable.'
+    problem_fact_ids:
+    - formula.event_pipeline.problem.1
+    input_fact_ids: []
+    action_fact_ids:
+    - formula.event_pipeline.action.2
+    output_fact_ids:
+    - formula.event_pipeline.output.3
+    outcome_fact_ids:
+    - formula.event_pipeline.outcome.4
+    metric_ids: []
+    boundary_ids:
+    - formula_dream.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: formula.event_pipeline.accomplishment
+      system_id: formula.event_pipeline
+      purpose: Demonstrate the distinct work and result in Event-driven production and publishing pipeline.
+      fact_ids:
+      - formula.event_pipeline.problem.1
+      - formula.event_pipeline.action.2
+      - formula.event_pipeline.output.3
+      - formula.event_pipeline.outcome.4
+      metric_ids: []
+      boundary_ids:
+      - formula_dream.boundary
+  - id: formula.workflow_generator
+    narrative: '## System 2: n8n workflow-generation system
+
+
+      Built a system on top of n8n in which Claude generated complete, importable workflow JSON already aligned with Lohith''s
+      established credential conventions.
+
+
+      Workflow and output:
+
+
+      - Described the intended automation at the workflow level.
+
+      - Generated the complete n8n definition rather than manually assembling every step in the interface.
+
+      - Imported the definition into the existing credential setup.
+
+      - Reused the approach across two production systems.
+
+      - Built 23+ workflows.
+
+      - Reduced idea-to-running-workflow time to under 10 minutes.
+
+
+      Maintainability evidence:
+
+
+      - Repeated workflow structure lives in a reusable generation pattern.
+
+      - Credential conventions and workflow structure remain consistent across generated definitions.
+
+      - A system-level change can be made in the generation approach instead of repeated manually in many workflows.
+
+
+      Do not move the `23+ workflows` or `under 10 minutes` figures to another employer.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 430
+      end_line: 450
+      quote: '## System 2: n8n workflow-generation system
+
+
+        Built a system on top of n8n in which Claude generated complete, importable workflow JSON already aligned with Lohith''s
+        established credential conventions.
+
+
+        Workflow and output:
+
+
+        - Described the intended automation at the workflow level.
+
+        - Generated the complete n8n definition rather than manually assembling every step in the interface.
+
+        - Imported the definition into the existing credential setup.
+
+        - Reused the approach across two production systems.
+
+        - Built 23+ workflows.
+
+        - Reduced idea-to-running-workflow time to under 10 minutes.
+
+
+        Maintainability evidence:
+
+
+        - Repeated workflow structure lives in a reusable generation pattern.
+
+        - Credential conventions and workflow structure remain consistent across generated definitions.
+
+        - A system-level change can be made in the generation approach instead of repeated manually in many workflows.
+
+
+        Do not move the `23+ workflows` or `under 10 minutes` figures to another employer.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - formula.workflow_generator.action.1
+    output_fact_ids:
+    - formula.workflow_generator.output.2
+    outcome_fact_ids:
+    - formula.workflow_generator.outcome.3
+    metric_ids:
+    - formula.workflows
+    - formula.workflow_time
+    boundary_ids:
+    - formula_dream.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: formula.workflow_generator.accomplishment
+      system_id: formula.workflow_generator
+      purpose: Demonstrate the distinct work and result in n8n workflow-generation system.
+      fact_ids:
+      - formula.workflow_generator.action.1
+      - formula.workflow_generator.output.2
+      - formula.workflow_generator.outcome.3
+      metric_ids:
+      - formula.workflows
+      - formula.workflow_time
+      boundary_ids:
+      - formula_dream.boundary
+  - id: formula.event_templates
+    narrative: '## System 3: Reusable event-template automation
+
+
+      Built parameterized templates connected to live event data so recurring publishing cycles could adapt to different dates,
+      locations, results, statistics, and contextual material without being rebuilt each time.
+
+
+      Workflow:
+
+
+      - Waited for results to reach the required state.
+
+      - Pulled rankings, standings, timing, statistics, and commentary.
+
+      - Applied the relevant event and location context to a reusable brand template.
+
+      - Generated accompanying copy with AI.
+
+      - Published the result across platforms without manual handling after setup.
+
+
+      Output and impact:
+
+
+      - Replaced event-by-event recreation with a reusable data-driven workflow.
+
+      - Converted repeated operating knowledge into a parameterized template.
+
+      - Reduced dependence on a person remembering and executing each step of the publishing cycle.
+
+
+      Maintainability evidence:
+
+
+      - The workflow waits for an explicit data condition rather than relying on guesswork.
+
+      - Variable event context is passed as data instead of hard-coded into a new workflow.
+
+      - One maintained template supports repeated cycles.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 451
+      end_line: 474
+      quote: '## System 3: Reusable event-template automation
+
+
+        Built parameterized templates connected to live event data so recurring publishing cycles could adapt to different
+        dates, locations, results, statistics, and contextual material without being rebuilt each time.
+
+
+        Workflow:
+
+
+        - Waited for results to reach the required state.
+
+        - Pulled rankings, standings, timing, statistics, and commentary.
+
+        - Applied the relevant event and location context to a reusable brand template.
+
+        - Generated accompanying copy with AI.
+
+        - Published the result across platforms without manual handling after setup.
+
+
+        Output and impact:
+
+
+        - Replaced event-by-event recreation with a reusable data-driven workflow.
+
+        - Converted repeated operating knowledge into a parameterized template.
+
+        - Reduced dependence on a person remembering and executing each step of the publishing cycle.
+
+
+        Maintainability evidence:
+
+
+        - The workflow waits for an explicit data condition rather than relying on guesswork.
+
+        - Variable event context is passed as data instead of hard-coded into a new workflow.
+
+        - One maintained template supports repeated cycles.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - formula.event_templates.action.1
+    output_fact_ids:
+    - formula.event_templates.output.2
+    outcome_fact_ids:
+    - formula.event_templates.outcome.3
+    metric_ids: []
+    boundary_ids:
+    - formula_dream.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: formula.event_templates.accomplishment
+      system_id: formula.event_templates
+      purpose: Demonstrate the distinct work and result in Reusable event-template automation.
+      fact_ids:
+      - formula.event_templates.action.1
+      - formula.event_templates.output.2
+      - formula.event_templates.outcome.3
+      metric_ids: []
+      boundary_ids:
+      - formula_dream.boundary
+  - id: formula.information_aggregation
+    narrative: '## System 4: Recurring information aggregation
+
+
+      Built a recurring pipeline that gathered information from multiple community and web sources, including Reddit, Discord,
+      Instagram, blogs, and other relevant endpoints.
+
+
+      Workflow and output:
+
+
+      - Collected information from heterogeneous sources.
+
+      - Processed and aggregated it into a usable information layer.
+
+      - Refreshed that information inside the Formula Dream operation at an approximately daily cadence.
+
+
+      Impact:
+
+
+      - Replaced dependence on a single feed with a recurring multi-source ingestion process.
+
+      - Created a consolidated information layer for product and content operations.
+
+
+      Do not invent scraping methods, data volumes, ranking algorithms, or exact freshness guarantees.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 475
+      end_line: 491
+      quote: '## System 4: Recurring information aggregation
+
+
+        Built a recurring pipeline that gathered information from multiple community and web sources, including Reddit, Discord,
+        Instagram, blogs, and other relevant endpoints.
+
+
+        Workflow and output:
+
+
+        - Collected information from heterogeneous sources.
+
+        - Processed and aggregated it into a usable information layer.
+
+        - Refreshed that information inside the Formula Dream operation at an approximately daily cadence.
+
+
+        Impact:
+
+
+        - Replaced dependence on a single feed with a recurring multi-source ingestion process.
+
+        - Created a consolidated information layer for product and content operations.
+
+
+        Do not invent scraping methods, data volumes, ranking algorithms, or exact freshness guarantees.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - formula.information_aggregation.action.1
+    output_fact_ids:
+    - formula.information_aggregation.output.2
+    outcome_fact_ids:
+    - formula.information_aggregation.outcome.3
+    metric_ids: []
+    boundary_ids:
+    - formula_dream.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: formula.information_aggregation.accomplishment
+      system_id: formula.information_aggregation
+      purpose: Demonstrate the distinct work and result in Recurring information aggregation.
+      fact_ids:
+      - formula.information_aggregation.action.1
+      - formula.information_aggregation.output.2
+      - formula.information_aggregation.outcome.3
+      metric_ids: []
+      boundary_ids:
+      - formula_dream.boundary
+  - id: formula.formulytics
+    narrative: '## Personally attributable Formula Dream impact
+
+
+      The following results belong to the Formulytics presence Lohith built and operated himself:
+
+
+      - 200M+ cumulative Instagram views.
+
+      - Roughly 20M Facebook views per month at peak.
+
+      - 30K Instagram followers.
+
+
+      These figures supersede every older partial snapshot.
+
+
+      Do not attribute Formula Neon main-brand account numbers to Lohith. Do not claim that automation alone caused every
+      audience result. Safe framing connects the presence and automated operating system Lohith built and ran with the audience
+      scale it supported.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 492
+      end_line: 503
+      quote: '## Personally attributable Formula Dream impact
+
+
+        The following results belong to the Formulytics presence Lohith built and operated himself:
+
+
+        - 200M+ cumulative Instagram views.
+
+        - Roughly 20M Facebook views per month at peak.
+
+        - 30K Instagram followers.
+
+
+        These figures supersede every older partial snapshot.
+
+
+        Do not attribute Formula Neon main-brand account numbers to Lohith. Do not claim that automation alone caused every
+        audience result. Safe framing connects the presence and automated operating system Lohith built and ran with the audience
+        scale it supported.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - formula.formulytics.action.1
+    output_fact_ids: []
+    outcome_fact_ids:
+    - formula.formulytics.outcome.2
+    metric_ids:
+    - formula.instagram_views
+    - formula.facebook_views
+    - formula.instagram_followers
+    boundary_ids:
+    - formula_dream.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: formula.formulytics.accomplishment
+      system_id: formula.formulytics
+      purpose: 'Demonstrate the distinct work and result in ## Personally attributable Formula Dream impact.'
+      fact_ids:
+      - formula.formulytics.action.1
+      - formula.formulytics.outcome.2
+      metric_ids:
+      - formula.instagram_views
+      - formula.facebook_views
+      - formula.instagram_followers
+      boundary_ids:
+      - formula_dream.boundary
+- id: think_round
+  company: Think Round Inc.
+  titles:
+  - AI Engineer
+  - AI Automation Engineer
+  period: Apr 2025 - Mar 2026
+  status_text: Zoe was under mental-health board review, not approved or clinically validated.
+  boundary_ids:
+  - think_round.boundary
+  systems:
+  - id: think.context_memory
+    narrative: '## Context-aware conversation architecture
+
+
+      - Built a context-aware LLM conversation system.
+
+      - Implemented persistent memory so relevant conversational context could carry across interactions.
+
+      - Used confidence scoring as part of response handling.
+
+      - Integrated ACE assessment context.
+
+      - Supported personalized response behavior rather than a stateless generic chatbot flow.
+
+      - Used Python, FastAPI, asynchronous services, APIs, LLM orchestration, context management, and multi-provider evaluation.
+
+
+      Output and impact:
+
+
+      - Created a conversation path capable of using retained context instead of treating each message as isolated.
+
+      - Combined personalization, memory, and confidence handling in a safety-sensitive interaction flow.
+
+      - Produced a core architecture suitable for continued developer work and pilot preparation.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 552
+      end_line: 566
+      quote: '## Context-aware conversation architecture
+
+
+        - Built a context-aware LLM conversation system.
+
+        - Implemented persistent memory so relevant conversational context could carry across interactions.
+
+        - Used confidence scoring as part of response handling.
+
+        - Integrated ACE assessment context.
+
+        - Supported personalized response behavior rather than a stateless generic chatbot flow.
+
+        - Used Python, FastAPI, asynchronous services, APIs, LLM orchestration, context management, and multi-provider evaluation.
+
+
+        Output and impact:
+
+
+        - Created a conversation path capable of using retained context instead of treating each message as isolated.
+
+        - Combined personalization, memory, and confidence handling in a safety-sensitive interaction flow.
+
+        - Produced a core architecture suitable for continued developer work and pilot preparation.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - think.context_memory.action.1
+    output_fact_ids:
+    - think.context_memory.output.2
+    outcome_fact_ids:
+    - think.context_memory.outcome.3
+    metric_ids: []
+    boundary_ids:
+    - think_round.boundary
+    status_fact_ids:
+    - think.context_memory.status.4
+    accomplishments:
+    - id: think.context_memory.accomplishment
+      system_id: think.context_memory
+      purpose: 'Demonstrate the distinct work and result in ## Context-aware conversation architecture.'
+      fact_ids:
+      - think.context_memory.action.1
+      - think.context_memory.output.2
+      - think.context_memory.outcome.3
+      - think.context_memory.status.4
+      metric_ids: []
+      boundary_ids:
+      - think_round.boundary
+  - id: think.safety_evaluation
+    narrative: '## Safety and evaluation architecture
+
+
+      The response path includes:
+
+
+      1. Generate a candidate answer.
+
+      2. Parse or check the answer.
+
+      3. Pass it through a safety or evaluation gate.
+
+      4. Release only an answer that passes.
+
+      5. Withhold an answer that fails.
+
+      6. Use bounded evaluation logic before delivery.
+
+
+      Implemented safety concerns include:
+
+
+      - harmful-content filtering;
+
+      - crisis detection;
+
+      - crisis-resource routing;
+
+      - professional-boundary enforcement;
+
+      - minor-user protections;
+
+      - layered controls for vulnerable users.
+
+
+      Valid technical descriptions:
+
+
+      - fail-closed response architecture;
+
+      - safety gate before user delivery;
+
+      - multi-stage validation;
+
+      - evaluation loop before release;
+
+      - bounded release of model output;
+
+      - context-aware conversation with memory and confidence handling.
+
+
+      Output and impact:
+
+
+      - Produced a working architecture in which model output is checked before reaching a vulnerable user.
+
+      - Added crisis detection, resource routing, professional boundaries, and minor-user protections to the response path.
+
+      - Preserved conversational responsiveness despite multiple safety and evaluation stages.
+
+
+      Maintainability evidence:
+
+
+      - Generation and release are separate stages.
+
+      - Failed output is withheld by default.
+
+      - Safety requirements are implemented as explicit gates and routing behavior rather than broad instructions alone.
+
+      - Context, memory, and confidence are modeled as system concerns.
+
+      - The response loop is bounded by evaluation and release conditions.
+
+
+      Do not describe a specific regeneration or retry mechanism unless separately confirmed. Do not imply that the safety
+      design proves clinical efficacy.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 567
+      end_line: 611
+      quote: '## Safety and evaluation architecture
+
+
+        The response path includes:
+
+
+        1. Generate a candidate answer.
+
+        2. Parse or check the answer.
+
+        3. Pass it through a safety or evaluation gate.
+
+        4. Release only an answer that passes.
+
+        5. Withhold an answer that fails.
+
+        6. Use bounded evaluation logic before delivery.
+
+
+        Implemented safety concerns include:
+
+
+        - harmful-content filtering;
+
+        - crisis detection;
+
+        - crisis-resource routing;
+
+        - professional-boundary enforcement;
+
+        - minor-user protections;
+
+        - layered controls for vulnerable users.
+
+
+        Valid technical descriptions:
+
+
+        - fail-closed response architecture;
+
+        - safety gate before user delivery;
+
+        - multi-stage validation;
+
+        - evaluation loop before release;
+
+        - bounded release of model output;
+
+        - context-aware conversation with memory and confidence handling.
+
+
+        Output and impact:
+
+
+        - Produced a working architecture in which model output is checked before reaching a vulnerable user.
+
+        - Added crisis detection, resource routing, professional boundaries, and minor-user protections to the response path.
+
+        - Preserved conversational responsiveness despite multiple safety and evaluation stages.
+
+
+        Maintainability evidence:
+
+
+        - Generation and release are separate stages.
+
+        - Failed output is withheld by default.
+
+        - Safety requirements are implemented as explicit gates and routing behavior rather than broad instructions alone.
+
+        - Context, memory, and confidence are modeled as system concerns.
+
+        - The response loop is bounded by evaluation and release conditions.
+
+
+        Do not describe a specific regeneration or retry mechanism unless separately confirmed. Do not imply that the safety
+        design proves clinical efficacy.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - think.safety_evaluation.action.1
+    output_fact_ids:
+    - think.safety_evaluation.output.2
+    outcome_fact_ids:
+    - think.safety_evaluation.outcome.3
+    metric_ids: []
+    boundary_ids:
+    - think_round.boundary
+    status_fact_ids:
+    - think.safety_evaluation.status.4
+    accomplishments:
+    - id: think.safety_evaluation.accomplishment
+      system_id: think.safety_evaluation
+      purpose: 'Demonstrate the distinct work and result in ## Safety and evaluation architecture.'
+      fact_ids:
+      - think.safety_evaluation.action.1
+      - think.safety_evaluation.output.2
+      - think.safety_evaluation.outcome.3
+      - think.safety_evaluation.status.4
+      metric_ids: []
+      boundary_ids:
+      - think_round.boundary
+  - id: think.multi_agent_platform
+    narrative: '## ThinkLife multi-agent platform architecture
+
+
+      - Contributed to platform architecture supporting parallel development of specialized agents.
+
+      - The platform covered healing, onboarding, FAQ, and storytelling use cases.
+
+      - Zoe was one part of this broader architecture.
+
+      - Storytelling, FAQ, and onboarding agents were under construction alongside Zoe.
+
+
+      Output and impact:
+
+
+      - Established a structure that could support several specialized agents rather than one isolated chatbot.
+
+      - Separated agent responsibilities across distinct use cases.
+
+      - Moved Zoe to mental-health board review with the core engineering and safety flow implemented.
+
+
+      Maintainability evidence:
+
+
+      - Specialized responsibilities reduce the need for one unbounded agent to handle every task.
+
+      - A shared platform direction supports parallel development without presenting unfinished agents as released products.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 612
+      end_line: 629
+      quote: '## ThinkLife multi-agent platform architecture
+
+
+        - Contributed to platform architecture supporting parallel development of specialized agents.
+
+        - The platform covered healing, onboarding, FAQ, and storytelling use cases.
+
+        - Zoe was one part of this broader architecture.
+
+        - Storytelling, FAQ, and onboarding agents were under construction alongside Zoe.
+
+
+        Output and impact:
+
+
+        - Established a structure that could support several specialized agents rather than one isolated chatbot.
+
+        - Separated agent responsibilities across distinct use cases.
+
+        - Moved Zoe to mental-health board review with the core engineering and safety flow implemented.
+
+
+        Maintainability evidence:
+
+
+        - Specialized responsibilities reduce the need for one unbounded agent to handle every task.
+
+        - A shared platform direction supports parallel development without presenting unfinished agents as released products.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - think.multi_agent_platform.action.1
+    output_fact_ids:
+    - think.multi_agent_platform.output.2
+    outcome_fact_ids: []
+    metric_ids: []
+    boundary_ids:
+    - think_round.boundary
+    status_fact_ids:
+    - think.multi_agent_platform.status.3
+    accomplishments:
+    - id: think.multi_agent_platform.accomplishment
+      system_id: think.multi_agent_platform
+      purpose: 'Demonstrate the distinct work and result in ## ThinkLife multi-agent platform architecture.'
+      fact_ids:
+      - think.multi_agent_platform.action.1
+      - think.multi_agent_platform.output.2
+      - think.multi_agent_platform.status.3
+      metric_ids: []
+      boundary_ids:
+      - think_round.boundary
+- id: cognizant
+  company: Cognizant Technology Solutions
+  titles:
+  - Program Analyst
+  period: Feb 2022 - Aug 2023
+  status_text: Production enterprise data operations.
+  boundary_ids:
+  - cognizant.boundary
+  systems:
+  - id: cognizant.ingestion
+    narrative: '## Automated data ingestion and processing
+
+
+      - Built automated data-ingestion pipelines in Python and Apache Spark.
+
+      - Processed 50M+ rows per day.
+
+      - Used SQL and PySpark-style distributed processing patterns.
+
+      - Fed downstream KPI and analytics workflows.
+
+
+      Output and impact:
+
+
+      - Maintained production-scale ingestion at 50M+ rows per day.
+
+      - Established the data movement and transformation foundation used by downstream analytics.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 679
+      end_line: 690
+      quote: '## Automated data ingestion and processing
+
+
+        - Built automated data-ingestion pipelines in Python and Apache Spark.
+
+        - Processed 50M+ rows per day.
+
+        - Used SQL and PySpark-style distributed processing patterns.
+
+        - Fed downstream KPI and analytics workflows.
+
+
+        Output and impact:
+
+
+        - Maintained production-scale ingestion at 50M+ rows per day.
+
+        - Established the data movement and transformation foundation used by downstream analytics.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - cognizant.ingestion.action.1
+    output_fact_ids:
+    - cognizant.ingestion.output.2
+    outcome_fact_ids:
+    - cognizant.ingestion.outcome.3
+    metric_ids:
+    - cognizant.daily_rows
+    boundary_ids:
+    - cognizant.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: cognizant.ingestion.accomplishment
+      system_id: cognizant.ingestion
+      purpose: 'Demonstrate the distinct work and result in ## Automated data ingestion and processing.'
+      fact_ids:
+      - cognizant.ingestion.action.1
+      - cognizant.ingestion.output.2
+      - cognizant.ingestion.outcome.3
+      metric_ids:
+      - cognizant.daily_rows
+      boundary_ids:
+      - cognizant.boundary
+  - id: cognizant.kpi_latency
+    narrative: '## Data-to-KPI acceleration
+
+
+      - Reduced data-to-KPI latency from roughly 48 hours to roughly 2 hours.
+
+      - This is a 46-hour reduction and approximately a 96% reduction in elapsed time, but use the clearer `48 hours to 2
+      hours` formulation in resumes.
+
+      - Operational and analytical users received current KPI information much sooner.
+
+
+      Do not invent dashboard counts, stakeholder counts, business units, or decisions affected.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 691
+      end_line: 698
+      quote: '## Data-to-KPI acceleration
+
+
+        - Reduced data-to-KPI latency from roughly 48 hours to roughly 2 hours.
+
+        - This is a 46-hour reduction and approximately a 96% reduction in elapsed time, but use the clearer `48 hours to
+        2 hours` formulation in resumes.
+
+        - Operational and analytical users received current KPI information much sooner.
+
+
+        Do not invent dashboard counts, stakeholder counts, business units, or decisions affected.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - cognizant.kpi_latency.action.1
+    output_fact_ids: []
+    outcome_fact_ids:
+    - cognizant.kpi_latency.outcome.2
+    metric_ids:
+    - cognizant.kpi_latency
+    boundary_ids:
+    - cognizant.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: cognizant.kpi_latency.accomplishment
+      system_id: cognizant.kpi_latency
+      purpose: 'Demonstrate the distinct work and result in ## Data-to-KPI acceleration.'
+      fact_ids:
+      - cognizant.kpi_latency.action.1
+      - cognizant.kpi_latency.outcome.2
+      metric_ids:
+      - cognizant.kpi_latency
+      boundary_ids:
+      - cognizant.boundary
+  - id: cognizant.aws_etl
+    narrative: '## AWS ETL optimization
+
+
+      - Optimized ETL workflows using AWS S3, Lambda, and Glue.
+
+      - Reduced infrastructure cost measurably.
+
+      - No exact cost percentage or currency amount is confirmed.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 699
+      end_line: 704
+      quote: '## AWS ETL optimization
+
+
+        - Optimized ETL workflows using AWS S3, Lambda, and Glue.
+
+        - Reduced infrastructure cost measurably.
+
+        - No exact cost percentage or currency amount is confirmed.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - cognizant.aws_etl.action.1
+    output_fact_ids: []
+    outcome_fact_ids:
+    - cognizant.aws_etl.outcome.2
+    metric_ids: []
+    boundary_ids:
+    - cognizant.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: cognizant.aws_etl.accomplishment
+      system_id: cognizant.aws_etl
+      purpose: 'Demonstrate the distinct work and result in ## AWS ETL optimization.'
+      fact_ids:
+      - cognizant.aws_etl.action.1
+      - cognizant.aws_etl.outcome.2
+      metric_ids: []
+      boundary_ids:
+      - cognizant.boundary
+  - id: cognizant.data_quality
+    narrative: '## Data quality and maintainability foundation
+
+
+      - Used data validation and pipeline testing in the delivery workflow.
+
+      - Worked with explicit data transformations and downstream KPI dependencies.
+
+      - Built experience in production throughput, cloud ETL, distributed processing, and measured latency improvement.
+
+
+      This evidence supports Lohith''s later pipeline mindset: changes must preserve data contracts, downstream consumers,
+      repeatable processing, and observable outcomes. Do not claim specific agentic tooling at Cognizant.'
+    source_refs:
+    - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+      start_line: 705
+      end_line: 712
+      quote: '## Data quality and maintainability foundation
+
+
+        - Used data validation and pipeline testing in the delivery workflow.
+
+        - Worked with explicit data transformations and downstream KPI dependencies.
+
+        - Built experience in production throughput, cloud ETL, distributed processing, and measured latency improvement.
+
+
+        This evidence supports Lohith''s later pipeline mindset: changes must preserve data contracts, downstream consumers,
+        repeatable processing, and observable outcomes. Do not claim specific agentic tooling at Cognizant.'
+    problem_fact_ids: []
+    input_fact_ids: []
+    action_fact_ids:
+    - cognizant.data_quality.action.1
+    output_fact_ids:
+    - cognizant.data_quality.output.2
+    outcome_fact_ids: []
+    metric_ids: []
+    boundary_ids:
+    - cognizant.boundary
+    status_fact_ids: []
+    accomplishments:
+    - id: cognizant.data_quality.accomplishment
+      system_id: cognizant.data_quality
+      purpose: 'Demonstrate the distinct work and result in ## Data quality and maintainability foundation.'
+      fact_ids:
+      - cognizant.data_quality.action.1
+      - cognizant.data_quality.output.2
+      metric_ids: []
+      boundary_ids:
+      - cognizant.boundary
+facts:
+- id: corominas.multi_tenant.problem.1
+  employer_id: corominas
+  system_id: corominas.multi_tenant
+  kind: problem
+  text: A 200-client operation needed repeatable delivery without client-specific code branches.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 227
+    end_line: 253
+    quote: '## Capability block 1: Multi-tenant LLM pipeline architecture
+
+
+      Built a multi-tenant automation engine in which client behavior is controlled through configuration instead of client-specific
+      code branches. Adding a client became a configuration change rather than a rebuild.
+
+
+      The end-to-end path covered:
+
+
+      - intake and client-specific configuration;
+
+      - generation;
+
+      - deterministic validation;
+
+      - client preview and editing;
+
+      - approval;
+
+      - publication;
+
+      - automated confirmation and state tracking.
+
+
+      Output and impact:
+
+
+      - Replaced a manual editorial and approval process with an unattended pipeline across a 200-client portfolio.
+
+      - Made onboarding repeatable by moving client differences into configuration.
+
+      - Reduced internal involvement to exception handling and final approval across the content-to-publish cycle.
+
+      - Supported 1,200+ pieces per month at full-portfolio scale, based on 6-8 pages per client per month across 200 clients.
+
+
+      Maintainability evidence:
+
+
+      - Client variation lives in configuration rather than duplicated logic.
+
+      - Workflow stages have distinct responsibilities and explicit handoffs.
+
+      - Deterministic checks and human approval constrain model output before external action.'
+- id: corominas.multi_tenant.action.2
+  employer_id: corominas
+  system_id: corominas.multi_tenant
+  kind: action
+  text: Built a configuration-driven, multi-tenant LLM pipeline from intake through validation, approval, publication, confirmation,
+    and state tracking.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 227
+    end_line: 253
+    quote: '## Capability block 1: Multi-tenant LLM pipeline architecture
+
+
+      Built a multi-tenant automation engine in which client behavior is controlled through configuration instead of client-specific
+      code branches. Adding a client became a configuration change rather than a rebuild.
+
+
+      The end-to-end path covered:
+
+
+      - intake and client-specific configuration;
+
+      - generation;
+
+      - deterministic validation;
+
+      - client preview and editing;
+
+      - approval;
+
+      - publication;
+
+      - automated confirmation and state tracking.
+
+
+      Output and impact:
+
+
+      - Replaced a manual editorial and approval process with an unattended pipeline across a 200-client portfolio.
+
+      - Made onboarding repeatable by moving client differences into configuration.
+
+      - Reduced internal involvement to exception handling and final approval across the content-to-publish cycle.
+
+      - Supported 1,200+ pieces per month at full-portfolio scale, based on 6-8 pages per client per month across 200 clients.
+
+
+      Maintainability evidence:
+
+
+      - Client variation lives in configuration rather than duplicated logic.
+
+      - Workflow stages have distinct responsibilities and explicit handoffs.
+
+      - Deterministic checks and human approval constrain model output before external action.'
+- id: corominas.multi_tenant.output.3
+  employer_id: corominas
+  system_id: corominas.multi_tenant
+  kind: output
+  text: Converted client onboarding and variation into configuration instead of duplicated workflow logic.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 227
+    end_line: 253
+    quote: '## Capability block 1: Multi-tenant LLM pipeline architecture
+
+
+      Built a multi-tenant automation engine in which client behavior is controlled through configuration instead of client-specific
+      code branches. Adding a client became a configuration change rather than a rebuild.
+
+
+      The end-to-end path covered:
+
+
+      - intake and client-specific configuration;
+
+      - generation;
+
+      - deterministic validation;
+
+      - client preview and editing;
+
+      - approval;
+
+      - publication;
+
+      - automated confirmation and state tracking.
+
+
+      Output and impact:
+
+
+      - Replaced a manual editorial and approval process with an unattended pipeline across a 200-client portfolio.
+
+      - Made onboarding repeatable by moving client differences into configuration.
+
+      - Reduced internal involvement to exception handling and final approval across the content-to-publish cycle.
+
+      - Supported 1,200+ pieces per month at full-portfolio scale, based on 6-8 pages per client per month across 200 clients.
+
+
+      Maintainability evidence:
+
+
+      - Client variation lives in configuration rather than duplicated logic.
+
+      - Workflow stages have distinct responsibilities and explicit handoffs.
+
+      - Deterministic checks and human approval constrain model output before external action.'
+- id: corominas.multi_tenant.outcome.4
+  employer_id: corominas
+  system_id: corominas.multi_tenant
+  kind: outcome
+  text: Rolled the client-deliverable and approval cycle across the full 200-client portfolio while retaining exception handling
+    and final approval.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 227
+    end_line: 253
+    quote: '## Capability block 1: Multi-tenant LLM pipeline architecture
+
+
+      Built a multi-tenant automation engine in which client behavior is controlled through configuration instead of client-specific
+      code branches. Adding a client became a configuration change rather than a rebuild.
+
+
+      The end-to-end path covered:
+
+
+      - intake and client-specific configuration;
+
+      - generation;
+
+      - deterministic validation;
+
+      - client preview and editing;
+
+      - approval;
+
+      - publication;
+
+      - automated confirmation and state tracking.
+
+
+      Output and impact:
+
+
+      - Replaced a manual editorial and approval process with an unattended pipeline across a 200-client portfolio.
+
+      - Made onboarding repeatable by moving client differences into configuration.
+
+      - Reduced internal involvement to exception handling and final approval across the content-to-publish cycle.
+
+      - Supported 1,200+ pieces per month at full-portfolio scale, based on 6-8 pages per client per month across 200 clients.
+
+
+      Maintainability evidence:
+
+
+      - Client variation lives in configuration rather than duplicated logic.
+
+      - Workflow stages have distinct responsibilities and explicit handoffs.
+
+      - Deterministic checks and human approval constrain model output before external action.'
+- id: corominas.llm_harness.action.1
+  employer_id: corominas
+  system_id: corominas.llm_harness
+  kind: action
+  text: Built provider-independent LLM orchestration with sub-agent techniques, prompt caching, context management, loop reduction,
+    and memory optimization.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 254
+    end_line: 269
+    quote: '## Capability block 2: LLM harness and cost control
+
+
+      Built a harness around LLM inference rather than coupling the workflow directly to one model call. Used sub-agent techniques,
+      prompt caching, context-window management, loop reduction, and memory optimization. The orchestration is model-agnostic,
+      so changing the underlying model is a configuration change rather than a rewrite.
+
+
+      Output and impact:
+
+
+      - Reduced inference cost by over 90% without quality regression.
+
+      - Reduced per-operation cost from dollar-scale to cent-scale.
+
+      - Separated orchestration from provider-specific calls so model changes did not require rebuilding the workflow.
+
+
+      Maintainability evidence:
+
+
+      - Provider abstraction limits the blast radius of a model change.
+
+      - Context and memory are deliberately managed instead of allowed to grow without control.
+
+      - Loop reduction improves both cost and predictability.'
+- id: corominas.llm_harness.output.2
+  employer_id: corominas
+  system_id: corominas.llm_harness
+  kind: output
+  text: Separated model-provider calls from orchestration so a model change became configuration rather than a workflow rewrite.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 254
+    end_line: 269
+    quote: '## Capability block 2: LLM harness and cost control
+
+
+      Built a harness around LLM inference rather than coupling the workflow directly to one model call. Used sub-agent techniques,
+      prompt caching, context-window management, loop reduction, and memory optimization. The orchestration is model-agnostic,
+      so changing the underlying model is a configuration change rather than a rewrite.
+
+
+      Output and impact:
+
+
+      - Reduced inference cost by over 90% without quality regression.
+
+      - Reduced per-operation cost from dollar-scale to cent-scale.
+
+      - Separated orchestration from provider-specific calls so model changes did not require rebuilding the workflow.
+
+
+      Maintainability evidence:
+
+
+      - Provider abstraction limits the blast radius of a model change.
+
+      - Context and memory are deliberately managed instead of allowed to grow without control.
+
+      - Loop reduction improves both cost and predictability.'
+- id: corominas.llm_harness.outcome.3
+  employer_id: corominas
+  system_id: corominas.llm_harness
+  kind: outcome
+  text: Reduced inference cost by more than 90 percent, from dollar-scale to cent-scale per operation, without quality regression.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 254
+    end_line: 269
+    quote: '## Capability block 2: LLM harness and cost control
+
+
+      Built a harness around LLM inference rather than coupling the workflow directly to one model call. Used sub-agent techniques,
+      prompt caching, context-window management, loop reduction, and memory optimization. The orchestration is model-agnostic,
+      so changing the underlying model is a configuration change rather than a rewrite.
+
+
+      Output and impact:
+
+
+      - Reduced inference cost by over 90% without quality regression.
+
+      - Reduced per-operation cost from dollar-scale to cent-scale.
+
+      - Separated orchestration from provider-specific calls so model changes did not require rebuilding the workflow.
+
+
+      Maintainability evidence:
+
+
+      - Provider abstraction limits the blast radius of a model change.
+
+      - Context and memory are deliberately managed instead of allowed to grow without control.
+
+      - Loop reduction improves both cost and predictability.'
+- id: corominas.quality_gate.action.1
+  employer_id: corominas
+  system_id: corominas.quality_gate
+  kind: action
+  text: Built a deterministic validation layer between generation and human review for format, completeness, factual consistency,
+    and structure.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 270
+    end_line: 287
+    quote: '## Capability block 3: Deterministic quality gate
+
+
+      Built a validation layer between generation and human review. Generated artifacts pass through deterministic checks
+      for format, completeness, factual consistency, and structural requirements. The enforcement layer is separate from the
+      prompt.
+
+
+      Output and impact:
+
+
+      - Automated routine validation before output reached a human.
+
+      - Made prompt changes and model swaps comparable against consistent standards.
+
+      - Reduced dependence on manual spot-checking while preserving final human judgment.
+
+
+      Maintainability evidence:
+
+
+      - Generation and evaluation are separate systems.
+
+      - Stable validation rules provide regression protection when model behavior changes.
+
+      - Failed output is withheld instead of released because the model sounded confident.
+
+
+      Do not imply that human approval disappeared.'
+- id: corominas.quality_gate.output.2
+  employer_id: corominas
+  system_id: corominas.quality_gate
+  kind: output
+  text: Withheld failed output and made prompt or model changes comparable against stable checks.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 270
+    end_line: 287
+    quote: '## Capability block 3: Deterministic quality gate
+
+
+      Built a validation layer between generation and human review. Generated artifacts pass through deterministic checks
+      for format, completeness, factual consistency, and structural requirements. The enforcement layer is separate from the
+      prompt.
+
+
+      Output and impact:
+
+
+      - Automated routine validation before output reached a human.
+
+      - Made prompt changes and model swaps comparable against consistent standards.
+
+      - Reduced dependence on manual spot-checking while preserving final human judgment.
+
+
+      Maintainability evidence:
+
+
+      - Generation and evaluation are separate systems.
+
+      - Stable validation rules provide regression protection when model behavior changes.
+
+      - Failed output is withheld instead of released because the model sounded confident.
+
+
+      Do not imply that human approval disappeared.'
+- id: corominas.quality_gate.outcome.3
+  employer_id: corominas
+  system_id: corominas.quality_gate
+  kind: outcome
+  text: Automated routine validation while preserving final human judgment.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 270
+    end_line: 287
+    quote: '## Capability block 3: Deterministic quality gate
+
+
+      Built a validation layer between generation and human review. Generated artifacts pass through deterministic checks
+      for format, completeness, factual consistency, and structural requirements. The enforcement layer is separate from the
+      prompt.
+
+
+      Output and impact:
+
+
+      - Automated routine validation before output reached a human.
+
+      - Made prompt changes and model swaps comparable against consistent standards.
+
+      - Reduced dependence on manual spot-checking while preserving final human judgment.
+
+
+      Maintainability evidence:
+
+
+      - Generation and evaluation are separate systems.
+
+      - Stable validation rules provide regression protection when model behavior changes.
+
+      - Failed output is withheld instead of released because the model sounded confident.
+
+
+      Do not imply that human approval disappeared.'
+- id: corominas.approval.action.1
+  employer_id: corominas
+  system_id: corominas.approval
+  kind: action
+  text: Built a client-facing preview, inline-editing, approval, publication, and confirmation flow.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 288
+    end_line: 303
+    quote: '## Capability block 4: Human-in-the-loop approval system
+
+
+      Built a client-facing dashboard and approval flow where clients could inspect a live-accurate preview, make inline edits,
+      and publish. Client approval directly triggered publication and confirmation, removing the internal team as intermediary
+      while preserving the final human decision.
+
+
+      Output and impact:
+
+
+      - Reduced approval-to-publish time from days to under 60 seconds.
+
+      - Turned the final decision into client self-service.
+
+      - Consolidated pending approvals, published inventory, and operational information in one interface.
+
+
+      Maintainability evidence:
+
+
+      - The workflow has an explicit human control point before external publication.
+
+      - Approval is a defined state transition rather than an informal message passed between teams.
+
+      - The same approval contract works across clients.'
+- id: corominas.approval.output.2
+  employer_id: corominas
+  system_id: corominas.approval
+  kind: output
+  text: Made approval a defined client-controlled state transition rather than an informal team handoff.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 288
+    end_line: 303
+    quote: '## Capability block 4: Human-in-the-loop approval system
+
+
+      Built a client-facing dashboard and approval flow where clients could inspect a live-accurate preview, make inline edits,
+      and publish. Client approval directly triggered publication and confirmation, removing the internal team as intermediary
+      while preserving the final human decision.
+
+
+      Output and impact:
+
+
+      - Reduced approval-to-publish time from days to under 60 seconds.
+
+      - Turned the final decision into client self-service.
+
+      - Consolidated pending approvals, published inventory, and operational information in one interface.
+
+
+      Maintainability evidence:
+
+
+      - The workflow has an explicit human control point before external publication.
+
+      - Approval is a defined state transition rather than an informal message passed between teams.
+
+      - The same approval contract works across clients.'
+- id: corominas.approval.outcome.3
+  employer_id: corominas
+  system_id: corominas.approval
+  kind: outcome
+  text: Reduced approval-to-publish time from days to under 60 seconds.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 288
+    end_line: 303
+    quote: '## Capability block 4: Human-in-the-loop approval system
+
+
+      Built a client-facing dashboard and approval flow where clients could inspect a live-accurate preview, make inline edits,
+      and publish. Client approval directly triggered publication and confirmation, removing the internal team as intermediary
+      while preserving the final human decision.
+
+
+      Output and impact:
+
+
+      - Reduced approval-to-publish time from days to under 60 seconds.
+
+      - Turned the final decision into client self-service.
+
+      - Consolidated pending approvals, published inventory, and operational information in one interface.
+
+
+      Maintainability evidence:
+
+
+      - The workflow has an explicit human control point before external publication.
+
+      - Approval is a defined state transition rather than an informal message passed between teams.
+
+      - The same approval contract works across clients.'
+- id: corominas.agent_ops.action.1
+  employer_id: corominas
+  system_id: corominas.agent_ops
+  kind: action
+  text: Built domain-specific agents across Slack with an Airtable ledger for queryable actions and human escalation for cross-system
+    risk.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 304
+    end_line: 319
+    quote: '## Capability block 5: Multi-agent operational orchestration
+
+
+      Built a domain-specific agent network across internal Slack channels. Agents handled routine client requests in their
+      area, notified the team of client actions, and escalated a human ticket when a change risked affecting another system.
+      Airtable served as the shared ledger for logged and queryable actions.
+
+
+      Output and impact:
+
+
+      - Removed an engineering bottleneck for routine changes without removing human judgment from risky changes.
+
+      - Replaced ad hoc status chasing with structured notifications and a queryable action history.
+
+      - Created a clear division between routine autonomous handling and human escalation.
+
+
+      Maintainability evidence:
+
+
+      - Shared state is written to a ledger rather than held only in message context.
+
+      - Cross-system risk triggers escalation instead of unrestricted agent action.
+
+      - Operational channels make agent activity visible to the team.'
+- id: corominas.agent_ops.output.2
+  employer_id: corominas
+  system_id: corominas.agent_ops
+  kind: output
+  text: Separated routine autonomous requests from risky changes that required a human ticket.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 304
+    end_line: 319
+    quote: '## Capability block 5: Multi-agent operational orchestration
+
+
+      Built a domain-specific agent network across internal Slack channels. Agents handled routine client requests in their
+      area, notified the team of client actions, and escalated a human ticket when a change risked affecting another system.
+      Airtable served as the shared ledger for logged and queryable actions.
+
+
+      Output and impact:
+
+
+      - Removed an engineering bottleneck for routine changes without removing human judgment from risky changes.
+
+      - Replaced ad hoc status chasing with structured notifications and a queryable action history.
+
+      - Created a clear division between routine autonomous handling and human escalation.
+
+
+      Maintainability evidence:
+
+
+      - Shared state is written to a ledger rather than held only in message context.
+
+      - Cross-system risk triggers escalation instead of unrestricted agent action.
+
+      - Operational channels make agent activity visible to the team.'
+- id: corominas.agent_ops.outcome.3
+  employer_id: corominas
+  system_id: corominas.agent_ops
+  kind: outcome
+  text: Removed a routine engineering bottleneck and replaced ad hoc status chasing with visible notifications and durable
+    history.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 304
+    end_line: 319
+    quote: '## Capability block 5: Multi-agent operational orchestration
+
+
+      Built a domain-specific agent network across internal Slack channels. Agents handled routine client requests in their
+      area, notified the team of client actions, and escalated a human ticket when a change risked affecting another system.
+      Airtable served as the shared ledger for logged and queryable actions.
+
+
+      Output and impact:
+
+
+      - Removed an engineering bottleneck for routine changes without removing human judgment from risky changes.
+
+      - Replaced ad hoc status chasing with structured notifications and a queryable action history.
+
+      - Created a clear division between routine autonomous handling and human escalation.
+
+
+      Maintainability evidence:
+
+
+      - Shared state is written to a ledger rather than held only in message context.
+
+      - Cross-system risk triggers escalation instead of unrestricted agent action.
+
+      - Operational channels make agent activity visible to the team.'
+- id: corominas.generated_workflows.action.1
+  employer_id: corominas
+  system_id: corominas.generated_workflows
+  kind: action
+  text: Built Python generators that emit and maintain workflow definitions as deterministic infrastructure.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 320
+    end_line: 335
+    quote: '## Capability block 6: Workflow infrastructure as generated code
+
+
+      Treated workflow definitions as generated infrastructure rather than hand-built interface state. Python generators emit
+      and maintain workflow definitions. When an orchestration pattern changes, the generator changes and dependent workflows
+      can be regenerated.
+
+
+      Output and impact:
+
+
+      - Replaced repeated manual workflow editing with reusable generation logic.
+
+      - Allowed pattern changes to propagate without individually rebuilding many configurations.
+
+      - Made new workflow patterns a generator change rather than a sequence of interface edits.
+
+
+      Maintainability evidence:
+
+
+      - The source of truth is deterministic code rather than scattered manual configuration.
+
+      - Repeated structures can be changed consistently.
+
+      - Infrastructure becomes reviewable and reproducible.'
+- id: corominas.generated_workflows.output.2
+  employer_id: corominas
+  system_id: corominas.generated_workflows
+  kind: output
+  text: Made workflow patterns reviewable, reproducible, and consistently regenerable.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 320
+    end_line: 335
+    quote: '## Capability block 6: Workflow infrastructure as generated code
+
+
+      Treated workflow definitions as generated infrastructure rather than hand-built interface state. Python generators emit
+      and maintain workflow definitions. When an orchestration pattern changes, the generator changes and dependent workflows
+      can be regenerated.
+
+
+      Output and impact:
+
+
+      - Replaced repeated manual workflow editing with reusable generation logic.
+
+      - Allowed pattern changes to propagate without individually rebuilding many configurations.
+
+      - Made new workflow patterns a generator change rather than a sequence of interface edits.
+
+
+      Maintainability evidence:
+
+
+      - The source of truth is deterministic code rather than scattered manual configuration.
+
+      - Repeated structures can be changed consistently.
+
+      - Infrastructure becomes reviewable and reproducible.'
+- id: corominas.generated_workflows.outcome.3
+  employer_id: corominas
+  system_id: corominas.generated_workflows
+  kind: outcome
+  text: Replaced repeated manual workflow editing with reusable generation logic.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 320
+    end_line: 335
+    quote: '## Capability block 6: Workflow infrastructure as generated code
+
+
+      Treated workflow definitions as generated infrastructure rather than hand-built interface state. Python generators emit
+      and maintain workflow definitions. When an orchestration pattern changes, the generator changes and dependent workflows
+      can be regenerated.
+
+
+      Output and impact:
+
+
+      - Replaced repeated manual workflow editing with reusable generation logic.
+
+      - Allowed pattern changes to propagate without individually rebuilding many configurations.
+
+      - Made new workflow patterns a generator change rather than a sequence of interface edits.
+
+
+      Maintainability evidence:
+
+
+      - The source of truth is deterministic code rather than scattered manual configuration.
+
+      - Repeated structures can be changed consistently.
+
+      - Infrastructure becomes reviewable and reproducible.'
+- id: corominas.security_response.action.1
+  employer_id: corominas
+  system_id: corominas.security_response
+  kind: action
+  text: Led a technical response to a third-party compromise by identifying the vector, auditing automation, sweeping the
+    portfolio, and hardening the API surface.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 336
+    end_line: 352
+    quote: '## Capability block 7: Security response and hardening
+
+
+      After a third-party system in the portfolio was compromised, Lohith led the technical response. He identified the attack
+      vector, audited the automation layer the same day to rule it out with evidence, swept the wider portfolio for the exposure,
+      converted the sweep into a passive ongoing scanner, closed findings in the automation''s own API surface, and authored
+      the standing security policy.
+
+
+      Output and impact:
+
+
+      - Turned a one-off incident investigation into an ongoing posture-monitoring control.
+
+      - Produced evidence that separated the compromised third-party path from the automation layer.
+
+      - Converted incident findings into API hardening and a reusable operating policy.
+
+
+      Binding boundary:
+
+
+      - This was response and hardening, not prevention.
+
+      - Use `responded to`, `audited`, `swept`, or `hardened`.
+
+      - Never say Lohith prevented, pre-empted, or detected the breach early.
+
+      - Lohith flagged and escalated client remediation; he did not remediate the compromised client site himself.'
+- id: corominas.security_response.output.2
+  employer_id: corominas
+  system_id: corominas.security_response
+  kind: output
+  text: Converted the portfolio sweep into a passive ongoing scanner and authored a standing security policy.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 336
+    end_line: 352
+    quote: '## Capability block 7: Security response and hardening
+
+
+      After a third-party system in the portfolio was compromised, Lohith led the technical response. He identified the attack
+      vector, audited the automation layer the same day to rule it out with evidence, swept the wider portfolio for the exposure,
+      converted the sweep into a passive ongoing scanner, closed findings in the automation''s own API surface, and authored
+      the standing security policy.
+
+
+      Output and impact:
+
+
+      - Turned a one-off incident investigation into an ongoing posture-monitoring control.
+
+      - Produced evidence that separated the compromised third-party path from the automation layer.
+
+      - Converted incident findings into API hardening and a reusable operating policy.
+
+
+      Binding boundary:
+
+
+      - This was response and hardening, not prevention.
+
+      - Use `responded to`, `audited`, `swept`, or `hardened`.
+
+      - Never say Lohith prevented, pre-empted, or detected the breach early.
+
+      - Lohith flagged and escalated client remediation; he did not remediate the compromised client site himself.'
+- id: corominas.security_response.outcome.3
+  employer_id: corominas
+  system_id: corominas.security_response
+  kind: outcome
+  text: Turned a one-off incident investigation into an ongoing posture-monitoring control.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 336
+    end_line: 352
+    quote: '## Capability block 7: Security response and hardening
+
+
+      After a third-party system in the portfolio was compromised, Lohith led the technical response. He identified the attack
+      vector, audited the automation layer the same day to rule it out with evidence, swept the wider portfolio for the exposure,
+      converted the sweep into a passive ongoing scanner, closed findings in the automation''s own API surface, and authored
+      the standing security policy.
+
+
+      Output and impact:
+
+
+      - Turned a one-off incident investigation into an ongoing posture-monitoring control.
+
+      - Produced evidence that separated the compromised third-party path from the automation layer.
+
+      - Converted incident findings into API hardening and a reusable operating policy.
+
+
+      Binding boundary:
+
+
+      - This was response and hardening, not prevention.
+
+      - Use `responded to`, `audited`, `swept`, or `hardened`.
+
+      - Never say Lohith prevented, pre-empted, or detected the breach early.
+
+      - Lohith flagged and escalated client remediation; he did not remediate the compromised client site himself.'
+- id: formula.event_pipeline.problem.1
+  employer_id: formula_dream
+  system_id: formula.event_pipeline
+  kind: problem
+  text: Completed media needed reliable multi-platform publication without manual handling.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 397
+    end_line: 429
+    quote: '## System 1: Event-driven production and publishing pipeline
+
+
+      Built an end-to-end pipeline connecting scheduled Python production jobs, Google Drive, n8n, external results APIs,
+      grounded LLM generation, and Instagram and YouTube publishing.
+
+
+      Workflow:
+
+
+      1. GitHub Actions runs self-scheduling Python production jobs.
+
+      2. Completed media assets are written to Google Drive under a filename contract that downstream automation can interpret.
+
+      3. A Google Drive event starts the publishing workflow when a new asset arrives.
+
+      4. An hourly sweep checks for missed events so one dropped trigger does not leave an asset unpublished.
+
+      5. External API calls assemble factual event and participant context.
+
+      6. Gemini with Google Search grounding produces captions and metadata as strict JSON.
+
+      7. The workflow publishes to Instagram and YouTube.
+
+      8. Google Drive custom properties mark the source asset as posted so retries and sweeps do not publish it twice.
+
+      9. HTTP calls retry three times with backoff.
+
+      10. A failure email identifies the exact failing step, includes the error, and links to the relevant execution.
+
+
+      Output and impact:
+
+
+      - Removed manual handling between a completed asset and multi-platform publication.
+
+      - Combined low-latency event handling with scheduled recovery.
+
+      - Prevented duplicate publication through durable idempotency markers.
+
+      - Made failures diagnosable instead of silently stopping the pipeline.
+
+      - Demonstrated ownership across triggers, storage contracts, orchestration, external APIs, LLM generation, structured
+      output, state, publication, and failure handling.
+
+
+      Maintainability evidence:
+
+
+      - The event trigger and scheduled sweep provide two independent paths to completion.
+
+      - Posted state is persisted outside the model and survives retries.
+
+      - Backoff behavior is explicit.
+
+      - Failure reports identify the failed step and preserve a path to the execution record.
+
+      - The filename and JSON contracts make boundaries between stages inspectable.'
+- id: formula.event_pipeline.action.2
+  employer_id: formula_dream
+  system_id: formula.event_pipeline
+  kind: action
+  text: Built an event-driven and scheduled pipeline across Python jobs, Google Drive, n8n, external APIs, grounded LLM generation,
+    and publishing endpoints.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 397
+    end_line: 429
+    quote: '## System 1: Event-driven production and publishing pipeline
+
+
+      Built an end-to-end pipeline connecting scheduled Python production jobs, Google Drive, n8n, external results APIs,
+      grounded LLM generation, and Instagram and YouTube publishing.
+
+
+      Workflow:
+
+
+      1. GitHub Actions runs self-scheduling Python production jobs.
+
+      2. Completed media assets are written to Google Drive under a filename contract that downstream automation can interpret.
+
+      3. A Google Drive event starts the publishing workflow when a new asset arrives.
+
+      4. An hourly sweep checks for missed events so one dropped trigger does not leave an asset unpublished.
+
+      5. External API calls assemble factual event and participant context.
+
+      6. Gemini with Google Search grounding produces captions and metadata as strict JSON.
+
+      7. The workflow publishes to Instagram and YouTube.
+
+      8. Google Drive custom properties mark the source asset as posted so retries and sweeps do not publish it twice.
+
+      9. HTTP calls retry three times with backoff.
+
+      10. A failure email identifies the exact failing step, includes the error, and links to the relevant execution.
+
+
+      Output and impact:
+
+
+      - Removed manual handling between a completed asset and multi-platform publication.
+
+      - Combined low-latency event handling with scheduled recovery.
+
+      - Prevented duplicate publication through durable idempotency markers.
+
+      - Made failures diagnosable instead of silently stopping the pipeline.
+
+      - Demonstrated ownership across triggers, storage contracts, orchestration, external APIs, LLM generation, structured
+      output, state, publication, and failure handling.
+
+
+      Maintainability evidence:
+
+
+      - The event trigger and scheduled sweep provide two independent paths to completion.
+
+      - Posted state is persisted outside the model and survives retries.
+
+      - Backoff behavior is explicit.
+
+      - Failure reports identify the failed step and preserve a path to the execution record.
+
+      - The filename and JSON contracts make boundaries between stages inspectable.'
+- id: formula.event_pipeline.output.3
+  employer_id: formula_dream
+  system_id: formula.event_pipeline
+  kind: output
+  text: Added durable posted-state markers, scheduled recovery, retry backoff, strict JSON contracts, and diagnostic failure
+    links.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 397
+    end_line: 429
+    quote: '## System 1: Event-driven production and publishing pipeline
+
+
+      Built an end-to-end pipeline connecting scheduled Python production jobs, Google Drive, n8n, external results APIs,
+      grounded LLM generation, and Instagram and YouTube publishing.
+
+
+      Workflow:
+
+
+      1. GitHub Actions runs self-scheduling Python production jobs.
+
+      2. Completed media assets are written to Google Drive under a filename contract that downstream automation can interpret.
+
+      3. A Google Drive event starts the publishing workflow when a new asset arrives.
+
+      4. An hourly sweep checks for missed events so one dropped trigger does not leave an asset unpublished.
+
+      5. External API calls assemble factual event and participant context.
+
+      6. Gemini with Google Search grounding produces captions and metadata as strict JSON.
+
+      7. The workflow publishes to Instagram and YouTube.
+
+      8. Google Drive custom properties mark the source asset as posted so retries and sweeps do not publish it twice.
+
+      9. HTTP calls retry three times with backoff.
+
+      10. A failure email identifies the exact failing step, includes the error, and links to the relevant execution.
+
+
+      Output and impact:
+
+
+      - Removed manual handling between a completed asset and multi-platform publication.
+
+      - Combined low-latency event handling with scheduled recovery.
+
+      - Prevented duplicate publication through durable idempotency markers.
+
+      - Made failures diagnosable instead of silently stopping the pipeline.
+
+      - Demonstrated ownership across triggers, storage contracts, orchestration, external APIs, LLM generation, structured
+      output, state, publication, and failure handling.
+
+
+      Maintainability evidence:
+
+
+      - The event trigger and scheduled sweep provide two independent paths to completion.
+
+      - Posted state is persisted outside the model and survives retries.
+
+      - Backoff behavior is explicit.
+
+      - Failure reports identify the failed step and preserve a path to the execution record.
+
+      - The filename and JSON contracts make boundaries between stages inspectable.'
+- id: formula.event_pipeline.outcome.4
+  employer_id: formula_dream
+  system_id: formula.event_pipeline
+  kind: outcome
+  text: Automated asset-to-publication handling while preventing duplicate publication and making failures diagnosable.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 397
+    end_line: 429
+    quote: '## System 1: Event-driven production and publishing pipeline
+
+
+      Built an end-to-end pipeline connecting scheduled Python production jobs, Google Drive, n8n, external results APIs,
+      grounded LLM generation, and Instagram and YouTube publishing.
+
+
+      Workflow:
+
+
+      1. GitHub Actions runs self-scheduling Python production jobs.
+
+      2. Completed media assets are written to Google Drive under a filename contract that downstream automation can interpret.
+
+      3. A Google Drive event starts the publishing workflow when a new asset arrives.
+
+      4. An hourly sweep checks for missed events so one dropped trigger does not leave an asset unpublished.
+
+      5. External API calls assemble factual event and participant context.
+
+      6. Gemini with Google Search grounding produces captions and metadata as strict JSON.
+
+      7. The workflow publishes to Instagram and YouTube.
+
+      8. Google Drive custom properties mark the source asset as posted so retries and sweeps do not publish it twice.
+
+      9. HTTP calls retry three times with backoff.
+
+      10. A failure email identifies the exact failing step, includes the error, and links to the relevant execution.
+
+
+      Output and impact:
+
+
+      - Removed manual handling between a completed asset and multi-platform publication.
+
+      - Combined low-latency event handling with scheduled recovery.
+
+      - Prevented duplicate publication through durable idempotency markers.
+
+      - Made failures diagnosable instead of silently stopping the pipeline.
+
+      - Demonstrated ownership across triggers, storage contracts, orchestration, external APIs, LLM generation, structured
+      output, state, publication, and failure handling.
+
+
+      Maintainability evidence:
+
+
+      - The event trigger and scheduled sweep provide two independent paths to completion.
+
+      - Posted state is persisted outside the model and survives retries.
+
+      - Backoff behavior is explicit.
+
+      - Failure reports identify the failed step and preserve a path to the execution record.
+
+      - The filename and JSON contracts make boundaries between stages inspectable.'
+- id: formula.workflow_generator.action.1
+  employer_id: formula_dream
+  system_id: formula.workflow_generator
+  kind: action
+  text: Built a Claude-assisted generator for complete importable n8n workflow JSON aligned with established credential conventions.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 430
+    end_line: 450
+    quote: '## System 2: n8n workflow-generation system
+
+
+      Built a system on top of n8n in which Claude generated complete, importable workflow JSON already aligned with Lohith''s
+      established credential conventions.
+
+
+      Workflow and output:
+
+
+      - Described the intended automation at the workflow level.
+
+      - Generated the complete n8n definition rather than manually assembling every step in the interface.
+
+      - Imported the definition into the existing credential setup.
+
+      - Reused the approach across two production systems.
+
+      - Built 23+ workflows.
+
+      - Reduced idea-to-running-workflow time to under 10 minutes.
+
+
+      Maintainability evidence:
+
+
+      - Repeated workflow structure lives in a reusable generation pattern.
+
+      - Credential conventions and workflow structure remain consistent across generated definitions.
+
+      - A system-level change can be made in the generation approach instead of repeated manually in many workflows.
+
+
+      Do not move the `23+ workflows` or `under 10 minutes` figures to another employer.'
+- id: formula.workflow_generator.output.2
+  employer_id: formula_dream
+  system_id: formula.workflow_generator
+  kind: output
+  text: Reused the generation approach across two production systems and more than 23 workflows.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 430
+    end_line: 450
+    quote: '## System 2: n8n workflow-generation system
+
+
+      Built a system on top of n8n in which Claude generated complete, importable workflow JSON already aligned with Lohith''s
+      established credential conventions.
+
+
+      Workflow and output:
+
+
+      - Described the intended automation at the workflow level.
+
+      - Generated the complete n8n definition rather than manually assembling every step in the interface.
+
+      - Imported the definition into the existing credential setup.
+
+      - Reused the approach across two production systems.
+
+      - Built 23+ workflows.
+
+      - Reduced idea-to-running-workflow time to under 10 minutes.
+
+
+      Maintainability evidence:
+
+
+      - Repeated workflow structure lives in a reusable generation pattern.
+
+      - Credential conventions and workflow structure remain consistent across generated definitions.
+
+      - A system-level change can be made in the generation approach instead of repeated manually in many workflows.
+
+
+      Do not move the `23+ workflows` or `under 10 minutes` figures to another employer.'
+- id: formula.workflow_generator.outcome.3
+  employer_id: formula_dream
+  system_id: formula.workflow_generator
+  kind: outcome
+  text: Reduced idea-to-running-workflow time to under 10 minutes.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 430
+    end_line: 450
+    quote: '## System 2: n8n workflow-generation system
+
+
+      Built a system on top of n8n in which Claude generated complete, importable workflow JSON already aligned with Lohith''s
+      established credential conventions.
+
+
+      Workflow and output:
+
+
+      - Described the intended automation at the workflow level.
+
+      - Generated the complete n8n definition rather than manually assembling every step in the interface.
+
+      - Imported the definition into the existing credential setup.
+
+      - Reused the approach across two production systems.
+
+      - Built 23+ workflows.
+
+      - Reduced idea-to-running-workflow time to under 10 minutes.
+
+
+      Maintainability evidence:
+
+
+      - Repeated workflow structure lives in a reusable generation pattern.
+
+      - Credential conventions and workflow structure remain consistent across generated definitions.
+
+      - A system-level change can be made in the generation approach instead of repeated manually in many workflows.
+
+
+      Do not move the `23+ workflows` or `under 10 minutes` figures to another employer.'
+- id: formula.event_templates.action.1
+  employer_id: formula_dream
+  system_id: formula.event_templates
+  kind: action
+  text: Built parameterized templates that wait for live event state and combine results, statistics, commentary, context,
+    AI-generated copy, and publishing.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 451
+    end_line: 474
+    quote: '## System 3: Reusable event-template automation
+
+
+      Built parameterized templates connected to live event data so recurring publishing cycles could adapt to different dates,
+      locations, results, statistics, and contextual material without being rebuilt each time.
+
+
+      Workflow:
+
+
+      - Waited for results to reach the required state.
+
+      - Pulled rankings, standings, timing, statistics, and commentary.
+
+      - Applied the relevant event and location context to a reusable brand template.
+
+      - Generated accompanying copy with AI.
+
+      - Published the result across platforms without manual handling after setup.
+
+
+      Output and impact:
+
+
+      - Replaced event-by-event recreation with a reusable data-driven workflow.
+
+      - Converted repeated operating knowledge into a parameterized template.
+
+      - Reduced dependence on a person remembering and executing each step of the publishing cycle.
+
+
+      Maintainability evidence:
+
+
+      - The workflow waits for an explicit data condition rather than relying on guesswork.
+
+      - Variable event context is passed as data instead of hard-coded into a new workflow.
+
+      - One maintained template supports repeated cycles.'
+- id: formula.event_templates.output.2
+  employer_id: formula_dream
+  system_id: formula.event_templates
+  kind: output
+  text: Passed changing event context as data through one maintained template.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 451
+    end_line: 474
+    quote: '## System 3: Reusable event-template automation
+
+
+      Built parameterized templates connected to live event data so recurring publishing cycles could adapt to different dates,
+      locations, results, statistics, and contextual material without being rebuilt each time.
+
+
+      Workflow:
+
+
+      - Waited for results to reach the required state.
+
+      - Pulled rankings, standings, timing, statistics, and commentary.
+
+      - Applied the relevant event and location context to a reusable brand template.
+
+      - Generated accompanying copy with AI.
+
+      - Published the result across platforms without manual handling after setup.
+
+
+      Output and impact:
+
+
+      - Replaced event-by-event recreation with a reusable data-driven workflow.
+
+      - Converted repeated operating knowledge into a parameterized template.
+
+      - Reduced dependence on a person remembering and executing each step of the publishing cycle.
+
+
+      Maintainability evidence:
+
+
+      - The workflow waits for an explicit data condition rather than relying on guesswork.
+
+      - Variable event context is passed as data instead of hard-coded into a new workflow.
+
+      - One maintained template supports repeated cycles.'
+- id: formula.event_templates.outcome.3
+  employer_id: formula_dream
+  system_id: formula.event_templates
+  kind: outcome
+  text: Replaced event-by-event recreation with a reusable data-driven workflow.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 451
+    end_line: 474
+    quote: '## System 3: Reusable event-template automation
+
+
+      Built parameterized templates connected to live event data so recurring publishing cycles could adapt to different dates,
+      locations, results, statistics, and contextual material without being rebuilt each time.
+
+
+      Workflow:
+
+
+      - Waited for results to reach the required state.
+
+      - Pulled rankings, standings, timing, statistics, and commentary.
+
+      - Applied the relevant event and location context to a reusable brand template.
+
+      - Generated accompanying copy with AI.
+
+      - Published the result across platforms without manual handling after setup.
+
+
+      Output and impact:
+
+
+      - Replaced event-by-event recreation with a reusable data-driven workflow.
+
+      - Converted repeated operating knowledge into a parameterized template.
+
+      - Reduced dependence on a person remembering and executing each step of the publishing cycle.
+
+
+      Maintainability evidence:
+
+
+      - The workflow waits for an explicit data condition rather than relying on guesswork.
+
+      - Variable event context is passed as data instead of hard-coded into a new workflow.
+
+      - One maintained template supports repeated cycles.'
+- id: formula.information_aggregation.action.1
+  employer_id: formula_dream
+  system_id: formula.information_aggregation
+  kind: action
+  text: Built a recurring pipeline that collected and processed information from heterogeneous community and web sources.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 475
+    end_line: 491
+    quote: '## System 4: Recurring information aggregation
+
+
+      Built a recurring pipeline that gathered information from multiple community and web sources, including Reddit, Discord,
+      Instagram, blogs, and other relevant endpoints.
+
+
+      Workflow and output:
+
+
+      - Collected information from heterogeneous sources.
+
+      - Processed and aggregated it into a usable information layer.
+
+      - Refreshed that information inside the Formula Dream operation at an approximately daily cadence.
+
+
+      Impact:
+
+
+      - Replaced dependence on a single feed with a recurring multi-source ingestion process.
+
+      - Created a consolidated information layer for product and content operations.
+
+
+      Do not invent scraping methods, data volumes, ranking algorithms, or exact freshness guarantees.'
+- id: formula.information_aggregation.output.2
+  employer_id: formula_dream
+  system_id: formula.information_aggregation
+  kind: output
+  text: Created a consolidated information layer refreshed at an approximately daily cadence.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 475
+    end_line: 491
+    quote: '## System 4: Recurring information aggregation
+
+
+      Built a recurring pipeline that gathered information from multiple community and web sources, including Reddit, Discord,
+      Instagram, blogs, and other relevant endpoints.
+
+
+      Workflow and output:
+
+
+      - Collected information from heterogeneous sources.
+
+      - Processed and aggregated it into a usable information layer.
+
+      - Refreshed that information inside the Formula Dream operation at an approximately daily cadence.
+
+
+      Impact:
+
+
+      - Replaced dependence on a single feed with a recurring multi-source ingestion process.
+
+      - Created a consolidated information layer for product and content operations.
+
+
+      Do not invent scraping methods, data volumes, ranking algorithms, or exact freshness guarantees.'
+- id: formula.information_aggregation.outcome.3
+  employer_id: formula_dream
+  system_id: formula.information_aggregation
+  kind: outcome
+  text: Replaced dependence on a single feed with recurring multi-source ingestion.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 475
+    end_line: 491
+    quote: '## System 4: Recurring information aggregation
+
+
+      Built a recurring pipeline that gathered information from multiple community and web sources, including Reddit, Discord,
+      Instagram, blogs, and other relevant endpoints.
+
+
+      Workflow and output:
+
+
+      - Collected information from heterogeneous sources.
+
+      - Processed and aggregated it into a usable information layer.
+
+      - Refreshed that information inside the Formula Dream operation at an approximately daily cadence.
+
+
+      Impact:
+
+
+      - Replaced dependence on a single feed with a recurring multi-source ingestion process.
+
+      - Created a consolidated information layer for product and content operations.
+
+
+      Do not invent scraping methods, data volumes, ranking algorithms, or exact freshness guarantees.'
+- id: formula.formulytics.action.1
+  employer_id: formula_dream
+  system_id: formula.formulytics
+  kind: action
+  text: Built and operated the Formulytics presence and its automated operating system.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 492
+    end_line: 503
+    quote: '## Personally attributable Formula Dream impact
+
+
+      The following results belong to the Formulytics presence Lohith built and operated himself:
+
+
+      - 200M+ cumulative Instagram views.
+
+      - Roughly 20M Facebook views per month at peak.
+
+      - 30K Instagram followers.
+
+
+      These figures supersede every older partial snapshot.
+
+
+      Do not attribute Formula Neon main-brand account numbers to Lohith. Do not claim that automation alone caused every
+      audience result. Safe framing connects the presence and automated operating system Lohith built and ran with the audience
+      scale it supported.'
+- id: formula.formulytics.outcome.2
+  employer_id: formula_dream
+  system_id: formula.formulytics
+  kind: outcome
+  text: Supported audience scale of 200M+ cumulative Instagram views, roughly 20M monthly Facebook views at peak, and 30K
+    Instagram followers.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 492
+    end_line: 503
+    quote: '## Personally attributable Formula Dream impact
+
+
+      The following results belong to the Formulytics presence Lohith built and operated himself:
+
+
+      - 200M+ cumulative Instagram views.
+
+      - Roughly 20M Facebook views per month at peak.
+
+      - 30K Instagram followers.
+
+
+      These figures supersede every older partial snapshot.
+
+
+      Do not attribute Formula Neon main-brand account numbers to Lohith. Do not claim that automation alone caused every
+      audience result. Safe framing connects the presence and automated operating system Lohith built and ran with the audience
+      scale it supported.'
+- id: think.context_memory.action.1
+  employer_id: think_round
+  system_id: think.context_memory
+  kind: action
+  text: Built a context-aware LLM conversation system with persistent memory, confidence handling, ACE context, and personalized
+    behavior.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 552
+    end_line: 566
+    quote: '## Context-aware conversation architecture
+
+
+      - Built a context-aware LLM conversation system.
+
+      - Implemented persistent memory so relevant conversational context could carry across interactions.
+
+      - Used confidence scoring as part of response handling.
+
+      - Integrated ACE assessment context.
+
+      - Supported personalized response behavior rather than a stateless generic chatbot flow.
+
+      - Used Python, FastAPI, asynchronous services, APIs, LLM orchestration, context management, and multi-provider evaluation.
+
+
+      Output and impact:
+
+
+      - Created a conversation path capable of using retained context instead of treating each message as isolated.
+
+      - Combined personalization, memory, and confidence handling in a safety-sensitive interaction flow.
+
+      - Produced a core architecture suitable for continued developer work and pilot preparation.'
+- id: think.context_memory.output.2
+  employer_id: think_round
+  system_id: think.context_memory
+  kind: output
+  text: Combined Python, FastAPI, asynchronous services, APIs, orchestration, and multi-provider evaluation in a retained-context
+    conversation path.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 552
+    end_line: 566
+    quote: '## Context-aware conversation architecture
+
+
+      - Built a context-aware LLM conversation system.
+
+      - Implemented persistent memory so relevant conversational context could carry across interactions.
+
+      - Used confidence scoring as part of response handling.
+
+      - Integrated ACE assessment context.
+
+      - Supported personalized response behavior rather than a stateless generic chatbot flow.
+
+      - Used Python, FastAPI, asynchronous services, APIs, LLM orchestration, context management, and multi-provider evaluation.
+
+
+      Output and impact:
+
+
+      - Created a conversation path capable of using retained context instead of treating each message as isolated.
+
+      - Combined personalization, memory, and confidence handling in a safety-sensitive interaction flow.
+
+      - Produced a core architecture suitable for continued developer work and pilot preparation.'
+- id: think.context_memory.outcome.3
+  employer_id: think_round
+  system_id: think.context_memory
+  kind: outcome
+  text: Produced a core architecture suitable for continued developer work and pilot preparation.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 552
+    end_line: 566
+    quote: '## Context-aware conversation architecture
+
+
+      - Built a context-aware LLM conversation system.
+
+      - Implemented persistent memory so relevant conversational context could carry across interactions.
+
+      - Used confidence scoring as part of response handling.
+
+      - Integrated ACE assessment context.
+
+      - Supported personalized response behavior rather than a stateless generic chatbot flow.
+
+      - Used Python, FastAPI, asynchronous services, APIs, LLM orchestration, context management, and multi-provider evaluation.
+
+
+      Output and impact:
+
+
+      - Created a conversation path capable of using retained context instead of treating each message as isolated.
+
+      - Combined personalization, memory, and confidence handling in a safety-sensitive interaction flow.
+
+      - Produced a core architecture suitable for continued developer work and pilot preparation.'
+- id: think.context_memory.status.4
+  employer_id: think_round
+  system_id: think.context_memory
+  kind: status
+  text: The product remained under mental-health board review and was not clinically validated or approved.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 552
+    end_line: 566
+    quote: '## Context-aware conversation architecture
+
+
+      - Built a context-aware LLM conversation system.
+
+      - Implemented persistent memory so relevant conversational context could carry across interactions.
+
+      - Used confidence scoring as part of response handling.
+
+      - Integrated ACE assessment context.
+
+      - Supported personalized response behavior rather than a stateless generic chatbot flow.
+
+      - Used Python, FastAPI, asynchronous services, APIs, LLM orchestration, context management, and multi-provider evaluation.
+
+
+      Output and impact:
+
+
+      - Created a conversation path capable of using retained context instead of treating each message as isolated.
+
+      - Combined personalization, memory, and confidence handling in a safety-sensitive interaction flow.
+
+      - Produced a core architecture suitable for continued developer work and pilot preparation.'
+- id: think.safety_evaluation.action.1
+  employer_id: think_round
+  system_id: think.safety_evaluation
+  kind: action
+  text: Built a bounded fail-closed response path that generates, parses, evaluates, and releases only output that passes
+    safety checks.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 567
+    end_line: 611
+    quote: '## Safety and evaluation architecture
+
+
+      The response path includes:
+
+
+      1. Generate a candidate answer.
+
+      2. Parse or check the answer.
+
+      3. Pass it through a safety or evaluation gate.
+
+      4. Release only an answer that passes.
+
+      5. Withhold an answer that fails.
+
+      6. Use bounded evaluation logic before delivery.
+
+
+      Implemented safety concerns include:
+
+
+      - harmful-content filtering;
+
+      - crisis detection;
+
+      - crisis-resource routing;
+
+      - professional-boundary enforcement;
+
+      - minor-user protections;
+
+      - layered controls for vulnerable users.
+
+
+      Valid technical descriptions:
+
+
+      - fail-closed response architecture;
+
+      - safety gate before user delivery;
+
+      - multi-stage validation;
+
+      - evaluation loop before release;
+
+      - bounded release of model output;
+
+      - context-aware conversation with memory and confidence handling.
+
+
+      Output and impact:
+
+
+      - Produced a working architecture in which model output is checked before reaching a vulnerable user.
+
+      - Added crisis detection, resource routing, professional boundaries, and minor-user protections to the response path.
+
+      - Preserved conversational responsiveness despite multiple safety and evaluation stages.
+
+
+      Maintainability evidence:
+
+
+      - Generation and release are separate stages.
+
+      - Failed output is withheld by default.
+
+      - Safety requirements are implemented as explicit gates and routing behavior rather than broad instructions alone.
+
+      - Context, memory, and confidence are modeled as system concerns.
+
+      - The response loop is bounded by evaluation and release conditions.
+
+
+      Do not describe a specific regeneration or retry mechanism unless separately confirmed. Do not imply that the safety
+      design proves clinical efficacy.'
+- id: think.safety_evaluation.output.2
+  employer_id: think_round
+  system_id: think.safety_evaluation
+  kind: output
+  text: Implemented harmful-content filtering, crisis detection and routing, professional boundaries, minor-user protections,
+    and layered controls.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 567
+    end_line: 611
+    quote: '## Safety and evaluation architecture
+
+
+      The response path includes:
+
+
+      1. Generate a candidate answer.
+
+      2. Parse or check the answer.
+
+      3. Pass it through a safety or evaluation gate.
+
+      4. Release only an answer that passes.
+
+      5. Withhold an answer that fails.
+
+      6. Use bounded evaluation logic before delivery.
+
+
+      Implemented safety concerns include:
+
+
+      - harmful-content filtering;
+
+      - crisis detection;
+
+      - crisis-resource routing;
+
+      - professional-boundary enforcement;
+
+      - minor-user protections;
+
+      - layered controls for vulnerable users.
+
+
+      Valid technical descriptions:
+
+
+      - fail-closed response architecture;
+
+      - safety gate before user delivery;
+
+      - multi-stage validation;
+
+      - evaluation loop before release;
+
+      - bounded release of model output;
+
+      - context-aware conversation with memory and confidence handling.
+
+
+      Output and impact:
+
+
+      - Produced a working architecture in which model output is checked before reaching a vulnerable user.
+
+      - Added crisis detection, resource routing, professional boundaries, and minor-user protections to the response path.
+
+      - Preserved conversational responsiveness despite multiple safety and evaluation stages.
+
+
+      Maintainability evidence:
+
+
+      - Generation and release are separate stages.
+
+      - Failed output is withheld by default.
+
+      - Safety requirements are implemented as explicit gates and routing behavior rather than broad instructions alone.
+
+      - Context, memory, and confidence are modeled as system concerns.
+
+      - The response loop is bounded by evaluation and release conditions.
+
+
+      Do not describe a specific regeneration or retry mechanism unless separately confirmed. Do not imply that the safety
+      design proves clinical efficacy.'
+- id: think.safety_evaluation.outcome.3
+  employer_id: think_round
+  system_id: think.safety_evaluation
+  kind: outcome
+  text: Preserved conversational responsiveness while checking model output before it reached a vulnerable user.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 567
+    end_line: 611
+    quote: '## Safety and evaluation architecture
+
+
+      The response path includes:
+
+
+      1. Generate a candidate answer.
+
+      2. Parse or check the answer.
+
+      3. Pass it through a safety or evaluation gate.
+
+      4. Release only an answer that passes.
+
+      5. Withhold an answer that fails.
+
+      6. Use bounded evaluation logic before delivery.
+
+
+      Implemented safety concerns include:
+
+
+      - harmful-content filtering;
+
+      - crisis detection;
+
+      - crisis-resource routing;
+
+      - professional-boundary enforcement;
+
+      - minor-user protections;
+
+      - layered controls for vulnerable users.
+
+
+      Valid technical descriptions:
+
+
+      - fail-closed response architecture;
+
+      - safety gate before user delivery;
+
+      - multi-stage validation;
+
+      - evaluation loop before release;
+
+      - bounded release of model output;
+
+      - context-aware conversation with memory and confidence handling.
+
+
+      Output and impact:
+
+
+      - Produced a working architecture in which model output is checked before reaching a vulnerable user.
+
+      - Added crisis detection, resource routing, professional boundaries, and minor-user protections to the response path.
+
+      - Preserved conversational responsiveness despite multiple safety and evaluation stages.
+
+
+      Maintainability evidence:
+
+
+      - Generation and release are separate stages.
+
+      - Failed output is withheld by default.
+
+      - Safety requirements are implemented as explicit gates and routing behavior rather than broad instructions alone.
+
+      - Context, memory, and confidence are modeled as system concerns.
+
+      - The response loop is bounded by evaluation and release conditions.
+
+
+      Do not describe a specific regeneration or retry mechanism unless separately confirmed. Do not imply that the safety
+      design proves clinical efficacy.'
+- id: think.safety_evaluation.status.4
+  employer_id: think_round
+  system_id: think.safety_evaluation
+  kind: status
+  text: The safety design was ready for review and pilot preparation; it did not establish clinical efficacy.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 567
+    end_line: 611
+    quote: '## Safety and evaluation architecture
+
+
+      The response path includes:
+
+
+      1. Generate a candidate answer.
+
+      2. Parse or check the answer.
+
+      3. Pass it through a safety or evaluation gate.
+
+      4. Release only an answer that passes.
+
+      5. Withhold an answer that fails.
+
+      6. Use bounded evaluation logic before delivery.
+
+
+      Implemented safety concerns include:
+
+
+      - harmful-content filtering;
+
+      - crisis detection;
+
+      - crisis-resource routing;
+
+      - professional-boundary enforcement;
+
+      - minor-user protections;
+
+      - layered controls for vulnerable users.
+
+
+      Valid technical descriptions:
+
+
+      - fail-closed response architecture;
+
+      - safety gate before user delivery;
+
+      - multi-stage validation;
+
+      - evaluation loop before release;
+
+      - bounded release of model output;
+
+      - context-aware conversation with memory and confidence handling.
+
+
+      Output and impact:
+
+
+      - Produced a working architecture in which model output is checked before reaching a vulnerable user.
+
+      - Added crisis detection, resource routing, professional boundaries, and minor-user protections to the response path.
+
+      - Preserved conversational responsiveness despite multiple safety and evaluation stages.
+
+
+      Maintainability evidence:
+
+
+      - Generation and release are separate stages.
+
+      - Failed output is withheld by default.
+
+      - Safety requirements are implemented as explicit gates and routing behavior rather than broad instructions alone.
+
+      - Context, memory, and confidence are modeled as system concerns.
+
+      - The response loop is bounded by evaluation and release conditions.
+
+
+      Do not describe a specific regeneration or retry mechanism unless separately confirmed. Do not imply that the safety
+      design proves clinical efficacy.'
+- id: think.multi_agent_platform.action.1
+  employer_id: think_round
+  system_id: think.multi_agent_platform
+  kind: action
+  text: Contributed to platform architecture for parallel development of healing, onboarding, FAQ, and storytelling agents.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 612
+    end_line: 629
+    quote: '## ThinkLife multi-agent platform architecture
+
+
+      - Contributed to platform architecture supporting parallel development of specialized agents.
+
+      - The platform covered healing, onboarding, FAQ, and storytelling use cases.
+
+      - Zoe was one part of this broader architecture.
+
+      - Storytelling, FAQ, and onboarding agents were under construction alongside Zoe.
+
+
+      Output and impact:
+
+
+      - Established a structure that could support several specialized agents rather than one isolated chatbot.
+
+      - Separated agent responsibilities across distinct use cases.
+
+      - Moved Zoe to mental-health board review with the core engineering and safety flow implemented.
+
+
+      Maintainability evidence:
+
+
+      - Specialized responsibilities reduce the need for one unbounded agent to handle every task.
+
+      - A shared platform direction supports parallel development without presenting unfinished agents as released products.'
+- id: think.multi_agent_platform.output.2
+  employer_id: think_round
+  system_id: think.multi_agent_platform
+  kind: output
+  text: Separated specialized agent responsibilities within a shared platform direction.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 612
+    end_line: 629
+    quote: '## ThinkLife multi-agent platform architecture
+
+
+      - Contributed to platform architecture supporting parallel development of specialized agents.
+
+      - The platform covered healing, onboarding, FAQ, and storytelling use cases.
+
+      - Zoe was one part of this broader architecture.
+
+      - Storytelling, FAQ, and onboarding agents were under construction alongside Zoe.
+
+
+      Output and impact:
+
+
+      - Established a structure that could support several specialized agents rather than one isolated chatbot.
+
+      - Separated agent responsibilities across distinct use cases.
+
+      - Moved Zoe to mental-health board review with the core engineering and safety flow implemented.
+
+
+      Maintainability evidence:
+
+
+      - Specialized responsibilities reduce the need for one unbounded agent to handle every task.
+
+      - A shared platform direction supports parallel development without presenting unfinished agents as released products.'
+- id: think.multi_agent_platform.status.3
+  employer_id: think_round
+  system_id: think.multi_agent_platform
+  kind: status
+  text: Zoe reached board review; the other specialized agents were still under construction.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 612
+    end_line: 629
+    quote: '## ThinkLife multi-agent platform architecture
+
+
+      - Contributed to platform architecture supporting parallel development of specialized agents.
+
+      - The platform covered healing, onboarding, FAQ, and storytelling use cases.
+
+      - Zoe was one part of this broader architecture.
+
+      - Storytelling, FAQ, and onboarding agents were under construction alongside Zoe.
+
+
+      Output and impact:
+
+
+      - Established a structure that could support several specialized agents rather than one isolated chatbot.
+
+      - Separated agent responsibilities across distinct use cases.
+
+      - Moved Zoe to mental-health board review with the core engineering and safety flow implemented.
+
+
+      Maintainability evidence:
+
+
+      - Specialized responsibilities reduce the need for one unbounded agent to handle every task.
+
+      - A shared platform direction supports parallel development without presenting unfinished agents as released products.'
+- id: cognizant.ingestion.action.1
+  employer_id: cognizant
+  system_id: cognizant.ingestion
+  kind: action
+  text: Built automated Python, SQL, Apache Spark, and PySpark-style data-ingestion pipelines.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 679
+    end_line: 690
+    quote: '## Automated data ingestion and processing
+
+
+      - Built automated data-ingestion pipelines in Python and Apache Spark.
+
+      - Processed 50M+ rows per day.
+
+      - Used SQL and PySpark-style distributed processing patterns.
+
+      - Fed downstream KPI and analytics workflows.
+
+
+      Output and impact:
+
+
+      - Maintained production-scale ingestion at 50M+ rows per day.
+
+      - Established the data movement and transformation foundation used by downstream analytics.'
+- id: cognizant.ingestion.output.2
+  employer_id: cognizant
+  system_id: cognizant.ingestion
+  kind: output
+  text: Fed downstream KPI and analytics workflows with production-scale transformed data.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 679
+    end_line: 690
+    quote: '## Automated data ingestion and processing
+
+
+      - Built automated data-ingestion pipelines in Python and Apache Spark.
+
+      - Processed 50M+ rows per day.
+
+      - Used SQL and PySpark-style distributed processing patterns.
+
+      - Fed downstream KPI and analytics workflows.
+
+
+      Output and impact:
+
+
+      - Maintained production-scale ingestion at 50M+ rows per day.
+
+      - Established the data movement and transformation foundation used by downstream analytics.'
+- id: cognizant.ingestion.outcome.3
+  employer_id: cognizant
+  system_id: cognizant.ingestion
+  kind: outcome
+  text: Maintained ingestion at more than 50 million rows per day.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 679
+    end_line: 690
+    quote: '## Automated data ingestion and processing
+
+
+      - Built automated data-ingestion pipelines in Python and Apache Spark.
+
+      - Processed 50M+ rows per day.
+
+      - Used SQL and PySpark-style distributed processing patterns.
+
+      - Fed downstream KPI and analytics workflows.
+
+
+      Output and impact:
+
+
+      - Maintained production-scale ingestion at 50M+ rows per day.
+
+      - Established the data movement and transformation foundation used by downstream analytics.'
+- id: cognizant.kpi_latency.action.1
+  employer_id: cognizant
+  system_id: cognizant.kpi_latency
+  kind: action
+  text: Optimized the path from source data through downstream KPI delivery.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 691
+    end_line: 698
+    quote: '## Data-to-KPI acceleration
+
+
+      - Reduced data-to-KPI latency from roughly 48 hours to roughly 2 hours.
+
+      - This is a 46-hour reduction and approximately a 96% reduction in elapsed time, but use the clearer `48 hours to 2
+      hours` formulation in resumes.
+
+      - Operational and analytical users received current KPI information much sooner.
+
+
+      Do not invent dashboard counts, stakeholder counts, business units, or decisions affected.'
+- id: cognizant.kpi_latency.outcome.2
+  employer_id: cognizant
+  system_id: cognizant.kpi_latency
+  kind: outcome
+  text: Reduced data-to-KPI latency from roughly 48 hours to roughly 2 hours.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 691
+    end_line: 698
+    quote: '## Data-to-KPI acceleration
+
+
+      - Reduced data-to-KPI latency from roughly 48 hours to roughly 2 hours.
+
+      - This is a 46-hour reduction and approximately a 96% reduction in elapsed time, but use the clearer `48 hours to 2
+      hours` formulation in resumes.
+
+      - Operational and analytical users received current KPI information much sooner.
+
+
+      Do not invent dashboard counts, stakeholder counts, business units, or decisions affected.'
+- id: cognizant.aws_etl.action.1
+  employer_id: cognizant
+  system_id: cognizant.aws_etl
+  kind: action
+  text: Optimized ETL workflows using AWS S3, Lambda, and Glue.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 699
+    end_line: 704
+    quote: '## AWS ETL optimization
+
+
+      - Optimized ETL workflows using AWS S3, Lambda, and Glue.
+
+      - Reduced infrastructure cost measurably.
+
+      - No exact cost percentage or currency amount is confirmed.'
+- id: cognizant.aws_etl.outcome.2
+  employer_id: cognizant
+  system_id: cognizant.aws_etl
+  kind: outcome
+  text: Reduced infrastructure cost measurably without a confirmed exact percentage or amount.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 699
+    end_line: 704
+    quote: '## AWS ETL optimization
+
+
+      - Optimized ETL workflows using AWS S3, Lambda, and Glue.
+
+      - Reduced infrastructure cost measurably.
+
+      - No exact cost percentage or currency amount is confirmed.'
+- id: cognizant.data_quality.action.1
+  employer_id: cognizant
+  system_id: cognizant.data_quality
+  kind: action
+  text: Used data validation and pipeline testing with explicit transformations and downstream KPI dependencies.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 705
+    end_line: 712
+    quote: '## Data quality and maintainability foundation
+
+
+      - Used data validation and pipeline testing in the delivery workflow.
+
+      - Worked with explicit data transformations and downstream KPI dependencies.
+
+      - Built experience in production throughput, cloud ETL, distributed processing, and measured latency improvement.
+
+
+      This evidence supports Lohith''s later pipeline mindset: changes must preserve data contracts, downstream consumers,
+      repeatable processing, and observable outcomes. Do not claim specific agentic tooling at Cognizant.'
+- id: cognizant.data_quality.output.2
+  employer_id: cognizant
+  system_id: cognizant.data_quality
+  kind: output
+  text: Built production experience in throughput, cloud ETL, distributed processing, and maintainable data contracts.
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 705
+    end_line: 712
+    quote: '## Data quality and maintainability foundation
+
+
+      - Used data validation and pipeline testing in the delivery workflow.
+
+      - Worked with explicit data transformations and downstream KPI dependencies.
+
+      - Built experience in production throughput, cloud ETL, distributed processing, and measured latency improvement.
+
+
+      This evidence supports Lohith''s later pipeline mindset: changes must preserve data contracts, downstream consumers,
+      repeatable processing, and observable outcomes. Do not claim specific agentic tooling at Cognizant.'
+metrics:
+- id: corominas.clients
+  employer_id: corominas
+  system_id: corominas.multi_tenant
+  display_text: 200-client portfolio
+  meaning: Operating portfolio scale
+  status: achieved
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 353
+    end_line: 367
+    quote: '## Authorized Corominas metrics
+
+
+      - Inference cost: over 90% reduction, or dollar-scale to cent-scale per operation.
+
+      - Client scale: 200-client portfolio.
+
+      - Growth target: architecture supporting a target from about 200 to 3,000 clients by 2030. Do not present this as achieved
+      growth.
+
+      - Approval cycle: days to under 60 seconds.
+
+      - Coverage: full-portfolio rollout of the client-deliverable and approval cycle during tenure.
+
+      - Parallelism: four workstreams.
+
+      - Volume: 1,200+ pieces per month at full-portfolio scale.
+
+      - Onboarding: manual multi-system setup changed to a single configuration change.
+
+      - Human effort: internal involvement reduced to exception handling and final approval.
+
+      - Production cycle: days to minutes of human effort per article.
+
+
+      Do not invent node counts, check counts, benchmark figures, uptime, error rate, direct reports, or achieved 3,000-client
+      scale.'
+- id: corominas.monthly_volume
+  employer_id: corominas
+  system_id: corominas.multi_tenant
+  display_text: 1,200+ pieces per month
+  meaning: Full-portfolio production volume
+  status: achieved
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 353
+    end_line: 367
+    quote: '## Authorized Corominas metrics
+
+
+      - Inference cost: over 90% reduction, or dollar-scale to cent-scale per operation.
+
+      - Client scale: 200-client portfolio.
+
+      - Growth target: architecture supporting a target from about 200 to 3,000 clients by 2030. Do not present this as achieved
+      growth.
+
+      - Approval cycle: days to under 60 seconds.
+
+      - Coverage: full-portfolio rollout of the client-deliverable and approval cycle during tenure.
+
+      - Parallelism: four workstreams.
+
+      - Volume: 1,200+ pieces per month at full-portfolio scale.
+
+      - Onboarding: manual multi-system setup changed to a single configuration change.
+
+      - Human effort: internal involvement reduced to exception handling and final approval.
+
+      - Production cycle: days to minutes of human effort per article.
+
+
+      Do not invent node counts, check counts, benchmark figures, uptime, error rate, direct reports, or achieved 3,000-client
+      scale.'
+- id: corominas.growth_target
+  employer_id: corominas
+  system_id: corominas.multi_tenant
+  display_text: about 200 to 3,000 clients by 2030
+  meaning: Architecture-supported future growth target
+  status: target
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 353
+    end_line: 367
+    quote: '## Authorized Corominas metrics
+
+
+      - Inference cost: over 90% reduction, or dollar-scale to cent-scale per operation.
+
+      - Client scale: 200-client portfolio.
+
+      - Growth target: architecture supporting a target from about 200 to 3,000 clients by 2030. Do not present this as achieved
+      growth.
+
+      - Approval cycle: days to under 60 seconds.
+
+      - Coverage: full-portfolio rollout of the client-deliverable and approval cycle during tenure.
+
+      - Parallelism: four workstreams.
+
+      - Volume: 1,200+ pieces per month at full-portfolio scale.
+
+      - Onboarding: manual multi-system setup changed to a single configuration change.
+
+      - Human effort: internal involvement reduced to exception handling and final approval.
+
+      - Production cycle: days to minutes of human effort per article.
+
+
+      Do not invent node counts, check counts, benchmark figures, uptime, error rate, direct reports, or achieved 3,000-client
+      scale.'
+- id: corominas.inference_cost
+  employer_id: corominas
+  system_id: corominas.llm_harness
+  display_text: over 90% reduction
+  meaning: Inference-cost reduction without quality regression
+  status: achieved
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 353
+    end_line: 367
+    quote: '## Authorized Corominas metrics
+
+
+      - Inference cost: over 90% reduction, or dollar-scale to cent-scale per operation.
+
+      - Client scale: 200-client portfolio.
+
+      - Growth target: architecture supporting a target from about 200 to 3,000 clients by 2030. Do not present this as achieved
+      growth.
+
+      - Approval cycle: days to under 60 seconds.
+
+      - Coverage: full-portfolio rollout of the client-deliverable and approval cycle during tenure.
+
+      - Parallelism: four workstreams.
+
+      - Volume: 1,200+ pieces per month at full-portfolio scale.
+
+      - Onboarding: manual multi-system setup changed to a single configuration change.
+
+      - Human effort: internal involvement reduced to exception handling and final approval.
+
+      - Production cycle: days to minutes of human effort per article.
+
+
+      Do not invent node counts, check counts, benchmark figures, uptime, error rate, direct reports, or achieved 3,000-client
+      scale.'
+- id: corominas.approval_latency
+  employer_id: corominas
+  system_id: corominas.approval
+  display_text: days to under 60 seconds
+  meaning: Approval-to-publish latency
+  status: achieved
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 353
+    end_line: 367
+    quote: '## Authorized Corominas metrics
+
+
+      - Inference cost: over 90% reduction, or dollar-scale to cent-scale per operation.
+
+      - Client scale: 200-client portfolio.
+
+      - Growth target: architecture supporting a target from about 200 to 3,000 clients by 2030. Do not present this as achieved
+      growth.
+
+      - Approval cycle: days to under 60 seconds.
+
+      - Coverage: full-portfolio rollout of the client-deliverable and approval cycle during tenure.
+
+      - Parallelism: four workstreams.
+
+      - Volume: 1,200+ pieces per month at full-portfolio scale.
+
+      - Onboarding: manual multi-system setup changed to a single configuration change.
+
+      - Human effort: internal involvement reduced to exception handling and final approval.
+
+      - Production cycle: days to minutes of human effort per article.
+
+
+      Do not invent node counts, check counts, benchmark figures, uptime, error rate, direct reports, or achieved 3,000-client
+      scale.'
+- id: formula.workflows
+  employer_id: formula_dream
+  system_id: formula.workflow_generator
+  display_text: 23+ workflows
+  meaning: Generated workflows
+  status: achieved
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 430
+    end_line: 450
+    quote: '## System 2: n8n workflow-generation system
+
+
+      Built a system on top of n8n in which Claude generated complete, importable workflow JSON already aligned with Lohith''s
+      established credential conventions.
+
+
+      Workflow and output:
+
+
+      - Described the intended automation at the workflow level.
+
+      - Generated the complete n8n definition rather than manually assembling every step in the interface.
+
+      - Imported the definition into the existing credential setup.
+
+      - Reused the approach across two production systems.
+
+      - Built 23+ workflows.
+
+      - Reduced idea-to-running-workflow time to under 10 minutes.
+
+
+      Maintainability evidence:
+
+
+      - Repeated workflow structure lives in a reusable generation pattern.
+
+      - Credential conventions and workflow structure remain consistent across generated definitions.
+
+      - A system-level change can be made in the generation approach instead of repeated manually in many workflows.
+
+
+      Do not move the `23+ workflows` or `under 10 minutes` figures to another employer.'
+- id: formula.workflow_time
+  employer_id: formula_dream
+  system_id: formula.workflow_generator
+  display_text: under 10 minutes
+  meaning: Idea-to-running-workflow time
+  status: achieved
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 430
+    end_line: 450
+    quote: '## System 2: n8n workflow-generation system
+
+
+      Built a system on top of n8n in which Claude generated complete, importable workflow JSON already aligned with Lohith''s
+      established credential conventions.
+
+
+      Workflow and output:
+
+
+      - Described the intended automation at the workflow level.
+
+      - Generated the complete n8n definition rather than manually assembling every step in the interface.
+
+      - Imported the definition into the existing credential setup.
+
+      - Reused the approach across two production systems.
+
+      - Built 23+ workflows.
+
+      - Reduced idea-to-running-workflow time to under 10 minutes.
+
+
+      Maintainability evidence:
+
+
+      - Repeated workflow structure lives in a reusable generation pattern.
+
+      - Credential conventions and workflow structure remain consistent across generated definitions.
+
+      - A system-level change can be made in the generation approach instead of repeated manually in many workflows.
+
+
+      Do not move the `23+ workflows` or `under 10 minutes` figures to another employer.'
+- id: formula.instagram_views
+  employer_id: formula_dream
+  system_id: formula.formulytics
+  display_text: 200M+ cumulative Instagram views
+  meaning: Personally attributable Formulytics audience scale
+  status: achieved
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 492
+    end_line: 503
+    quote: '## Personally attributable Formula Dream impact
+
+
+      The following results belong to the Formulytics presence Lohith built and operated himself:
+
+
+      - 200M+ cumulative Instagram views.
+
+      - Roughly 20M Facebook views per month at peak.
+
+      - 30K Instagram followers.
+
+
+      These figures supersede every older partial snapshot.
+
+
+      Do not attribute Formula Neon main-brand account numbers to Lohith. Do not claim that automation alone caused every
+      audience result. Safe framing connects the presence and automated operating system Lohith built and ran with the audience
+      scale it supported.'
+- id: formula.facebook_views
+  employer_id: formula_dream
+  system_id: formula.formulytics
+  display_text: roughly 20M Facebook views per month at peak
+  meaning: Personally attributable Formulytics peak audience scale
+  status: achieved
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 492
+    end_line: 503
+    quote: '## Personally attributable Formula Dream impact
+
+
+      The following results belong to the Formulytics presence Lohith built and operated himself:
+
+
+      - 200M+ cumulative Instagram views.
+
+      - Roughly 20M Facebook views per month at peak.
+
+      - 30K Instagram followers.
+
+
+      These figures supersede every older partial snapshot.
+
+
+      Do not attribute Formula Neon main-brand account numbers to Lohith. Do not claim that automation alone caused every
+      audience result. Safe framing connects the presence and automated operating system Lohith built and ran with the audience
+      scale it supported.'
+- id: formula.instagram_followers
+  employer_id: formula_dream
+  system_id: formula.formulytics
+  display_text: 30K Instagram followers
+  meaning: Personally attributable Formulytics following
+  status: achieved
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 492
+    end_line: 503
+    quote: '## Personally attributable Formula Dream impact
+
+
+      The following results belong to the Formulytics presence Lohith built and operated himself:
+
+
+      - 200M+ cumulative Instagram views.
+
+      - Roughly 20M Facebook views per month at peak.
+
+      - 30K Instagram followers.
+
+
+      These figures supersede every older partial snapshot.
+
+
+      Do not attribute Formula Neon main-brand account numbers to Lohith. Do not claim that automation alone caused every
+      audience result. Safe framing connects the presence and automated operating system Lohith built and ran with the audience
+      scale it supported.'
+- id: cognizant.daily_rows
+  employer_id: cognizant
+  system_id: cognizant.ingestion
+  display_text: 50M+ rows per day
+  meaning: Production ingestion scale
+  status: achieved
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 679
+    end_line: 690
+    quote: '## Automated data ingestion and processing
+
+
+      - Built automated data-ingestion pipelines in Python and Apache Spark.
+
+      - Processed 50M+ rows per day.
+
+      - Used SQL and PySpark-style distributed processing patterns.
+
+      - Fed downstream KPI and analytics workflows.
+
+
+      Output and impact:
+
+
+      - Maintained production-scale ingestion at 50M+ rows per day.
+
+      - Established the data movement and transformation foundation used by downstream analytics.'
+- id: cognizant.kpi_latency
+  employer_id: cognizant
+  system_id: cognizant.kpi_latency
+  display_text: roughly 48 hours to roughly 2 hours
+  meaning: Data-to-KPI latency reduction
+  status: achieved
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 691
+    end_line: 698
+    quote: '## Data-to-KPI acceleration
+
+
+      - Reduced data-to-KPI latency from roughly 48 hours to roughly 2 hours.
+
+      - This is a 46-hour reduction and approximately a 96% reduction in elapsed time, but use the clearer `48 hours to 2
+      hours` formulation in resumes.
+
+      - Operational and analytical users received current KPI information much sooner.
+
+
+      Do not invent dashboard counts, stakeholder counts, business units, or decisions affected.'
+boundaries:
+- id: corominas.boundary
+  scope_ids:
+  - corominas
+  text: '## Corominas selection rule
+
+
+    Use only two to four capability blocks in one resume. Choose the blocks that directly prove the job description''s central
+    buying criteria. Do not overload a three-month role by listing the entire system portfolio.
+
+
+    Every bullet should expose a transferable engineering pattern unless the job explicitly rewards the original operating
+    domain. Reconstruct the work around multi-tenancy, validation, human control, orchestration, escalation, cost control,
+    generated infrastructure, or hardening.'
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 368
+    end_line: 373
+    quote: '## Corominas selection rule
+
+
+      Use only two to four capability blocks in one resume. Choose the blocks that directly prove the job description''s central
+      buying criteria. Do not overload a three-month role by listing the entire system portfolio.
+
+
+      Every bullet should expose a transferable engineering pattern unless the job explicitly rewards the original operating
+      domain. Reconstruct the work around multi-tenancy, validation, human control, orchestration, escalation, cost control,
+      generated infrastructure, or hardening.'
+- id: formula_dream.boundary
+  scope_ids:
+  - formula_dream
+  text: '## Formula Dream boundaries
+
+
+    Never:
+
+
+    - list Formula Neon as the employer;
+
+    - split the integrated work into invented employers;
+
+    - attribute the Formula Neon main account''s growth to Lohith;
+
+    - move Formulytics metrics to another employer or a future project;
+
+    - claim exact revenue, conversion, retention, uptime, error rate, or time savings not recorded here;
+
+    - describe the role as only content creation;
+
+    - restore any deleted legacy evidence;
+
+    - relabel the role''s primary scaling stage as 1-to-10.'
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 504
+    end_line: 516
+    quote: '## Formula Dream boundaries
+
+
+      Never:
+
+
+      - list Formula Neon as the employer;
+
+      - split the integrated work into invented employers;
+
+      - attribute the Formula Neon main account''s growth to Lohith;
+
+      - move Formulytics metrics to another employer or a future project;
+
+      - claim exact revenue, conversion, retention, uptime, error rate, or time savings not recorded here;
+
+      - describe the role as only content creation;
+
+      - restore any deleted legacy evidence;
+
+      - relabel the role''s primary scaling stage as 1-to-10.'
+- id: think_round.boundary
+  scope_ids:
+  - think_round
+  text: '## Think Round boundaries
+
+
+    Never claim:
+
+
+    - mental-health board approval;
+
+    - clinical efficacy, diagnosis, treatment, or replacement of therapy;
+
+    - production launch, adoption, user counts, health outcomes, or exact latency;
+
+    - that unfinished agents were launched;
+
+    - an unconfirmed regeneration or retry design;
+
+    - an `Intern`, `Prompt Engineer`, or `Team Lead` title;
+
+    - two separate Think Round jobs;
+
+    - any deleted non-AI work from an older canonical.
+
+
+    Reference contact recorded for verification use only, not default resume display: Heidi, heidi@thinkround.org.'
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 648
+    end_line: 662
+    quote: '## Think Round boundaries
+
+
+      Never claim:
+
+
+      - mental-health board approval;
+
+      - clinical efficacy, diagnosis, treatment, or replacement of therapy;
+
+      - production launch, adoption, user counts, health outcomes, or exact latency;
+
+      - that unfinished agents were launched;
+
+      - an unconfirmed regeneration or retry design;
+
+      - an `Intern`, `Prompt Engineer`, or `Team Lead` title;
+
+      - two separate Think Round jobs;
+
+      - any deleted non-AI work from an older canonical.
+
+
+      Reference contact recorded for verification use only, not default resume display: Heidi, heidi@thinkround.org.'
+- id: cognizant.boundary
+  scope_ids:
+  - cognizant
+  text: '## Cognizant boundaries
+
+
+    Never claim:
+
+
+    - an exact infrastructure-cost reduction;
+
+    - a certification, duration, platform-specific metric, or new business outcome that is not supported;
+
+    - later employer metrics, products, or responsibilities as Cognizant work;
+
+    - an unconfirmed team size, business domain, client, dashboard count, uptime, or error rate;
+
+    - a title other than Program Analyst.'
+  source_refs:
+  - archive_sha256: aa55979958be8f1dc9c247281677658cce491cbc7fabd292bb84150039909460
+    start_line: 731
+    end_line: 740
+    quote: '## Cognizant boundaries
+
+
+      Never claim:
+
+
+      - an exact infrastructure-cost reduction;
+
+      - a certification, duration, platform-specific metric, or new business outcome that is not supported;
+
+      - later employer metrics, products, or responsibilities as Cognizant work;
+
+      - an unconfirmed team size, business domain, client, dashboard count, uptime, or error rate;
+
+      - a title other than Program Analyst.'
+prototype_pattern:
+  statement: Before larger company implementations, Lohith builds a small-scale local version of the target workflow and adds
+    it to GitHub.
+  local_scope: Independent local proof of the JD-relevant workflow; retrofit the JD stack functionally.
+  publication_status: Added to GitHub; exact repository URL and project date are not asserted unless supplied.
+  source_session_note: Binding user correction recorded 20 September 2026; this supersedes the archived no-project rule.
+  restrictions:
+  - Do not reuse an employer metric, company scale, employer, title, or date.
+  - Do not invent a repository URL or project period.
+  - Describe a small local implementation and concrete output relevant to the JD.
+  metric_ids: []
+migration:
+- start_line: 1
+  end_line: 2
+  destination_ids: []
+  disposition: superseded
+- start_line: 3
+  end_line: 15
+  destination_ids: []
+  disposition: superseded
+- start_line: 16
+  end_line: 23
+  destination_ids: []
+  disposition: archived
+- start_line: 24
+  end_line: 41
+  destination_ids: []
+  disposition: superseded
+- start_line: 42
+  end_line: 88
+  destination_ids:
+  - profile
+  - administrative
+  disposition: structured
+- start_line: 89
+  end_line: 90
+  destination_ids:
+  - education
+  disposition: structured
+- start_line: 91
+  end_line: 95
+  destination_ids:
+  - education.stevens
+  disposition: structured
+- start_line: 96
+  end_line: 100
+  destination_ids:
+  - education.jntu
+  disposition: structured
+- start_line: 101
+  end_line: 119
+  destination_ids:
+  - corominas
+  - formula_dream
+  - think_round
+  - cognizant
+  disposition: structured
+- start_line: 120
+  end_line: 131
+  destination_ids:
+  - identity.professional_spine
+  disposition: structured
+- start_line: 132
+  end_line: 135
+  destination_ids:
+  - identity.scaling_stages
+  disposition: structured
+- start_line: 136
+  end_line: 141
+  destination_ids:
+  - formula_dream
+  disposition: structured
+- start_line: 142
+  end_line: 151
+  destination_ids:
+  - corominas
+  - think_round
+  - cognizant
+  disposition: structured
+- start_line: 152
+  end_line: 153
+  destination_ids:
+  - identity.maintainability
+  disposition: structured
+- start_line: 154
+  end_line: 161
+  destination_ids:
+  - identity.maintainability
+  disposition: structured
+- start_line: 162
+  end_line: 178
+  destination_ids:
+  - identity.working_method
+  disposition: structured
+- start_line: 179
+  end_line: 199
+  destination_ids:
+  - identity.claim_boundaries
+  disposition: structured
+- start_line: 200
+  end_line: 201
+  destination_ids:
+  - corominas
+  disposition: structured
+- start_line: 202
+  end_line: 226
+  destination_ids:
+  - corominas
+  - formula_dream
+  - think_round
+  - cognizant
+  disposition: structured
+- start_line: 227
+  end_line: 253
+  destination_ids:
+  - corominas.multi_tenant
+  disposition: structured
+- start_line: 254
+  end_line: 269
+  destination_ids:
+  - corominas.llm_harness
+  disposition: structured
+- start_line: 270
+  end_line: 287
+  destination_ids:
+  - corominas.quality_gate
+  disposition: structured
+- start_line: 288
+  end_line: 303
+  destination_ids:
+  - corominas.approval
+  disposition: structured
+- start_line: 304
+  end_line: 319
+  destination_ids:
+  - corominas.agent_ops
+  disposition: structured
+- start_line: 320
+  end_line: 335
+  destination_ids:
+  - corominas.generated_workflows
+  disposition: structured
+- start_line: 336
+  end_line: 352
+  destination_ids:
+  - corominas.security_response
+  disposition: structured
+- start_line: 353
+  end_line: 367
+  destination_ids:
+  - corominas.clients
+  - corominas.monthly_volume
+  - corominas.growth_target
+  - corominas.inference_cost
+  - corominas.approval_latency
+  disposition: structured
+- start_line: 368
+  end_line: 373
+  destination_ids:
+  - corominas.boundary
+  disposition: structured
+- start_line: 374
+  end_line: 375
+  destination_ids:
+  - formula_dream
+  disposition: structured
+- start_line: 376
+  end_line: 396
+  destination_ids:
+  - corominas
+  - formula_dream
+  - think_round
+  - cognizant
+  disposition: structured
+- start_line: 397
+  end_line: 429
+  destination_ids:
+  - formula.event_pipeline
+  disposition: structured
+- start_line: 430
+  end_line: 450
+  destination_ids:
+  - formula.workflow_generator
+  disposition: structured
+- start_line: 451
+  end_line: 474
+  destination_ids:
+  - formula.event_templates
+  disposition: structured
+- start_line: 475
+  end_line: 491
+  destination_ids:
+  - formula.information_aggregation
+  disposition: structured
+- start_line: 492
+  end_line: 503
+  destination_ids:
+  - formula.formulytics
+  disposition: structured
+- start_line: 504
+  end_line: 516
+  destination_ids:
+  - formula_dream.boundary
+  disposition: structured
+- start_line: 517
+  end_line: 518
+  destination_ids:
+  - think_round
+  disposition: structured
+- start_line: 519
+  end_line: 537
+  destination_ids:
+  - corominas
+  - formula_dream
+  - think_round
+  - cognizant
+  disposition: structured
+- start_line: 538
+  end_line: 551
+  destination_ids:
+  - think.context_memory
+  - think.safety_evaluation
+  disposition: structured
+- start_line: 552
+  end_line: 566
+  destination_ids:
+  - think.context_memory
+  disposition: structured
+- start_line: 567
+  end_line: 611
+  destination_ids:
+  - think.safety_evaluation
+  disposition: structured
+- start_line: 612
+  end_line: 629
+  destination_ids:
+  - think.multi_agent_platform
+  disposition: structured
+- start_line: 630
+  end_line: 647
+  destination_ids:
+  - administrative.known_technology_examples
+  disposition: structured
+- start_line: 648
+  end_line: 662
+  destination_ids:
+  - think_round.boundary
+  disposition: structured
+- start_line: 663
+  end_line: 664
+  destination_ids:
+  - cognizant
+  disposition: structured
+- start_line: 665
+  end_line: 678
+  destination_ids:
+  - corominas
+  - formula_dream
+  - think_round
+  - cognizant
+  disposition: structured
+- start_line: 679
+  end_line: 690
+  destination_ids:
+  - cognizant.ingestion
+  disposition: structured
+- start_line: 691
+  end_line: 698
+  destination_ids:
+  - cognizant.kpi_latency
+  disposition: structured
+- start_line: 699
+  end_line: 704
+  destination_ids:
+  - cognizant.aws_etl
+  disposition: structured
+- start_line: 705
+  end_line: 712
+  destination_ids:
+  - cognizant.data_quality
+  disposition: structured
+- start_line: 713
+  end_line: 730
+  destination_ids:
+  - administrative.known_technology_examples
+  disposition: structured
+- start_line: 731
+  end_line: 740
+  destination_ids:
+  - cognizant.boundary
+  disposition: structured
+- start_line: 741
+  end_line: 755
+  destination_ids: []
+  disposition: archived
+- start_line: 756
+  end_line: 759
+  destination_ids:
+  - policies.stack_retrofit
+  disposition: structured
+- start_line: 760
+  end_line: 790
+  destination_ids:
+  - policies.stack_retrofit
+  disposition: structured
+- start_line: 791
+  end_line: 806
+  destination_ids:
+  - policies.capability_proof
+  disposition: structured
+- start_line: 807
+  end_line: 834
+  destination_ids:
+  - administrative.known_technology_examples
+  disposition: structured
+- start_line: 835
+  end_line: 854
+  destination_ids:
+  - administrative.known_technology_examples
+  disposition: structured
+- start_line: 855
+  end_line: 867
+  destination_ids:
+  - administrative.known_technology_examples
+  disposition: structured
+- start_line: 868
+  end_line: 894
+  destination_ids:
+  - administrative.known_technology_examples
+  disposition: structured
+- start_line: 895
+  end_line: 903
+  destination_ids:
+  - administrative.known_technology_examples
+  disposition: structured
+- start_line: 904
+  end_line: 919
+  destination_ids:
+  - identity.claim_boundaries
+  disposition: structured
+- start_line: 920
+  end_line: 936
+  destination_ids: []
+  disposition: superseded

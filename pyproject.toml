@@ -7,7 +7,7 @@ name = "local-application-harness"
 version = "0.1.0"
 description = "Local bounded resume writing with Jev decisions"
 requires-python = ">=3.11"
-dependencies = ["pydantic>=2,<3", "reportlab>=4,<5", "pypdf>=5,<7"]
+dependencies = ["pydantic>=2,<3", "PyYAML>=6,<7", "reportlab>=4,<5", "pypdf>=5,<7"]
 
 [project.scripts]
 apply-job = "harness.cli:main"

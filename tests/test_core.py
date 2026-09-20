@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class SourceTests(unittest.TestCase):
     def test_operations_retains_employer_status_and_exact_source(self):
         from harness.sources import load_canonical
-        data = load_canonical(ROOT / "01-CANONICAL.md")
+        data = load_canonical(ROOT / "archive" / "canonical-v2.md")
         unit = next(x for x in data["evidence"] if "Multi-agent operational" in x["heading"])
         self.assertIn("Airtable served as the shared ledger", unit["text"])
         self.assertIn("Do not imply that every planned system was complete", unit["boundaries"])
@@ -19,7 +19,7 @@ class SourceTests(unittest.TestCase):
 
     def test_think_round_inherits_no_production_launch(self):
         from harness.sources import load_canonical
-        data = load_canonical(ROOT / "01-CANONICAL.md")
+        data = load_canonical(ROOT / "archive" / "canonical-v2.md")
         units = [x for x in data["evidence"] if x["employer_id"] == "think-round-inc"]
         self.assertGreaterEqual(len(units), 3)
         for unit in units:
