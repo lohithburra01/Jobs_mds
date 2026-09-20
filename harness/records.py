@@ -270,3 +270,15 @@ class Blueprint(StrictModel):
     envelopes: list[Envelope] = Field(min_length=1)
     fixed_fields: dict[str, Any]
     unselected_reasons: dict[str, str] = Field(default_factory=dict)
+
+
+class AssessmentV3(StrictModel):
+    leaves: dict[str, dict[str, Any]]
+    parents: dict[str, dict[str, Any]]
+    component_coverage: dict[str, dict[str, Any]]
+    relationships: dict[str, dict[str, Any]]
+    issues: list[Issue] = Field(default_factory=list)
+    unresolved: list[str] = Field(default_factory=list)
+    text_hashes: dict[str, str]
+    selected_ids: list[str]
+    passed: bool
