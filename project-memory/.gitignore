@@ -1,0 +1,4 @@
+cache/
+events/
+*.lock
+scratch/

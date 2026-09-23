@@ -1,0 +1,18 @@
+{
+  "goal": "A fresh coding-agent chat can resume this job-application project from continuously maintained, selectively retrieved project memory.",
+  "authorization": "Lohith explicitly requested implementation in the current conversation, after defining the memory, checkpoint, observation and commit requirements.",
+  "scope": "Project memory and coding-work observations only. Preserve application code, existing dirty work and original agreement. No paid model runs, application submissions or pushes.",
+  "design": {
+    "storage": "Small versioned JSON records with stable IDs and explicit links; immutable record revisions; SQLite search/graph index rebuilt from those records. Raw operational events stay local in daily JSONL files.",
+    "retrieval": "Start with project overview, current checkpoint, operating rules and pointers. Read a specific record or exact source section only when needed.",
+    "updates": "Record decisions and changes immediately. Reject stale revisions. One coherent change per explicit-path commit. User acceptance is distinct from technical completion.",
+    "observations": "Local CLI event logging plus Codex startup/tool/stop hooks. Hook trust is controlled by Codex/user, never bypassed. Agent-maintained semantic decisions cannot be inferred automatically from tool events.",
+    "portability": "Python standard library and PowerShell launcher. No specific model required. Any terminal agent can query the same project records. Hooks are a Codex adapter, not a universal sandbox."
+  },
+  "steps": [
+    {"id": "M1", "work": "Implement record storage, revisions, search, linked impact lookup and bounded startup briefing.", "evidence": "Fresh-process recovery, stale-write rejection, dependency traversal, source integrity checks."},
+    {"id": "M2", "work": "Add local observation hooks and setup for the next Codex session.", "evidence": "Synthetic lifecycle events exercise logging and briefing; live trust/dispatch remains separately visible."},
+    {"id": "M3", "work": "Import the agreed plan with exact source references, seed honest checkpoint states and install concise startup instructions.", "evidence": "Source coverage and hashes; fresh CLI reads only relevant records; inspect handoff and focused commits."}
+  ],
+  "limits": ["No guarantee of semantic correctness or enforced human identity.", "Untrusted/unsupported hooks cannot observe Codex automatically.", "Old application implementation claims are historical until freshly inspected.", "Detailed storage grows, while the startup context stays bounded."]
+}
