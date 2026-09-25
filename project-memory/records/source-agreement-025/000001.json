@@ -1,0 +1,25 @@
+{
+  "id": "source-agreement-025",
+  "kind": "source_section",
+  "title": "Observability component choices",
+  "status": "reference",
+  "summary": "Exact source lines 1035–1126; read with source command. Parent: source-agreement.",
+  "body": "",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1035,
+      "end": 1126
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "source-agreement"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.140+00:00",
+  "change_reason": "Index a source section for selective retrieval"
+}

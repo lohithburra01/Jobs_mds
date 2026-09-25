@@ -1,0 +1,20 @@
+{
+  "id": "source-engine",
+  "kind": "source",
+  "title": "00-APPLICATION-ENGINE.md",
+  "summary": "Original source, retrieved by exact section. Later user decisions can supersede its instructions.",
+  "status": "reference",
+  "body": "Source preserved without paraphrasing. Original path: 00-APPLICATION-ENGINE.md",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-engine.txt",
+      "sha256": "363f4837c4fae59d3a70dc999525dbc00859d02d4ecbe07ed302584683c64e0c",
+      "start": 1,
+      "end": 604
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.496+00:00",
+  "change_reason": "Import source without changing its text"
+}

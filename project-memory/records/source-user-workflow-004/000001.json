@@ -1,0 +1,25 @@
+{
+  "id": "source-user-workflow-004",
+  "kind": "source_section",
+  "title": "## Starting an application",
+  "status": "reference",
+  "summary": "Exact source lines 17–42; read with source command. Parent: source-user-workflow.",
+  "body": "",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-user-workflow.txt",
+      "sha256": "45bda81d5cc8ba31d0377122cf7d5260c8f0272134c9cd006585c7987e433b6a",
+      "start": 17,
+      "end": 42
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "source-user-workflow"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.463+00:00",
+  "change_reason": "Index a source section for selective retrieval"
+}

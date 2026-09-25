@@ -1,0 +1,25 @@
+{
+  "id": "module-jd",
+  "kind": "module",
+  "title": "JD interpretation",
+  "summary": "Preserve original passages; decompose requirements with narrow options. Do not let repeated extraction failure prevent all writing.",
+  "body": "",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-005"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.737+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

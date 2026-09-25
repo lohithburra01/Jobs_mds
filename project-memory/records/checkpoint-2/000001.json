@@ -1,0 +1,18 @@
+{
+  "id": "checkpoint-2",
+  "kind": "checkpoint",
+  "title": "Demonstrate one small coding task",
+  "summary": "Show an actual bounded change, its evidence and history before trusting the coding workflow.",
+  "body": "",
+  "status": "",
+  "links": [
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-1"
+    }
+  ],
+  "next_action": "Discuss the bounded task with Lohith when this checkpoint becomes current.",
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.848+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

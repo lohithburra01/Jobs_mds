@@ -1,0 +1,25 @@
+{
+  "id": "source-old-now-001",
+  "kind": "source_section",
+  "title": "# Current checkpoint — 22 September 2026",
+  "status": "historical",
+  "summary": "Exact source lines 1–20; read with source command. Parent: source-old-now.",
+  "body": "",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-old-now.txt",
+      "sha256": "77550a9d6a88306cde341c4862ac60f9f631e520d92c74d2051ccad1d13f7cc0",
+      "start": 1,
+      "end": 20
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "source-old-now"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.408+00:00",
+  "change_reason": "Index a source section for selective retrieval"
+}

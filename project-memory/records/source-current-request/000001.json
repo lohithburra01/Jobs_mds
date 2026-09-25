@@ -1,0 +1,20 @@
+{
+  "id": "source-current-request",
+  "kind": "source",
+  "title": "latest-user-request-2026-09-23.txt",
+  "summary": "Original source, retrieved by exact section. Later user decisions can supersede its instructions.",
+  "status": "reference",
+  "body": "Source preserved without paraphrasing. Original path: project-memory\\sources\\latest-user-request-2026-09-23.txt",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-current-request.txt",
+      "sha256": "6bee879928ab06a2971f2160ab72ce86c8f8417b29adab94d14014bc4df9aeb9",
+      "start": 1,
+      "end": 1
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.670+00:00",
+  "change_reason": "Import source without changing its text"
+}

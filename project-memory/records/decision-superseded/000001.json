@@ -1,0 +1,25 @@
+{
+  "id": "decision-superseded",
+  "kind": "decision",
+  "title": "Retired instructions and preserved distinctions",
+  "summary": "Retire model locks, old active steps1–3 authorization, one-page-only rules and missing-OpenRouter-approval claims. The source agreement remains preserved; later user amendments win.",
+  "body": "User chose a project-specific memory setup now, not a universal framework or Beads installation. Earlier restriction against databases belonged to the application design, not this newly requested coding-memory index. Existing OpenRouter permission persists, but setup scope does not request a paid run. Old documents can contain contradictory complete/pending states; inspect evidence. Do not infer independent initial model calls from separately owned writing blocks.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "supersedes",
+      "to": "source-old-now"
+    },
+    {
+      "rel": "supersedes",
+      "to": "source-old-memory"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.826+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

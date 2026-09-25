@@ -1,0 +1,29 @@
+{
+  "id": "module-selection",
+  "kind": "module",
+  "title": "Work selection",
+  "summary": "Fit is based on work responsibilities and scope; tool retrofit is allowed. Avoid mechanical recency and bullet quotas.",
+  "body": "",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-006"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-004"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.737+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "module-project",
+  "kind": "module",
+  "title": "Independent project",
+  "summary": "Include a JD-relevant local project using the user's established small-scale-before-company-work pattern. No exhaustive project inventory required.",
+  "body": "",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-008"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.758+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

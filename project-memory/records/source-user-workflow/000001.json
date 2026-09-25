@@ -1,0 +1,20 @@
+{
+  "id": "source-user-workflow",
+  "kind": "source",
+  "title": "USER-WORKFLOW.md",
+  "summary": "Original source, retrieved by exact section. Later user decisions can supersede its instructions.",
+  "status": "reference",
+  "body": "Source preserved without paraphrasing. Original path: USER-WORKFLOW.md",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-user-workflow.txt",
+      "sha256": "45bda81d5cc8ba31d0377122cf7d5260c8f0272134c9cd006585c7987e433b6a",
+      "start": 1,
+      "end": 134
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.445+00:00",
+  "change_reason": "Import source without changing its text"
+}

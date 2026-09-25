@@ -1,0 +1,87 @@
+# Your controls for coding work
+
+We can work in this chat. A new chat is optional after a completed checkpoint; it is not required to use these controls.
+
+## Communication rule agreed with the user
+
+Assume the user is returning with no context. Start with the goal, current tracker step, and the next concrete action. Before testing, explain the input and the behavior expected from the user's requirements. After each checkpoint, show the actual result and what it establishes in plain language. State what remains unverified. A count of passing tests is not evidence of resume quality.
+
+Keep the user informed while work is active. Do not silently expand scope, change the agreed design, or begin a later milestone beyond the user's authorization. The current authorization covers tracker steps 1–3: finish and test coding controls, demonstrate one real Sol task through them, then add application progress/request visibility. Resume-content redesign and live resume generation are later steps.
+
+Maintain PROGRESS-TRACKER.csv when a checkpoint changes state. Keep untouched statuses blank. Save concise input/expected/observed evidence in CONTROL-TEST-RESULTS.md; the tracker remains the short overview. No timer automation is needed to update progress during active work.
+
+## What a task does
+
+```text
+YOUR REQUEST
+  ↓
+Saved task contract
+  • one outcome
+  • named files it may change
+  • protected inputs and acceptance evidence
+  • selected model + deadline
+  ↓
+Python starts one Sol worker
+  • fresh, small task context
+  • model events and command output saved locally
+  • status and stop available while it runs
+  ↓
+Python compares actual file changes and runs verification
+  ↓
+Jev checks each stated requirement against selected actual files
+  • satisfied / violated / insufficient evidence
+  • one attempt; no repeated voting
+  ↓
+Completed with saved evidence OR stopped with a specific reason
+```
+
+The task contract is the boundary. A worker cannot grant itself more files, a longer deadline, or a different acceptance condition. Changes outside scope are detected and preserved for inspection; they are not automatically undone.
+
+## What you can say here
+
+| You want… | Say something like… | What should happen |
+|---|---|---|
+| Progress | “Show current task, elapsed time, and what is waiting.” | Read local status; do not launch another model run. |
+| Stop | “Stop now and save where we are.” | Cancel the owned worker, keep files and logs, record the next step. |
+| Explain | “Explain this decision; don't change anything.” | Answer from evidence; no coding task starts. |
+| Correct an output | “This skills group mixes tools with methods. Here is the line.” | Save the exact example and target that cause in one bounded task. |
+| Change a rule | “Two pages are fine; don't shorten useful experience.” | Update the authoritative rule and dependent task before execution. |
+| Limit work | “Only fix project selection. Don't run another full application.” | Record that scope and stop condition in the contract. |
+| Resume later | “Read NOW.md and continue the recorded next task.” | Load the checkpoint, not the whole chat. |
+
+You do not need special phrasing or to understand the code. If your message changes the task, the agent must make that change explicit. Ordinary feedback does not silently authorize a rebuild.
+
+## Terminal controls
+
+From this project folder:
+
+```powershell
+.\scripts\dev-control.ps1 --help
+.\scripts\dev-control.ps1 run --contract .\dev-tasks\your-task.json
+.\scripts\dev-control.ps1 status --run "PATH PRINTED WHEN THE TASK STARTS"
+.\scripts\dev-control.ps1 events --run "PATH PRINTED WHEN THE TASK STARTS" --follow
+.\scripts\dev-control.ps1 stop --run "PATH PRINTED WHEN THE TASK STARTS"
+```
+
+The first command runs in one terminal. Status, events and stop can run in another. Following events uses Python, not model inference. Ctrl+C also stops the foreground controller. There is no automatic restart: interrupted tasks need a deliberate new task, based on the saved evidence.
+
+## What is saved
+
+Run files live under `.devcontrol/runs/` in the target workspace and are ignored by Git. They include the frozen contract, original file hashes, actual changed-file manifest, worker report, stdout/stderr, verification results, current status and an append-only event timeline. A requested Jev review also saves its selected input evidence and decisions. No remote telemetry dashboard is enabled.
+
+Jev sees only the text files explicitly named in each requirement's `evidence_paths`. Missing, outside-workspace, obvious credential files and oversized evidence stop review. Do not list private files that are unrelated to the requirement. Each requirement must have actual evidence; a worker's “done” statement is not enough.
+
+## Limits to understand
+
+- This is a local supervisor, not a security boundary. Codex's sandbox controls execution permissions. File hashes detect drift after a task; they do not prevent every bad edit or stop a malicious worker from tampering with local files.
+- A deadline limits wall-clock execution; it does not reserve or guarantee an exact number of subscription credits. CLI and desktop work still consume the account's allowance. Returned usage is evidence where available; missing usage stays unknown.
+- Passing code checks does not establish resume quality. Product review must use the user's rejected examples and the final visible output.
+- Jev is additional semantic evidence, not a proof engine. Unclear results stop with evidence; no model is asked repeatedly until it agrees.
+- The controller does not automatically invoke Astra or buy credits. A design conflict is surfaced for a concrete decision; a routine implementation task selects Sol automatically.
+- Only one controller-managed writer may run per workspace. Avoid editing its files manually during a run; outside edits are also detected as drift.
+
+## Small commits and future sessions
+
+Commit one coherent verified change with its problem, changed behavior and verification evidence. Do not stage unrelated edits, private run artifacts or `.env`. Save the commit ID and next task in NOW.md. Commit creation remains an explicit agent action after review; a worker cannot commit through this task prompt.
+
+The first bootstrap of these controls uses the current chat and a bounded native Sol subagent. It cannot retroactively supervise its own creation. Future coding tasks can use the installed runner; the checkpoint must distinguish tested controls from untested live model execution.

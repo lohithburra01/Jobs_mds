@@ -1,0 +1,25 @@
+{
+  "id": "state-existing-code",
+  "kind": "evidence",
+  "title": "What exists versus what is proven",
+  "summary": "Application CLI, canonical.yaml, renderer and v3 implementation exist. Current resumes have not met Lohith's standard. Old control tests/real worker proof and application visibility were pending; do not restart the old worker merely to inspect state.",
+  "body": "Inventory on 2026-09-23: pre-existing uncommitted harness/skills.py, tests/test_skills_v3.py, pyproject.toml and devcontrol work must be preserved. devcontrol process_alive uses os.kill(pid,0), unsafe on Windows; STOP handling during verification needs review. Last prior application commit e58cace. Historical Stibo run jobs/stibo-jd-20260920T202846388022Z/run.json says STOPPED, 28 HTTP attempts, reported USD 0.032269598. No fresh application run was performed during memory setup. No assumption that original implementation is usable until inspected.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-old-results"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-old-tracker"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-old-now"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.822+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

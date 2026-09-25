@@ -1,0 +1,25 @@
+{
+  "id": "source-old-memory-001",
+  "kind": "source_section",
+  "title": "# Project memory index",
+  "status": "historical",
+  "summary": "Exact source lines 1–47; read with source command. Parent: source-old-memory.",
+  "body": "",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-old-memory.txt",
+      "sha256": "138c0552bf4a9216d67f27a59c5fe2f71ded0864dc6b2efce302e426378fefb7",
+      "start": 1,
+      "end": 47
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "source-old-memory"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.417+00:00",
+  "change_reason": "Index a source section for selective retrieval"
+}

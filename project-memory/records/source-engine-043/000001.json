@@ -1,0 +1,25 @@
+{
+  "id": "source-engine-043",
+  "kind": "source_section",
+  "title": "### 6. Density and scan gate",
+  "status": "reference",
+  "summary": "Exact source lines 569–577; read with source command. Parent: source-engine.",
+  "body": "",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-engine.txt",
+      "sha256": "363f4837c4fae59d3a70dc999525dbc00859d02d4ecbe07ed302584683c64e0c",
+      "start": 569,
+      "end": 577
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "source-engine"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.640+00:00",
+  "change_reason": "Index a source section for selective retrieval"
+}

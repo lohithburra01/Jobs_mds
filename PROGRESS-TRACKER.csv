@@ -1,0 +1,15 @@
+﻿Goal,"Paste a JD and receive a readable tailored resume PDF, cover-letter PDF, application JSON and reusable chat context.",,
+Where we are,"Project memory, selective retrieval, exact plan archive, fresh-chat instructions and observation adapter are implemented. Awaiting Lohith review; live Codex hook delivery is still unverified.",,
+Next,"In a fresh chat, load this memory and show Lohith the current state. Check hook health/trust, then agree the next coding checkpoint before starting application changes.",,
+
+Checkpoint,What this achieves,Status,Next action
+Agree what the application must produce,The detailed twenty-point discussion and later amendments are preserved. The application output is not yet accepted.,accepted,
+Prepare this project for a fresh chat,"Project memory, selective retrieval, exact plan archive, fresh-chat instructions and observation adapter are implemented. Awaiting Lohith review; live Codex hook delivery is still unverified.",review,"In a fresh chat, load this memory and show Lohith the current state. Check hook health/trust, then agree the next coding checkpoint before starting application changes."
+Control the coding work,"Existing devcontrol code needs inspection; its final proof is pending. Current memory setup supplies continuity and observation, not proof of all old worker controls.",planned,Discuss the bounded task with Lohith when this checkpoint becomes current.
+Demonstrate one small coding task,"Show an actual bounded change, its evidence and history before trusting the coding workflow.",,Discuss the bounded task with Lohith when this checkpoint becomes current.
+See inside an application run,"Make stage, request, time, saved output and failure visible. This is application instrumentation, not the coding hooks.",,Discuss the bounded task with Lohith when this checkpoint becomes current.
+Improve the resume builder,"Repair resolved evidence, selection, skills, projects, writing, hierarchy and final layout according to the agreement.",,Discuss the bounded task with Lohith when this checkpoint becomes current.
+Inspect saved data and rendered examples,Replay locally and inspect visible output before spending on a full external run.,,Discuss the bounded task with Lohith when this checkpoint becomes current.
+Run one actual JD end to end,"Produce resume PDF, letter PDF, JSON, portable context and an inspectable report; Lohith judges the result.",,Discuss the bounded task with Lohith when this checkpoint becomes current.
+Check a different JD,Confirm tailoring beyond the first example after the first output is inspectable.,,Discuss the bounded task with Lohith when this checkpoint becomes current.
+Use the application routinely,One understandable JD-to-files workflow with a clear output location and bounded failures.,,Discuss the bounded task with Lohith when this checkpoint becomes current.

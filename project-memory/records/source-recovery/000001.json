@@ -1,0 +1,20 @@
+{
+  "id": "source-recovery",
+  "kind": "source",
+  "title": "RECOVERY-PLAN.md",
+  "summary": "Original source, retrieved by exact section. Later user decisions can supersede its instructions.",
+  "status": "historical",
+  "body": "Source preserved without paraphrasing. Original path: RECOVERY-PLAN.md",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-recovery.txt",
+      "sha256": "54f5a9c066870d8d6737cf62204b141a4e68df36e566b37c9db69cc54b273da2",
+      "start": 1,
+      "end": 163
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.161+00:00",
+  "change_reason": "Import source without changing its text"
+}

@@ -1,0 +1,25 @@
+THIS PROJECT IS READY TO RESUME FROM SAVED MEMORY
+
+Open a fresh chat in:
+C:\Users\91910\Downloads\jobs mds
+
+Paste:
+Read AGENTS.md. Run the project-memory startup and health check. Show me where
+we are, what is already done, and the next checkpoint. Use our saved agreement;
+do not redesign the plan or begin application changes before explaining them to me.
+
+The agent has a linked memory database and exact source records. You do not need
+to paste this old conversation. A small startup document only points it into that
+memory; it does not contain the whole project.
+
+Memory/plan retrieval is ready. Automatic Codex tool observations are configured
+but have not yet been observed in a live session. Codex requires hook trust:
+in Codex CLI, open /hooks and review this project's hooks. The agent must check
+health rather than claim they are active. No trust-bypass switch is needed.
+
+Status page: project-memory/cache/status.html
+Refresh manually: powershell -NoProfile -File scripts/project-memory.ps1 view
+Detailed operation guide: project-memory/OPERATING-GUIDE.txt
+
+The resume pipeline is still unfinished. This setup preserves its agreed plan and
+honest checkpoints; it does not claim the resumes are fixed. You judge the results.

@@ -1,0 +1,25 @@
+{
+  "id": "rule-application",
+  "kind": "rule",
+  "title": "Settled application requirements",
+  "summary": "Tailor strong, readable resumes to JD work; tool retrofit is authorized. Preserve employers/dates. All four employers, max four bullets each, no eight-total cap; relevant independent project; one or two pages without deleting useful content to force one. Jev decides/checks; writers create.",
+  "body": "Canonical tool inventory is intentionally incomplete. Do not ask for exhaustive freelance/tool lists or reopen employer-specific tool verification. Do not invent companies, dates, metrics or repository URLs. No minimum-word evaluation loops. Skills separate concrete tools from methods/domains. Child checks precede parent checks. One initial writer request with separately owned blocks was recommended in the follow-up, not independently proven superior. Original JD, resolved source text and explicit options must reach each decision/writing unit.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-004"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-023"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.715+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

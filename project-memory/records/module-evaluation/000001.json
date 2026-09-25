@@ -1,0 +1,33 @@
+{
+  "id": "module-evaluation",
+  "kind": "module",
+  "title": "Evaluate against user-visible examples",
+  "summary": "Use saved examples and inspect actual output; passing self-written checks is not proof of resume quality. User feedback must point to the changed behavior.",
+  "body": "",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-014"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-017"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-018"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.818+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

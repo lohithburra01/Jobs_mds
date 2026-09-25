@@ -1,0 +1,1238 @@
+===== ORIGINAL 20-POINT EXPLANATION — VERBATIM =====
+
+**The plan has two separate layers:**
+
+1. **The application pipeline:** turn your JD and canonical into a strong resume, cover letter, JSON and portable chat context.
+2. **The development controls:** keep the coding agents within scope, make their work visible, and prevent repeated expensive guessing.
+
+I inspected the current implementation before writing this. There are concrete defects to fix—not merely a need for more tests.
+
+This explanation is the plan. **No new Markdown file, handoff or manual model switch.** Nothing below should be mistaken for functionality already completed.
+
+---
+
+**1. What is actually broken—and what changes first**
+
+| Current problem I found | Why it matters | Planned correction |
+|---|---|---|
+| Writer receives fact/metric IDs without the corresponding evidence text | It cannot reliably turn the underlying work into specific writing | Resolve every reference into readable evidence before sending it |
+| Some Jev checks also receive IDs instead of the facts they must judge | A “scope preserved” judgment lacks the necessary context | Give each check its exact source facts, metrics and restrictions |
+| Tool placement defaults to “functional,” then takes the first three terms | Unchecked tools can be assigned mechanically | Require explicit workflow-placement decisions; remove the first-three rule |
+| Project starts from the first selected candidate and generic steps | Relevance and specificity are accidental | Select a project purpose explicitly, then build its actual local workflow |
+| Higher-level checks are constructed together | They cannot consume completed intermediate judgments | Run real item → group → section → document stages |
+| Coverage uses planned candidates before layout removes bullets | The report can claim coverage absent from the PDF | Recalculate coverage from the final visible text |
+| Overflow repair considers the longest blocks across both documents | It can shorten the letter without fixing the resume | Limit repair to the document and blocks causing overflow |
+| JD extraction can repeatedly block all writing | You spend time without getting an application | Preserve the original JD, allow one extraction, retain unresolved passages |
+| Tests use canned prose and predetermined decisions | Passing them does not demonstrate writing quality | Keep mechanical tests separate from actual model/output evaluations |
+
+**The first substantive resume fix is delivering complete evidence to the writer and evaluator.** Adding another evaluator around incomplete inputs would preserve the underlying problem.
+
+---
+
+**2. Layer one: the application’s data structure**
+
+The YAML should describe your work. It should not contain the entire execution history, every generated resume, or every possible technology.
+
+**Physical storage decision:** retain **one authoritative `canonical.yaml`** for now. Split it into typed, linked records internally. Creating dozens of competing YAML files would add migration work without fixing the missing evidence.
+
+Three kinds of information remain separate:
+
+| Information | Purpose | Changes when |
+|---|---|---|
+| **Canonical** | Your identity, employment, work, metrics and project pattern | You supply a factual correction or addition |
+| **Policy** | Retrofit permission, writing preferences, structure and limits | You change a rule |
+| **Application run** | A particular JD, decisions, selected work, writing and results | Each application |
+
+A JD must never overwrite the canonical. A generated sentence must never quietly become a new canonical fact.
+
+**Inside the canonical, the hierarchy is:**
+
+```mermaid
+flowchart TD
+    C["Authoritative canonical"]
+    C --> P["Profile and education"]
+    C --> I["Professional identity"]
+    C --> E["Employers"]
+    C --> PP["Independent-project pattern"]
+
+    E --> EM["Employer record<br/>Company, titles, dates, employment status"]
+    EM --> S["System or initiative<br/>What was being built and why"]
+    S --> N["Original narrative<br/>Keeps the surrounding meaning"]
+    S --> F["Linked facts"]
+    S --> M["Linked metrics"]
+    S --> B["Linked boundaries"]
+    S --> A["Distinct accomplishments"]
+
+    F --> FP["Problem"]
+    F --> FI["Inputs"]
+    F --> FA["Actions"]
+    F --> FO["Outputs"]
+    F --> FR["Outcomes"]
+    F --> FS["Implementation status"]
+
+    A --> AR["References to compatible facts,<br/>metrics and boundaries"]
+    AR --> EP["Resolved evidence packet"]
+    N --> EP
+    M --> EP
+    B --> EP
+```
+
+**Each record has a specific job:**
+
+| Record | What it contains | What it prevents |
+|---|---|---|
+| Employer | Stable ID, company, titles, dates | Changed companies or chronology |
+| System | Problem, workflow narrative, linked records | Mixing unrelated initiatives |
+| Problem fact | The operational problem | Bullets with no explanation of purpose |
+| Input fact | Documents, events, records or other inputs | Vague descriptions of what the system handled |
+| Action fact | What you built, changed or operated | Generic capability statements |
+| Output fact | The resulting artifact or system behavior | Unsupported promises of impact |
+| Outcome fact | What changed operationally | Confusing implementation with demonstrated impact |
+| Metric | Value, meaning, scope, achieved/target status | Borrowing numbers from another project |
+| Boundary | Ownership, deployment status or other qualification | Turning a prototype into a production claim |
+| Accomplishment | A coherent, useful combination of those records | One bullet attempting to describe everything |
+| Source reference | Original passage and stable reference | Losing the basis for a statement |
+| Prototype pattern | Your authorized local/GitHub working pattern | Requiring an exhaustive project inventory |
+
+**The split is semantic, not sentence-by-sentence.**
+
+For example, “built a workflow that reads requests, validates them and creates approved records” may contain several actions, but those actions belong to one workflow. We preserve that connection.
+
+We split separate achievements when they support genuinely different points: building the workflow, improving its operational behavior, and enabling adoption might justify different bullets. Merely renaming the same achievement does not.
+
+**Most importantly: IDs are for Python. Actual evidence is for the model.**
+
+For every potential bullet, Python assembles:
+
+```text
+Employer and system
+Original system narrative
+Selected problem and input facts
+Selected action and output facts
+Relevant outcome
+Exact permitted metric, if any
+Implementation status and boundaries
+Assigned JD requirement
+Functionally placed target technologies
+The point this bullet must communicate
+```
+
+The writer and the corresponding Jev check receive that packet. They do not have to guess what `fact_17` means.
+
+---
+
+**3. Retrofit stays exactly where you put it**
+
+Your permission is settled.
+
+- Work determines relevance.
+- JD technologies can be expressed within a compatible workflow.
+- Employer-specific historical tool matching is not a prerequisite.
+- No exhaustive technology questionnaire.
+- No repeated request to justify retrofit.
+
+The remaining question is **functional placement**.
+
+For example: is this technology being used for orchestration, storage, retrieval, application hosting or deployment?
+
+Jev receives:
+
+```text
+The target technology
+The relevant JD passage
+The selected workflow and its stages
+The proposed role of the technology
+```
+
+It selects:
+
+- `FUNCTIONAL`
+- `MISPLACED`
+- `UNNECESSARY`
+- `UNCERTAIN`
+
+Python then applies the result.
+
+There is no default “functional” answer. There is also no “take the first three technologies” rule.
+
+**This check concerns whether the sentence describes a coherent system. It does not reopen your experience or retrofit permission.**
+
+---
+
+**4. How the JD is split without losing requirements**
+
+```mermaid
+flowchart TD
+    RAW["Exact pasted JD"] --> SAVE["Save original text and input hash"]
+    SAVE --> SEG["Python assigns passage IDs and source offsets"]
+    SEG --> CHECK["Verify every nonblank source span is accounted for"]
+
+    CHECK --> JC["Jev classifies passages<br/>Work, qualification, technology,<br/>company context, mixed or uncertain"]
+    CHECK --> EX["One structured extraction call<br/>Draft requirements, components and terms"]
+
+    EX --> SP["Python checks quoted spans and IDs"]
+    SP --> JF["Jev checks interpretation against original passages"]
+
+    JC --> MERGE["Assemble complete JD brief"]
+    JF --> MERGE
+    RAW --> MERGE
+
+    JF -->|Invalid or missing detail| FALL["Retain original passage<br/>Mark interpretation unresolved"]
+    FALL --> MERGE
+
+    MERGE --> MAP["Map actual work and plan application"]
+```
+
+Each requirement contains:
+
+- Original passage.
+- Plain-language interpretation.
+- Priority.
+- Child components.
+- Named technologies.
+- Any unresolved interpretation.
+
+A requirement such as:
+
+> Build applications that retrieve enterprise information, invoke tools and request approval before taking actions.
+
+becomes meaningful components:
+
+1. Retrieve enterprise information.
+2. Invoke external tools or systems.
+3. Enforce approval before the relevant action.
+
+It does **not** become a separate requirement for every verb or noun.
+
+**Failure behavior:** if the generated interpretation is incomplete, the original passage survives. We do not spend three drafts trying to achieve a perfect intermediate representation before writing anything.
+
+However, retaining a passage does not magically prove coverage. An unresolved compound requirement remains visibly unresolved until its parts are accounted for.
+
+---
+
+**5. How work is selected for each employer**
+
+Selection happens before prose generation.
+
+For each accomplishment, Jev evaluates:
+
+| Decision | Context provided |
+|---|---|
+| Work relevance | Full relevant JD context plus the accomplishment |
+| Requirement support | Exact requirement/component plus resolved evidence |
+| Specificity | Actual action, output and outcome |
+| Duplication | Two potentially overlapping accomplishments |
+| Tool placement | Selected workflow and proposed technology role |
+
+Support choices remain explicit:
+
+- Direct.
+- Partial.
+- Adjacent.
+- No support.
+- Uncertain.
+
+Python selects the strongest useful combination.
+
+The ordering is:
+
+1. Cover central work.
+2. Add distinct supporting work.
+3. Prefer concrete evidence.
+4. Remove genuine repetition.
+5. Respect the measured page space.
+
+**Your structural rules remain:**
+
+- All four employers remain.
+- Maximum four bullets per employer.
+- No eight-bullet total limit.
+- No mandatory four-bullet quota.
+- Older roles can receive substantial space when relevant.
+- Recent employment does not automatically consume the page.
+
+Every excluded candidate gets a recorded reason. “Not chosen” must be inspectable, not an invisible model decision.
+
+---
+
+**6. Skills: individual terms first, readable groups afterwards**
+
+The internal taxonomy and the displayed resume groups are different things.
+
+Internally, every term gets its own classification. The resume then combines compatible terms into a small number of readable lines.
+
+| Example | Internal type | Possible displayed group |
+|---|---|---|
+| Python, TypeScript, SQL | Language | Languages |
+| LangGraph, LangChain | Framework/library | AI frameworks |
+| OpenAI | Provider | AI platforms and providers |
+| Azure AI Services | Cloud service | Cloud and AI services |
+| PostgreSQL | Database | Data and storage |
+| Docker, Kubernetes | Deployment tooling | Deployment and operations |
+| CI/CD | Engineering practice | Delivery practices |
+| RAG | Application architecture | AI application methods |
+| MLOps | Broad operational discipline | Include only with useful context |
+| LLMs | Model family | LLM integration, where appropriate |
+
+Those are classification examples, not a command to insert all of them into every resume.
+
+The sequence is:
+
+1. **Term check:** what is it?
+2. **Relevance check:** why is it useful for this JD?
+3. **Specificity check:** does the display phrase communicate something meaningful?
+4. **Membership check:** does it belong in this group?
+5. **Group check:** do all members fit the label?
+6. **Skills-section check:** are important terms represented without duplicate or irrelevant clutter?
+
+We will not invent a model name because the JD only says “LLMs.” Nor will “AI, automation, MLOps” be presented as a list of concrete technologies.
+
+Necessary repetition across Skills and Experience is allowed. That is reinforcement, not automatically redundancy.
+
+---
+
+**7. The project will have an actual purpose**
+
+The current generic “Local [role] Workflow Prototype” approach needs replacing.
+
+The project receives a structured brief:
+
+| Field | Meaning |
+|---|---|
+| Purpose | The JD capability the project demonstrates |
+| Relationship to your work | Relevant workflow and authorized local-prototype pattern |
+| Input | What the local version processes |
+| Steps | What happens from input to result |
+| Technologies | Their specific roles in those steps |
+| Output | What someone can inspect |
+| Validation | How behavior is checked |
+| Scale | Explicitly local/independent |
+| Publication | Your confirmed GitHub pattern; no fabricated repository URL |
+
+Jev evaluates the proposed project against the JD and the available workflow pattern. Python selects it based on useful relevance, not employer order.
+
+The writer then creates a concrete title and normally two complementary bullets:
+
+- What the project does.
+- What it produces and how it is validated.
+
+No borrowed employer revenue, client scale or deployment claims. No invented dates or links. No request for you to enumerate every project.
+
+---
+
+**8. Writing: substantive input before stylistic correction**
+
+One coherent writing call receives the whole application brief.
+
+| Section | Writing responsibility |
+|---|---|
+| Summary | Explain professional identity, relevant systems and scope in a developed short paragraph |
+| Experience | Give each bullet one useful accomplishment with a clear mechanism and result/output |
+| Project | Demonstrate the relevant independent workflow |
+| Cover-letter opening | Connect the specific role to your relevant work |
+| Cover-letter middle | Develop a strong example instead of listing skills |
+| Cover-letter closing | State a concrete prospective contribution and close directly |
+
+The current word ranges remain **guidance**, not rejection gates.
+
+The writer can choose wording, sentence structure and emphasis within the supplied brief. It cannot change fixed facts, silently select different employers, invent metrics or grade itself.
+
+**Illustrative wording contrast—not a claim about your history:**
+
+| Weak | Better |
+|---|---|
+| “Leveraged innovative AI capabilities to drive operational transformation.” | “Built a request-processing workflow that validates incoming records and routes exceptions for approval.” |
+
+The second gives the reader an action, object and behavior. A supported outcome can then be added. We do not force every bullet to contain a number.
+
+If a sentence is vague, the diagnosis must distinguish:
+
+- Good evidence, weak wording.
+- Evidence missing from the brief.
+- Wrong accomplishment selected.
+- Evaluator applying a bad rule.
+
+Only the first is primarily a prompt-repair problem.
+
+---
+
+**9. Review happens at the depth you requested**
+
+```mermaid
+flowchart TD
+    D["Saved application draft"] --> S1["Each skill<br/>Type, relevance, specificity, group fit"]
+    D --> E1["Each experience bullet<br/>Meaning, clarity, evidence, scope, JD purpose"]
+    D --> P1["Each project bullet<br/>Local scope, workflow, output, clarity"]
+    D --> W1["Each summary sentence and letter paragraph<br/>Purpose, specificity, clarity"]
+
+    S1 --> S2["Each skill group<br/>Membership and duplication"]
+    S2 --> S3["Whole Skills section"]
+
+    E1 --> E2["Each employer<br/>Breadth, distinct points, consistent scope"]
+    E2 --> E3["Whole Experience section"]
+
+    P1 --> P2["Whole project<br/>Coherent and useful demonstration"]
+    W1 --> W2["Whole summary and whole letter"]
+
+    S3 --> DOC["Final visible application<br/>Consistency, coverage and unnecessary repetition"]
+    E3 --> DOC
+    P2 --> DOC
+    W2 --> DOC
+
+    DOC --> RESULT["Ready under checks<br/>or Review required with exact issues"]
+```
+
+The levels are genuinely sequential.
+
+An employer check receives the finished bullet judgments. Experience receives the employer judgments. The final application receives the completed section results.
+
+Independent questions within a level can share a request. Dependent levels cannot pretend to know answers that have not yet been returned.
+
+For every decision, retain:
+
+```text
+Which item was checked
+Which dimension was checked
+Exact question and available choices
+Evidence supplied
+Selected answer
+Model and policy version
+Input hash
+Whether this result was cached
+Affected output IDs
+```
+
+**A parent PASS never cancels a child failure.**
+
+But a subjective failure with no identifiable cause also does not trigger a speculative rewrite of everything. It becomes an unresolved issue.
+
+---
+
+**10. Page fitting and coverage must describe the same resume**
+
+The final visible document is authoritative.
+
+The sequence becomes:
+
+1. Write the substantive draft.
+2. Measure it using the renderer’s actual typography and flowables.
+3. Preserve mandatory sections.
+4. Select the strongest fitting experience content.
+5. Render the preview.
+6. Evaluate coverage against the content that actually remains.
+7. Repair only if there is a localized reason.
+
+Layout decisions consider **distinct useful coverage**, not merely the number of bullets.
+
+The current exhaustive combination search will be replaced with a measured selection procedure that reuses block heights and avoids repeatedly rendering thousands of combinations. Final PDF pagination still verifies the result.
+
+If a line-wrap boundary defeats the estimate, a bounded adjustment uses the actual rendered dimensions. It does not silently shrink the font.
+
+**Specific rules:**
+
+- Never remove the project to make fitting easy.
+- Never remove an employer.
+- Never shorten the letter to solve resume overflow.
+- Never claim coverage from a removed bullet.
+- Never pad the resume solely to occupy space.
+- Never discard useful fitting material because an arbitrary global count was reached.
+
+The coverage report distinguishes:
+
+| Status | Meaning |
+|---|---|
+| Explicit | Final visible text clearly communicates the requirement |
+| Partial | Only part of the requirement is expressed |
+| Implied | Related work appears, but the requested capability is not explicit |
+| Missing | No visible coverage |
+| Uncertain | Interpretation or judgment remains unresolved |
+
+It links to the actual sentence—not just a selected candidate ID.
+
+---
+
+**11. Repairs are limited and targeted**
+
+The normal generation budget remains:
+
+- One JD extraction.
+- One complete application draft.
+- At most two shared repair rounds.
+
+Malformed application attempts consume that same application-writing allowance; they do not create a hidden extra loop.
+
+Repair routing is specific:
+
+| Failure | Response |
+|---|---|
+| Missing source evidence | Fix the evidence assembly |
+| Wrong skill group | Correct grouping; preserve unrelated prose |
+| Misplaced technology | Correct that workflow placement |
+| Generic wording | Rewrite the affected sentence using its evidence |
+| Duplicate accomplishment | Replace or remove the weaker duplicate |
+| Overflow | Adjust affected resume content only |
+| Missing visible coverage | Identify the best eligible content that can express it |
+| Ambiguous judgment | Preserve draft and report uncertainty |
+| Provider timeout | Save progress and stop/retry only under transport policy |
+
+A changed bullet invalidates its own checks, its employer, related requirements and document consistency. Another employer’s unchanged bullet checks stay cached.
+
+Cache identity includes the evidence, text, question, policy and model—not just the bullet ID.
+
+**No looping until the model happens to say PASS.**
+
+---
+
+**12. Observability: the exact information both of us receive**
+
+There will be two timelines:
+
+- **Application timeline:** how the JD becomes the documents.
+- **Development timeline:** what the coding agents do to the software.
+
+Both come from recorded events. Neither depends on conversational narration.
+
+**Application events**
+
+Each stage and request records:
+
+| Field | Purpose |
+|---|---|
+| Run ID and parent ID | Connect the whole run, stage, batch and request |
+| Stage and operation | Distinguish extraction, writing, checking and rendering |
+| Endpoint and model | Identify which service is actually active |
+| Start/end timestamps | Measure real duration |
+| Status | Running, completed, failed, cancelled or timed out |
+| Input/output references | Open the exact local artifacts |
+| Input size and question count | Diagnose request construction |
+| Cache state | Explain reused work |
+| Attempt and repair number | Reveal repetition |
+| Returned usage | Record what the provider reports |
+| Error category | Distinguish network, schema, interpretation and quality failures |
+| Checkpoint | Show what can be resumed |
+
+Do not expose credentials. Do not claim access to hidden model reasoning.
+
+**Live view—illustrative layout:**
+
+```text
+APPLICATION: Stibo
+CURRENT: Writing resume and letter
+MODEL: DeepSeek
+ELAPSED: 38 seconds
+REQUEST DEADLINE: 120 seconds
+
+Completed:
+✓ JD preserved
+✓ Requirements mapped
+✓ Evidence selected
+✓ Skills grouped
+✓ Project brief prepared
+
+Waiting:
+• Writer response
+
+Available now:
+• JD interpretation
+• Selected evidence
+• Writer input
+
+Controls:
+Stop | Open inputs | Open latest draft | View events
+```
+
+Python updates elapsed time locally. That refresh does not call Astra.
+
+**Post-run view**
+
+It contains:
+
+- Resume, letter, JSON and portable context.
+- Stage-by-stage duration.
+- Failures and retries.
+- Changes between revisions.
+- Selected and omitted work with reasons.
+- Requirement-to-sentence coverage.
+- Every unresolved issue.
+- Links to the relevant request, response and source.
+
+For a complaint such as “the project disappeared,” we can trace:
+
+```text
+Project brief → writer response → application JSON → rendered PDF
+```
+
+The first point at which it disappears identifies the faulty stage.
+
+**Deadlines are enforced outside the model call.** A socket timeout alone is insufficient.
+
+The proposed initial limits remain 20 seconds per Jev request, 120 seconds per writing request and eight minutes per application. These are configurable stopping policies to validate—not claims that the application already meets them.
+
+Cancellation preserves completed work. Missing usage stays “unknown”; an interrupted upstream request may still be billed.
+
+---
+
+**13. Evaluation: checking whether the checks mean anything**
+
+There are three distinct questions:
+
+| Evaluation | Question |
+|---|---|
+| Mechanical correctness | Did the software preserve structure, identities, references and layout constraints? |
+| Evaluator accuracy | Does Jev recognize the defects we actually care about? |
+| Product quality | Is the resulting application useful, readable and tailored? |
+
+They must not collapse into one green percentage.
+
+**The starting evaluation examples come from your actual complaints:**
+
+- Thin summary.
+- Flat skills dump.
+- Methods mislabeled as products.
+- Generic AI vocabulary.
+- Missing project.
+- Older employers unnecessarily reduced.
+- Eight-total truncation.
+- Unnecessary repetition.
+- Relevant work omitted.
+- Coverage reported for invisible content.
+- Numbers transferred to the wrong work.
+- Weak cover-letter paragraphs.
+
+For each example, store:
+
+```text
+Original JD
+Actual output excerpt
+Your complaint or applicable rule
+Expected judgment
+Reason for that judgment
+Whether the label is confirmed or provisional
+```
+
+We also need acceptable examples. Otherwise, an evaluator that rejects everything looks deceptively successful.
+
+**No need for you to write a perfect resume or label hundreds of cases.** We start from the feedback already available. Where a stylistic preference remains ambiguous, it is marked provisional rather than invented as your preference.
+
+Before trusting a Jev check, measure:
+
+- Bad examples it incorrectly approves.
+- Acceptable examples it incorrectly rejects.
+- Uncertain answers.
+- Disagreements with confirmed feedback.
+
+Use existing evaluation tooling with Python/Jev adapters. Do not build another evaluation framework.
+
+For layout, use renderer measurements and inspectable page images. Text-only Jev judgments cannot certify visual polish.
+
+---
+
+**14. Layer two: the harness around the coding agents**
+
+The roles are deliberately narrow.
+
+```mermaid
+flowchart TD
+    U["Your request and existing preferences"] --> A["Astra defines bounded change"]
+    A --> C["Task contract<br/>Scope, required behavior, evidence,<br/>allowed changes and stopping conditions"]
+    C --> CTRL["Python controller"]
+
+    CTRL --> S["Sol implementation worker<br/>Fresh task context"]
+    CTRL --> T["Optional Terra investigation<br/>Read-only, specific question"]
+
+    S --> OUT["Diff, command results,<br/>artifact examples and failure details"]
+    T --> OUT
+
+    OUT --> PY["Python verification<br/>Scope, references, exit codes,<br/>budgets and artifact integrity"]
+    OUT --> J["Jev requirement checks<br/>Satisfied, violated or insufficient evidence"]
+
+    PY --> ROUTE["Controller routes result"]
+    J --> ROUTE
+
+    ROUTE -->|Supported completion| SAVE["Save result and advance"]
+    ROUTE -->|Localized defect| FIX["One targeted worker correction"]
+    FIX --> OUT
+    ROUTE -->|Design conflict| ESC["Compact evidence packet to Astra"]
+    ESC --> A
+    ROUTE -->|Budget exhausted or repeated failure| STOP["Stop with preserved work"]
+```
+
+**Astra**
+
+- Defines the task and resolves design conflicts.
+- Does not repeatedly inspect unchanged logs.
+- Does not perform routine implementation merely because it is the parent.
+- Receives short evidence packets, not full worker transcripts.
+
+**Sol**
+
+- Implements the named task.
+- Works from relevant files and a compact checkpoint.
+- Cannot reinterpret settled requirements as optional.
+- Cannot silently expand scope.
+- Returns evidence, not “everything looks good.”
+
+**Terra**
+
+- Investigates a specific independent question when needed.
+- Does not become mandatory overhead for every change.
+- Does not duplicate Sol’s work.
+
+**Python**
+
+- Starts and stops workers.
+- Captures events and commands.
+- Checks allowed changes.
+- Preserves reference criteria.
+- Runs selected verification commands.
+- Determines whether required evidence exists.
+- Updates task state from results.
+
+**Jev**
+
+- Checks narrow semantic obligations.
+- Does not execute commands.
+- Does not authorize scope expansion.
+- Does not replace mechanical verification.
+- Does not certify arbitrary code correctness merely from a diff.
+
+Automatic model selection removes the need for manual switching. More agents are not automatically better: initially, use one implementation worker at a time.
+
+---
+
+**15. Exactly how Jev participates in development**
+
+Consider the task:
+
+> Fix coverage so removed bullets do not count toward the final resume.
+
+Jev receives the task requirement and specific evidence:
+
+- Relevant before/after code.
+- The recorded example with a removed bullet.
+- Final visible text.
+- Before/after coverage report.
+- Results from the focused verification.
+
+It answers separate questions:
+
+1. Does the report use the final selected content?
+2. Does the removed bullet still contribute coverage?
+3. Was the requirement weakened or bypassed?
+4. Did the change introduce an unrelated behavior change?
+
+Choices:
+
+- `SATISFIED`
+- `VIOLATED`
+- `INSUFFICIENT_EVIDENCE`
+
+Python separately checks that:
+
+- The referenced files exist.
+- The result belongs to the current code revision.
+- The command actually ran.
+- The reference example was not altered.
+- Only permitted scope changed.
+- The run stayed within its limits.
+
+**This avoids asking Jev the useless broad question “Is the implementation good?”**
+
+If evidence is insufficient, the worker supplies the missing artifact. It does not receive permission to rewrite the entire subsystem.
+
+---
+
+**16. The worker cannot mark its own homework correct**
+
+Before implementation, the controller freezes:
+
+- The user requirement.
+- The reproduced failure.
+- Expected behavior.
+- Evaluation version.
+- Permitted files or subsystem.
+- Required evidence.
+- Stop conditions.
+
+The worker can add implementation tests. It cannot silently alter that acceptance reference.
+
+Reference changes are recorded as proposed design changes. They do not turn a failed implementation into a pass.
+
+A worker’s completion message is only a submission. Completion requires the controller’s evidence checks and the specified evaluations.
+
+This is also how scope stays narrow:
+
+> “Fix coverage after layout” does not permit rewriting the canonical, switching models, introducing a framework or changing bullet limits.
+
+---
+
+**17. Your next complaint becomes a diagnosis, not a scramble**
+
+Suppose you say:
+
+> “These bullets are still vague.”
+
+The procedure is:
+
+1. Attach that feedback to the exact output revision.
+2. Identify the affected bullets.
+3. Inspect the evidence packets supplied to the writer.
+4. Inspect the clarity judgments.
+5. Classify the failure:
+   - insufficient source packet;
+   - wrong selection;
+   - weak writing;
+   - false evaluator approval.
+6. Correct the earliest demonstrated cause.
+7. Replay the affected example.
+8. Check that previously acceptable examples remain acceptable.
+9. Show the specific before/after change.
+
+We do not immediately add a “vagueness gate,” adjust five prompts and generate another entire application.
+
+If two attempts fail for the same reason, the controller stops that repair path and sends Astra the evidence. It does not keep spending your allowance on the same assumption.
+
+---
+
+**18. What controls Codex usage**
+
+The development view shows:
+
+- Active agent and model.
+- Task being executed.
+- Available per-session token usage.
+- Time spent executing versus waiting.
+- Number of worker attempts.
+- Number of Astra escalations.
+- Latest saved result.
+
+Account allowance is shown separately when available. It is account-wide; we cannot honestly attribute every percentage point to a particular worker or convert token counts directly into purchased credits without supported accounting.
+
+The practical controls are:
+
+- Small task context.
+- No full conversation copied into every worker.
+- No recursive agent spawning.
+- No repeated model-based status polling.
+- One task per worker session.
+- Focused verification after a local change.
+- A full regression check at the integration checkpoint, rather than after every tiny edit.
+- A 20-minute initial worker deadline with saved progress.
+- No automatic restart or automatic credit purchase.
+
+These are enforceable boundaries. They are not promises of a particular savings percentage.
+
+---
+
+**19. The implementation order**
+
+This order prioritizes the actual resumes while putting enough visibility in place to stop repeating the current failure.
+
+| Step | Change | Evidence needed before advancing |
+|---|---|---|
+| **1** | Minimal coding/application event capture and stopping controls | Correct stage/model displayed; simulated stuck request stops; work is preserved |
+| **2** | Resolve canonical facts, metrics and boundaries into writer/Jev inputs | Actual selected evidence appears in both payloads; no unresolved source IDs |
+| **3** | Correct tool placement, accomplishment selection and project construction | Inspectable JD-specific brief with explicit placement and project purpose |
+| **4** | Preserve all JD passages and remove full extraction regeneration | Existing failed Stibo extraction can produce a complete brief with visible uncertainties |
+| **5** | Produce and save the coherent draft early | Resume, letter and JSON available before all semantic review completes |
+| **6** | Correct review sequencing, layout and final-text coverage | Removed content cannot contribute coverage; overflow targets the correct document |
+| **7** | Calibrate the affected Jev checks on existing rejected examples | False approvals and false rejections reported separately |
+| **8** | Run one instrumented Stibo application | Complete artifact package, trace, coverage and measured result |
+| **9** | Check McKesson without tuning specifically to it | Evidence the improvement generalizes beyond the first JD |
+
+Acceptance examples for each step are defined **before that step’s implementation**, not invented afterwards to match whatever the worker produced.
+
+We do not wait until step eight to look at writing. Step five exposes the draft immediately.
+
+---
+
+**20. What you receive from an ordinary application run**
+
+The finished package contains:
+
+- **Resume PDF**
+- **Cover-letter PDF**
+- **Application JSON**
+- **Portable chat context**
+- **Readable coverage and issue report**
+- **Execution trace and revision history**
+
+The portable context contains the JD, generated content, relevant canonical excerpts, retrofit policy and outstanding issues. It lets another chat continue editing without reconstructing this conversation.
+
+The status is explicit:
+
+- **Draft:** available, checks still pending.
+- **Ready under configured checks:** required checks completed successfully.
+- **Review required:** output exists, with named unresolved issues.
+- **Stopped:** execution ended before a complete output, with the last checkpoint and reason.
+
+There are no routine approval questions during generation. Missing setup information produces a precise local error identifying the field to edit.
+
+**What changes about our working relationship is concrete:** the next resume problem must lead to an identifiable failed stage, an inspectable correction and a limited verification run. It must not lead to another long conversation in which I keep guessing, rewriting and assuring you that my own tests passed.
+
+This turn was inspection and design only. The important new finding is that the existing writer and evaluators are missing some of the very evidence they need. **That is the first substantive defect to repair, immediately after the minimal visibility controls—not another layer of abstract evaluation.**
+
+
+===== YOUR NUMBERED FEEDBACK — VERBATIM =====
+
+1.  1 is... I cant really say much right now, I might have a better idea as i go down and read the rest of the points till 20, but right now it sounds good, but i dont know if thats all of the problems 
+2. 2 is good, for now atleast the canonical looks good
+3. 3 is okay too, again for now, but keeping these modular will help i guess, so we just make changes to these when needed
+4. 4 is okay too for now.
+5. yes looks good too
+6. good
+7. good too
+8. yeah good too
+9. yup good for now too.
+10. Okay, so to make it easy for you, actually, I don't care if it leaks out to the second page. The resume is two pages. It's okay at least, right? Because lately, as I was sending out these resumes, they never cared if it has two pages or one page. They only cared about the content in the pages. The thing is that we are already limiting these things, right? We already have certain limits that will not let the resume go to a third page. One and a half page is still okay. So the majority of the chunk is being taken by the experience section, and we are limiting everything to four points per employer, right? So it shouldn't be much of an issue. If it comes to that, never sacrifice the content to fit into one single page. That's exactly what I'm saying. So yeah.
+11. Um, I have to talk about this. I don't know how you're doing it. So, but I need a proper, I need a proper graph of this exact thing, you know, the process of how this thing works. In my mind, I envision it in a way that, you know, I see... I don't know if it makes sense, but yeah. So the way I see it is just, you know, we have multiple... Let's take a small, you know, whole blank paper, white paper. That is my resume, okay? And certain sections of each of that blank paper were taken care of by each JEV model with an endpoint, you know, a writer connected with it. Each writer uses its own LLM model that we call, and then it just fills up that section and just, you know, and then that's it. Its work is over. Instead of, you know, one writer writing the whole thing and then JEV is checking each and every section and then, you know, making changes and all. Instead of that, I see these small, small writers connected to each JEV, which are responsible just for that particular section of that, you know, blank page. This is what I envision. And so I don't know if that's exactly what you did. I want you to, you know, give me a proper idea of how this, how are we going to, you know, how this whole white page gets filled, you know? Just a pinning here, that picture. That's it.
+12. So how are we doing the observability thing? Have we done it with LangChain, LangFuse, or I don't know, like Pydantic or whatever? How are we creating this whole, you know, observability setup for, in a meta sense, you know, layer one and layer two, the actual pipeline and also in actual, in the conversation right now, or in the CLI in general. So how are we setting up the observability layer?
+13. good i think, i dont see any issues for now
+14. hopefully this is good enough, again, so we need any additional observable things? Also one thing my friend who works as an AI engineer suggested is to create PRs or even, like, committing. Committing. He says that you should commit very, very often, very, very often. And also while committing, you have to write a note that specifically mentions something. With respect to Temporal, with respect to Temporal, you know saving things, you already have the evidence of when it was saved and what's the issue number or something. And then with respect, you know, in addition to that, if you just give it enough context in the commit, you know commit itself, the name or something, the additional note, it will, you know, help with going back and debugging easier. So committing more often and, you know, in very small, small chunks instead of, instead of, you know, combining multiple different changes into one single commit. That is a bigger... that will be an issue. So if you just, you know, commit one single, I mean bigger change, one singular bigger change, and then just note it and then commit it, then that will be, you know, very, very helpful in general for us. So that is also something that we have to, you know, I'm just suggesting to make things better. And similar to that, there might be some other things that are, you know\... You must have known these things when you did research earlier with respect to what these big companies do for the coding agents, right? So hopefully our implementation plan, whatever you have given right now, should be enough. Yeah. One more thing is I need you to clearly explain, because clearly explain what I need to do as well, right? Because I might be... because I am the one main, you know, error-prone element in this whole thing, right? Because I'm in this loop. So what happens is I might not understand the way this whole system works and I just, you know, prompt you something, and that will force you to come out of this whole setup loop, right? Whatever the harness that we have created for the coding agent in the CLI. So I have to respect it and I have to understand what are the changes that I'm asking or what are the things that I am going to do. So how it is going to affect the whole thing. So based on that, I have to format my prompt or, you know, approach the AI agent in a certain way, right? So I have to be really careful about that. So I have to know that as well. okay sorry that was already addressed in the next pointers.
+15. good for me
+16. good for me
+17. very well put, good idea
+18. hopefully this should work
+19. good i think for now.
+20. all good
+
+So! this actually looks promising I hope we achieve success this time and establish an anchor that i can use in my future pipelines or the chatting with agents. 
+
+I might have asked something thats already stated, I might have overlooked somethings.
+
+
+===== FOLLOW-UP EXPLANATION — VERBATIM =====
+
+Your feedback gives us a clearer specification. **The accepted parts stay; the changes are page length, a clearer writing diagram, concrete observability choices, and small traceable commits.**
+
+Also, the defects I found are a verified starting list—not a claim that we have found every problem.
+
+**1. Resume length: content takes priority**
+
+Your new rule replaces the previous one-page requirement:
+
+- **One or two pages are acceptable.**
+- A page and a half is acceptable.
+- Keep the maximum of four bullets per employer.
+- Keep relevant content rather than deleting it to achieve one page.
+- Keep readable fonts and spacing.
+- Prevent awkward breaks, such as an employer heading stranded at the bottom.
+
+This removes the need for the complicated one-page subset selection.
+
+If a resume unexpectedly reaches three pages, we first inspect formatting, duplication and unnecessarily long wording. **We do not silently delete useful accomplishments.** If it still exceeds two pages, preserve the draft and report the problem.
+
+The existing code still enforces one page; changing the rule in this conversation has not yet changed that code.
+
+---
+
+**2. Your “blank paper with small writers” picture**
+
+Your picture makes sense. It describes **separate writing units with their own responsibilities and checks**.
+
+It differs from the previous proposal in one important respect:
+
+> The proposal used one initial writing request to produce several separately identified blocks. It did not use an independent model call for every block.
+
+These are two separate design choices:
+
+| Choice | Meaning |
+|---|---|
+| **Separate ownership** | Each block has its own instructions, evidence, checks and revision history |
+| **Separate model call** | Each block requires another request to the writing model |
+
+We absolutely need separate ownership. We do not necessarily need a separate initial call for every block.
+
+**My recommendation is: one coordinated initial draft, then independent block repairs.**
+
+That gives the writer enough context to avoid repeating itself across employers, summary and letter. Afterwards, a bad bullet can be repaired without regenerating the rest.
+
+This is a design recommendation—not a claim that we have already proved it produces better prose.
+
+**Here is how the blank page gets filled:**
+
+```mermaid
+flowchart TD
+    BRIEF["Complete application brief<br/>JD + resolved evidence + selected work<br/>skills + project + writing instructions"]
+
+    BRIEF --> FIXED["Python copies fixed information<br/>Name, contact details, employers,<br/>titles, dates and education"]
+
+    BRIEF --> SKILLS["Jev classifies individual skills<br/>Python assembles approved groups"]
+
+    BRIEF --> WRITE["One initial writer request<br/>Returns separately identified text blocks"]
+
+    WRITE --> SUM["Summary blocks<br/>Professional identity, relevant work and scope"]
+    WRITE --> E1["Employer A blocks<br/>Up to four distinct accomplishments"]
+    WRITE --> E2["Employer B blocks<br/>Up to four distinct accomplishments"]
+    WRITE --> E3["Employer C blocks<br/>Up to four distinct accomplishments"]
+    WRITE --> E4["Employer D blocks<br/>Up to four distinct accomplishments"]
+    WRITE --> PROJ["Project blocks<br/>Local workflow, output and validation"]
+    WRITE --> LETTER["Separate cover-letter blocks<br/>Opening, proof and closing"]
+
+    FIXED --> PAGE["Python assembles the resume<br/>One or two pages"]
+    SKILLS --> PAGE
+    SUM --> PAGE
+    E1 --> PAGE
+    E2 --> PAGE
+    E3 --> PAGE
+    E4 --> PAGE
+    PROJ --> PAGE
+
+    LETTER --> LP["Python assembles the cover letter"]
+
+    PAGE --> PREVIEW["Save JSON and draft PDF previews"]
+    LP --> PREVIEW
+    PREVIEW --> REVIEW["Run block, group and document checks"]
+```
+
+The writer does not position words on the PDF. It returns text attached to stable IDs. Python places those blocks in the template.
+
+**Each writing unit has this information:**
+
+| Field | Example purpose |
+|---|---|
+| Block ID | Identifies one particular bullet |
+| Parent | Identifies its employer or section |
+| Assigned point | What the block must communicate |
+| Evidence | Actual source text, permitted metric and status |
+| JD responsibility | The requirement it helps express |
+| Technology placement | Which technology does what |
+| Writing instruction | How to present the point clearly |
+| Current text | The latest saved version |
+| Check results | What passed, failed or remains uncertain |
+| Revision history | What changed and why |
+
+That is the modularity you want. A section’s rules can change without restructuring the entire pipeline.
+
+**Here is the exact repair loop for one block:**
+
+```mermaid
+flowchart TD
+    B["Saved bullet: employer B, bullet 2"]
+    B --> J["Jev checks separate dimensions<br/>Clarity, assigned point, scope,<br/>evidence and technology placement"]
+
+    J -->|Pass| KEEP["Keep this version"]
+    J -->|Localized failure| ISSUE["Record exact failed dimension<br/>and required correction"]
+    J -->|Insufficient evidence| DIAG["Inspect the input packet<br/>Do not guess or rewrite everything"]
+
+    ISSUE --> W["Writer receives<br/>this block's evidence and instruction<br/>plus neighboring text as read-only context"]
+    W --> PATCH["Return only the permitted block ID"]
+    PATCH --> VALIDATE["Python rejects changes to other blocks"]
+    VALIDATE --> RECHECK["Recheck changed bullet,<br/>affected employer and document dependencies"]
+    RECHECK --> RESULT["Keep improved version<br/>or record unresolved issue"]
+
+    RESULT --> LIMIT["Two shared repair rounds maximum<br/>No independent endless loop per block"]
+```
+
+**There is not a separately deployed Jev model for every box.** They are separate questions and records, sent through the same Jev API. Independent questions can share a request.
+
+Similarly, repair writers can use the same writing model with different restricted inputs. We do not need eight different model configurations.
+
+Your alternative—separate initial writers per section—remains a possible later experiment. We should change to it only if actual comparisons show that it improves the output. Otherwise, it adds coordination and requests without proven benefit.
+
+---
+
+**3. Observability: what exists and what we will use**
+
+**Today:** there are saved requests, responses and run-state files. The full live observability setup is **not implemented**.
+
+The concrete arrangement will be:
+
+| Component | Selected approach | Responsibility |
+|---|---|---|
+| Execution | Existing Python pipeline | Runs the application stages |
+| Data validation | Existing Pydantic models | Reject malformed records and events |
+| Durable event record | Local append-only JSONL journal | Records what happened in order |
+| Immediate live display | Python terminal display | Shows current stage, elapsed time, failures and artifacts |
+| Trace exploration | Langfuse integration | Browse nested operations, inputs, outputs and evaluations |
+| Coding-agent capture | `codex exec --json` | Captures the worker’s exposed execution events |
+| Evaluation | Python checks plus Jev, run through the evaluation adapter | Measures behavior and output quality |
+
+**LangChain is not required.** We do not need to rebuild the pipeline around it to get tracing.
+
+**Pydantic is not the observability system.** It validates the structure of records.
+
+**Langfuse is the trace viewer and analysis layer.** Its documented graph views can show either the overall workflow or individual calls, including repeated steps. [Langfuse graph documentation](https://langfuse.com/docs/observability/features/agent-graphs).
+
+The local journal remains authoritative. The application must still run, show progress and retain evidence if Langfuse is unavailable. Trace export happens separately; it must not block resume generation.
+
+Deployment of Langfuse is still a setup decision. I have not installed it or sent your data there.
+
+**The two layers connect like this:**
+
+```mermaid
+flowchart TD
+    subgraph DEV["Development timeline"]
+        TASK["Task and requirement version"]
+        AGENT["Worker model and session"]
+        CMD["Commands and file changes"]
+        CHECK["Verification and Jev judgments"]
+        COMMIT["Git commit and result"]
+        TASK --> AGENT --> CMD --> CHECK --> COMMIT
+    end
+
+    subgraph APP["Application timeline"]
+        RUN["Application run"]
+        JD["JD interpretation"]
+        PLAN["Evidence, skills and project selection"]
+        WRITE["Writing and block revisions"]
+        EVAL["Hierarchical checks"]
+        PDF["JSON, PDFs and context"]
+        RUN --> JD --> PLAN --> WRITE --> EVAL --> PDF
+    end
+
+    COMMIT -->|"Application records its code version"| RUN
+
+    DEV --> EVENTS["Local event journals<br/>Linked task, run, request and artifact IDs"]
+    APP --> EVENTS
+
+    EVENTS --> LIVE["Live terminal view"]
+    EVENTS --> TRACE["Langfuse trace explorer"]
+    EVENTS --> REPORT["Post-run report"]
+```
+
+**Live information**
+
+You see:
+
+- Which task or stage is active.
+- Which model is actually running.
+- Which request is outstanding.
+- Time elapsed and its deadline.
+- Whether work is cached, executing, failed or retrying.
+- Which draft and evidence files are already available.
+- Which block is being repaired and why.
+- Stop/resume status.
+
+**After completion**
+
+You see:
+
+- The exact code and input versions used.
+- Where time was spent.
+- What changed between drafts.
+- What the checks approved or rejected.
+- Which requirements appear in which final sentences.
+- Why content was selected or omitted.
+- Any unresolved issues.
+
+For the coding agent, token usage is captured where the runtime exposes it. Subscription allowance remains an account-level measurement, not a precise per-command bill.
+
+Codex’s non-interactive mode provides execution output suitable for scripted capture. That supports this setup, but does not expose every internal model operation. [Codex documentation](https://learn.chatgpt.com/docs/non-interactive-mode).
+
+**For this existing chat:** I can report tools, file changes and decisions visible to me. I cannot retroactively create a complete trace of earlier inference or hidden reasoning. The proposed CLI controller makes future execution substantially more observable.
+
+---
+
+**4. Small commits: yes, that belongs in the design**
+
+Your friend’s recommendation fits this project.
+
+The rule will be **one coherent behavior change per commit**, rather than “commit after every arbitrary file edit.”
+
+Examples:
+
+- Permit two-page resumes without deleting content.
+- Resolve evidence text in writer inputs.
+- Remove unchecked technology-placement defaults.
+- Calculate coverage from final visible text.
+
+Those should be separate changes.
+
+A commit message should explain:
+
+```text
+R6: Calculate coverage from final visible resume text
+
+Problem:
+Removed bullets were still counted as covering JD requirements.
+
+Change:
+Coverage now uses the selected, rendered application content.
+
+Evidence:
+Saved failing example: <case ID>
+Focused verification: <result reference>
+
+Scope:
+No changes to source facts or writing prompts.
+```
+
+The commit already supplies an identifier and timestamp. The note supplies the **reason and evidence**.
+
+The trace links together:
+
+```text
+Task ID → issue/example ID → code change → commit → application run
+```
+
+Additional rules:
+
+- Preserve a starting checkpoint before implementation.
+- Separate unrelated fixes.
+- Label unfinished checkpoints honestly.
+- Keep credentials and generated private application data out of Git.
+- Reference local evidence without committing sensitive payloads.
+- Use a PR for a reviewable group of changes when useful; committing locally does not require publishing a PR.
+- Revert a specific faulty change when appropriate rather than rewriting history blindly.
+
+I interpret your “temporal” point as preserving changes over time. **We do not need to introduce the Temporal workflow platform to achieve that.**
+
+---
+
+**5. Additional controls worth keeping**
+
+Beyond tracing and commits, these four are particularly useful:
+
+| Control | What it catches |
+|---|---|
+| **Input and configuration snapshots** | “Why did the same JD behave differently?” |
+| **Prompt, rubric and model version tracking** | Changes caused by instructions or model configuration |
+| **Before/after artifact comparison** | A code fix that accidentally worsens the resume |
+| **Recorded-response replay** | Debugging deterministic code without repeatedly calling models |
+
+These are small extensions of the execution record, not four new platforms.
+
+The system must also distinguish **no progress** from **slow progress**. An active timer is not proof that useful work is happening. Repeated identical outputs, unchanged failures and exhausted repair budgets should produce an explicit stop.
+
+---
+
+**6. What you need to do**
+
+You do **not** need to learn a special prompting language or protect the harness from ordinary conversation.
+
+Normal messages should work:
+
+| You say | The system should do |
+|---|---|
+| “This bullet is vague.” | Attach feedback to that bullet and diagnose it |
+| “Allow two pages.” | Record a policy change and identify affected checks |
+| “Why did it choose this project?” | Explain the saved selection; change nothing |
+| “Try another summary.” | Create a revision while preserving the previous version |
+| “Stop.” | Stop execution and save progress |
+| “This needs a different architecture.” | Route a design change instead of quietly patching code |
+
+You can include a run name or quote a sentence when convenient. If you do not, the interface should supply the current run or selected item.
+
+When a message has multiple plausible meanings, the system should explain its interpretation before taking a consequential action. **It should not make you responsible for knowing its internal machinery.**
+
+Your two-page instruction is a good example: it changes layout policy and associated checks. It does not authorize changing employers, rewriting the canonical or weakening content evaluation.
+
+---
+
+**7. The resulting anchor**
+
+The reusable part for future pipelines is:
+
+```text
+Explicit task
+    → bounded worker
+    → observable execution
+    → preserved artifacts
+    → independently checked result
+    → small versioned change
+```
+
+The resume-specific parts—canonical structure, skills taxonomy, writing criteria and project rules—remain separate modules.
+
+**The design now incorporates your feedback: two-page allowance, independently owned writing blocks, targeted repairs, local live events with Langfuse trace exploration, and small evidence-linked commits.** Your section-writer picture is clarified rather than silently substituted for the previous design. No implementation or application run occurred in this turn.

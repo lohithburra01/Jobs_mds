@@ -1,0 +1,20 @@
+{
+  "id": "source-canonical",
+  "kind": "source",
+  "title": "01-CANONICAL.md",
+  "summary": "Original source, retrieved by exact section. Later user decisions can supersede its instructions.",
+  "status": "reference",
+  "body": "Source preserved without paraphrasing. Original path: 01-CANONICAL.md",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-canonical.txt",
+      "sha256": "eb44d71fc657781967b0c393eb99bfc2466a8bb04fee3735f83d0f95ce8cebf6",
+      "start": 1,
+      "end": 13
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.650+00:00",
+  "change_reason": "Import source without changing its text"
+}

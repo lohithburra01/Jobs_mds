@@ -1,0 +1,25 @@
+{
+  "id": "source-old-results-005",
+  "kind": "source_section",
+  "title": "## Previously observed Jev wiring check",
+  "status": "historical",
+  "summary": "Exact source lines 34–38; read with source command. Parent: source-old-results.",
+  "body": "",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-old-results.txt",
+      "sha256": "cbaed2ad33191624af7ac259e3f13967f03269385a118afb2e19d48a73918515",
+      "start": 34,
+      "end": 38
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "source-old-results"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.400+00:00",
+  "change_reason": "Index a source section for selective retrieval"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "checkpoint-3",
+  "kind": "checkpoint",
+  "title": "See inside an application run",
+  "summary": "Make stage, request, time, saved output and failure visible. This is application instrumentation, not the coding hooks.",
+  "body": "",
+  "status": "",
+  "links": [
+    {
+      "rel": "depends_on",
+      "to": "module-observability"
+    }
+  ],
+  "next_action": "Discuss the bounded task with Lohith when this checkpoint becomes current.",
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.858+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

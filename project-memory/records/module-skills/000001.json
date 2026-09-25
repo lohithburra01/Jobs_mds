@@ -1,0 +1,25 @@
+{
+  "id": "module-skills",
+  "kind": "module",
+  "title": "Skills",
+  "summary": "Categorize actual tools and methods correctly. Check each skill, group and whole section in order.",
+  "body": "",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-007"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.747+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

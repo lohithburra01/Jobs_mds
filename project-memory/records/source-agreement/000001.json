@@ -1,0 +1,20 @@
+{
+  "id": "source-agreement",
+  "kind": "source",
+  "title": "Agreed discussion - verbatim notes - 2026-09-22.txt",
+  "summary": "Original source, retrieved by exact section. Later user decisions can supersede its instructions.",
+  "status": "reference",
+  "body": "Source preserved without paraphrasing. Original path: Agreed discussion - verbatim notes - 2026-09-22.txt",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1,
+      "end": 1238
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.042+00:00",
+  "change_reason": "Import source without changing its text"
+}

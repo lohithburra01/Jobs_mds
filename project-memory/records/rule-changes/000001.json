@@ -1,0 +1,17 @@
+{
+  "id": "rule-changes",
+  "kind": "rule",
+  "title": "Handle cross-checkpoint changes without losing the route",
+  "summary": "For a significant change, record the request and paused position, inspect known dependencies and code, explain affected checkpoints to Lohith, then implement the agreed scope. Preserve earlier versions; reopen only affected work. Commit one coherent change with a meaningful task label.",
+  "body": "A dependency query finds recorded links only; it is not a semantic oracle. Commit with explicit file paths and inspect staged diff; never include unrelated dirty changes, .env, raw logs or generated resumes. A technical completion uses review status; accepted requires the actual user statement and source. That record is provenance, not cryptographic proof of human identity.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-026"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.699+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

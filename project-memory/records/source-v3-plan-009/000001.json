@@ -1,0 +1,25 @@
+{
+  "id": "source-v3-plan-009",
+  "kind": "source_section",
+  "title": "## Task 4: Hierarchical assessment and targeted dependencies",
+  "status": "historical",
+  "summary": "Exact source lines 154–189; read with source command. Parent: source-v3-plan.",
+  "body": "",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-v3-plan.txt",
+      "sha256": "c4acebc6fb1ca36fa368a10f8c7843ecd7f79cab621ed38b406661e306c6694f",
+      "start": 154,
+      "end": 189
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "source-v3-plan"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.317+00:00",
+  "change_reason": "Index a source section for selective retrieval"
+}

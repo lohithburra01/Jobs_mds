@@ -1,0 +1,20 @@
+{
+  "id": "source-old-now",
+  "kind": "source",
+  "title": "NOW.md",
+  "summary": "Original source, retrieved by exact section. Later user decisions can supersede its instructions.",
+  "status": "historical",
+  "body": "Source preserved without paraphrasing. Original path: NOW.md",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-old-now.txt",
+      "sha256": "77550a9d6a88306cde341c4862ac60f9f631e520d92c74d2051ccad1d13f7cc0",
+      "start": 1,
+      "end": 20
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.404+00:00",
+  "change_reason": "Import source without changing its text"
+}

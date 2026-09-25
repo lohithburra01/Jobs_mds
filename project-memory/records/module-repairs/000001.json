@@ -1,0 +1,29 @@
+{
+  "id": "module-repairs",
+  "kind": "module",
+  "title": "Bounded repairs",
+  "summary": "Target the failed block with its evidence and neighbors; reject edits to other IDs; recheck affected dependencies; at most two shared repair rounds in saved proposal.",
+  "body": "",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-012"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.792+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

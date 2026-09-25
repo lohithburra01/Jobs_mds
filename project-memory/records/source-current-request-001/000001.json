@@ -1,0 +1,25 @@
+{
+  "id": "source-current-request-001",
+  "kind": "source_section",
+  "title": "Okay, so what do we do now? Forget everything. Just create a harness just for this particular project. We'll, you know, we'll retr",
+  "status": "reference",
+  "summary": "Exact source lines 1–1; read with source command. Parent: source-current-request.",
+  "body": "",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-current-request.txt",
+      "sha256": "6bee879928ab06a2971f2160ab72ce86c8f8417b29adab94d14014bc4df9aeb9",
+      "start": 1,
+      "end": 1
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "source-current-request"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.678+00:00",
+  "change_reason": "Index a source section for selective retrieval"
+}

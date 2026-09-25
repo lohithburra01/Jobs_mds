@@ -1,0 +1,17 @@
+{
+  "id": "rule-collaboration",
+  "kind": "rule",
+  "title": "Lohith steers and judges outcomes",
+  "summary": "Assume Lohith returns with no context. State goal, current checkpoint and next action briefly. Save feedback and decisions immediately; show concrete results for his judgment. Do not turn questions into changes or technical success into acceptance.",
+  "body": "Keep progress updates short and regular. Explain any verification by its input, expected behavior, observed result and limitation. The user need not memorize commands or maintain records manually. If either partner drifts, show the connection to the project and agree whether to change course.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-028"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.689+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

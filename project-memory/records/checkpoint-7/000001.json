@@ -1,0 +1,18 @@
+{
+  "id": "checkpoint-7",
+  "kind": "checkpoint",
+  "title": "Check a different JD",
+  "summary": "Confirm tailoring beyond the first example after the first output is inspectable.",
+  "body": "",
+  "status": "",
+  "links": [
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-6"
+    }
+  ],
+  "next_action": "Discuss the bounded task with Lohith when this checkpoint becomes current.",
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.919+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

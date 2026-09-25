@@ -1,0 +1,29 @@
+{
+  "id": "module-observability",
+  "kind": "module",
+  "title": "Application run visibility",
+  "summary": "Observe stage/request start/end, retry/timeout/failure, saved intermediate results, latency and cost. This application layer is distinct from coding-session observations.",
+  "body": "",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-013"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-025"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.799+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

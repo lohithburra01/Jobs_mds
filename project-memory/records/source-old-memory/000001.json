@@ -1,0 +1,20 @@
+{
+  "id": "source-old-memory",
+  "kind": "source",
+  "title": "MEMORY.md",
+  "summary": "Original source, retrieved by exact section. Later user decisions can supersede its instructions.",
+  "status": "historical",
+  "body": "Source preserved without paraphrasing. Original path: MEMORY.md",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-old-memory.txt",
+      "sha256": "138c0552bf4a9216d67f27a59c5fe2f71ded0864dc6b2efce302e426378fefb7",
+      "start": 1,
+      "end": 47
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.417+00:00",
+  "change_reason": "Import source without changing its text"
+}

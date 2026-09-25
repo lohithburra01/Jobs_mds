@@ -1,0 +1,20 @@
+# Current checkpoint — 22 September 2026
+
+Read this file first. `Agreed discussion - verbatim notes - 2026-09-22.txt` preserves the exact agreed discussion and user amendments: do not edit it. `RECOVERY-PLAN.md` is the earlier design; its paused-implementation and one-page-only statements are superseded here.
+
+ACTIVE TASK: user authorized tracker steps 1–3: finish/test coding controls, run one small real Sol task through them, then implement application stage/request visibility and deadlines. User must receive plain explanations of inputs, expected behavior, actual results and limitations at each checkpoint. See CODING-CONTROLS.md communication rule. No resume-content redesign or real resume-generation run in this scope. One bounded Sol implementer owns controller files/tests; root owns evidence, docs and subsequent integration. No recursive delegation or automatic restart.
+
+Verified Stibo v3: jobs/stibo-jd-20260920T202846388022Z is STOPPED, 28 HTTP attempts, $0.032269598 reported API cost. No job_model_v3, blueprint_v3 or v3 application. Latest draft has three unfaithful components and six missing-passage decisions. The slow 22:56:16 and 22:58:40 requests were writer chat/completions, not Jev. Earlier latency explanations were incorrect.
+
+Existing canonical/renderer/CLI/planning/checks are implemented; writing quality is not established. Existing uncommitted skills.py/test_skills_v3.py changes must be preserved. User has explicitly approved transmission of JDs and canonical/profile to OpenRouter; do not request that approval again.
+
+User wants automatic Astra/Sol/Terra delegation, not manual switches. Sol implements bounded tasks; Astra handles material design decisions; Terra is optional for narrow read-only investigation. Primary cost metric is Codex allowance/continuation credits, not OpenRouter spend. Local JSONL is authoritative; no remote telemetry export is enabled.
+
+Fixed requirements: work-based fit; authorized stack retrofit; all four employers; max four bullets per employer with no eight-total cap; one relevant independent project; one OR TWO pages, never cut useful content just to fit one; Jev semantic checks at child and parent levels; Python deterministic work; writer creates only; no minimum-word evaluator loops. Outputs include resume, letter, application JSON, context.md and visible report.
+
+Known next pipeline defects: unresolved source IDs in writer/evaluator inputs; technology defaults without decisions; project selected mechanically; parent checks not genuinely sequential; coverage based on candidates before selection; overflow repair can target letter text; obsolete one-page selection. These belong to tracker step 4. Request visibility/deadlines belong to the currently authorized step 3.
+
+Control verification is pending: demonstrate success, rejection of false completion, deadline, stop, lock, and scope failures with subprocess fixtures. These checks prove controls, not resume quality. Preserve pre-existing edits to harness/skills.py and tests/test_skills_v3.py. Never print, copy to task context, or commit .env.
+
+No application submission, deployment or push. Preserve prior artifacts and API accounting. No process should be launched merely to refresh status.
+

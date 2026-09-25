@@ -1,0 +1,25 @@
+{
+  "id": "module-canonical",
+  "kind": "module",
+  "title": "Canonical evidence",
+  "summary": "Typed records for employers, work, facts, metrics, restrictions, tools and project patterns. Resolve IDs to their actual contents.",
+  "body": "",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-003"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.723+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

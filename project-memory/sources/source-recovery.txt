@@ -1,0 +1,163 @@
+# Recovery plan — 21 September 2026
+
+Status: researched proposal and implementation handoff. No runtime changes or paid calls made during this review. This document supersedes the old v3 execution order and the contradictory operational notes in NOW.md. Existing source/retrofit/layout requirements remain binding.
+
+## Latest clarification: coding-agent control comes first
+
+The user's primary cost is Codex/ChatGPT subscription allowance and purchased continuation credits. OpenRouter spending is not the optimization target. The user wants automatic mixed-model delegation, not manual model switches. The following amendment overrides the manual Sol-session instruction below. It is a researched proposal, not installed configuration.
+
+### Existing solutions and evidence
+
+- Native Codex subagents support per-agent model and reasoning configuration, with the main agent receiving results. This host's tools expose gpt-6-astra, gpt-5.6-sol and gpt-5.6-terra. Installed CLI is 0.155.0-alpha.9.2; its help confirms --model, --json, --output-schema and --output-last-message. Availability in a separate login still needs verification; no paid probe was run.
+- Anthropic's cwc-long-running-agents reference implements evidence gates, fresh-context evaluation, handoff files, a stop switch and steering. Its authors explicitly label it an unmaintained event example, not a turnkey harness. Reuse the architecture, not its unbounded shell-loop example or platform-specific hooks verbatim.
+- Promptfoo supports Python providers and Python assertions: a suitable existing runner for application comparisons, with our own Jev adapter. No need to build an evaluation framework.
+- Langfuse supports application traces, datasets, experiments and feedback: an existing optional trace UI. Do not introduce a server/account dependency before local event capture works. No external telemetry upload is authorized by choosing it in this proposal.
+- Neither orchestration nor observability establishes that a resume is good. No source reviewed establishes a universal tool that guarantees intent-preserving, fast, correct agent implementation.
+
+Sources:
+https://learn.chatgpt.com/docs/agent-configuration/subagents
+https://learn.chatgpt.com/docs/non-interactive-mode
+https://github.com/anthropics/cwc-long-running-agents
+https://www.promptfoo.dev/docs/providers/python/
+https://www.promptfoo.dev/docs/configuration/expected-outputs/python/
+https://langfuse.com/docs/observability/overview
+https://langfuse.com/docs/evaluation/overview
+
+### Proposed model roles and invocation policy
+
+1. Astra creates or amends a bounded task contract only when a design decision is required. It does not narrate waits, repeatedly inspect running workers, or read bulk logs.
+2. Sol is the implementation worker. Give it the current task, relevant files and compact checkpoint, not the long parent transcript. One writer at a time; no recursive delegation.
+3. Terra is an optional read-only evidence collector for a concrete independent investigation, not mandatory overhead on each change.
+4. Python owns execution, timeouts, event capture, scope checks, evidence hashes and final status. Jev classifies narrowly defined compliance/quality questions against those artifacts. Model-generated declarations of success are never the authoritative status.
+5. A worker returns COMPLETED_WITH_EVIDENCE, BLOCKED or DESIGN_CONFLICT. Python verifies the first. Jev may classify the mismatch but cannot authorize a contract change. A design conflict or two failed attempts on the same defect routes a short evidence packet to Astra; budget exhaustion stops. Neither routine completion nor status refresh requires an Astra inference call in the headless mode.
+
+Native subagents are the smallest first configuration. For fully automatic wake-on-event behavior without repeatedly waking an Astra parent, use a thin local supervisor around codex exec, rather than an always-running conversational manager. This supervisor is control flow only, not another autonomous AI framework. Verify actual child model IDs in returned session events. All Codex workers still consume account allowance; more agents do not imply lower cost.
+
+### Acceptance separate from implementation
+
+Before a worker edits code, freeze: the user's rule, affected example, desired output behavior, allowed scope, evaluation version, deadline and evidence required. The controller retains the reference contract and evaluation snapshot outside the worker's editable copy; compare hashes at completion. A changed reference is a proposed design change, not a pass. For a first local pilot, hash verification is tamper detection, not a security boundary.
+
+The code worker may add unit tests; it cannot rewrite the acceptance rubric in order to pass. Frozen examples come from real rejected outputs and explicit user rules. Agent-created positive examples have provisional labels, not human ground truth. Jev false accepts and false rejects must both be measured. Layout gets renderer/PDF checks and an inspectable image; do not claim Jev text judgments verify visual polish.
+
+Confirmed current gap: tests/test_run_v3.py uses a fixed provider returning canned generic text and the first criterion as each decision. tests/test_hierarchy_v3.py similarly injects predetermined decisions. These test orchestration correctly but do not evaluate live writing or Jev accuracy. They must not be marketed as product quality evidence.
+
+### Two observable timelines
+
+Coding timeline: task/contract version -> selected worker/model -> commands -> files/diff -> local checks -> Jev compliance -> result/escalation. Show token usage when emitted, active time, wait time, attempt count and checkpoint. Account allowance snapshots are account-wide and cannot be attributed exactly to one worker; missing metrics stay unknown. Token counts are not assumed to convert directly to purchased credits. An in-flight call may consume additional usage before cancellation.
+
+Application timeline: source passage -> interpretation -> work selection -> writer -> each review level -> repair -> render/export. Every span carries run/parent IDs, stage, endpoint/model, start/end, status, cache state, safe input/output references and failure code. Display operation start immediately; refresh elapsed time locally without model calls. Save the same events for post-run diagnosis. No secret keys or hidden chain-of-thought is required for operational visibility.
+
+Final report links each issue to its JD passage, actual output, decision criteria, evidence and first affected stage. Record revisions so a missing project can be traced to selection, writing, export or rendering instead of guessed at. Feed user feedback into this record before touching prompts or code.
+
+### Revised execution order
+
+- R0: configure bounded mixed-model execution and capture a single harmless worker's model/events. This is a small setup task, not an autonomous development platform. Preserve normal sandbox controls. No worker proliferation, no automatic credit purchase, no API-billing switch.
+- R1: existing application tracing/deadline work, plus coding event visibility. No product logic changes in the same patch.
+- Before R2: freeze acceptance cases for the proposed extraction change. Evaluate the failure before repairing it. This moves feedback-based evaluation ahead of implementation, instead of bolting it on at R4.
+- R2/R3: implement the existing recovery steps one at a time through Sol, using recorded responses for transport/debugging. Runtime calls only where actual model quality must be measured.
+- R4/R5: use the existing evaluation runner, then inspect one complete Stibo package. Keep McKesson held out. Run a small repeated sample only when needed to distinguish improvement from sampling variation, not a broad expensive benchmark by default.
+
+Success measures: time to an inspectable complete application; frequency of the user's named defects; held-out regressions; Codex tokens/available usage per accepted change; number of user correction rounds. No unsupported savings percentage or completion-time promise.
+
+### Why the previous approach recurred
+
+New prompting techniques changed the worker without independently testing whether its interpretation of the goal was correct. Self-authored tests then checked that interpretation. Saved logs lacked a usable live timeline, and stale handoff notes let incorrect assumptions persist. Auto-approval removed permission pauses but not inference, context replay, tool time, unnecessary retries or repairs. These are concrete failures here, not proof every AI project must take days.
+
+Primary evidence for the wider problem:
+https://www.anthropic.com/engineering/harness-design-long-running-apps — explicitly describes optimistic self-grading and says a separate evaluator is not sufficient by itself.
+https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents — distinguishes capability from regression evals and requires grader calibration; multiple observation methods are complementary.
+https://openai.com/index/harness-engineering/ — describes agent-accessible logs/metrics/traces and repository knowledge; explicitly reports remaining open control-system challenges.
+https://metr.org/blog/2026-02-24-uplift-update/ — early-2025 slowdown finding and later, uncertain evidence of speedup. Do not apply the older 19% figure to this model or this user.
+https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan — usage depends on model, complexity, context, reasoning and tools; CLI is not a separate free quota.
+
+Research/design only. No subagents, installations, model calls, tests or pipeline executions were launched for this amendment.
+
+## Outcome
+
+Run a local Python command, paste a JD, receive resume.pdf, cover-letter.pdf, application.json, context.md and a readable report. Codex does not supervise ordinary runs. No routine human questions. Failed checks remain visible; a draft is not mislabeled ready.
+
+## Verified position
+
+- Existing Python CLI already accepts pasted JDs, with /done to finish. Reuse it.
+- Canonical YAML, structured records, renderer, candidate planning and hierarchical checks are implemented. Their existence and prior local tests do not establish writing quality.
+- Stibo v3 jobs/stibo-jd-20260920T202846388022Z/run.json is STOPPED: 28 HTTP attempts, $0.032269598 reported API cost. No job_model_v3 or blueprint_v3 was saved; no v3 application was written.
+- Latest extraction decisions flag three unfaithful components and six missing passages. This is an extraction-stage failure, not a measured verdict on a finished resume.
+- At 22:56:16 and 22:58:40 the outstanding requests were chat/completions, not Jev. Previous commentary misidentified the waiting stage. Do not infer cause from question count or elapsed time alone.
+- Provider uses urllib.request.urlopen(timeout=120). That timeout covers blocking operations; it is not a whole-job wall-clock deadline. Stage completion and request lifecycle need explicit events.
+- NOW.md incorrectly said approval was missing and the run had only 13 attempts. User explicitly approved sending JDs and canonical/profile to OpenRouter. Approval persists.
+
+## Keep and change
+
+Keep canonical.yaml, public JSON contract, ReportLab renderer, scoped metrics, source links, per-item Jev checks, target stack retrofit, all four employers, maximum four bullets per employer, one relevant independent project, readable one-page layout. No eight-total cap, minimum-word gate, exhaustive tool history or new project inventory.
+
+Change orchestration and visibility first. Do not rebuild the repository, replace the writer model blindly, add a multi-agent framework, or create an elaborate dashboard.
+
+## Product stages
+
+1. Python saves the exact JD, input hashes and stable passage IDs. Splitting must cover every nonblank source span, including long paragraphs and short headings; preserve parent context. Never silently drop passages by character length.
+2. Jev classifies each passage as work, qualification, named stack, context, or mixed/uncertain, with separate narrow questions where needed. Mixed/uncertain remains in the writing brief. Classification does not erase source text.
+3. Allow at most ONE structured extraction call using the existing writer adapter. This creates detailed candidate components and skill terms; Python checks spans/IDs. Jev checks interpretation. Failed or omitted parts fall back to exact source passages with an unresolved annotation, instead of regenerating the whole JD three times. Invalid generated paraphrases are not treated as facts. Retain the complete JD in the writer brief. This fallback must be visible in coverage.
+4. Reuse Jev work-to-evidence decisions and Python blueprint selection. Skills have individual type/group decisions; generic families remain explicit rather than gaining invented vendors. Preserve child-level coverage of compound requirements. A raw passage fallback does not count as proof that all its children are covered.
+5. One coherent writer call creates summary, categorized skills wording, employer bullets, project and letter from the complete brief. Save the validated application immediately. Render a draft preview before semantic review finishes. Preserve earlier valid drafts if subsequent calls fail.
+6. Python checks schema, identity/dates, metric references, employer/project presence, four-per-employer maximum, PDF text and measured layout. Jev evaluates skills/items/groups and bullets/employers, then sections/document with actual child results. Cover every JD passage/component in the report. No aggregate score overrides a failed child.
+7. At most TWO shared targeted repair rounds, persisted across resume. Recheck changed items and their dependencies only. No repeated identical question to obtain a favorable answer. No separate extraction repair loop. Valid drafts export even if review remains unresolved; READY requires the actual release conditions. Never present unreviewed drafts as ready.
+8. Export context.md deterministically: JD, selected application text, source IDs, retrofit policy, outstanding issues and editing instructions, plus paths to complete source files. This is the portable context for another chat; no private key or hidden reasoning.
+
+## Visibility and hard stops
+
+Extend existing store/provider/CLI, not a new service. A local terminal status view plus a generated HTML report is sufficient.
+
+Every request records START/END/ERROR/CANCEL, stage, operation, endpoint, model, request hash, question count, input size, cache hit, elapsed time, returned usage, and failure category. Payloads remain in local files and are linked by ID; credentials never enter logs.
+
+Example display (illustration, not a live measurement):
+
+    Stibo | WRITE | DeepSeek | 36 seconds / 120-second deadline
+    JD saved ✓  Work mapped ✓  Writing active  Review pending
+    API reported cost: $0.02 | Draft: not yet available
+
+Python refreshes this display; Codex does not poll it every 30 seconds. Ctrl+C cancels the owned process, checkpoints and releases its lock. Resume uses completed artifacts; no duplicate runner.
+
+Provisional engineering limits, not performance promises: 20-second total Jev request deadline, 120-second total writer request deadline, 8-minute total application deadline, existing 80 HTTP attempts maximum. At most one transport retry for retryable failures within remaining time; no retries for semantic disagreement. Implement real elapsed-time supervision, not just socket inactivity timeouts. Cancelled upstream work may still be billed; mark missing usage as unknown. Do not claim a hard dollar cap from incomplete reported costs. Do not silently raise limits to pass a demonstration.
+
+Keep the current 40-question batching as a conservative starting value, not a proven provider optimum. Measure endpoint timings and payload sizes before tuning. Parent questions wait for children; independent questions may share requests. Persist each completed batch. Each meaningful state change produces one concise event.
+
+## Evaluation that tests quality
+
+Three different forms of evidence, reported separately:
+
+1. Mechanical checks: Python proves structure/layout and preserved fixed fields. Run only checks affected by a change; existing full suite runs once at the release checkpoint, with output saved to a file.
+2. Jev calibration: use actual rejected excerpts and the user's explicit complaints. Build a small fixed set (about 12 cases) covering flat skills, wrong taxonomy, missing project, eight-bullet truncation, empty summaries, unsupported metric reuse, abstract wording and necessary versus unnecessary repetition. Store expected labels and the specific user rule behind each. Subjective labels are provisional until reviewed; agent-authored examples are not independent ground truth. Include both good and bad cases so rejecting everything cannot appear successful. Jev judges the candidates; Python reports false accepts, false rejects and unknowns. No generative judge.
+3. Real output: first Stibo package must be readable and include meaningful older-role evidence and project. Compare to existing rejected output using the frozen rubric, exact excerpts and visible layout. The user's assessment of readability remains decisive; there is no automated proof of recruiter response or ATS ranking. Only after this package is inspectable run McKesson as a held-out JD. Do not tune the rubric just to make Stibo pass.
+
+Development evaluation loop: reproduce one specific defect from saved data -> change one cause -> rerun that case -> compare actual artifact/decision -> save result. Two failed attempts on the same defect stop that work item with evidence. Do not launch the complete paid application to test every patch.
+
+## Harness for coding work
+
+Use fresh, bounded coding sessions with the user's selected Sol model. Feed NOW.md, this plan and the current task only. Do not paste this entire conversation or broad file dumps.
+
+Each work item has a task ID, allowed files, expected output, verification command and stop condition. Save commands, exit codes, diffs and failures to a local work log. Update task status and NOW.md before returning. A claim of completion must link its output and verification evidence.
+
+For a CLI coding runner, use codex exec with JSON events saved to disk and normal sandbox permissions. A small Python supervisor can enforce wall-clock limits and stop the owned worker; it must preserve diffs and report interruption. Start with 20 minutes per work item and no automatic restart. This is a development stop limit, not an estimate that all work takes 20 minutes. Codex usage metrics when available are separate from OpenRouter cost; unknown account-credit consumption stays unknown.
+
+Use Jev once per proposed completion to classify explicit requirements against the task, diff and command evidence: SATISFIED / VIOLATED / INSUFFICIENT_EVIDENCE. Python verifies files, exit codes, scope and budgets. Jev does not certify arbitrary code correctness or give permission to expand scope. Its unknown/failure is recorded, not fed into an endless self-repair loop. No Astra escalation unless a concrete unresolved design choice requires it.
+
+## Implementation sequence and deliverables
+
+| ID | Scope/files | Deliverable and acceptance |
+| --- | --- | --- |
+| R1 | provider.py, store.py, cli.py; small local supervisor/status adapter | Accurate stage/request display, deadlines, cancellation. Replay recorded requests and simulate a hung transport offline. Status must name the correct endpoint and stop at the deadline. No live application. |
+| R2 | skills.py, records.py, pipeline_v3.py | Lossless JD passages and single extraction with explicit fallback. Replay saved Stibo responses. Every source span accounted for; same failure cannot trigger another full extraction. |
+| R3 | generation.py, reporting.py, CLI export | Early draft JSON/PDF, context.md, readable issue report and preserved repair budget. Offline saved-data demonstration; output generated even when semantic status is REVIEW_REQUIRED. |
+| R4 | small evaluation script/data plus local work log | Frozen complaint-based examples; Jev calibration results separate from mechanical checks. One bounded calibration invocation, not a full application. Record uncertain labels. |
+| R5 | existing runtime only unless a specific defect is demonstrated | One instrumented Stibo run; show actual PDFs, JSON, context, issues, measured time and costs. Stop at limits. If poor, change one identified cause using saved output. McKesson only after Stibo is inspectable and quality evidence warrants proceeding. |
+
+R1 is the next work item. R2-R5 are not marked complete by passing unit tests. No automatic full rebuild, second benchmark, new framework or model search.
+
+## Research sources and implications
+
+- https://docs.typesafe.ai/introduction — narrow typed questions, independent parallel evaluations, compose results in code. Supports Jev+Python division; contradicts inferring latency solely from question count.
+- https://typesafe.ai/blog/introducing-system-one-models-and-jev — vendor evaluation compares against reference models; it is not a resume-quality benchmark.
+- https://docs.python.org/3/library/urllib.request.html — urlopen timeout is for blocking operations; add whole-operation supervision.
+- https://learn.chatgpt.com/docs/non-interactive-mode — codex exec runs from scripts and emits progress/results. CLI can make execution observable; it does not make model use free. The application Python CLI uses OpenRouter directly and does not require Codex inference.
+
+No claim that this plan guarantees a great resume. It gives a short, observable way to prove or reject each change without repeating multi-hour blind runs.

@@ -1,0 +1,29 @@
+{
+  "id": "module-rendering",
+  "kind": "module",
+  "title": "Rendering and visible coverage",
+  "summary": "One or two pages. Calculate coverage from final visible content. Do not shorten the letter to fix resume overflow. Preserve renderer/public JSON where possible.",
+  "body": "",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-011"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-023"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.783+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}

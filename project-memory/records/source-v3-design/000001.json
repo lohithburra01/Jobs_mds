@@ -1,0 +1,20 @@
+{
+  "id": "source-v3-design",
+  "kind": "source",
+  "title": "HARNESS-V3-DESIGN.md",
+  "summary": "Original source, retrieved by exact section. Later user decisions can supersede its instructions.",
+  "status": "historical",
+  "body": "Source preserved without paraphrasing. Original path: HARNESS-V3-DESIGN.md",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-v3-design.txt",
+      "sha256": "125974c15450c0752003f4701dde8a2d29a104604539e42bec8f6b1316c45657",
+      "start": 1,
+      "end": 250
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.230+00:00",
+  "change_reason": "Import source without changing its text"
+}

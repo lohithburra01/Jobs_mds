@@ -1,0 +1,20 @@
+{
+  "id": "source-old-results",
+  "kind": "source",
+  "title": "CONTROL-TEST-RESULTS.md",
+  "summary": "Original source, retrieved by exact section. Later user decisions can supersede its instructions.",
+  "status": "historical",
+  "body": "Source preserved without paraphrasing. Original path: CONTROL-TEST-RESULTS.md",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-old-results.txt",
+      "sha256": "cbaed2ad33191624af7ac259e3f13967f03269385a118afb2e19d48a73918515",
+      "start": 1,
+      "end": 38
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.376+00:00",
+  "change_reason": "Import source without changing its text"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "checkpoint-6",
+  "kind": "checkpoint",
+  "title": "Run one actual JD end to end",
+  "summary": "Produce resume PDF, letter PDF, JSON, portable context and an inspectable report; Lohith judges the result.",
+  "body": "",
+  "status": "",
+  "links": [
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-3"
+    },
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-5"
+    }
+  ],
+  "next_action": "Discuss the bounded task with Lohith when this checkpoint becomes current.",
+  "revision": 1,
+  "updated_at": "2026-09-23T19:55:40.911+00:00",
+  "change_reason": "Initial migration: preserve source context and current user intent"
+}
