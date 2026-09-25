@@ -1,4 +1,5 @@
 from contextlib import contextmanager, closing
+from collections import deque
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -20,6 +21,10 @@ def digest(data):
 
 def dump(value):
     return json.dumps(value, ensure_ascii=False, indent=2) + "\n"
+
+
+class UnknownRecord(ValueError):
+    pass
 
 
 class Store:
@@ -77,18 +82,23 @@ class Store:
         directory = self.home / "records" / self.validate_id(ident)
         files = sorted(directory.glob("[0-9]*.json"))
         if not files:
-            raise ValueError("Unknown record: " + ident)
+            raise UnknownRecord("Unknown record: " + ident)
         file = directory / f"{revision:06d}.json" if revision else files[-1]
         return json.loads(file.read_text(encoding="utf-8"))
 
     def all(self):
-        return [self.get(p.name) for p in sorted((self.home / "records").iterdir()) if p.is_dir()]
+        return [self.get(p.name) for p in sorted((self.home / "records").iterdir())
+                if p.is_dir() and any(p.glob("[0-9]*.json"))]
 
     def _event(self, kind, summary, record=None, **extra):
         event = dict(id=uuid.uuid4().hex, time=now(), kind=kind, summary=summary[:1000], record=record, **extra)
         path = self.home / "events" / (event["time"][:10] + ".jsonl")
-        with path.open("a", encoding="utf-8") as f:
-            f.write(json.dumps(event, ensure_ascii=False) + "\n")
+        with path.open("a+b") as f:
+            if f.tell():
+                f.seek(-1, os.SEEK_END)
+                if f.read(1) != b"\n":
+                    f.write(b"\n")  # Preserve a torn line, but isolate the next valid event.
+            f.write((json.dumps(event, ensure_ascii=False) + "\n").encode("utf-8"))
             f.flush()
             os.fsync(f.fileno())
         return event
@@ -117,7 +127,7 @@ class Store:
         with self.lock():
             try:
                 previous = self.get(ident)
-            except ValueError:
+            except UnknownRecord:
                 previous = None
             actual = previous["revision"] if previous else 0
             if actual != expected_revision:
@@ -132,6 +142,8 @@ class Store:
             directory = self.home / "records" / ident
             directory.mkdir(exist_ok=True)
             target = directory / f"{actual + 1:06d}.json"
+            if target.exists():
+                raise ValueError("Revision already exists; refusing to overwrite history.")
             temporary = directory / ("." + uuid.uuid4().hex + ".tmp")
             with temporary.open("w", encoding="utf-8", newline="\n") as f:
                 f.write(dump(data))
@@ -151,7 +163,9 @@ class Store:
     def rebuild(self):
         with self.lock():
             records = self.all()
-            with closing(sqlite3.connect(self.home / "cache" / "memory.sqlite3")) as conn:
+            cache = self.home / "cache" / "memory.sqlite3"
+            temporary = cache.with_name(uuid.uuid4().hex + ".sqlite3")
+            with closing(sqlite3.connect(temporary)) as conn:
                 with conn:
                     conn.execute("CREATE TABLE IF NOT EXISTS nodes (id TEXT PRIMARY KEY, kind TEXT, title TEXT, status TEXT, content TEXT)")
                     conn.execute("CREATE TABLE IF NOT EXISTS edges (source TEXT, relation TEXT, target TEXT)")
@@ -166,9 +180,12 @@ class Store:
                                 pass  # doctor reports stale sources; never indexes changed text as agreed text.
                         conn.execute("INSERT INTO nodes VALUES (?,?,?,?,?)", (r["id"], r["kind"], r["title"], r.get("status", ""), content))
                         conn.executemany("INSERT INTO edges VALUES (?,?,?)", [(r["id"], e["rel"], e["to"]) for e in r.get("links", [])])
+            os.replace(temporary, cache)
         return {"records": len(records), "index": "project-memory/cache/memory.sqlite3", "truth": "versioned JSON records"}
 
     def search(self, query, limit=12):
+        if not 1 <= limit <= 100:
+            raise ValueError("Search limit must be 1–100.")
         self.rebuild()
         with closing(sqlite3.connect(self.home / "cache" / "memory.sqlite3")) as conn:
             conn.row_factory = sqlite3.Row
@@ -187,20 +204,35 @@ class Store:
         return {"changed_id": ident, "affected_ids": sorted(visited - {ident}), "limit": "Known recorded dependencies only. Inspect code and other sources before claiming complete impact. Nothing was modified."}
 
     def timeline(self, limit=15):
+        if not 1 <= limit <= 1000:
+            raise ValueError("Timeline limit must be 1–1000.")
         rows = []
         for path in sorted((self.home / "events").glob("*.jsonl"), reverse=True):
-            for line in reversed(path.read_text(encoding="utf-8").splitlines()):
+            with path.open(encoding="utf-8", errors="replace") as f:
+                tail = deque(f, maxlen=limit-len(rows))
+            for line in reversed(tail):
                 try:
-                    rows.append(json.loads(line))
-                except json.JSONDecodeError:
-                    rows.append({"kind": "damaged_event", "summary": "Incomplete event line; inspect " + path.name})
+                    item = json.loads(line)
+                    if not isinstance(item, dict) or not all(k in item for k in ("time", "kind", "summary")):
+                        raise ValueError("Invalid event")
+                    rows.append(item)
+                except ValueError:
+                    rows.append({"time": path.stem + " (time unknown)", "kind": "damaged_event", "summary": "Incomplete event line; inspect " + path.name})
                 if len(rows) >= limit:
                     return rows
         return rows
 
     def doctor(self):
         problems = []
-        records = self.all()
+        records = []
+        for path in sorted((self.home / "records").iterdir()):
+            if path.is_dir():
+                try:
+                    records.append(self.get(path.name))
+                except (ValueError, OSError) as exc:
+                    problems.append(path.name + ": incomplete or damaged record: " + str(exc))
+                if any(path.glob("*.tmp")):
+                    problems.append(path.name + ": interrupted temporary write retained for inspection")
         known = {r["id"] for r in records}
         for r in records:
             for edge in r.get("links", []):

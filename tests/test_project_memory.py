@@ -9,6 +9,8 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 CLI = ROOT / "scripts" / "project_memory.py"
+sys.path.insert(0, str(ROOT))
+from project_memory.store import Store
 
 
 class MemoryTests(unittest.TestCase):
@@ -85,6 +87,39 @@ class MemoryTests(unittest.TestCase):
         events = json.loads(self.cli("timeline", "--limit", "1").stdout)
         self.assertEqual(events[0]["kind"], "interrupted")
         self.assertEqual(json.loads(self.cli("show", "task-1").stdout)["status"], "planned")
+
+    def test_corrupt_record_cannot_be_treated_as_new_and_overwritten(self):
+        self.put(self.record("task-1"))
+        record = self.root / "project-memory/records/task-1/000001.json"
+        record.write_text('{"broken":', encoding="utf-8")
+        self.assertNotEqual(self.put(self.record("task-1"), 0, ok=False).returncode, 0)
+        self.assertEqual(record.read_text(encoding="utf-8"), '{"broken":')
+
+    def test_interrupted_first_write_is_reported_without_breaking_other_records(self):
+        self.put(self.record("task-1"))
+        partial = self.root / "project-memory/records/interrupted"
+        partial.mkdir()
+        (partial / ".unfinished.tmp").write_text("partial", encoding="utf-8")
+        self.assertEqual(len(json.loads(self.cli("search", "task-1").stdout)), 1)
+        report = json.loads(self.cli("doctor", ok=False).stdout)
+        self.assertTrue(report["problems"])
+
+    def test_corrupt_cache_rebuilds_without_losing_saved_records(self):
+        self.put(self.record("task-1"))
+        (self.root / "project-memory/cache/memory.sqlite3").write_bytes(b"not a database")
+        self.cli("rebuild")
+        self.assertEqual(json.loads(self.cli("search", "task-1").stdout)[0]["id"], "task-1")
+
+    def test_torn_event_does_not_swallow_next_event(self):
+        store = Store(self.root)
+        store.event("before", "Before interruption")
+        log = next((store.home / "events").glob("*.jsonl"))
+        with log.open("ab") as f:
+            f.write(b'{"partial":"\xe2')
+        store.event("after", "Recovered")
+        rows = store.timeline(4)
+        self.assertEqual(rows[0]["kind"], "after")
+        self.assertTrue(any(r["kind"] == "damaged_event" for r in rows))
 
 
 if __name__ == "__main__":
