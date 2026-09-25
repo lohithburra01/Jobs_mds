@@ -4,15 +4,20 @@ Open a fresh chat in:
 C:\Users\91910\Downloads\jobs mds
 
 Paste:
-Read AGENTS.md. Run the project-memory startup and health check. Show me where
-we are, what is already done, and the next checkpoint. Use our saved agreement;
-do not redesign the plan or begin application changes before explaining them to me.
+Read AGENTS.md and NOW.md. Run the project-memory startup. Read
+blueprint-semantic-context-graph and checkpoint-memory using show ID.
+Show me where we are. Then build the detailed component/subcomponent knowledge
+graph from our preserved agreement, following the blueprint. Show me the Skills
+branch first. Preserve the application design and keep me informed as you work.
 
 The agent has a linked memory database and exact source records. You do not need
 to paste this old conversation. A small startup document only points it into that
 memory; it does not contain the whole project.
 
-Memory/plan retrieval is ready. Automatic Codex tool observations are configured
+Memory storage and basic retrieval are ready. Detailed semantic segmentation
+of the plan is still to do; broad module summaries alone do not complete it.
+
+Separately, automatic Codex tool observations are configured
 but have not yet been observed in a live session. Codex requires hook trust:
 in Codex CLI, open /hooks and review this project's hooks. The agent must check
 health rather than claim they are active. No trust-bypass switch is needed.

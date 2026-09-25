@@ -1,0 +1,30 @@
+{
+  "id": "checkpoint-memory",
+  "kind": "checkpoint",
+  "title": "Prepare this project for a fresh chat",
+  "summary": "Memory storage and broad component map exist. The blueprint is saved; detailed splitting of the agreed plan into linked subcomponents is still to do.",
+  "body": "Lohith clarified that the next task is meaningful, selectively readable plan knowledge. Broad module summaries and pointers to source sections do not finish that task. Read blueprint-semantic-context-graph. Preserve the agreed application design and existing dirty application code. Do not redirect this task into Codex hooks or resume generation. The application remains unfinished; live hook delivery remains unverified.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "uses",
+      "to": "state-existing-code"
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded"
+    },
+    {
+      "rel": "uses",
+      "to": "blueprint-semantic-context-graph"
+    }
+  ],
+  "next_action": "Read the semantic-context blueprint, explain the current gap, and begin segmenting the agreed plan into component children with exact source links. Show the Skills branch before repeating the structure.",
+  "revision": 4,
+  "updated_at": "2026-09-25T15:03:12.534+00:00",
+  "change_reason": "Make semantic plan segmentation the next task, as Lohith requested"
+}
