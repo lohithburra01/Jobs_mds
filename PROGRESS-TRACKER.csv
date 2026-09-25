@@ -1,10 +1,10 @@
 ﻿Goal,"Paste a JD and receive a readable tailored resume PDF, cover-letter PDF, application JSON and reusable chat context.",,
-Where we are,Memory storage and broad component map exist. The blueprint is saved; detailed splitting of the agreed plan into linked subcomponents is still to do.,,
-Next,"Read the semantic-context blueprint, explain the current gap, and begin segmenting the agreed plan into component children with exact source links. Show the Skills branch before repeating the structure.",,
+Where we are,Storage/basic retrieval exist. The complete two-layer review map now shows canonical internals and exact agreement text. Fine-grained context-record migration remains outstanding.,,
+Next,"Lohith reviews the two-layer map. Incorporate his corrections, then populate individually retrievable semantic records from the mapped plan; preserve application behavior.",,
 
 Checkpoint,What this achieves,Status,Next action
 Agree what the application must produce,The detailed twenty-point discussion and later amendments are preserved. The application output is not yet accepted.,accepted,
-Prepare this project for a fresh chat,Memory storage and broad component map exist. The blueprint is saved; detailed splitting of the agreed plan into linked subcomponents is still to do.,review,"Read the semantic-context blueprint, explain the current gap, and begin segmenting the agreed plan into component children with exact source links. Show the Skills branch before repeating the structure."
+Prepare this project for a fresh chat,Storage/basic retrieval exist. The complete two-layer review map now shows canonical internals and exact agreement text. Fine-grained context-record migration remains outstanding.,review,"Lohith reviews the two-layer map. Incorporate his corrections, then populate individually retrievable semantic records from the mapped plan; preserve application behavior."
 Control the coding work,"Existing devcontrol code needs inspection; its final proof is pending. Current memory setup supplies continuity and observation, not proof of all old worker controls.",planned,Discuss the bounded task with Lohith when this checkpoint becomes current.
 Demonstrate one small coding task,"Show an actual bounded change, its evidence and history before trusting the coding workflow.",,Discuss the bounded task with Lohith when this checkpoint becomes current.
 See inside an application run,"Make stage, request, time, saved output and failure visible. This is application instrumentation, not the coding hooks.",,Discuss the bounded task with Lohith when this checkpoint becomes current.

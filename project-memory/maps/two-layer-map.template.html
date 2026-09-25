@@ -1,0 +1,119 @@
+<div id="two-layer-plan">
+  <style>
+    #two-layer-plan { color:var(--foreground); }
+    #two-layer-plan .flow { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:12px 0; }
+    #two-layer-plan .flow a { overflow-wrap:anywhere; }
+    #two-layer-plan .branches { margin:12px 0 16px 12px; padding-left:16px; border-left:1px solid var(--border); }
+    #two-layer-plan details { margin:10px 0; }
+    #two-layer-plan summary { padding:6px 0; font-weight:500; }
+    #two-layer-plan .state { display:block; margin:4px 0; color:var(--muted-foreground); }
+    #two-layer-plan ul { padding-left:20px; }
+    #two-layer-plan li { margin:6px 0; overflow-wrap:anywhere; }
+    #two-layer-plan .source { white-space:pre-wrap; overflow-wrap:anywhere; font:inherit; margin:10px 0; }
+    #two-layer-plan .routes { display:flex; flex-wrap:wrap; gap:8px 16px; margin:8px 0; }
+    #two-layer-plan .section-label { color:var(--muted-foreground); }
+    #two-layer-plan .connection { margin:18px 0; padding:8px 0; border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+    @media(max-width:480px) { #two-layer-plan .branches { margin-left:3px; padding-left:9px; } }
+  </style>
+  <h2>One project, two separate layers</h2>
+  <div class="flow" aria-label="Relationship between the two layers">
+    <a href="#node-context">You + coding agent</a><span aria-hidden="true">↔</span>
+    <a href="#node-memory-structure">External context graph</a><span aria-hidden="true">→</span>
+    <a href="#node-task">One scoped coding task</a><span aria-hidden="true">→</span>
+    <a href="#node-application">Application pipeline</a>
+  </div>
+  <strong>Layer 1 · Make the application</strong>
+  <div class="flow">
+    <a href="#node-canonical">Canonical records</a><span>+</span><a href="#node-jd">JD requirements</a><span>→</span>
+    <a href="#node-brief">Select evidence / skills / project</a><span>→</span><a href="#node-writing">Write blocks</a><span>→</span>
+    <a href="#node-review">Check</a><span>↔</span><a href="#node-layout">Render</a><span>↔</span><a href="#node-repairs">Repair</a><span>→</span><a href="#node-deliverables">Documents + context</a>
+  </div>
+  <strong>Layer 2 · Build it together without losing context</strong>
+  <div class="flow">
+    <a href="#node-entry">Fresh agent</a><span>→</span><a href="#node-root">Project / current checkpoint</a><span>→</span>
+    <a href="#node-component">Relevant component / child / links</a><span>→</span><a href="#node-task">Scoped work</a><span>→</span>
+    <a href="#node-human">Your review</a><span>→</span><a href="#node-commits">Updated records + commit</a><span>→ next session</span>
+  </div>
+  <div class="section-label">Expand a branch for its parts. “Original agreement” opens the exact saved wording.</div>
+  <div id="plan-tree"></div>
+  <div class="connection">
+    <strong>The connection between layers</strong>
+    <div class="flow">
+      <a href="#node-component">Component context + applicable rules</a><span aria-hidden="true">→</span>
+      <a href="#node-task">Task / code change</a><span aria-hidden="true">→</span>
+      <a href="#node-commits">Commit</a><span aria-hidden="true">→</span>
+      <a href="#node-run-data">Application run records that code version</a><span aria-hidden="true">→</span>
+      <a href="#node-change">Your feedback updates the relevant component</a>
+    </div>
+  </div>
+  <details id="source-archive">
+    <summary>Full saved agreement · all 29 sections, exact wording</summary>
+    <div class="section-label">Historical text is preserved here. Later amendments and current records take precedence.</div>
+    <div id="sources"></div>
+  </details>
+  <details id="current-records">
+    <summary>Current saved rules and state · exact record snapshots</summary>
+    <div id="records"></div>
+  </details>
+  <div class="text-small" id="map-evidence"></div>
+  <script>
+    (() => {
+      const data = /*PLAN_DATA*/null;
+      const root = document.getElementById('two-layer-plan');
+      const tree = root.querySelector('#plan-tree');
+      const sourceIndex = new Map(data.sections.map(s => [s.number,s]));
+      function el(tag, text, cls) {
+        const e = document.createElement(tag);
+        if(text !== undefined) e.textContent = text;
+        if(cls) e.className = cls;
+        return e;
+      }
+      function route(target, label) { const a = el('a',label); a.href='#'+target; return a; }
+      const flows = {
+        application:[['data','Canonical + policy'],['jd','JD'],['brief','Complete brief'],['writing','Draft'],['review','Checks'],['layout','PDF + final coverage'],['repairs','Bounded repairs'],['deliverables','Package']],
+        context:[['entry','Start'],['memory-structure','Relevant context'],['task','Task'],['change','Feedback / change'],['coding-observe','Recorded evidence'],['commits','Save + commit']]
+      };
+      function renderNode(node,depth) {
+        const d=el('details'); d.id='node-'+node.id;
+        d.open = depth === 0;
+        d.append(el('summary',node.title));
+        const body=el('div',undefined,'branches');
+        body.append(el('span',node.state,'state text-small'));
+        if(flows[node.id]) {
+          const flow=el('div',undefined,'flow');
+          flows[node.id].forEach(([id,label],i)=>{ if(i) flow.append(el('span','→')); flow.append(route('node-'+id,label)); });
+          body.append(flow);
+        }
+        if(node.points.length) { const ul=el('ul'); node.points.forEach(p=>ul.append(el('li',p))); body.append(ul); }
+        if(node.routes.length) { const routes=el('div',undefined,'routes'); node.routes.forEach(([to,label])=>routes.append(route('node-'+to,'↗ '+label))); body.append(routes); }
+        node.children.forEach(child=>body.append(renderNode(child,depth+1)));
+        if(node.sources.length) {
+          const refs=el('details'); refs.append(el('summary','Original agreement · '+node.sources.map(i=>'§'+i).join(', ')));
+          node.sources.forEach(i=>{const s=sourceIndex.get(i); const t=el('details'); t.append(el('summary',s.title+' · lines '+s.start+'–'+s.end)); t.append(el('div',s.text,'source')); refs.append(t);});
+          body.append(refs);
+        }
+        d.append(body); return d;
+      }
+      data.layers.forEach(layer=>tree.append(renderNode(layer,0)));
+      data.sections.forEach(s=>{
+        const d=el('details'); d.id='source-'+s.number;
+        d.append(el('summary','§'+s.number+' · '+s.title+' · lines '+s.start+'–'+s.end));
+        const routes=el('div',undefined,'routes');
+        data.source_coverage[s.number].forEach(id=>routes.append(route('node-'+id,'↗ '+id)));
+        d.append(routes,el('div',s.text,'source')); root.querySelector('#sources').append(d);
+      });
+      data.current_records.forEach(r=>{
+        const d=el('details'); d.append(el('summary',r.title+' · revision '+r.revision));
+        d.append(el('div',JSON.stringify(r,null,2),'source')); root.querySelector('#records').append(d);
+      });
+      root.querySelector('#map-evidence').textContent='Source: preserved agreement, all 1,238 lines + current saved records + canonical schema inventory. This map shows design and recorded state; it does not certify application quality.';
+      root.addEventListener('click',event=>{
+        const a=event.target.closest('a[href^="#"]'); if(!a || !root.contains(a)) return;
+        const target=root.querySelector(a.getAttribute('href')); if(!target) return;
+        event.preventDefault();
+        let p=target; while(p && p!==root) { if(p.tagName==='DETAILS') p.open=true; p=p.parentElement; }
+        target.scrollIntoView({behavior:'auto',block:'start'});
+      });
+    })();
+  </script>
+</div>

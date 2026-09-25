@@ -6,6 +6,7 @@ Use show ID for one record, or source ID for exact original text.
 - project: goal, current focus and complete checkpoint list.
 - checkpoint-memory: setup status and fresh-chat next action.
 - blueprint-semantic-context-graph: requested detailed plan segmentation.
+- map-two-layer-plan: application + coding-context map, with canonical internals.
 - rule-collaboration, rule-memory, rule-changes: working with Lohith.
 - rule-application: settled resume requirements.
 - decision-superseded: retired instructions and source precedence.

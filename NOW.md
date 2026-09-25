@@ -14,5 +14,9 @@ Storage and broad component records exist. Detailed semantic splitting of the
 agreed plan is still outstanding. The saved blueprint defines that next task;
 do not redirect it into tool-specific hooks or application repairs.
 
+The two-layer review map is now available via record map-two-layer-plan.
+It includes canonical internals and the full source agreement. Lohith is reviewing
+the design; individual semantic-record migration is not marked complete.
+
 The previous NOW.md is preserved verbatim under source-old-now in the graph.
 No model name is required. Do not replay the chat or read all archives.

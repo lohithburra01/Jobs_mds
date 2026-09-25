@@ -1,0 +1,25 @@
+{
+  "id": "map-two-layer-plan",
+  "kind": "artifact",
+  "title": "Review map: full application design and portable coding context",
+  "status": "review",
+  "summary": "Expandable two-layer map with canonical internals, 67 branches, all 29 exact agreement sections and current memory rules. A review map, not a claim of finished semantic-record migration.",
+  "body": "Open project-memory/maps/two-layer-map.html. Data is project-memory/maps/two-layer-plan.json; regenerate with scripts/build_two_layer_map.py. The complete preserved agreement is included and mapped to branches. Canonical schema inventory distinguishes existing typed YAML from missing fine-grained context routes. Original model locks and one-page restrictions are shown as historical. User requested both layers together, including every canonical subcomponent, on 2026-09-25. Browser navigation and no horizontal overflow were checked at desktop and narrow widths. Source preservation does not independently certify interpretation of every summary.",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement"
+    },
+    {
+      "rel": "uses",
+      "to": "blueprint-semantic-context-graph"
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-25T21:03:04.349+00:00",
+  "change_reason": "Save complete two-layer review map requested by Lohith; preserve exact plan text"
+}
