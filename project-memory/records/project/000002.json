@@ -1,0 +1,62 @@
+{
+  "id": "project",
+  "kind": "project",
+  "title": "Local job-application builder",
+  "summary": "Paste a JD and receive a readable tailored resume PDF, cover-letter PDF, application JSON and reusable chat context.",
+  "body": "Two layers: this coding-memory harness helps Lohith and an agent build the separate application pipeline. Preserve existing agreements; avoid universal-framework work. The full source-agreement is the detailed plan; modules and checkpoints route to exact sections. Fresh sessions must explain current position, then follow Lohith's steering. Active module records hold planned boundaries and links. The current root remains the same; only the new modularity clarification changes how future work is scoped.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "rule",
+      "to": "rule-scope"
+    },
+    {
+      "rel": "rule",
+      "to": "rule-collaboration"
+    },
+    {
+      "rel": "rule",
+      "to": "rule-memory"
+    },
+    {
+      "rel": "rule",
+      "to": "rule-changes"
+    },
+    {
+      "rel": "rule",
+      "to": "rule-application"
+    },
+    {
+      "rel": "rule",
+      "to": "rule-observations"
+    },
+    {
+      "rel": "plan",
+      "to": "source-agreement"
+    },
+    {
+      "rel": "decision",
+      "to": "decision-superseded"
+    },
+    {
+      "rel": "decision",
+      "to": "decision-modular-temporal-memory"
+    }
+  ],
+  "focus": "checkpoint-memory",
+  "checkpoints": [
+    "checkpoint-0",
+    "checkpoint-memory",
+    "checkpoint-1",
+    "checkpoint-2",
+    "checkpoint-3",
+    "checkpoint-4",
+    "checkpoint-5",
+    "checkpoint-6",
+    "checkpoint-7",
+    "checkpoint-8"
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:50.003+00:00",
+  "change_reason": "Link latest design clarification into fresh-session root"
+}

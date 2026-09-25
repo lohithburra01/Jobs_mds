@@ -53,6 +53,12 @@ def dashboard(store):
     for link in current.get("links", []):
         r = store.get(link["to"])
         linked.append(f"<li>{e(link['rel'])} → <code>{e(r['id'])}</code>: {e(r['title'])}</li>")
+    modules = []
+    for record in store.all():
+        if record.get("kind") == "module":
+            contract = record.get("contract", {})
+            dependencies = ", ".join(edge["to"].removeprefix("module-") for edge in record.get("links", []) if edge["rel"] == "depends_on")
+            modules.append(f"<tr><td><strong>{e(record['title'])}</strong><br><small>{e(record['id'])}</small></td><td>{e(contract.get('receives','See saved plan'))}</td><td>{e(contract.get('produces','See saved plan'))}</td><td>{e(dependencies or 'Independent input')}</td></tr>")
     observation = "No live Codex hook event observed yet. Review /hooks in Codex CLI; the next chat must check health."
     if h["last_observed_hook"]:
         last = h["last_observed_hook"]
@@ -63,6 +69,7 @@ def dashboard(store):
 <h1>Job-application project</h1><p><strong>Finish line:</strong> {e(project['summary'])}</p>
 <section class="current"><h2>We are here: {e(current['title'])}</h2><p>{e(current['summary'])}</p><p><strong>Next:</strong> {e(current.get('next_action','Discuss with Lohith.'))}</p><small>Record {e(current['id'])}, revision {current['revision']}. Page generated {e(now())}.</small></section>
 <section><h2>The route to a working application</h2><table><thead><tr><th>Step</th><th>Outcome</th><th>State</th></tr></thead><tbody>{''.join(rows)}</tbody></table></section>
+<section><h2>Planned parts of the application</h2><p>Each row has its own saved contract. The links show possible effects of a changed interface; the actual implementation has not been verified against these boundaries.</p><table><thead><tr><th>Part</th><th>Receives</th><th>Produces</th><th>Uses</th></tr></thead><tbody>{''.join(modules)}</tbody></table></section>
 <section class="note"><h2>What is being recorded</h2><p>{e(observation)}</p><p>Memory changes are recorded by this harness. Tool events arrive only when Codex hooks are trusted and running. Decisions and feedback still need the agent to save their meaning. This page refreshes every five seconds; it is regenerated when hooks or memory commands run.</p></section>
 <section><h2>Latest recorded activity</h2><ol>{''.join(timeline)}</ol></section>
 <section><h2>Detail connected to the current step</h2><ul>{''.join(linked)}</ul><p>Agent command: <code>scripts/project-memory.ps1 show RECORD-ID</code>. Full exact passages: <code>source SOURCE-SECTION-ID</code>.</p></section>

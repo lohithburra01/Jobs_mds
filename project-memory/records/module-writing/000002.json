@@ -1,0 +1,48 @@
+{
+  "id": "module-writing",
+  "kind": "module",
+  "title": "Writing blocks",
+  "summary": "Each block owns its instructions, resolved evidence and revision history. Follow-up recommends coordinated initial drafting then bounded block repairs; separate initial calls are not settled.",
+  "body": "Planned boundary: receives Resolved evidence and selected work; skills; project brief; produces Separately identified resume and letter text blocks. Owns Readable JD-specific writing and block ownership. Must preserve: Fixed employers, dates and restrictions stay intact; number of initial model calls is not implied by block ownership. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-009"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-selection"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-skills"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-project"
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:49.707+00:00",
+  "change_reason": "Refine module boundary and actual dependencies after Lohith's 2026-09-25 correction",
+  "contract": {
+    "receives": "Resolved evidence and selected work; skills; project brief",
+    "produces": "Separately identified resume and letter text blocks",
+    "owns": "Readable JD-specific writing and block ownership",
+    "must_preserve": "Fixed employers, dates and restrictions stay intact; number of initial model calls is not implied by block ownership",
+    "status": "planned boundary, not verified implementation"
+  }
+}

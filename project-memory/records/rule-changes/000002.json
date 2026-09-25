@@ -1,0 +1,21 @@
+{
+  "id": "rule-changes",
+  "kind": "rule",
+  "title": "Handle cross-checkpoint changes without losing the route",
+  "summary": "Target the smallest affected module or fact; preserve the paused task and old versions. Inspect recorded dependencies and actual code, then explain any downstream effects before changing the agreed plan.",
+  "body": "A dependency query finds recorded links only; it is not a semantic oracle. Commit with explicit file paths and inspect staged diff; never include unrelated dirty changes, .env, raw logs or generated resumes. A technical completion uses review status; accepted requires the actual user statement and source. That record is provenance, not cryptographic proof of human identity. Distinguish a new fact within a module from a change to that module's input/output contract. A fact may require new selection or writing for a relevant JD without redesigning the whole pipeline. A contract change can cross modules: mark only inspected consumers as needs_review. impact returns candidates, not automatic invalidation.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-026"
+    },
+    {
+      "rel": "clarified_by",
+      "to": "decision-modular-temporal-memory"
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:49.878+00:00",
+  "change_reason": "Clarify localized data changes and cross-module contract changes"
+}

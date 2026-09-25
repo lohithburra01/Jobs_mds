@@ -1,0 +1,44 @@
+{
+  "id": "module-rendering",
+  "kind": "module",
+  "title": "Rendering and visible coverage",
+  "summary": "One or two pages. Calculate coverage from final visible content. Do not shorten the letter to fix resume overflow. Preserve renderer/public JSON where possible.",
+  "body": "Planned boundary: receives Approved document JSON/text blocks and fixed candidate fields; produces Resume and letter PDFs with final visible text. Owns PDF layout and truthful coverage measured after layout. Must preserve: Allow one or two pages; do not remove useful content merely for one-page fit. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-011"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-023"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-writing"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-checks"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:49.766+00:00",
+  "change_reason": "Refine module boundary and actual dependencies after Lohith's 2026-09-25 correction",
+  "contract": {
+    "receives": "Approved document JSON/text blocks and fixed candidate fields",
+    "produces": "Resume and letter PDFs with final visible text",
+    "owns": "PDF layout and truthful coverage measured after layout",
+    "must_preserve": "Allow one or two pages; do not remove useful content merely for one-page fit",
+    "status": "planned boundary, not verified implementation"
+  }
+}

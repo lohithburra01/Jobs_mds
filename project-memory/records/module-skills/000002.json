@@ -1,0 +1,36 @@
+{
+  "id": "module-skills",
+  "kind": "module",
+  "title": "Skills",
+  "summary": "Categorize actual tools and methods correctly. Check each skill, group and whole section in order.",
+  "body": "Planned boundary: receives JD requirements; selected work and candidate tools; produces Categorized, JD-relevant skills. Owns Skills taxonomy and individual/group checks. Must preserve: Do not present broad domains as concrete tools. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-007"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-jd"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-selection"
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:49.654+00:00",
+  "change_reason": "Refine module boundary and actual dependencies after Lohith's 2026-09-25 correction",
+  "contract": {
+    "receives": "JD requirements; selected work and candidate tools",
+    "produces": "Categorized, JD-relevant skills",
+    "owns": "Skills taxonomy and individual/group checks",
+    "must_preserve": "Do not present broad domains as concrete tools",
+    "status": "planned boundary, not verified implementation"
+  }
+}

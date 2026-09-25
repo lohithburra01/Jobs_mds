@@ -1,0 +1,44 @@
+{
+  "id": "module-checks",
+  "kind": "module",
+  "title": "Jev and deterministic checks",
+  "summary": "Python checks structure; Jev asks narrow semantic questions using complete inputs. Item results feed group then section then document checks.",
+  "body": "Planned boundary: receives Draft blocks; corresponding resolved facts; JD passages; produces Item, group, section and document findings. Owns Narrow Jev semantic questions plus deterministic structural checks. Must preserve: Each check receives actual evidence and returns a finding, not new prose. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-010"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-016"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-writing"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-jd"
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:49.736+00:00",
+  "change_reason": "Refine module boundary and actual dependencies after Lohith's 2026-09-25 correction",
+  "contract": {
+    "receives": "Draft blocks; corresponding resolved facts; JD passages",
+    "produces": "Item, group, section and document findings",
+    "owns": "Narrow Jev semantic questions plus deterministic structural checks",
+    "must_preserve": "Each check receives actual evidence and returns a finding, not new prose",
+    "status": "planned boundary, not verified implementation"
+  }
+}

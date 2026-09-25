@@ -1,0 +1,72 @@
+{
+  "id": "module-observability",
+  "kind": "module",
+  "title": "Application run visibility",
+  "summary": "Observe stage/request start/end, retry/timeout/failure, saved intermediate results, latency and cost. This application layer is distinct from coding-session observations.",
+  "body": "Planned boundary: receives Application runtime stage/request events; produces Local application trace and readable report. Owns Visibility into each application run. Must preserve: Remain separate from coding-agent hook events and do not claim unobserved causes. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-013"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-025"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "observes",
+      "to": "module-canonical"
+    },
+    {
+      "rel": "observes",
+      "to": "module-jd"
+    },
+    {
+      "rel": "observes",
+      "to": "module-selection"
+    },
+    {
+      "rel": "observes",
+      "to": "module-skills"
+    },
+    {
+      "rel": "observes",
+      "to": "module-project"
+    },
+    {
+      "rel": "observes",
+      "to": "module-writing"
+    },
+    {
+      "rel": "observes",
+      "to": "module-checks"
+    },
+    {
+      "rel": "observes",
+      "to": "module-rendering"
+    },
+    {
+      "rel": "observes",
+      "to": "module-repairs"
+    },
+    {
+      "rel": "observes",
+      "to": "module-evaluation"
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:49.826+00:00",
+  "change_reason": "Refine module boundary and actual dependencies after Lohith's 2026-09-25 correction",
+  "contract": {
+    "receives": "Application runtime stage/request events",
+    "produces": "Local application trace and readable report",
+    "owns": "Visibility into each application run",
+    "must_preserve": "Remain separate from coding-agent hook events and do not claim unobserved causes",
+    "status": "planned boundary, not verified implementation"
+  }
+}

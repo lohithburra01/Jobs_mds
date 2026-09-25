@@ -23,6 +23,8 @@ During work:
 - Keep records understandable without chat: what, why, scope, source, next action.
 - For significant design changes, save a change record; inspect `impact ID` plus
   actual code; explain affected checkpoints to Lohith before expanding the work.
+  Preserve the earlier revision and say which active rule or module contract changes.
+  A new fact inside a module does not automatically change that module's contract.
 - Use `event` for meaningful operational notes. Hooks save tool metadata when active;
   they do not automatically save the meaning of conversations. No raw secrets in logs.
 - Show real results and limitations. Use status `review` when implementation is ready.

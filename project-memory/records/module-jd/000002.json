@@ -1,0 +1,28 @@
+{
+  "id": "module-jd",
+  "kind": "module",
+  "title": "JD interpretation",
+  "summary": "Preserve original passages; decompose requirements with narrow options. Do not let repeated extraction failure prevent all writing.",
+  "body": "Planned boundary: receives Original job description; produces Passage-level requirements and unresolved passages. Owns Understanding this JD and preserving its source text. Must preserve: Do not infer candidate facts; preserve original JD and disclose unresolved passages. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-005"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:49.600+00:00",
+  "change_reason": "Refine module boundary and actual dependencies after Lohith's 2026-09-25 correction",
+  "contract": {
+    "receives": "Original job description",
+    "produces": "Passage-level requirements and unresolved passages",
+    "owns": "Understanding this JD and preserving its source text",
+    "must_preserve": "Do not infer candidate facts; preserve original JD and disclose unresolved passages",
+    "status": "planned boundary, not verified implementation"
+  }
+}

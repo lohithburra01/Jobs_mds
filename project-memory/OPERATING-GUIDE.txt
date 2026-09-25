@@ -47,6 +47,21 @@ dependencies. Inspect code/sources too. Explain affected checkpoints to Lohith,
 agree the change, then reopen only affected work as needs_review. Save the paused
 position and next action so a design discussion does not lose the original task.
 
+MODULE BOUNDARIES AND DRIFT
+Every module-* record has its own planned contract: what it receives, produces,
+owns and must preserve. Change the smallest record that matches the request.
+Treat adding a 3D fact as a fact/content change in canonical evidence; changing
+the canonical format is a contract change. A contract change can affect every
+consumer. impact ID gives a conservative list from recorded links; it does not
+change statuses or prove that every listed consumer needs implementation work.
+Inspect actual code and examples, then record which consumers require review.
+Unrelated modules keep their current versions. When an old rule still applies,
+keep it active; when replaced, record the replacement and a supersedes link.
+Timestamps and Git commits preserve chronology, while active statuses and links
+tell a fresh agent what applies now. The observed operation log survives a new
+session in the same folder, but is local/ignored by Git; commit important findings
+as records if they must travel with a clone of the repository.
+
 Statuses: planned / in_progress / review / accepted / needs_review / blocked /
 deferred; reference / historical / superseded for source/decision records.
 Blank means untouched. Accepted requires acceptance.user_statement (agents must

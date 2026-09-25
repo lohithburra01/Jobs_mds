@@ -1,0 +1,26 @@
+{
+  "id": "decision-modular-temporal-memory",
+  "kind": "decision",
+  "title": "Keep current intent and module boundaries visible across sessions",
+  "summary": "Timestamped history shows evolution; current versioned rules and module contracts show what still applies. A change targets one component and explicitly reviews linked consumers.",
+  "body": "Lohith clarified on 2026-09-25 that agent memory and observations must survive clearing or switching sessions. New instructions must not silently displace older applicable rules. Each application component needs its own addressable working record, so changes can stay local when its input/output contract is unchanged. When a change crosses a boundary, the agent must show the affected components and preserve earlier work. Operation events remain local across sessions in the same folder; important conclusions belong in versioned records and focused Git commits. Timestamps alone cannot identify which instruction is active: revision, status, source and supersedes relationships do that.",
+  "status": "active",
+  "origin": {
+    "kind": "user_conversation",
+    "date": "2026-09-25",
+    "note": "Standalone summary of the user's current clarification; the chat itself was not imported verbatim."
+  },
+  "links": [
+    {
+      "rel": "builds_on",
+      "to": "rule-memory"
+    },
+    {
+      "rel": "builds_on",
+      "to": "rule-changes"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-25T14:50:49.507+00:00",
+  "change_reason": "Record Lohith's temporal memory and modularity clarification"
+}

@@ -268,6 +268,12 @@ class Store:
             if edge["rel"] == "rule":
                 r = self.get(edge["to"])
                 lines.append(r["id"] + ": " + r["summary"])
+        lines.append("\nACTIVE DESIGN DECISIONS:")
+        for edge in project.get("links", []):
+            if edge["rel"] == "decision":
+                r = self.get(edge["to"])
+                if r.get("status") == "active":
+                    lines.append(r["id"] + ": " + r["summary"])
         lines.extend(["\nCURRENT DETAIL:", active.get("body", ""), "\nREAD NEXT (retrieve just what you need):"])
         for edge in active.get("links", []):
             r = self.get(edge["to"])

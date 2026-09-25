@@ -1,0 +1,32 @@
+{
+  "id": "module-canonical",
+  "kind": "module",
+  "title": "Canonical evidence",
+  "summary": "Typed records for employers, work, facts, metrics, restrictions, tools and project patterns. Resolve IDs to their actual contents.",
+  "body": "Planned boundary: receives Candidate evidence and user corrections; produces Typed evidence records and resolved fact text. Owns Candidate facts, restrictions and authorized retrofit policy. Must preserve: Preserve employers, dates and original evidence; an added fact does not by itself change the record schema. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-003"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:49.581+00:00",
+  "change_reason": "Refine module boundary and actual dependencies after Lohith's 2026-09-25 correction",
+  "contract": {
+    "receives": "Candidate evidence and user corrections",
+    "produces": "Typed evidence records and resolved fact text",
+    "owns": "Candidate facts, restrictions and authorized retrofit policy",
+    "must_preserve": "Preserve employers, dates and original evidence; an added fact does not by itself change the record schema",
+    "status": "planned boundary, not verified implementation"
+  }
+}

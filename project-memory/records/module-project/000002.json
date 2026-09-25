@@ -1,0 +1,40 @@
+{
+  "id": "module-project",
+  "kind": "module",
+  "title": "Independent project",
+  "summary": "Include a JD-relevant local project using the user's established small-scale-before-company-work pattern. No exhaustive project inventory required.",
+  "body": "Planned boundary: receives Candidate project pattern; JD; selected work; produces One relevant independent-project brief. Owns Local small-scale project tailored to the JD. Must preserve: No invented dates, repository URLs or measurable outcomes. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "reference",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-008"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-jd"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-selection"
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:49.674+00:00",
+  "change_reason": "Refine module boundary and actual dependencies after Lohith's 2026-09-25 correction",
+  "contract": {
+    "receives": "Candidate project pattern; JD; selected work",
+    "produces": "One relevant independent-project brief",
+    "owns": "Local small-scale project tailored to the JD",
+    "must_preserve": "No invented dates, repository URLs or measurable outcomes",
+    "status": "planned boundary, not verified implementation"
+  }
+}

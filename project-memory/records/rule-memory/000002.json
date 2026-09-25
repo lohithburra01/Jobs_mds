@@ -1,0 +1,17 @@
+{
+  "id": "rule-memory",
+  "kind": "rule",
+  "title": "External memory is the durable working state",
+  "summary": "Use external versioned records across sessions. Show current active rules, current checkpoint and linked module detail; keep dated history without loading it all. Preserve older rules that still apply.",
+  "body": "The record graph is versioned JSON; SQLite is a rebuildable search index. Use expected_revision to reject stale writes. Do not edit prior revisions. Exact agreement snapshots and old plans remain retrievable. Latest user instructions override older records; save that override instead of silently obeying stale state. Each important observation belongs in a timestamped local event or versioned record. A new instruction does not silently erase an older applicable one: record whether it adds to, narrows or supersedes that rule, and update the active version explicitly. A timestamp alone establishes sequence, not authority. Raw events survive new sessions in this folder but are ignored by Git; durable cross-machine conclusions need committed records.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "clarified_by",
+      "to": "decision-modular-temporal-memory"
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:49.864+00:00",
+  "change_reason": "Clarify temporal history versus current active memory"
+}

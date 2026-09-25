@@ -1,0 +1,17 @@
+{
+  "id": "rule-observations",
+  "kind": "rule",
+  "title": "What automatic observations do and do not capture",
+  "summary": "Record tool lifecycle metadata locally when trusted Codex hooks deliver it. Save semantic decisions via the memory CLI; hooks do not understand conversations. Check health each fresh session. Never claim configured hooks are active without live evidence.",
+  "body": "Raw prompts, command bodies, credentials and tool outputs are not copied into hook events. Tool IDs, timing, explicit exit codes and transcript pointers support investigation. Hosted web tools may be uncovered. This is observation and continuity, not a security sandbox. Local event logs are not Git history; record important outcomes in versioned records and focused commits. Current events are persisted in project-memory/events/ by timestamp and can be read in later Codex sessions in the same folder. Live hook delivery is still unverified until Codex trusts project hooks. Events are local and not committed; record material findings separately in Git-tracked records.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "clarified_by",
+      "to": "decision-modular-temporal-memory"
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-25T14:50:49.895+00:00",
+  "change_reason": "Clarify which observations survive sessions and which survive Git clone"
+}

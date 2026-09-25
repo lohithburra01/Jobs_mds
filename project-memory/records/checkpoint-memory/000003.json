@@ -1,0 +1,26 @@
+{
+  "id": "checkpoint-memory",
+  "kind": "checkpoint",
+  "title": "Prepare this project for a fresh chat",
+  "summary": "Project memory and fresh-chat startup are built. Module boundaries and temporal rules now reflect Lohith's clarification. Waiting for his review; live Codex hook delivery remains unverified.",
+  "body": "The application pipeline has not been repaired by this setup. The next agent should run start and health, show the current state, and discuss the next bounded task with Lohith. The old worker controls are not proved. Automatic tool recording requires Codex project/hook trust; decisions still require explicit memory updates. Preserve existing dirty application files. This turn refined memory records only. No application implementation was changed or claimed complete.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "uses",
+      "to": "state-existing-code"
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded"
+    }
+  ],
+  "next_action": "In a fresh chat, load this memory and show Lohith the current state. Check hook health/trust, then agree the next coding checkpoint before starting application changes.",
+  "revision": 3,
+  "updated_at": "2026-09-25T14:50:50.024+00:00",
+  "change_reason": "Record current correction without accepting or advancing checkpoint"
+}
