@@ -74,7 +74,7 @@ class Store:
         path = (self.root / relative).resolve()
         if not path.is_relative_to(self.root):
             raise ValueError("Source must stay inside the project.")
-        if any(p == ".env" or p.startswith(".env.") or p == ".git" for p in path.parts):
+        if any(p.lower() == ".env" or p.lower().startswith(".env.") or p.lower() == ".git" for p in path.parts):
             raise ValueError("Secret/environment and Git internal files cannot be imported.")
         return path
 
@@ -119,6 +119,8 @@ class Store:
                 raise ValueError("Missing " + field)
         if len(data["summary"]) > 1200:
             raise ValueError("Keep the summary under 1200 characters; use body for detail.")
+        if not isinstance(data.get("body", ""), str):
+            raise ValueError("Record body must be text.")
         allowed = {"", "planned", "in_progress", "review", "accepted", "historical", "reference", "active", "proposed", "needs_review", "blocked", "deferred", "superseded"}
         if data.get("status", "") not in allowed:
             raise ValueError("Unknown status")
@@ -138,6 +140,10 @@ class Store:
                 self.get(edge["to"])
             for source in data.get("sources", []):
                 self.path(source["path"])
+            if data["kind"] == "project":
+                self.get(data["focus"])
+                for checkpoint in data.get("checkpoints", []):
+                    self.get(checkpoint)
             data.update(revision=actual + 1, updated_at=now(), change_reason=reason)
             directory = self.home / "records" / ident
             directory.mkdir(exist_ok=True)
@@ -189,7 +195,7 @@ class Store:
         self.rebuild()
         with closing(sqlite3.connect(self.home / "cache" / "memory.sqlite3")) as conn:
             conn.row_factory = sqlite3.Row
-            return [dict(r) for r in conn.execute("SELECT id,kind,title,status FROM nodes WHERE instr(lower(title || ' ' || content),lower(?))>0 LIMIT ?", (query, limit))]
+            return [dict(r) for r in conn.execute("SELECT id,kind,title,status FROM nodes WHERE instr(lower(title || ' ' || content),lower(?))>0 ORDER BY CASE WHEN status IN ('historical','superseded') THEN 2 ELSE 0 END, CASE WHEN kind IN ('rule','module','checkpoint','decision') THEN 0 WHEN kind='source_section' THEN 1 ELSE 2 END, id LIMIT ?", (query, limit))]
 
     def impact(self, ident):
         self.get(ident)

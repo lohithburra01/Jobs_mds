@@ -69,6 +69,10 @@ class MemoryTests(unittest.TestCase):
         r = self.record("task-1")
         r["links"] = [{"rel": "depends_on", "to": "missing"}]
         self.assertNotEqual(self.put(r, ok=False).returncode, 0)
+        p = self.record("project")
+        p.update(kind="project", focus="missing", checkpoints=[])
+        self.assertNotEqual(self.put(p, ok=False).returncode, 0)
+        self.assertRaises(ValueError, Store(self.root).path, ".ENV")
         r["links"] = []
         r["status"] = "accepted"
         self.assertNotEqual(self.put(r, ok=False).returncode, 0)
