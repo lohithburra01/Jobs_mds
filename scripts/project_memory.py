@@ -6,6 +6,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from project_memory.store import Store, dump
+from project_memory.views import dashboard, health
 
 
 def main():
@@ -42,10 +43,13 @@ def main():
     p.add_argument("--snapshot", action="store_true")
     sub.add_parser("rebuild")
     sub.add_parser("doctor")
+    sub.add_parser("view")
+    sub.add_parser("health")
     args = parser.parse_args()
     store = Store(args.root)
     if args.command in ("start", "context"):
         print(store.brief(args.id))
+        print("\nOBSERVATION STATUS: " + ("A prior live hook event exists; run health for its timestamp." if health(store)["last_observed_hook"] else "No live hook event observed. Run health; do not claim automatic recording is active."))
         return 0
     if args.command == "show":
         result = store.get(args.id, args.revision)
@@ -69,6 +73,15 @@ def main():
         result = store.doctor()
     elif args.command == "import-source":
         result = store.import_source(args.path, args.id, args.status, args.snapshot)
+    elif args.command == "health":
+        result = health(store)
+    elif args.command == "view":
+        result = {"dashboard": dashboard(store)}
+    if args.command in {"put", "event"}:
+        try:
+            dashboard(store)
+        except ValueError:
+            pass
     print(dump(result), end="")
     return 1 if args.command == "doctor" and result["problems"] else 0
 

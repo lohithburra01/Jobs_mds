@@ -1,0 +1,94 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -NonInteractive -File \"C:\\Users\\91910\\Downloads\\jobs mds\\scripts\\memory-hook.ps1\"",
+            "timeout": 15,
+            "additionalContextLimit": 11000
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -NonInteractive -File \"C:\\Users\\91910\\Downloads\\jobs mds\\scripts\\memory-hook.ps1\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -NonInteractive -File \"C:\\Users\\91910\\Downloads\\jobs mds\\scripts\\memory-hook.ps1\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -NonInteractive -File \"C:\\Users\\91910\\Downloads\\jobs mds\\scripts\\memory-hook.ps1\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -NonInteractive -File \"C:\\Users\\91910\\Downloads\\jobs mds\\scripts\\memory-hook.ps1\"",
+            "timeout": 15,
+            "additionalContextLimit": 11000
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -NonInteractive -File \"C:\\Users\\91910\\Downloads\\jobs mds\\scripts\\memory-hook.ps1\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "Interrupt": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -NonInteractive -File \"C:\\Users\\91910\\Downloads\\jobs mds\\scripts\\memory-hook.ps1\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -NonInteractive -File \"C:\\Users\\91910\\Downloads\\jobs mds\\scripts\\memory-hook.ps1\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}
