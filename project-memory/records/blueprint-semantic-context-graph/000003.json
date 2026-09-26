@@ -1,0 +1,161 @@
+{
+  "id": "blueprint-semantic-context-graph",
+  "kind": "blueprint",
+  "title": "Turn the agreed application plan into selectively readable knowledge",
+  "status": "in_progress",
+  "summary": "Component-by-component semantic migration is underway in the existing record store. Skills is ready for review with four children and source coverage; remaining components are tracked explicitly.",
+  "body": "This is the blueprint requested by Lohith on 2026-09-25, not a claim that the detailed segmentation is finished. The task is external project knowledge, shared by any agent able to read the folder and run the Python CLI. It is not another application redesign or tool-specific observation system. The exact agreement stays preserved as source evidence. Small semantic records become the normal reading route; the full agreement is not injected at startup. Clarification 2026-09-25: Canonical must also be individually retrievable down to employer, system, facts, metrics, boundaries and accomplishments, alongside identity/profile/education and the project pattern. Both application and coding-context layers must be visible together. map-two-layer-plan provides the review map; Skills is now migrated into individual Store records; remaining branches are tracked in tracker-semantic-migration.",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement"
+    },
+    {
+      "rel": "uses",
+      "to": "decision-modular-temporal-memory"
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration"
+    },
+    {
+      "rel": "example",
+      "to": "module-skills"
+    },
+    {
+      "rel": "example",
+      "to": "module-canonical"
+    },
+    {
+      "rel": "uses",
+      "to": "tracker-semantic-migration",
+      "reason": "Read current progress and the next component."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-skills",
+      "reason": "Inspect the first bounded clause coverage map."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Latest authorization to continue one component at a time."
+    }
+  ],
+  "layers": [
+    {
+      "level": "Project map",
+      "contains": "Purpose, current checkpoint, brief active global rules, and component directory. No full module bodies or accumulated diary."
+    },
+    {
+      "level": "Component",
+      "contains": "Purpose, owned responsibility, inputs, outputs, current progress, applicable rules, and an index of subcomponents."
+    },
+    {
+      "level": "Subcomponent",
+      "contains": "One coherent question, behavior, rule, or design decision. Standalone explanation with enough context to understand it; not arbitrary heading or line-count chunks."
+    },
+    {
+      "level": "Evidence and history",
+      "contains": "Exact source passages, revisions, reasons for changes, and linked commits. Read when provenance or evolution is relevant."
+    }
+  ],
+  "node_fields": [
+    "Stable ID",
+    "Plain title and short summary",
+    "Standalone detail",
+    "Status and owning component",
+    "Applicable rule links",
+    "Named outgoing links with when-to-follow explanations",
+    "Exact source references",
+    "Revision, timestamp and reason for change"
+  ],
+  "edge_meanings": {
+    "part_of": "This detail belongs to this component.",
+    "depends_on": "A change to the target may affect this component; inspect the connection before changing anything else.",
+    "uses": "Read this shared rule or definition when applying this record.",
+    "based_on": "Read the original passage if exact wording or interpretation matters.",
+    "supersedes": "This explicitly replaces the linked older decision; age alone never cancels a rule."
+  },
+  "session_reading": [
+    "Read the small entry point and run the existing startup command.",
+    "Read the project map, current checkpoint and applicable global rules. Explain current position to Lohith.",
+    "Open the relevant component; show an index of child summaries instead of all child bodies.",
+    "Read only the children needed for the current task. Follow named cross-links when needed.",
+    "If context is missing, retrieve the linked detail. Do not fill the gap from assumptions or read every archive.",
+    "Save changed facts and meaningful decisions before moving on. A fresh session repeats this reading path without requiring the old chat."
+  ],
+  "change_handling": [
+    "Revise the smallest coherent record. Preserve older revisions and the reason for the change.",
+    "Keep global and older applicable rules active until explicitly changed; a new topic does not replace them.",
+    "Use recorded dependencies to identify possibly affected components. Explain cross-component implications to Lohith; do not silently rewrite the entire plan.",
+    "Update affected records and tracker as one coherent change, then commit it separately with a descriptive label.",
+    "Keep routine tool events separate from decision records. Store useful outcomes, sources and evidence references rather than duplicating full chat transcripts in each node."
+  ],
+  "implementation_steps": [
+    "Inventory meaningful clauses in the preserved agreement and later amendments; map each to its component and subcomponent. Reuse existing IDs wherever appropriate.",
+    "Keep a coverage mapping from source passages to semantic records or explicit historical/superseded decisions. Nothing should disappear during segmentation.",
+    "Populate component children with standalone explanations, applicable rules and exact source references. Shared facts live once and are linked elsewhere.",
+    "Add human-readable link reasons and component child indexes. Extend bounded CLI retrieval only where current commands cannot present these routes.",
+    "Show Lohith the actual Skills branch and one cross-component route, so he can judge whether the organization is understandable before repeating it throughout the plan.",
+    "Complete the remaining components. Check source coverage, dangling links, conflicting active decisions and a fresh-session navigation example.",
+    "Refresh tracker and startup instructions. Report separately what is stored, what can be retrieved and what remains unfinished in the application."
+  ],
+  "existing_components": [
+    "canonical",
+    "jd",
+    "selection",
+    "skills",
+    "project",
+    "writing",
+    "checks",
+    "rendering",
+    "repairs",
+    "observability",
+    "evaluation"
+  ],
+  "ready_now": [
+    "Versioned JSON records and typed links",
+    "Rebuildable SQLite search index",
+    "Selective show/source/search retrieval",
+    "Broad component records and preserved exact agreement",
+    "Checkpoint and history views",
+    "Skills semantic child navigation and bounded source-clause coverage"
+  ],
+  "not_ready_yet": [
+    "Complete semantic decomposition of all remaining application and coding-context components",
+    "Complete agreement-wide source coverage beyond the Skills pilot",
+    "Fine-grained child navigation for remaining components"
+  ],
+  "limits": [
+    "The graph guides context selection; it does not itself restrict filesystem writes or guarantee no drift.",
+    "Missing dependency links can hide impact, so interfaces and changed files must still be inspected.",
+    "Portability requires the new agent to use the startup route. Automatic discovery and native tool logging vary by host.",
+    "This task does not change application behavior, resume requirements or model selection."
+  ],
+  "completion_evidence": [
+    "Lohith can see where a specific agreed requirement lives.",
+    "A fresh process can retrieve one component and the necessary linked rules without the whole agreement.",
+    "Each meaningful source clause has a recorded destination or explicit supersession.",
+    "A changed node retains its previous revision and exposes known affected neighbors."
+  ],
+  "revision": 3,
+  "updated_at": "2026-09-26T20:45:48.762+00:00",
+  "change_reason": "Record Skills pilot migration and preserve outstanding full-plan work",
+  "skills_pilot": {
+    "component": "module-skills",
+    "children": [
+      "skills-taxonomy",
+      "skills-term-checks",
+      "skills-group-checks",
+      "skills-section-checks"
+    ],
+    "coverage": "coverage-skills",
+    "status": "review",
+    "note": "Semantic records now exist; no application enforcement or user acceptance claimed."
+  }
+}

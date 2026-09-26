@@ -1,0 +1,20 @@
+{
+  "id": "source-component-continuation-2026-09-26",
+  "kind": "source",
+  "title": "Continue saved work one component at a time",
+  "status": "reference",
+  "summary": "Latest user authorization: resume saved unfinished work, show the result, update memory and tracker, and commit one coherent component without waiting for the plan to be restated.",
+  "body": "Exact user message in the current Codex task on 2026-09-26. Authorizes continuation; does not constitute acceptance of any implementation.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-component-continuation-2026-09-26.txt",
+      "sha256": "c74a5d7d46a6acfa9643c935be7df49213767a69bed44ac058b0d05f92e6026c",
+      "start": 1,
+      "end": 1
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-26T20:42:24.083+00:00",
+  "change_reason": "Preserve latest explicit continuation instruction before dependent work"
+}

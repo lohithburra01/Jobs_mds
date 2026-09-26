@@ -1,0 +1,87 @@
+{
+  "id": "skills-group-checks",
+  "title": "Assemble compatible skills and check the group label",
+  "summary": "Python assembles approved groups; review each group after its member checks for label fit, membership and duplication.",
+  "body": "Combine compatible individually classified terms into readable groups. Python assembles approved groups according to the later ownership clarification. Review all members against the displayed label and check duplication within the group. Consume completed individual judgments before dependent group review; a group PASS cannot cancel a failed member. Internal classifications and displayed labels remain separate. Follow module-checks for the shared decision audit and unresolved findings; no independent group retry policy is invented here.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 260,
+      "end": 262
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 284,
+      "end": 285
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 368,
+      "end": 369
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 385,
+      "end": 407
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 960,
+      "end": 960
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-skills",
+      "reason": "Return to the component contract and sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply settled relevance, retrofit and evidence constraints."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-007",
+      "reason": "Read exact Skills agreement wording when interpreting this requirement."
+    },
+    {
+      "rel": "depends_on",
+      "to": "skills-term-checks",
+      "reason": "Read completed member judgments before reviewing a group."
+    },
+    {
+      "rel": "uses",
+      "to": "skills-taxonomy",
+      "reason": "Choose a readable label without confusing it with internal term types."
+    },
+    {
+      "rel": "uses",
+      "to": "module-checks",
+      "reason": "Shared hierarchy and retained decision evidence apply to group checks."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-010",
+      "reason": "Original review hierarchy adds group duplication and sequential judgments."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024",
+      "reason": "Later clarification assigns approved-group assembly to Python."
+    }
+  ],
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-skills",
+  "progress": "Semantic record extracted for review; application enforcement has not been verified.",
+  "revision": 1,
+  "updated_at": "2026-09-26T20:44:10.659+00:00",
+  "change_reason": "Migrate one coherent Skills requirement from preserved agreement without changing the application contract"
+}

@@ -1,0 +1,96 @@
+{
+  "id": "skills-taxonomy",
+  "title": "Classify each term before choosing display groups",
+  "summary": "Internal types and displayed resume labels are distinct; examples illustrate classification rather than mandatory resume content.",
+  "body": "Every skill term receives an internal classification before compatible terms are combined into a small number of readable resume lines. A displayed group need not have the same name as the internal type. Broad disciplines and methods must not be presented as concrete technologies. The examples below preserve the agreement; include terms only when useful for the JD. Do not invent a model name from a generic reference to LLMs. The agreement gives examples, not an exhaustive closed taxonomy or fixed displayed labels.",
+  "examples": [
+    {
+      "terms": "Python, TypeScript, SQL",
+      "internal_type": "Language",
+      "possible_display": "Languages"
+    },
+    {
+      "terms": "LangGraph, LangChain",
+      "internal_type": "Framework/library",
+      "possible_display": "AI frameworks"
+    },
+    {
+      "terms": "OpenAI",
+      "internal_type": "Provider",
+      "possible_display": "AI platforms and providers"
+    },
+    {
+      "terms": "Azure AI Services",
+      "internal_type": "Cloud service",
+      "possible_display": "Cloud and AI services"
+    },
+    {
+      "terms": "PostgreSQL",
+      "internal_type": "Database",
+      "possible_display": "Data and storage"
+    },
+    {
+      "terms": "Docker, Kubernetes",
+      "internal_type": "Deployment tooling",
+      "possible_display": "Deployment and operations"
+    },
+    {
+      "terms": "CI/CD",
+      "internal_type": "Engineering practice",
+      "possible_display": "Delivery practices"
+    },
+    {
+      "terms": "RAG",
+      "internal_type": "Application architecture",
+      "possible_display": "AI application methods"
+    },
+    {
+      "terms": "MLOps",
+      "internal_type": "Broad operational discipline",
+      "possible_display": "Include only with useful context"
+    },
+    {
+      "terms": "LLMs",
+      "internal_type": "Model family",
+      "possible_display": "LLM integration, where appropriate"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 260,
+      "end": 277
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 288,
+      "end": 288
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-skills",
+      "reason": "Return to the component contract and sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply settled relevance, retrofit and evidence constraints."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-007",
+      "reason": "Read exact Skills agreement wording when interpreting this requirement."
+    }
+  ],
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-skills",
+  "progress": "Semantic record extracted for review; application enforcement has not been verified.",
+  "revision": 1,
+  "updated_at": "2026-09-26T20:44:10.259+00:00",
+  "change_reason": "Migrate one coherent Skills requirement from preserved agreement without changing the application contract"
+}

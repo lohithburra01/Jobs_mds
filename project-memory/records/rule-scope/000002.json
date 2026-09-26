@@ -1,0 +1,22 @@
+{
+  "id": "rule-scope",
+  "kind": "rule",
+  "title": "Current authorization and model independence",
+  "summary": "Continue unfinished memory-graph work one component at a time: read relevant records and original passages, show results, update memory/tracker, and commit each coherent change. No model lock or paid run, submission, deployment or push is implied.",
+  "body": "The 2026-09-26 continuation request replaces the prior wait-for-restatement step for the existing memory task. It does not accept results in advance or authorize unrelated application repairs. Preserve application contracts and unrelated dirty work. Resume the next unfinished memory component from the tracker.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Read the latest authorization when deciding whether to continue the saved task."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-26T20:42:24.289+00:00",
+  "change_reason": "Latest user instruction authorizes component-by-component continuation of saved memory work"
+}

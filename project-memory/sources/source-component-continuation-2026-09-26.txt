@@ -1,0 +1,1 @@
+Read AGENTS.md and NOW\.md, then run the project-memory startup command. Tell me briefly where we are. Continue the current unfinished work one component at a time. Read its relevant saved records and original agreement passages, make the change, show me the result, update the memory and tracker, and commit that one coherent change. Don’t wait for me to restate the plan.

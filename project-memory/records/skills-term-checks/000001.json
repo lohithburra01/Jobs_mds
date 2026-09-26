@@ -1,0 +1,85 @@
+{
+  "id": "skills-term-checks",
+  "title": "Check one skill: type, relevance, specificity and membership",
+  "summary": "Jev classifies the individual term and checks why it belongs in this JD-specific Skills section and proposed group.",
+  "body": "Use four ordered questions for each term: (1) What is it? (2) Why is it useful for this JD? (3) Does its displayed phrase communicate something meaningful? (4) Does it belong in the proposed group? The later assembly clarification assigns individual classification to Jev. Follow the JD and selection records for the actual requirement and selected workflow; canonical inventory is not an exhaustive tool whitelist. Apply the settled retrofit rule without reopening employer-specific technology verification. Return item judgments for group review; do not replace individual checks with one overall section judgment. Shared decision evidence and unresolved-result handling belong to module-checks. This source does not specify exhaustive classification choices or a new per-skill retry budget.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 281,
+      "end": 284
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 288,
+      "end": 288
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 960,
+      "end": 960
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-skills",
+      "reason": "Return to the component contract and sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply settled relevance, retrofit and evidence constraints."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-007",
+      "reason": "Read exact Skills agreement wording when interpreting this requirement."
+    },
+    {
+      "rel": "uses",
+      "to": "skills-taxonomy",
+      "reason": "Resolve the distinction between term type and display label."
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-jd",
+      "reason": "Follow when deciding relevance to the actual JD requirement."
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-selection",
+      "reason": "Follow when connecting a term to the selected workflow."
+    },
+    {
+      "rel": "uses",
+      "to": "module-canonical",
+      "reason": "Follow when candidate facts or tools need to be resolved; inventory is intentionally incomplete."
+    },
+    {
+      "rel": "uses",
+      "to": "module-checks",
+      "reason": "Use shared narrow-question, evidence and unresolved-result rules."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024",
+      "reason": "Later clarification assigns Jev the individual classification work."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-004",
+      "reason": "Read the settled work-based relevance and functional retrofit rule."
+    }
+  ],
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-skills",
+  "progress": "Semantic record extracted for review; application enforcement has not been verified.",
+  "revision": 1,
+  "updated_at": "2026-09-26T20:44:10.479+00:00",
+  "change_reason": "Migrate one coherent Skills requirement from preserved agreement without changing the application contract"
+}

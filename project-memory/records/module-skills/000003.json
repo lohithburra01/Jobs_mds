@@ -1,0 +1,97 @@
+{
+  "id": "module-skills",
+  "kind": "module",
+  "title": "Skills",
+  "summary": "Four semantic records now explain taxonomy, individual checks, group checks and whole-section checks, with exact sources and named cross-component routes.",
+  "body": "Receives JD requirements, selected work and candidate tools; produces categorized JD-relevant skills. The planned application contract is unchanged. Jev classifies individual terms; Python assembles approved groups. Read the child index and open only the relevant record, then follow its named links. Semantic migration is ready for user review; this is not a claim that current application code enforces the agreement.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-007"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-jd"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-selection"
+    },
+    {
+      "rel": "child",
+      "to": "skills-taxonomy",
+      "reason": "Internal types and displayed resume labels are distinct; examples illustrate classification rather than mandatory resume content."
+    },
+    {
+      "rel": "child",
+      "to": "skills-term-checks",
+      "reason": "Jev classifies the individual term and checks why it belongs in this JD-specific Skills section and proposed group."
+    },
+    {
+      "rel": "child",
+      "to": "skills-group-checks",
+      "reason": "Python assembles approved groups; review each group after its member checks for label fit, membership and duplication."
+    },
+    {
+      "rel": "child",
+      "to": "skills-section-checks",
+      "reason": "After group checks, ensure important terms remain visible without irrelevant clutter; meaningful Skills/Experience repetition is allowed."
+    },
+    {
+      "rel": "coverage",
+      "to": "coverage-skills",
+      "reason": "Trace each substantive Skills clause to its semantic destination."
+    },
+    {
+      "rel": "uses",
+      "to": "module-checks",
+      "reason": "Retrieve shared hierarchy and decision evidence requirements."
+    },
+    {
+      "rel": "uses",
+      "to": "module-writing",
+      "reason": "Coordinate displayed skills with separately owned writing blocks."
+    }
+  ],
+  "revision": 3,
+  "updated_at": "2026-09-26T20:44:11.244+00:00",
+  "change_reason": "Add bounded semantic child navigation while preserving the planned application contract",
+  "contract": {
+    "receives": "JD requirements; selected work and candidate tools",
+    "produces": "Categorized, JD-relevant skills",
+    "owns": "Skills taxonomy and individual/group checks",
+    "must_preserve": "Do not present broad domains as concrete tools",
+    "status": "planned boundary, not verified implementation"
+  },
+  "children": [
+    {
+      "id": "skills-taxonomy",
+      "title": "Classify each term before choosing display groups",
+      "summary": "Internal types and displayed resume labels are distinct; examples illustrate classification rather than mandatory resume content."
+    },
+    {
+      "id": "skills-term-checks",
+      "title": "Check one skill: type, relevance, specificity and membership",
+      "summary": "Jev classifies the individual term and checks why it belongs in this JD-specific Skills section and proposed group."
+    },
+    {
+      "id": "skills-group-checks",
+      "title": "Assemble compatible skills and check the group label",
+      "summary": "Python assembles approved groups; review each group after its member checks for label fit, membership and duplication."
+    },
+    {
+      "id": "skills-section-checks",
+      "title": "Review the whole Skills section and useful repetition",
+      "summary": "After group checks, ensure important terms remain visible without irrelevant clutter; meaningful Skills/Experience repetition is allowed."
+    }
+  ],
+  "unresolved": [
+    "Exact closed taxonomy, response schemas and retry mechanics are not specified by the Skills passage; inspect shared records and actual implementation before any application change.",
+    "Application enforcement and output quality have not been tested by this memory-only migration."
+  ]
+}

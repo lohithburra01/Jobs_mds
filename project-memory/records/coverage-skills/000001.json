@@ -1,0 +1,241 @@
+{
+  "id": "coverage-skills",
+  "kind": "coverage",
+  "title": "Skills agreement clause coverage",
+  "status": "review",
+  "summary": "All substantive clauses in Skills source section 007 have semantic destinations; shared review hierarchy and later assembly ownership are linked.",
+  "body": "This is a bounded Skills coverage map, not a declaration that the whole agreement has been migrated. Source section 007 lines 258-293 contains a heading, blank lines and separator in addition to the mapped substantive clauses. Shared checks retain their existing owner; their full decomposition remains pending. Source 024 ownership is additive, not a taxonomy replacement. No Skills taxonomy supersession was found in the relevant later passages.",
+  "owner": "module-skills",
+  "clauses": [
+    {
+      "id": "taxonomy-and-examples",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 260,
+        "end": 277
+      },
+      "destinations": [
+        "skills-taxonomy"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "term-type",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 281,
+        "end": 281
+      },
+      "destinations": [
+        "skills-term-checks"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "jd-relevance",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 282,
+        "end": 282
+      },
+      "destinations": [
+        "skills-term-checks"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "display-specificity",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 283,
+        "end": 283
+      },
+      "destinations": [
+        "skills-term-checks"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "group-membership",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 284,
+        "end": 284
+      },
+      "destinations": [
+        "skills-term-checks",
+        "skills-group-checks"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "label-fit",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 285,
+        "end": 285
+      },
+      "destinations": [
+        "skills-group-checks"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "section-coverage-and-clutter",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 286,
+        "end": 286
+      },
+      "destinations": [
+        "skills-section-checks"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "no-invented-model-or-domain-as-tool",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 288,
+        "end": 288
+      },
+      "destinations": [
+        "skills-taxonomy",
+        "skills-term-checks"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "useful-cross-section-repetition",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 290,
+        "end": 290
+      },
+      "destinations": [
+        "skills-section-checks"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "group-duplication-and-hierarchy",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 368,
+        "end": 369
+      },
+      "destinations": [
+        "skills-group-checks",
+        "skills-section-checks"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "final-document-handoff",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 377,
+        "end": 377
+      },
+      "destinations": [
+        "skills-section-checks"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "shared-sequential-evidence-and-failure-rules",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 385,
+        "end": 407
+      },
+      "destinations": [
+        "module-checks",
+        "skills-group-checks",
+        "skills-section-checks"
+      ],
+      "disposition": "preserved"
+    },
+    {
+      "id": "jev-classifies-python-assembles",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 960,
+        "end": 960
+      },
+      "destinations": [
+        "skills-term-checks",
+        "skills-group-checks"
+      ],
+      "disposition": "preserved"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 258,
+      "end": 293
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 359,
+      "end": 410
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 960,
+      "end": 960
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-skills",
+      "reason": "Inspect source coverage for this component."
+    },
+    {
+      "rel": "covers",
+      "to": "skills-taxonomy",
+      "reason": "Read the standalone requirement mapped from the original clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "skills-term-checks",
+      "reason": "Read the standalone requirement mapped from the original clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "skills-group-checks",
+      "reason": "Read the standalone requirement mapped from the original clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "skills-section-checks",
+      "reason": "Read the standalone requirement mapped from the original clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "module-checks",
+      "reason": "Shared checks remain owned here; full decomposition pending."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-26T20:44:11.062+00:00",
+  "change_reason": "Track every substantive Skills clause and relevant cross-source clarification"
+}

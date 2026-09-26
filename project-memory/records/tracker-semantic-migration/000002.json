@@ -1,0 +1,102 @@
+{
+  "id": "tracker-semantic-migration",
+  "kind": "tracker",
+  "title": "Component-by-component semantic migration",
+  "status": "in_progress",
+  "summary": "Skills records are ready for review. Canonical is the next selected component; all other application and coding-context branches still need detailed migration.",
+  "body": "Latest user instruction authorizes one coherent component at a time, with source reading, visible result, memory/tracker update and commit. Review does not mean user acceptance. Canonical is selected next because it is the blueprint's other explicit example and its requested deep decomposition remains missing; this ordering is an execution choice, not a new application requirement. The complete two-layer map still contains unmigrated coding-context branches.",
+  "components": [
+    {
+      "id": "module-skills",
+      "status": "review",
+      "coverage": "coverage-skills"
+    },
+    {
+      "id": "module-canonical",
+      "status": "planned"
+    },
+    {
+      "id": "module-jd",
+      "status": "planned"
+    },
+    {
+      "id": "module-selection",
+      "status": "planned"
+    },
+    {
+      "id": "module-project",
+      "status": "planned"
+    },
+    {
+      "id": "module-writing",
+      "status": "planned"
+    },
+    {
+      "id": "module-checks",
+      "status": "planned"
+    },
+    {
+      "id": "module-rendering",
+      "status": "planned"
+    },
+    {
+      "id": "module-repairs",
+      "status": "planned"
+    },
+    {
+      "id": "module-observability",
+      "status": "planned"
+    },
+    {
+      "id": "module-evaluation",
+      "status": "planned"
+    }
+  ],
+  "coding_context_status": "Detailed branch migration pending; existing shared rules remain active.",
+  "next_action": "Migrate module-canonical one bounded component at a time from its saved contract, exact agreement passages and linked map inventory; keep missing facts explicit.",
+  "links": [
+    {
+      "rel": "uses",
+      "to": "module-skills",
+      "reason": "Inspect the completed pilot component."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-skills",
+      "reason": "Check the pilot source coverage."
+    },
+    {
+      "rel": "uses",
+      "to": "module-canonical",
+      "reason": "Next selected component; retrieve its contract before proceeding."
+    },
+    {
+      "rel": "uses",
+      "to": "blueprint-semantic-context-graph",
+      "reason": "Preserve migration scope and required record shape."
+    },
+    {
+      "rel": "uses",
+      "to": "map-two-layer-plan",
+      "reason": "Locate remaining application and coding-context branches."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Authority to continue without another plan restatement."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-26T20:46:28.741+00:00",
+  "change_reason": "Save observed Skills verification and independent source review before commit",
+  "verification": {
+    "date": "2026-09-26",
+    "integrity": "doctor: 204 records, zero problems; all current source hashes and links valid.",
+    "coverage": "13 clause groups resolve to records and hash-checked source ranges; all substantive Skills clauses covered.",
+    "retrieval": "Fresh CLI processes followed module-skills -> skills-term-checks -> module-jd and retrieved exact source-agreement-007.",
+    "contract": "module-skills revision 3 contract equals revision 2; application code unchanged by this component migration.",
+    "startup": "start names Skills review, Canonical next and continuation authorization; view refreshed.",
+    "source_review": "Independent read-only review of four children, module index and coverage against relevant original passages: no actionable findings.",
+    "limits": "Memory integrity and interpretation only. No application run or enforcement validation; no user acceptance."
+  }
+}

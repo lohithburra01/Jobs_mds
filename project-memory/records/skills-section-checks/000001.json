@@ -1,0 +1,81 @@
+{
+  "id": "skills-section-checks",
+  "title": "Review the whole Skills section and useful repetition",
+  "summary": "After group checks, ensure important terms remain visible without irrelevant clutter; meaningful Skills/Experience repetition is allowed.",
+  "body": "Review the whole Skills section using completed group judgments. Check that important JD-relevant terms are represented without duplicate or irrelevant clutter. Necessary repetition between Skills and Experience reinforces useful evidence and is not automatically redundancy. Pass the section judgments onward to final visible-document consistency and coverage checks; a section PASS does not erase a child failure. A subjective failure without an identifiable cause remains unresolved under the shared check rules, rather than prompting speculative rewriting. Follow module-writing when coordinating skills with written evidence and module-checks for the final document review. This record does not impose a fixed number of groups or skills.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 286,
+      "end": 290
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 368,
+      "end": 369
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 377,
+      "end": 377
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 385,
+      "end": 407
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-skills",
+      "reason": "Return to the component contract and sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply settled relevance, retrofit and evidence constraints."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-007",
+      "reason": "Read exact Skills agreement wording when interpreting this requirement."
+    },
+    {
+      "rel": "depends_on",
+      "to": "skills-group-checks",
+      "reason": "Use completed group judgments before reviewing the whole section."
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-jd",
+      "reason": "Follow when evaluating representation of important requirements."
+    },
+    {
+      "rel": "uses",
+      "to": "module-writing",
+      "reason": "Follow when coordinating Skills and Experience reinforcement in text blocks."
+    },
+    {
+      "rel": "uses",
+      "to": "module-checks",
+      "reason": "Follow for document-level review and unresolved child findings."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-010",
+      "reason": "Original review hierarchy routes section results into final document review."
+    }
+  ],
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-skills",
+  "progress": "Semantic record extracted for review; application enforcement has not been verified.",
+  "revision": 1,
+  "updated_at": "2026-09-26T20:44:10.853+00:00",
+  "change_reason": "Migrate one coherent Skills requirement from preserved agreement without changing the application contract"
+}

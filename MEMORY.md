@@ -5,6 +5,10 @@ Use show ID for one record, or source ID for exact original text.
 
 - project: goal, current focus and complete checkpoint list.
 - checkpoint-memory: setup status and fresh-chat next action.
+- tracker-semantic-migration: component progress and next bounded task.
+- module-skills: four semantic children and named cross-component routes.
+- coverage-skills: exact source clauses mapped to the Skills records.
+- source-component-continuation-2026-09-26: latest continuation authorization.
 - blueprint-semantic-context-graph: requested detailed plan segmentation.
 - map-two-layer-plan: application + coding-context map, with canonical internals.
 - rule-collaboration, rule-memory, rule-changes: working with Lohith.

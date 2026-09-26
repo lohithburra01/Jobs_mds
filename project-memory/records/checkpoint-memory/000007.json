@@ -1,0 +1,39 @@
+{
+  "id": "checkpoint-memory",
+  "kind": "checkpoint",
+  "title": "Prepare this project for a fresh chat",
+  "summary": "Semantic migration is underway, one component per coherent commit. Current component: Skills; broad records and source preservation already exist.",
+  "body": "Migrate Skills into separately readable taxonomy, term, group and section records, preserving original agreement and later amendments. Add source coverage and named retrieval routes. This is context migration, not application implementation. Existing HTML review-map limitations remain recorded; present the component result directly in chat.",
+  "status": "in_progress",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "uses",
+      "to": "state-existing-code"
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded"
+    },
+    {
+      "rel": "uses",
+      "to": "blueprint-semantic-context-graph"
+    },
+    {
+      "rel": "uses",
+      "to": "map-two-layer-plan"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Latest continuation instruction supersedes waiting for another plan restatement."
+    }
+  ],
+  "next_action": "Finish Skills records, verify source coverage and fresh-process retrieval, update the migration tracker, and commit this component.",
+  "revision": 7,
+  "updated_at": "2026-09-26T20:42:24.465+00:00",
+  "change_reason": "Begin the blueprint Skills pilot under latest continuation authorization"
+}
