@@ -1,0 +1,34 @@
+{
+  "id": "checkpoint-memory",
+  "kind": "checkpoint",
+  "title": "Prepare this project for a fresh chat",
+  "summary": "Storage/basic retrieval exist; fine-grained context migration remains unfinished. Lohith rejected the HTML presentation and requested the complete plan directly in chat, including decisions and unknowns.",
+  "body": "Lohith clarified that the next task is meaningful, selectively readable plan knowledge. Broad module summaries and pointers to source sections do not finish that task. Read blueprint-semantic-context-graph. Preserve the agreed application design and existing dirty application code. Do not redirect this task into Codex hooks or resume generation. The application remains unfinished; live hook delivery remains unverified.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "uses",
+      "to": "state-existing-code"
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded"
+    },
+    {
+      "rel": "uses",
+      "to": "blueprint-semantic-context-graph"
+    },
+    {
+      "rel": "uses",
+      "to": "map-two-layer-plan"
+    }
+  ],
+  "next_action": "Present the preserved plan and amendments in a complete readable walkthrough. Keep unsettled choices explicit; await Lohith's assessment before claiming the design is understood or accepted.",
+  "revision": 6,
+  "updated_at": "2026-09-26T20:25:07.181+00:00",
+  "change_reason": "Preserve the rejected presentation and current user request without changing application design"
+}
