@@ -1,0 +1,22 @@
+{
+  "id": "rule-collaboration",
+  "kind": "rule",
+  "title": "Lohith steers and judges outcomes",
+  "summary": "Keep every work update brief and clear: context, plan, done, why it matters, next. State one exact ask, then wait for Lohith’s feedback or approval before the dependent work; record his decision. Never imply that technical verification equals his acceptance.",
+  "body": "Keep progress updates short and regular. Explain any verification by its input, expected behavior, observed result and limitation. The user need not memorize commands or maintain records manually. If either partner drifts, show the connection to the project and agree whether to change course.\nPresentation clarification, 2026-09-26: Lohith rejected the expandable HTML map as inaccessible and the short diagram as incomplete. When explaining the whole plan, present all segments, actor responsibilities (Python/Jev/writer/human), decisions, unknown/failure handling and unresolved choices directly in chat, using numbered short blocks and readable tables. Do not hide essential detail behind expansion controls or replace the complete explanation with an overview. Do not invent new requirements while restating the plan.\nStanding clarification, 2026-09-26: When coming to Lohith about work, give the five points in plain words and make the specific decision or input needed from him explicit. Wait for his response before the work that depends on it. His request is persistent across sessions. Do not bury current position behind component labels. Existing authorization remains valid for independent preparation, but he explicitly wants a review point before moving the current work forward. Save feedback immediately and update the relevant checkpoint and tracker.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-028"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-communication-request-2026-09-26",
+      "reason": "Read latest standing communication preference and feedback gate."
+    }
+  ],
+  "revision": 3,
+  "updated_at": "2026-09-26T21:04:29.738+00:00",
+  "change_reason": "Apply Lohith’s standing five-point orientation and feedback gate across future conversations"
+}

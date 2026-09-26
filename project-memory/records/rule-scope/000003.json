@@ -1,0 +1,27 @@
+{
+  "id": "rule-scope",
+  "kind": "rule",
+  "title": "Current authorization and model independence",
+  "summary": "Current work remains this project’s memory harness, but present five clear points and wait for Lohith’s priority feedback before starting the next component. Earlier continuation authorization does not waive this latest review request. No model lock, paid run, submission, deployment or push is implied.",
+  "body": "The 2026-09-26 standing communication request narrows the prior continue-without-restatement instruction: prepare independently and preserve context, then pause before dependent component work for explicit feedback. Resume the chosen bounded task after Lohith answers. This does not erase the agreement or imply application acceptance.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Read the latest authorization when deciding whether to continue the saved task."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-communication-request-2026-09-26",
+      "reason": "Latest user instruction narrows how to continue the saved work."
+    }
+  ],
+  "revision": 3,
+  "updated_at": "2026-09-26T21:04:53.415+00:00",
+  "change_reason": "Latest user request narrows prior blanket continuation to a clear feedback point"
+}

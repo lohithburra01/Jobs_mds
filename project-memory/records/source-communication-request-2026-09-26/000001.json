@@ -1,0 +1,20 @@
+{
+  "id": "source-communication-request-2026-09-26",
+  "kind": "source",
+  "title": "Standing five-point communication and feedback request",
+  "status": "reference",
+  "summary": "Lohith requires brief context, plan, completed work, why it matters, and next step, followed by a precise ask and a wait for his feedback before proceeding.",
+  "body": "Faithful concise record of the latest explicit 2026-09-26 message. It changes the collaboration process across future conversations, not the application requirements.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-communication-request-2026-09-26.txt",
+      "sha256": "0eb25cd432ba2816d81500c7d6736ab42270539527ad14d4facfda639bb81722",
+      "start": 1,
+      "end": 1
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-26T21:04:29.552+00:00",
+  "change_reason": "Preserve latest standing communication instruction"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "checkpoint-memory",
+  "kind": "checkpoint",
+  "title": "Prepare this project for a fresh chat",
+  "summary": "Memory harness works and holds the agreement; detailed organization is partial. Skills is a sample in review. The app has not been proven on a real JD. Lohith requested a clear five-point orientation and a specific decision before more component work.",
+  "body": "Current result: module-skills routes to taxonomy, individual checks, group checks and section checks. coverage-skills traces original clauses and the later Jev/Python ownership clarification. The application contract is unchanged; current application enforcement and quality remain unverified. User authorizes continuing the saved migration one component at a time, showing results in chat and committing each coherent change. No acceptance is inferred. Follow tracker-semantic-migration for remaining scope.\nCurrent user-facing review point: explain project context and present one plain decision on the next priority. Do not start Canonical until Lohith responds to that decision. The previous Skills sample is committed but not accepted.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "uses",
+      "to": "state-existing-code"
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded"
+    },
+    {
+      "rel": "uses",
+      "to": "blueprint-semantic-context-graph"
+    },
+    {
+      "rel": "uses",
+      "to": "map-two-layer-plan"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Latest continuation instruction supersedes waiting for another plan restatement."
+    },
+    {
+      "rel": "uses",
+      "to": "tracker-semantic-migration",
+      "reason": "Read component progress and next action."
+    },
+    {
+      "rel": "uses",
+      "to": "module-skills",
+      "reason": "Inspect the current component result."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-skills",
+      "reason": "Review exact Skills source coverage."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Use standing five-point update and wait for feedback before advancing this checkpoint."
+    }
+  ],
+  "next_action": "Give five brief points and ask whether to finish making the saved agreement usable before application verification, or switch priority to proving the app with a real JD. Wait for Lohith’s answer before dependent work.",
+  "revision": 9,
+  "updated_at": "2026-09-26T21:04:29.918+00:00",
+  "change_reason": "Save current review point before the next memory component"
+}
