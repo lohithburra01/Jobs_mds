@@ -14,9 +14,8 @@ the agreement. Review is not user acceptance.
 
 Memory harness accepted 2026-09-27 (checkpoint-memory). Codex and Claude Code
 share it (change-claude-hooks). checkpoint-1 step 1 done. Current: checkpoint-6,
-a baseline run on the Scaleway JD (change-baseline-jd-first). Run 2 stopped at the
-JD-reading step; no resume yet. harness/skills.py has unfinished uncommitted work.
-See checkpoint-6 for cause and the decision needed from Lohith.
+a baseline run on the Scaleway JD. JD reading was redesigned (change-role-brief-jd,
+approved) and passes free tests; next is Lohith's go-ahead for one paid rerun.
 
 The previous NOW.md is preserved verbatim under source-old-now in the graph.
 No model name is required. Do not replay the chat or read all archives.

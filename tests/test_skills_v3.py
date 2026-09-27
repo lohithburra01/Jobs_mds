@@ -47,22 +47,26 @@ def make_job(terms):
     return JobV3(company="Acme", role="Engineer", location="", thesis="Build it", requirements=[requirement], components=[component], stack_items=items)
 
 
+POLICY = {"priority": {"CORE": "central"}, "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}
+BRIEF = {"summary": "AI engineer who ships production AI services.", "must_haves": ["Production AI delivery"], "nice_to_haves": []}
+
+
+def draft(requirements, stack=None, brief=None):
+    return {"company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI",
+            "brief": brief or BRIEF, "requirements": requirements, "stack": stack or []}
+
+
 class JobStructureTests(unittest.TestCase):
-    def test_jd_decisions_are_sent_in_bounded_batches(self):
+    def analyze(self, provider, jd):
         from harness.skills import analyze_job_v3
         from harness.store import RunStore
+        with scratch() as directory:
+            job = analyze_job_v3(RunStore(directory), provider, POLICY, jd)
+            note = (directory / "role-brief.md").read_text(encoding="utf-8")
+        return job, note
 
+    def test_jd_decisions_are_sent_in_bounded_batches(self):
         passages = [f"Requirement {index} deploys service {index} with monitoring." for index in range(1, 16)]
-        jd = "\n".join(passages)
-        draft = {
-            "company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI",
-            "requirements": [
-                {"text": passage, "quote": passage,
-                 "components": [{"text": passage, "quote": passage}]}
-                for passage in passages
-            ],
-            "stack": [],
-        }
 
         class BoundedProvider(FixedProvider):
             def decide(self, state, questions):
@@ -70,123 +74,100 @@ class JobStructureTests(unittest.TestCase):
                     raise AssertionError(f"oversized Jev batch: {len(questions)}")
                 return super().decide(state, questions)
 
-        provider = BoundedProvider(draft)
-        with scratch() as directory:
-            job = analyze_job_v3(RunStore(directory), provider,
-                                 {"priority": {"CORE": "central"},
-                                  "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}, jd)
+        provider = BoundedProvider(draft([{"text": p, "quote": p, "components": [{"text": p, "quote": p}]} for p in passages]))
+        job, _ = self.analyze(provider, "\n".join(passages))
         self.assertEqual(len(job.requirements), 15)
         self.assertGreater(len(provider.decide_calls), 1)
         self.assertTrue(all(len(questions) <= 40 for _, questions in provider.decide_calls))
 
     def test_composite_requirement_keeps_deployment_integration_and_controls(self):
-        from harness.skills import analyze_job_v3
         jd = "Deploy production AI applications, integrate them with enterprise APIs, and add monitoring, retries, and recovery controls."
-        provider = FixedProvider({
-            "company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI delivery",
-            "requirements": [{
-                "text": "Deploy reliable production AI applications",
-                "quote": jd,
-                "components": [
-                    {"text": "Deploy production AI applications", "quote": "Deploy production AI applications"},
-                    {"text": "Integrate with enterprise APIs", "quote": "integrate them with enterprise APIs"},
-                    {"text": "Add monitoring, retries, and recovery controls", "quote": "monitoring, retries, and recovery controls"},
-                ],
-            }],
-            "stack": [{"exact_term": "APIs", "quote": "enterprise APIs"}],
-        })
-        with scratch() as directory:
-            from harness.store import RunStore
-            job = analyze_job_v3(RunStore(directory), provider, {"priority": {"CORE": "central"}, "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}, jd)
+        provider = FixedProvider(draft([{
+            "text": "Deploy reliable production AI applications", "quote": jd,
+            "components": [
+                {"text": "Deploy production AI applications", "quote": "Deploy production AI applications"},
+                {"text": "Integrate with enterprise APIs", "quote": "integrate them with enterprise APIs"},
+                {"text": "Add monitoring, retries, and recovery controls", "quote": "monitoring, retries, and recovery controls"},
+            ]}], stack=[{"exact_term": "APIs", "quote": "enterprise APIs"}]))
+        job, _ = self.analyze(provider, jd)
         self.assertEqual(len(job.components), 3)
-        self.assertEqual({item.text for item in job.components}, {
-            "Deploy production AI applications", "Integrate with enterprise APIs",
-            "Add monitoring, retries, and recovery controls",
-        })
         self.assertTrue(all(item.quote in jd for item in job.components))
+        self.assertEqual(job.brief.stack, ["APIs"])
 
     def test_noncontiguous_component_short_quote_falls_back_to_exact_parent_passage(self):
-        from harness.skills import analyze_job_v3
-        from harness.store import RunStore
         jd = "Design, build, and deploy AI-powered solutions, automations, and agents."
-        provider = FixedProvider({
-            "company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI",
-            "requirements": [{"text": "Deliver AI solutions", "quote": jd,
-                              "components": [{"text": "Design AI-powered solutions",
-                                              "quote": "Design AI-powered solutions"}]}],
-            "stack": [],
-        })
-        with scratch() as directory:
-            job = analyze_job_v3(RunStore(directory), provider,
-                                 {"priority": {"CORE": "central"},
-                                  "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}, jd)
+        provider = FixedProvider(draft([{"text": "Deliver AI solutions", "quote": jd,
+                                         "components": [{"text": "Design AI-powered solutions", "quote": "Design AI-powered solutions"}]}]))
+        job, _ = self.analyze(provider, jd)
         self.assertEqual(job.components[0].quote, jd)
 
-    def test_missing_jd_passage_cannot_be_hidden_by_passing_extracted_nodes(self):
-        from harness.skills import analyze_job_v3
-        from harness.store import RunStore
+    def test_missing_work_passage_is_reported_not_fatal(self):
         jd = "Build AI services. Maintain audit logs for every automated action."
-        provider = FixedProvider({
-            "company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI",
-            "requirements": [{"text": "Build AI services", "quote": "Build AI services.",
-                              "components": [{"text": "Build AI services", "quote": "Build AI services."}]}],
-            "stack": [],
-        }, overrides={"passage_2__coverage": "MISSING"})
-        with scratch() as directory:
-            with self.assertRaisesRegex(ValueError, "still needs review"):
-                analyze_job_v3(RunStore(directory), provider,
-                               {"priority": {"CORE": "central"},
-                                "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}, jd)
-        self.assertEqual(len(provider.create_calls), 3)
-        self.assertTrue(all(call[1]["corrections"] for call in provider.create_calls[1:]))
+        provider = FixedProvider(draft([{"text": "Build AI services", "quote": "Build AI services."}]),
+                                 overrides={"passage_2__coverage": "MISSING"})
+        job, note = self.analyze(provider, jd)
+        self.assertEqual(len(provider.create_calls), 1)
+        self.assertEqual([(item.kind, item.text) for item in job.unresolved],
+                         [("PASSAGE_MISSING", "Maintain audit logs for every automated action.")])
+        self.assertIn("Maintain audit logs", note)
 
+    def test_self_contradicting_reviewer_does_not_stop_the_run(self):
+        # The run-3 contradiction: company context flagged missing, and judged unfaithful once included.
+        jd = "As Acme grows, we are strengthening our IT organization.\nBuild internal AI tools for business teams."
+        provider = FixedProvider(draft([
+            {"text": "Acme is strengthening IT", "quote": "As Acme grows, we are strengthening our IT organization."},
+            {"text": "Build internal AI tools", "quote": "Build internal AI tools for business teams."},
+        ]), overrides={"passage_1__label": "COMPANY_CONTEXT", "passage_1__coverage": "MISSING", "r1.c1__faithful": "FAIL"})
+        job, _ = self.analyze(provider, jd)
+        self.assertEqual(len(provider.create_calls), 1)
+        self.assertEqual(len(job.requirements), 2)
+        self.assertEqual([(item.kind, item.node_id) for item in job.unresolved], [("INTERPRETATION_FAIL", "r1.c1")])
 
-    def test_section_headings_are_not_coverage_passages(self):
-        from harness.skills import _jd_passages
-        jd = "\n".join([
-            "SOFT SKILLS:", "AI Tooling Engineering", "Business-side AI Toolers",
-            "Strong Python skills", "Docker and Kubernetes",
-            "Promote our own cloud and AI solutions internally.",
-        ])
-        self.assertEqual(_jd_passages(jd), [
-            "Strong Python skills", "Docker and Kubernetes",
-            "Promote our own cloud and AI solutions internally.",
-        ])
+    def test_three_line_jd_without_components_works(self):
+        jd = "Python developer wanted.\nBuild data pipelines for our analysts.\nRemote, full time."
+        provider = FixedProvider(draft([{"text": "Build data pipelines", "quote": "Build data pipelines for our analysts."}],
+                                       stack=[{"exact_term": "Python", "quote": "Python developer wanted."}],
+                                       brief={"summary": "Python developer who builds data pipelines for analysts.",
+                                              "must_haves": ["Python", "Data pipelines"]}))
+        job, note = self.analyze(provider, jd)
+        self.assertEqual([(item.id, item.text) for item in job.components], [("r1.c1", "Build data pipelines")])
+        self.assertIn("Python developer who builds data pipelines", note)
 
-    def test_retry_revises_previous_draft_instead_of_starting_over(self):
-        from harness.skills import analyze_job_v3
-        from harness.store import RunStore
-        jd = "Build AI services. Maintain audit logs for every automated action."
-        provider = FixedProvider({
-            "company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI",
-            "requirements": [{"text": "Build AI services", "quote": "Build AI services.",
-                              "components": [{"text": "Build AI services", "quote": "Build AI services."}]}],
-            "stack": [],
-        }, overrides={"passage_2__coverage": "MISSING"})
-        with scratch() as directory:
-            with self.assertRaises(ValueError):
-                analyze_job_v3(RunStore(directory), provider,
-                               {"priority": {"CORE": "central"},
-                                "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}, jd)
-        self.assertIsNone(provider.create_calls[0][1]["previous_draft"])
-        for _, payload in provider.create_calls[1:]:
-            self.assertEqual(payload["previous_draft"]["requirements"][0]["text"], "Build AI services")
+    def test_non_english_jd_keeps_original_language_quotes(self):
+        jd = "Vous concevrez des agents IA pour les équipes métier.\nMaîtrise de Python exigée."
+        provider = FixedProvider(draft([
+            {"text": "Design AI agents for business teams", "quote": "Vous concevrez des agents IA pour les équipes métier."},
+            {"text": "Python proficiency", "quote": "Maîtrise de Python exigée."},
+        ], stack=[{"exact_term": "Python", "quote": "Maîtrise de Python exigée."}],
+            brief={"summary": "AI engineer designing agents for business teams in Python.", "must_haves": ["AI agents", "Python"]}))
+        job, _ = self.analyze(provider, jd)
+        self.assertEqual(job.requirements[0].quote, "Vous concevrez des agents IA pour les équipes métier.")
+        self.assertEqual(job.requirements[0].text, "Design AI agents for business teams")
+        self.assertEqual(job.unresolved, [])
+
+    def test_quote_not_in_jd_is_reported_and_skipped(self):
+        jd = "Build AI services for finance teams."
+        provider = FixedProvider(draft([
+            {"text": "Build AI services", "quote": "Build AI services for finance teams."},
+            {"text": "Invented requirement", "quote": "Manage a team of twenty."},
+        ]))
+        job, _ = self.analyze(provider, jd)
+        self.assertEqual(len(job.requirements), 1)
+        self.assertEqual([item.kind for item in job.unresolved], ["QUOTE_NOT_IN_JD"])
+
+    def test_unusable_output_is_retried_once_then_stops_clearly(self):
+        provider = FixedProvider({"company": "Acme"})
+        with self.assertRaisesRegex(ValueError, "unusable output twice"):
+            self.analyze(provider, "Build AI services.")
+        self.assertEqual(len(provider.create_calls), 2)
 
     def test_personal_qualification_is_a_valid_component_kind(self):
-        from harness.skills import analyze_job_v3
-        from harness.store import RunStore
         jd = "Highly autonomous, curious, and comfortable in a fast-moving environment"
-        provider = FixedProvider({
-            "company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI",
-            "requirements": [{"text": "Work autonomously", "quote": jd, "components": [{"text": jd, "quote": jd}]}],
-            "stack": [],
-        })
-        with scratch() as directory:
-            analyze_job_v3(RunStore(directory), provider,
-                           {"priority": {"CORE": "central"},
-                            "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}, jd)
+        provider = FixedProvider(draft([{"text": "Work autonomously", "quote": jd}]))
+        self.analyze(provider, jd)
         questions = provider.decide_calls[0][1]
         self.assertIn("qualification or personal requirement", questions["r1.c1__faithful"]["instructions"])
+
 
 
 class SkillClassificationTests(unittest.TestCase):

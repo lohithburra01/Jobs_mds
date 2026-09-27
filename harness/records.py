@@ -188,6 +188,21 @@ class SkillGroup(StrictModel):
     item_ids: list[str] = Field(min_length=1)
 
 
+class RoleBrief(StrictModel):
+    """The single short understanding of what the JD asks for; the anchor for later stages."""
+    summary: str
+    must_haves: list[str]
+    nice_to_haves: list[str] = Field(default_factory=list)
+    stack: list[str] = Field(default_factory=list)
+
+
+class UnresolvedJD(StrictModel):
+    """Something the JD reading could not settle; shown to the user, never a reason to stop."""
+    kind: str
+    node_id: str = ""
+    text: str
+
+
 class JobV3(StrictModel):
     company: str
     role: str
@@ -196,6 +211,8 @@ class JobV3(StrictModel):
     requirements: list[RequirementV3] = Field(min_length=1)
     components: list[Component] = Field(min_length=1)
     stack_items: list[SkillItem] = Field(default_factory=list)
+    brief: RoleBrief | None = None
+    unresolved: list[UnresolvedJD] = Field(default_factory=list)
 
 
 class DecisionCase(StrictModel):

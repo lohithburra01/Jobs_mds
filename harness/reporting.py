@@ -45,7 +45,13 @@ def write_coverage_report(folder: Path, blueprint: Blueprint, report: Assessment
     data = coverage_data(blueprint, report, layout, usage)
     (folder / "coverage.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     lines = [f"# Coverage - {blueprint.job.company} / {blueprint.job.role}", "",
-             f"Status: **{data['status']}**", "", "## JD work components", "",
+             f"Status: **{data['status']}**", ""]
+    if blueprint.job.brief is not None:
+        lines += ["## Role brief", "", blueprint.job.brief.summary, ""]
+        lines += [f"- Must-have: {item}" for item in blueprint.job.brief.must_haves] + [""]
+    lines += ["## Unresolved in JD reading", ""]
+    lines += [f"- `{item.kind}` {item.node_id} {item.text}".replace("  ", " ") for item in blueprint.job.unresolved] or ["- None."]
+    lines += ["", "## JD work components", "",
              "| Component | Priority | Status | Visible evidence |", "|---|---|---|---|"]
     for component in data["components"]:
         lines.append(f"| {component['text']} | {component['priority']} | {component['status']} | {', '.join(component['expressed_ids']) or 'none'} |")

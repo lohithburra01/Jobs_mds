@@ -1,0 +1,46 @@
+{
+  "id": "change-role-brief-jd",
+  "kind": "change",
+  "status": "review",
+  "title": "Realign JD reading with the agreed plan and add one role brief",
+  "summary": "Proposal: one extraction call produces a short role brief plus requirements; Jev labels passages and flags interpretations but never blocks; failures stay visible as unresolved; the retry-and-stop loop is removed.",
+  "body": "WHY: Baseline runs 2 and 3 stopped at JD reading. The implementation (harness/skills.py analyze_job_v3) drifted from the accepted plan: it regenerates the whole extraction up to three times and stops the run if any of ~150 Jev answers fails, while plan-jd-unresolved-fallback says to keep the passage, mark it unresolved and not spend repeated drafts. Lohith also asked (2026-09-27) for one core understanding of what is asked, working for any JD language, format and length, simple and drift-proof, with Jev used for speed and never hindering.\n\nKEEP (already agreed, to be implemented as agreed): save exact JD text and hash; Python passage IDs; Jev labels every passage as work, qualification, technology, company context, mixed or uncertain; one structured extraction call; Python verifies quotes; Jev checks each interpretation against its original passage; each requirement keeps its passage, plain interpretation, priority, meaningful components and named technologies.\n\nADD (new): a ROLE BRIEF produced in the same single extraction call: one or two sentences (who they want, what problem, main stack), 3-6 must-haves, a few nice-to-haves, exact stack terms. Written in English whatever the JD language; quotes stay in the original language. Saved, shown to Lohith, and passed to selection and writing as the anchor for every later step.\n\nCHANGE: components become optional (a short or vague JD may have none). Coverage is computed only over passages Jev labels work, qualification or technology; company context and boilerplate need no coverage.\n\nREMOVE: the three-draft retry loop and the hard stop at JD reading. Failed interpretations and uncovered work/qualification passages are marked unresolved and listed in the brief and the final report; the run continues. Supersedes the retry-with-previous-draft and heading filter parts of change-jd-reading-convergence (heading handling moves to Jev passage labels).\n\nJEV ROLE: fast labeller and sorter, never a gatekeeper on interpretation. Uses: passage labels, interpretation flags, selection judgments (already agreed in plan-selection-judgments), and the truth check that every written claim is backed by saved facts (already agreed in module-checks). Jev latency and calibration in this project are not yet measured; the only recorded check took about 1 s for 3 questions.\n\nAFFECTS: module-jd (produces the role brief plus requirements and unresolved passages; implementation realigned), module-selection and module-writing (receive the role brief). module-checks unchanged. rule-application unchanged.\n\nVERIFY BEFORE ANY PAID RUN (fake Jev, no cost): a self-contradicting Jev still lets the run continue with items marked unresolved; a 3-line JD produces a brief with no components; a non-English JD fixture keeps original-language quotes. THEN, with Lohith's go-ahead: rerun the Scaleway JD once, then one short JD, and show him the brief, the resume and the unresolved list.\n\nNOT DECIDED HERE: resume content rules, selection rules, layout.\n\nAPPROVED 2026-09-27. Authorized now: implement and run the free fake-Jev tests only. Stop before any paid run.\n\nIMPLEMENTED 2026-09-28 (review, not yet proven on a real JD): harness/skills.py analyze_job_v3 now makes one extraction call (one retry only if the output is technically unusable), writes role-brief.md and jd-reading.json into the run folder, asks Jev passage labels, coverage, faithfulness and priority in one batched pass, and records problems in job.unresolved without stopping. Requirements without components become their own single component so later stages are unchanged. records.py: RoleBrief, UnresolvedJD; JobV3.brief and JobV3.unresolved. reporting.py: coverage.md shows the role brief and the unresolved list. The writer receives the brief inside the job record. Tests (fake Jev, no cost): self-contradicting reviewer continues; 3-line JD without components; French JD keeps original quotes; quote not in JD skipped and reported; unusable output retried once then stops clearly; report shows brief and unresolved. Full suite 121 pass. Not yet verified: real model and Jev behaviour; selection does not yet use the brief beyond the job record. Paid rerun needs Lohith's go-ahead.",
+  "links": [
+    {
+      "rel": "affects",
+      "to": "module-jd"
+    },
+    {
+      "rel": "affects",
+      "to": "module-selection"
+    },
+    {
+      "rel": "affects",
+      "to": "module-writing"
+    },
+    {
+      "rel": "affects",
+      "to": "change-jd-reading-convergence"
+    },
+    {
+      "rel": "based_on",
+      "to": "plan-jd-unresolved-fallback"
+    },
+    {
+      "rel": "based_on",
+      "to": "plan-jd-source-preservation"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Design change recorded and shown to Lohith before implementation."
+    }
+  ],
+  "acceptance": {
+    "user_statement": "yes approved, go ahead",
+    "source": "Lohith in Claude Code chat, 2026-09-27"
+  },
+  "revision": 3,
+  "updated_at": "2026-09-27T22:06:27.257+00:00",
+  "change_reason": "Implement change-role-brief-jd (free tests only)"
+}
