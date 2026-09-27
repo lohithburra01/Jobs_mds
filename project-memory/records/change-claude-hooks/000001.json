@@ -1,0 +1,18 @@
+{
+  "id": "change-claude-hooks",
+  "kind": "change",
+  "status": "review",
+  "title": "Wire Claude Code into the shared memory harness",
+  "summary": "Claude Code now loads AGENTS.md (via CLAUDE.md) and runs the same memory hook script as Codex; events are labelled by agent.",
+  "body": "Lohith wants one universal setup across Codex, Claude Code and other agents. Shared brain unchanged: scripts/memory-hook.ps1 + project-memory. Added .claude/settings.json (SessionStart, PreToolUse, PostToolUse, PreCompact, Stop, SessionEnd; Codex-only Interrupt and PostCompact omitted because Claude has no Interrupt and re-fires SessionStart after compaction). Added CLAUDE.md importing AGENTS.md. Hook launcher takes -Agent (default codex); events record origin claude_hook or codex_hook; health counts both and lists configured_agents. Verified: live PreToolUse from Claude recorded as claude_hook at 2026-09-27T18:53Z; Codex default path unchanged; hook tests pass. Not yet verified: Claude SessionStart brief (next session), any live Codex event, Antigravity wiring. Incident: launcher was changed before the Python script accepted --agent, blocking all tools until Lohith restored it with git checkout; redone in safe order.",
+  "links": [
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Hooks record metadata only; semantic updates remain an agent responsibility."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T18:57:14.015+00:00",
+  "change_reason": "Record Claude Code wiring into the shared memory harness as one coherent change"
+}

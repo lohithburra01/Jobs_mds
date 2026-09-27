@@ -1,4 +1,4 @@
-"""Codex adapter: metadata-only observations and a bounded startup briefing."""
+"""Agent hook adapter (Codex, Claude Code): metadata-only observations and a bounded startup briefing."""
 import argparse
 from datetime import datetime
 import json
@@ -11,12 +11,12 @@ from project_memory.store import Store, digest, now
 from project_memory.views import dashboard
 
 
-def handle(store, payload, synthetic=False):
+def handle(store, payload, synthetic=False, agent="codex"):
     kind = str(payload.get("hook_event_name", "Unknown"))
     session = str(payload.get("session_id", "unknown"))
     tool = str(payload.get("tool_name", ""))
     call = str(payload.get("tool_use_id", ""))
-    origin = "synthetic" if synthetic else "codex_hook"
+    origin = "synthetic" if synthetic else agent + "_hook"
     extra = dict(origin=origin, session=session, tool=tool, call=call,
                  turn=payload.get("turn_id"), model=payload.get("model"),
                  transcript_path=payload.get("transcript_path"))
@@ -54,13 +54,14 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", default=str(Path(__file__).resolve().parents[1]))
     parser.add_argument("--synthetic", action="store_true")
+    parser.add_argument("--agent", default="codex", choices=["codex", "claude"])
     args = parser.parse_args()
     payload = json.load(sys.stdin)
     root = Path(args.root).resolve()
     if not Path(payload.get("cwd", str(root))).resolve().is_relative_to(root):
         print("{}")
         return
-    print(json.dumps(handle(Store(root), payload, args.synthetic), ensure_ascii=False))
+    print(json.dumps(handle(Store(root), payload, args.synthetic, args.agent), ensure_ascii=False))
 
 
 if __name__ == "__main__":

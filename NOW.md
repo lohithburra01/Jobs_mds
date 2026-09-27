@@ -17,6 +17,7 @@ and verification-harness-completion. plan-application and plan-coding-context
 are the live plan directories; module-canonical exposes actual evidence and
 coverage-agreement maps original passages. tracker-semantic-migration holds
 current status. The older HTML map is a reference snapshot, not current state.
+change-claude-hooks (Claude Code wired to the same memory) is also in review.
 Wait for feedback/acceptance before checkpoint-1 (coding controls).
 
 The previous NOW.md is preserved verbatim under source-old-now in the graph.

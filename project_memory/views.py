@@ -10,9 +10,10 @@ from .store import now
 
 def health(store):
     events = store.timeline(1000)
-    live = [e for e in events if e.get("origin") == "codex_hook"]
+    live = [e for e in events if e.get("origin") in ("codex_hook", "claude_hook")]
     return {
-        "configured": (store.root / ".codex" / "hooks.json").exists(),
+        "configured": (store.root / ".codex" / "hooks.json").exists() or (store.root / ".claude" / "settings.json").exists(),
+        "configured_agents": [name for name, path in (("codex", ".codex/hooks.json"), ("claude", ".claude/settings.json")) if (store.root / path).exists()],
         "last_observed_hook": live[0] if live else None,
         "coverage": "Supported local tool events only. Hosted web tools and model reasoning are not recorded. Raw prompts, commands and outputs are not copied; transcript references identify original detail.",
         "activation": "Configured is not active. Codex requires project/hook trust. A non-synthetic event is evidence of delivery at that time, not a permanent guarantee.",
@@ -59,10 +60,10 @@ def dashboard(store):
             contract = record.get("contract", {})
             dependencies = ", ".join(edge["to"].removeprefix("module-") for edge in record.get("links", []) if edge["rel"] == "depends_on")
             modules.append(f"<tr><td><strong>{e(record['title'])}</strong><br><small>{e(record['id'])}</small></td><td>{e(contract.get('receives','See saved plan'))}</td><td>{e(contract.get('produces','See saved plan'))}</td><td>{e(dependencies or 'Independent input')}</td></tr>")
-    observation = "No live Codex hook event observed yet. Review /hooks in Codex CLI; the next chat must check health."
+    observation = "No live agent hook event observed yet. Review /hooks in the agent CLI; the next chat must check health."
     if h["last_observed_hook"]:
         last = h["last_observed_hook"]
-        observation = "Last delivered hook: " + last["kind"] + " at " + last["time"]
+        observation = "Last delivered hook: " + last["kind"] + " at " + last["time"] + " (" + last.get("origin", "unknown") + ")"
     html = f"""<!doctype html><html lang="en"><meta charset="utf-8"><meta http-equiv="refresh" content="5">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Application project — where we are</title>
 <style>body{{font:16px/1.55 system-ui,sans-serif;background:#f3f5f7;color:#162536;max-width:1050px;margin:32px auto;padding:0 20px}}h1{{font-size:30px}}h2{{font-size:20px;margin-top:0}}section{{background:white;padding:24px;margin:18px 0;border:1px solid #d7e0e7;border-radius:12px}}.current{{border-left:6px solid #247d75}}small,time{{color:#5e6c78;font-size:13px}}small{{display:block}}table{{border-collapse:collapse;width:100%}}td,th{{text-align:left;padding:14px 9px;border-bottom:1px solid #ddd;vertical-align:top}}td:first-child{{white-space:nowrap}}li{{margin:12px 0}}code{{background:#edf2f6;padding:2px 4px}}.note{{background:#fff5db}}pre{{white-space:pre-wrap}}</style>
