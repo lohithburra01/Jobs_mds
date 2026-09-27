@@ -1,12 +1,12 @@
 ﻿Goal,"Paste a JD and receive a readable tailored resume PDF, cover-letter PDF, application JSON and reusable chat context.",,
 Where we are,"Produce resume PDF, letter PDF, JSON, portable context and an inspectable report; Lohith judges the result.",,
-Next,"Ask Lohith for the go-ahead to rerun the Scaleway JD once plus one short JD, then show him role-brief.md, the resume and the unresolved list.",,
+Next,"Ask Lohith to approve a bounded fix for the selection stage request size (send shared system text once per batch, cap batch size by bytes, save provider error bodies), then rerun.",,
 
 Checkpoint,What this achieves,Status,Next action
 Agree what the application must produce,The detailed twenty-point discussion and later amendments are preserved. The application output is not yet accepted.,accepted,
 Prepare this project for a fresh chat,"Memory harness accepted: complete agreement navigation, detailed candidate evidence, verified integrity/recovery, saved communication rules, shared by Codex and Claude Code.",accepted,Done. Continue at checkpoint-1.
 Control the coding work,"Step 1 done (review): the supervisor now enforces its rules in all ten deliberate-failure cases, with fixture workers and no model calls. Real-task proof (Sol) and application visibility remain.",review,Step 2 (one real Codex task through the supervisor) is Lohith's to run in his own Codex setup; not blocking. Step 3 (application visibility) remains open.
-Run one actual JD end to end,"Produce resume PDF, letter PDF, JSON, portable context and an inspectable report; Lohith judges the result.",in_progress,"Ask Lohith for the go-ahead to rerun the Scaleway JD once plus one short JD, then show him role-brief.md, the resume and the unresolved list."
+Run one actual JD end to end,"Produce resume PDF, letter PDF, JSON, portable context and an inspectable report; Lohith judges the result.",in_progress,"Ask Lohith to approve a bounded fix for the selection stage request size (send shared system text once per batch, cap batch size by bytes, save provider error bodies), then rerun."
 Demonstrate one small coding task,"Show an actual bounded change, its evidence and history before trusting the coding workflow.",,Discuss the bounded task with Lohith when this checkpoint becomes current.
 See inside an application run,"Make stage, request, time, saved output and failure visible. This is application instrumentation, not the coding hooks.",,Discuss the bounded task with Lohith when this checkpoint becomes current.
 Improve the resume builder,"Repair resolved evidence, selection, skills, projects, writing, hierarchy and final layout according to the agreement.",,Discuss the bounded task with Lohith when this checkpoint becomes current.
