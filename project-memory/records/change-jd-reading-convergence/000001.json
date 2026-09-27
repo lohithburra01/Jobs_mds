@@ -1,0 +1,22 @@
+{
+  "id": "change-jd-reading-convergence",
+  "kind": "change",
+  "status": "review",
+  "title": "Make the JD-reading step converge instead of oscillating",
+  "summary": "Baseline run 2 stopped because the JD extraction was rejected three times. Fixes: personal qualifications can pass the faithfulness check; section headings are no longer coverage passages; each retry revises its previous draft.",
+  "body": "Observed in jobs/scaleway-baseline-jd-20260927T202451669539Z: (1) soft-skill components quoted exactly were judged unfaithful because the question required a concrete action/input/integration/control/output; the question now also accepts a stated qualification or personal requirement, still tied to its exact quote. (2) Headings such as 'AI Tooling Engineering' and 'SOFT SKILLS:' were flagged MISSING; lines of at most four words that end in ':' or are all capitalised words without end punctuation are excluded. On the saved run this removes 6 of 73 passages, all headings. (3) Retries regenerated from scratch, so fixes in one draft were lost in the next; retries now receive previous_draft and must keep uncriticised parts. Real omissions (promoting Scaleway's own cloud internally, the role's autonomy/team-building, the DSI context) must still be fixed by the model. Includes Codex's unfinished earlier work in the same file (passage coverage checks, bounded Jev batches, detailed corrections, parent-quote fallback), reviewed and kept. Tests: skills 10 pass; full suite 117 pass. Offline tests cannot show that Jev will now accept the draft; only the rerun can.",
+  "links": [
+    {
+      "rel": "affects",
+      "to": "checkpoint-6"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Check wording change is recorded; Lohith chose option A."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T21:29:18.940+00:00",
+  "change_reason": "Record JD-reading convergence fix (option A)"
+}

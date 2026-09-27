@@ -48,6 +48,37 @@ def make_job(terms):
 
 
 class JobStructureTests(unittest.TestCase):
+    def test_jd_decisions_are_sent_in_bounded_batches(self):
+        from harness.skills import analyze_job_v3
+        from harness.store import RunStore
+
+        passages = [f"Requirement {index} deploys service {index} with monitoring." for index in range(1, 16)]
+        jd = "\n".join(passages)
+        draft = {
+            "company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI",
+            "requirements": [
+                {"text": passage, "quote": passage,
+                 "components": [{"text": passage, "quote": passage}]}
+                for passage in passages
+            ],
+            "stack": [],
+        }
+
+        class BoundedProvider(FixedProvider):
+            def decide(self, state, questions):
+                if len(questions) > 40:
+                    raise AssertionError(f"oversized Jev batch: {len(questions)}")
+                return super().decide(state, questions)
+
+        provider = BoundedProvider(draft)
+        with scratch() as directory:
+            job = analyze_job_v3(RunStore(directory), provider,
+                                 {"priority": {"CORE": "central"},
+                                  "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}, jd)
+        self.assertEqual(len(job.requirements), 15)
+        self.assertGreater(len(provider.decide_calls), 1)
+        self.assertTrue(all(len(questions) <= 40 for _, questions in provider.decide_calls))
+
     def test_composite_requirement_keeps_deployment_integration_and_controls(self):
         from harness.skills import analyze_job_v3
         jd = "Deploy production AI applications, integrate them with enterprise APIs, and add monitoring, retries, and recovery controls."
@@ -73,6 +104,89 @@ class JobStructureTests(unittest.TestCase):
             "Add monitoring, retries, and recovery controls",
         })
         self.assertTrue(all(item.quote in jd for item in job.components))
+
+    def test_noncontiguous_component_short_quote_falls_back_to_exact_parent_passage(self):
+        from harness.skills import analyze_job_v3
+        from harness.store import RunStore
+        jd = "Design, build, and deploy AI-powered solutions, automations, and agents."
+        provider = FixedProvider({
+            "company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI",
+            "requirements": [{"text": "Deliver AI solutions", "quote": jd,
+                              "components": [{"text": "Design AI-powered solutions",
+                                              "quote": "Design AI-powered solutions"}]}],
+            "stack": [],
+        })
+        with scratch() as directory:
+            job = analyze_job_v3(RunStore(directory), provider,
+                                 {"priority": {"CORE": "central"},
+                                  "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}, jd)
+        self.assertEqual(job.components[0].quote, jd)
+
+    def test_missing_jd_passage_cannot_be_hidden_by_passing_extracted_nodes(self):
+        from harness.skills import analyze_job_v3
+        from harness.store import RunStore
+        jd = "Build AI services. Maintain audit logs for every automated action."
+        provider = FixedProvider({
+            "company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI",
+            "requirements": [{"text": "Build AI services", "quote": "Build AI services.",
+                              "components": [{"text": "Build AI services", "quote": "Build AI services."}]}],
+            "stack": [],
+        }, overrides={"passage_2__coverage": "MISSING"})
+        with scratch() as directory:
+            with self.assertRaisesRegex(ValueError, "still needs review"):
+                analyze_job_v3(RunStore(directory), provider,
+                               {"priority": {"CORE": "central"},
+                                "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}, jd)
+        self.assertEqual(len(provider.create_calls), 3)
+        self.assertTrue(all(call[1]["corrections"] for call in provider.create_calls[1:]))
+
+
+    def test_section_headings_are_not_coverage_passages(self):
+        from harness.skills import _jd_passages
+        jd = "\n".join([
+            "SOFT SKILLS:", "AI Tooling Engineering", "Business-side AI Toolers",
+            "Strong Python skills", "Docker and Kubernetes",
+            "Promote our own cloud and AI solutions internally.",
+        ])
+        self.assertEqual(_jd_passages(jd), [
+            "Strong Python skills", "Docker and Kubernetes",
+            "Promote our own cloud and AI solutions internally.",
+        ])
+
+    def test_retry_revises_previous_draft_instead_of_starting_over(self):
+        from harness.skills import analyze_job_v3
+        from harness.store import RunStore
+        jd = "Build AI services. Maintain audit logs for every automated action."
+        provider = FixedProvider({
+            "company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI",
+            "requirements": [{"text": "Build AI services", "quote": "Build AI services.",
+                              "components": [{"text": "Build AI services", "quote": "Build AI services."}]}],
+            "stack": [],
+        }, overrides={"passage_2__coverage": "MISSING"})
+        with scratch() as directory:
+            with self.assertRaises(ValueError):
+                analyze_job_v3(RunStore(directory), provider,
+                               {"priority": {"CORE": "central"},
+                                "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}, jd)
+        self.assertIsNone(provider.create_calls[0][1]["previous_draft"])
+        for _, payload in provider.create_calls[1:]:
+            self.assertEqual(payload["previous_draft"]["requirements"][0]["text"], "Build AI services")
+
+    def test_personal_qualification_is_a_valid_component_kind(self):
+        from harness.skills import analyze_job_v3
+        from harness.store import RunStore
+        jd = "Highly autonomous, curious, and comfortable in a fast-moving environment"
+        provider = FixedProvider({
+            "company": "Acme", "role": "AI Engineer", "location": "", "thesis": "Production AI",
+            "requirements": [{"text": "Work autonomously", "quote": jd, "components": [{"text": jd, "quote": jd}]}],
+            "stack": [],
+        })
+        with scratch() as directory:
+            analyze_job_v3(RunStore(directory), provider,
+                           {"priority": {"CORE": "central"},
+                            "verdict": {"PASS": "yes", "FAIL": "no", "UNCERTAIN": "unclear"}}, jd)
+        questions = provider.decide_calls[0][1]
+        self.assertIn("qualification or personal requirement", questions["r1.c1__faithful"]["instructions"])
 
 
 class SkillClassificationTests(unittest.TestCase):
