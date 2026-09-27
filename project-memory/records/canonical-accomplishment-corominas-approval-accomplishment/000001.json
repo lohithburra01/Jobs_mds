@@ -1,0 +1,63 @@
+{
+  "id": "canonical-accomplishment-corominas-approval-accomplishment",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "corominas.approval.accomplishment",
+  "summary": "Demonstrate the distinct work and result in Human-in-the-loop approval system.",
+  "body": "{\n  \"id\": \"corominas.approval.accomplishment\",\n  \"system_id\": \"corominas.approval\",\n  \"purpose\": \"Demonstrate the distinct work and result in Human-in-the-loop approval system.\",\n  \"fact_ids\": [\n    \"corominas.approval.action.1\",\n    \"corominas.approval.output.2\",\n    \"corominas.approval.outcome.3\"\n  ],\n  \"metric_ids\": [\n    \"corominas.approval_latency\"\n  ],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 887,
+      "end": 898
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-corominas-approval",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-approval-action-1",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-approval-output-2",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-approval-outcome-3",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-metric-corominas-approval-latency",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-corominas-boundary",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    }
+  ],
+  "original_id": "corominas.approval.accomplishment",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:36.345+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

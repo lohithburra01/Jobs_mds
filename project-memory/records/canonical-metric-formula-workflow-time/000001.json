@@ -1,0 +1,44 @@
+{
+  "id": "canonical-metric-formula-workflow-time",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "formula.workflow_time",
+  "summary": "under 10 minutes",
+  "body": "{\n  \"id\": \"formula.workflow_time\",\n  \"employer_id\": \"formula_dream\",\n  \"system_id\": \"formula.workflow_generator\",\n  \"display_text\": \"under 10 minutes\",\n  \"meaning\": \"Idea-to-running-workflow time\",\n  \"status\": \"achieved\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 4829,
+      "end": 4872
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-formula-workflow-generator",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "uses",
+      "to": "canonical-employer-formula-dream",
+      "reason": "Keep this evidence attached to its employer."
+    }
+  ],
+  "original_id": "formula.workflow_time",
+  "evidence_type": "metric",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:36.965+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

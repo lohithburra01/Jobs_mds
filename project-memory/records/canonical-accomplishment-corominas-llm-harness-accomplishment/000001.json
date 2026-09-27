@@ -1,0 +1,63 @@
+{
+  "id": "canonical-accomplishment-corominas-llm-harness-accomplishment",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "corominas.llm_harness.accomplishment",
+  "summary": "Demonstrate the distinct work and result in LLM harness and cost control.",
+  "body": "{\n  \"id\": \"corominas.llm_harness.accomplishment\",\n  \"system_id\": \"corominas.llm_harness\",\n  \"purpose\": \"Demonstrate the distinct work and result in LLM harness and cost control.\",\n  \"fact_ids\": [\n    \"corominas.llm_harness.action.1\",\n    \"corominas.llm_harness.output.2\",\n    \"corominas.llm_harness.outcome.3\"\n  ],\n  \"metric_ids\": [\n    \"corominas.inference_cost\"\n  ],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 719,
+      "end": 730
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-corominas-llm-harness",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-llm-harness-action-1",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-llm-harness-output-2",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-llm-harness-outcome-3",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-metric-corominas-inference-cost",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-corominas-boundary",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    }
+  ],
+  "original_id": "corominas.llm_harness.accomplishment",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:35.430+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

@@ -1,0 +1,83 @@
+{
+  "id": "canonical-system-corominas-multi-tenant",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Capability block 1: Multi-tenant LLM pipeline architecture",
+  "summary": "System corominas.multi_tenant: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Capability block 1: Multi-tenant LLM pipeline architecture\n\nBuilt a multi-tenant automation engine in which client behavior is controlled through configuration instead of client-specific code branches. Adding a client became a configuration change rather than a rebuild.\n\nThe end-to-end path covered:\n\n- intake and client-specific configuration;\n- generation;\n- deterministic validation;\n- client preview and editing;\n- approval;\n- publication;\n- automated confirmation and state tracking.\n\nOutput and impact:\n\n- Replaced a manual editorial and approval process with an unattended pipeline across a 200-client portfolio.\n- Made onboarding repeatable by moving client differences into configuration.\n- Reduced internal involvement to exception handling and final approval across the content-to-publish cycle.\n- Supported 1,200+ pieces per month at full-portfolio scale, based on 6-8 pages per client per month across 200 clients.\n\nMaintainability evidence:\n\n- Client variation lives in configuration rather than duplicated logic.\n- Workflow stages have distinct responsibilities and explicit handoffs.\n- Deterministic checks and human approval constrain model output before external action.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [\n    \"corominas.multi_tenant.problem.1\"\n  ],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"corominas.multi_tenant.action.2\"\n  ],\n  \"output_fact_ids\": [\n    \"corominas.multi_tenant.output.3\"\n  ],\n  \"outcome_fact_ids\": [\n    \"corominas.multi_tenant.outcome.4\"\n  ],\n  \"metric_ids\": [\n    \"corominas.clients\",\n    \"corominas.monthly_volume\",\n    \"corominas.growth_target\"\n  ],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 522,
+      "end": 648
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-corominas",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-multi-tenant-problem-1",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-multi-tenant-action-2",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-multi-tenant-output-3",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-multi-tenant-outcome-4",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-metric-corominas-clients",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-metric-corominas-monthly-volume",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-metric-corominas-growth-target",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-corominas-boundary",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    }
+  ],
+  "original_id": "corominas.multi_tenant",
+  "missing_evidence_categories": [
+    "input_fact_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:35.203+00:00",
+  "change_reason": "Connect existing system evidence without inferring absent categories"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "canonical-boundary-corominas-boundary",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "corominas.boundary",
+  "summary": "## Corominas selection rule\n\nUse only two to four capability blocks in one resume. Choose the blocks that directly prove the job description's central buying criteria. Do not overload a three-month role by listing the entire system portfolio.\n\nEvery bullet should expose a transferable engineering pattern unless the job explicitly rewards the original operating domain. Reconstruct the work around multi-tenancy, validation, human control, orchestration, escalation, cost control, generated infrastructure, or hardening.",
+  "body": "{\n  \"id\": \"corominas.boundary\",\n  \"scope_ids\": [\n    \"corominas\"\n  ],\n  \"text\": \"## Corominas selection rule\\n\\nUse only two to four capability blocks in one resume. Choose the blocks that directly prove the job description's central buying criteria. Do not overload a three-month role by listing the entire system portfolio.\\n\\nEvery bullet should expose a transferable engineering pattern unless the job explicitly rewards the original operating domain. Reconstruct the work around multi-tenancy, validation, human control, orchestration, escalation, cost control, generated infrastructure, or hardening.\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 5011,
+      "end": 5037
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-boundaries",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "corominas.boundary",
+  "evidence_type": "boundary",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:34.083+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

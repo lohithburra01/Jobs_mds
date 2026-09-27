@@ -1,0 +1,79 @@
+{
+  "id": "canonical-employers",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Employer directory",
+  "summary": "Directory of individually retrievable employers; use child links for actual evidence.",
+  "body": "This directory exposes existing typed records. Preserve source IDs, scope and qualifications; absent evidence stays absent.",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 513,
+      "end": 2230
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-canonical",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-employer-corominas",
+      "reason": "Read Corominas Consulting separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-employer-formula-dream",
+      "reason": "Read Formula Dream separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-employer-think-round",
+      "reason": "Read Think Round Inc. separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-employer-cognizant",
+      "reason": "Read Cognizant Technology Solutions separately."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:43.900+00:00",
+  "change_reason": "Add canonical child directory with readable names and exact retrieval routes",
+  "children": [
+    {
+      "id": "canonical-employer-corominas",
+      "title": "Corominas Consulting",
+      "summary": "Employer corominas: 7 separately retrievable systems."
+    },
+    {
+      "id": "canonical-employer-formula-dream",
+      "title": "Formula Dream",
+      "summary": "Employer formula_dream: 5 separately retrievable systems."
+    },
+    {
+      "id": "canonical-employer-think-round",
+      "title": "Think Round Inc.",
+      "summary": "Employer think_round: 3 separately retrievable systems."
+    },
+    {
+      "id": "canonical-employer-cognizant",
+      "title": "Cognizant Technology Solutions",
+      "summary": "Employer cognizant: 4 separately retrievable systems."
+    }
+  ]
+}

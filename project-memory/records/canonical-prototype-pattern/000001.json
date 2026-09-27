@@ -1,0 +1,38 @@
+{
+  "id": "canonical-prototype-pattern",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Independent project pattern",
+  "summary": "Existing independent project pattern from canonical.yaml; retrieve this branch without reading employers.",
+  "body": "{\n  \"statement\": \"Before larger company implementations, Lohith builds a small-scale local version of the target workflow and adds it to GitHub.\",\n  \"local_scope\": \"Independent local proof of the JD-relevant workflow; retrofit the JD stack functionally.\",\n  \"publication_status\": \"Added to GitHub; exact repository URL and project date are not asserted unless supplied.\",\n  \"source_session_note\": \"Binding user correction recorded 20 September 2026; this supersedes the archived no-project rule.\",\n  \"restrictions\": [\n    \"Do not reuse an employer metric, company scale, employer, title, or date.\",\n    \"Do not invent a repository URL or project period.\",\n    \"Describe a small local implementation and concrete output relevant to the JD.\"\n  ],\n  \"metric_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 5180,
+      "end": 5189
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-canonical",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "classification": "existing source content; not a new factual assertion",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:18.005+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

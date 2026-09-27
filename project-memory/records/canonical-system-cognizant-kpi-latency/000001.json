@@ -1,0 +1,45 @@
+{
+  "id": "canonical-system-cognizant-kpi-latency",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Data-to-KPI acceleration",
+  "summary": "System cognizant.kpi_latency: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Data-to-KPI acceleration\n\n- Reduced data-to-KPI latency from roughly 48 hours to roughly 2 hours.\n- This is a 46-hour reduction and approximately a 96% reduction in elapsed time, but use the clearer `48 hours to 2 hours` formulation in resumes.\n- Operational and analytical users received current KPI information much sooner.\n\nDo not invent dashboard counts, stakeholder counts, business units, or decisions affected.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"cognizant.kpi_latency.action.1\"\n  ],\n  \"output_fact_ids\": [],\n  \"outcome_fact_ids\": [\n    \"cognizant.kpi_latency.outcome.2\"\n  ],\n  \"metric_ids\": [\n    \"cognizant.kpi_latency\"\n  ],\n  \"boundary_ids\": [\n    \"cognizant.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 2087,
+      "end": 2139
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-cognizant",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "cognizant.kpi_latency",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "output_fact_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:23.049+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

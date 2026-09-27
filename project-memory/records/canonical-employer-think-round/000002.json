@@ -1,0 +1,70 @@
+{
+  "id": "canonical-employer-think-round",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Think Round Inc.",
+  "summary": "Employer think_round: 3 separately retrievable systems.",
+  "body": "{\n  \"id\": \"think_round\",\n  \"company\": \"Think Round Inc.\",\n  \"titles\": [\n    \"AI Engineer\",\n    \"AI Automation Engineer\"\n  ],\n  \"period\": \"Apr 2025 - Mar 2026\",\n  \"status_text\": \"Zoe was under mental-health board review, not approved or clinically validated.\",\n  \"boundary_ids\": [\n    \"think_round.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1656,
+      "end": 2011
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employers",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-think-context-memory",
+      "reason": "Read Context-aware conversation architecture separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-think-safety-evaluation",
+      "reason": "Read Safety and evaluation architecture separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-think-multi-agent-platform",
+      "reason": "Read ThinkLife multi-agent platform architecture separately."
+    }
+  ],
+  "original_id": "think_round",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:44.629+00:00",
+  "change_reason": "Add canonical child directory with readable names and exact retrieval routes",
+  "children": [
+    {
+      "id": "canonical-system-think-context-memory",
+      "title": "Context-aware conversation architecture",
+      "summary": "System think.context_memory: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-think-safety-evaluation",
+      "title": "Safety and evaluation architecture",
+      "summary": "System think.safety_evaluation: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-think-multi-agent-platform",
+      "title": "ThinkLife multi-agent platform architecture",
+      "summary": "System think.multi_agent_platform: original narrative, linked evidence and 1 accomplishment(s)."
+    }
+  ]
+}

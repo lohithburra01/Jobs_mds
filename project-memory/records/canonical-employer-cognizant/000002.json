@@ -1,0 +1,80 @@
+{
+  "id": "canonical-employer-cognizant",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Cognizant Technology Solutions",
+  "summary": "Employer cognizant: 4 separately retrievable systems.",
+  "body": "{\n  \"id\": \"cognizant\",\n  \"company\": \"Cognizant Technology Solutions\",\n  \"titles\": [\n    \"Program Analyst\"\n  ],\n  \"period\": \"Feb 2022 - Aug 2023\",\n  \"status_text\": \"Production enterprise data operations.\",\n  \"boundary_ids\": [\n    \"cognizant.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 2012,
+      "end": 2230
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employers",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-cognizant-ingestion",
+      "reason": "Read Automated data ingestion and processing separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-cognizant-kpi-latency",
+      "reason": "Read Data-to-KPI acceleration separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-cognizant-aws-etl",
+      "reason": "Read AWS ETL optimization separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-cognizant-data-quality",
+      "reason": "Read Data quality and maintainability foundation separately."
+    }
+  ],
+  "original_id": "cognizant",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:44.862+00:00",
+  "change_reason": "Add canonical child directory with readable names and exact retrieval routes",
+  "children": [
+    {
+      "id": "canonical-system-cognizant-ingestion",
+      "title": "Automated data ingestion and processing",
+      "summary": "System cognizant.ingestion: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-cognizant-kpi-latency",
+      "title": "Data-to-KPI acceleration",
+      "summary": "System cognizant.kpi_latency: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-cognizant-aws-etl",
+      "title": "AWS ETL optimization",
+      "summary": "System cognizant.aws_etl: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-cognizant-data-quality",
+      "title": "Data quality and maintainability foundation",
+      "summary": "System cognizant.data_quality: original narrative, linked evidence and 1 accomplishment(s)."
+    }
+  ]
+}

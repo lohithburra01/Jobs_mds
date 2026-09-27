@@ -1,0 +1,61 @@
+{
+  "id": "canonical-system-cognizant-data-quality",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Data quality and maintainability foundation",
+  "summary": "System cognizant.data_quality: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Data quality and maintainability foundation\n\n- Used data validation and pipeline testing in the delivery workflow.\n- Worked with explicit data transformations and downstream KPI dependencies.\n- Built experience in production throughput, cloud ETL, distributed processing, and measured latency improvement.\n\nThis evidence supports Lohith's later pipeline mindset: changes must preserve data contracts, downstream consumers, repeatable processing, and observable outcomes. Do not claim specific agentic tooling at Cognizant.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"cognizant.data_quality.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"cognizant.data_quality.output.2\"\n  ],\n  \"outcome_fact_ids\": [],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"cognizant.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 2181,
+      "end": 2230
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-cognizant",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-cognizant-data-quality-action-1",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-cognizant-data-quality-output-2",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-cognizant-boundary",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    }
+  ],
+  "original_id": "cognizant.data_quality",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "outcome_fact_ids",
+    "metric_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:43.428+00:00",
+  "change_reason": "Connect existing system evidence without inferring absent categories"
+}

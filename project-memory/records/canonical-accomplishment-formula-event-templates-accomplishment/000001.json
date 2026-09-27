@@ -1,0 +1,58 @@
+{
+  "id": "canonical-accomplishment-formula-event-templates-accomplishment",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "formula.event_templates.accomplishment",
+  "summary": "Demonstrate the distinct work and result in Reusable event-template automation.",
+  "body": "{\n  \"id\": \"formula.event_templates.accomplishment\",\n  \"system_id\": \"formula.event_templates\",\n  \"purpose\": \"Demonstrate the distinct work and result in Reusable event-template automation.\",\n  \"fact_ids\": [\n    \"formula.event_templates.action.1\",\n    \"formula.event_templates.output.2\",\n    \"formula.event_templates.outcome.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"formula_dream.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1496,
+      "end": 1506
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-formula-event-templates",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-event-templates-action-1",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-event-templates-output-2",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-event-templates-outcome-3",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-formula-dream-boundary",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    }
+  ],
+  "original_id": "formula.event_templates.accomplishment",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:39.066+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

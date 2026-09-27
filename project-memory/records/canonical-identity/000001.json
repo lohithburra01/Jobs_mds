@@ -1,0 +1,38 @@
+{
+  "id": "canonical-identity",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Professional identity",
+  "summary": "Existing professional identity from canonical.yaml; retrieve this branch without reading employers.",
+  "body": "{\n  \"professional_spine\": \"AI automation and agentic-systems engineer with a production data-engineering foundation.\",\n  \"career_progression\": \"production data pipelines -> applied LLM and safety systems -> zero-to-one AI automation -> one-to-ten multi-tenant agentic operations\",\n  \"maintainability\": \"# Agentic maintainability and pipeline discipline\\n\\n## Core projection\\n\\nLohith should be presented as an engineer who prevents agentic systems from becoming opaque, fragile chains of prompts and local fixes. He builds a harness around model behavior and treats the complete workflow as a system that must remain understandable and operable after the first successful demonstration.\\n\\nThis is the professional answer to the informal problem Lohith describes as `doom looping`: an agent or engineer tunnels into the immediate failure, repeatedly changes one local component, loses sight of surrounding contracts and state, and creates new failures elsewhere in the pipeline.\\n\\nThe claim is not that systems never fail. The claim is that Lohith designs them so failures are constrained, visible, diagnosable, reviewable, and less likely to cascade.\\n\\n## Working method\\n\\nThe following method is supported as a cross-role professional approach when the selected employer evidence demonstrates it:\\n\\n1. Map the workflow from trigger to final action before optimizing one step.\\n2. Define contracts between stages so a local change does not silently change downstream behavior.\\n3. Use models for probabilistic judgment and deterministic code for rules, validation, state transitions, and repeatable operations.\\n4. Separate generation from evaluation so model or prompt changes can be judged against stable standards.\\n5. Bound loops with explicit release conditions, retry behavior, escalation paths, or stopping logic.\\n6. Preserve durable state through configuration, ledgers, markers, memory stores, or databases rather than relying on conversational recall.\\n7. Make execution observable through structured logs, status channels, actionable failure messages, and direct links to the failing run where supported.\\n8. Prefer configuration, generators, scripts, and reusable templates over repeatedly rebuilding or re-prompting the same workflow.\\n9. Route uncertain, high-risk, or cross-system changes to human review instead of granting uncontrolled autonomy.\\n10. Use disciplined reviews, incremental changes, and explicit handoffs so maintenance work remains traceable.\\n11. Control model cost through caching, context management, provider abstraction, memory discipline, and loop reduction.\\n12. When a failure or security issue occurs, turn the response into a reusable control, scanner, gate, test, or policy where the evidence supports it.\\n\\n## Resume-level language\\n\\nUse this framing only when it can be proved by the selected work:\\n\\n- built maintainable agentic workflows with deterministic gates around model behavior;\\n- separated probabilistic generation from deterministic validation and release;\\n- designed observable pipelines with durable state, retries, recovery, and actionable failure reporting;\\n- bounded autonomous actions with explicit approval and escalation paths;\\n- converted repeated manual setup into configuration or generated infrastructure;\\n- reduced long-term maintenance risk by defining contracts and reusable operating patterns;\\n- kept model changes from becoming full-system rewrites through provider-independent orchestration;\\n- treated failures as system feedback and converted one-off fixes into reusable controls.\\n\\nNever claim:\\n\\n- that a system cannot break;\\n- zero defects, guaranteed reliability, or exact uptime without a recorded metric;\\n- a formally named proprietary methodology that did not exist;\\n- that every item in the working method was implemented at every employer;\\n- observability, evaluation, or review tooling at an employer unless its section supports it.\",\n  \"claim_boundaries\": \"# Global claim boundaries\\n\\n- The technology inventory is illustrative, not exhaustive. JD-named implementation tools may be retrofitted directly into relevant employer pipelines under the universal authority.\\n- Employer-specific facts remain binding for the kind of work, ownership, output, impact, scale, metrics, dates, and status. Tool names are selected from the JD and are not frozen by employer subsections.\\n- Do not convert current learning or general interest into past deployed work.\\n- Keep personal impact separate from company-wide growth.\\n- Keep current operating scale separate from future targets.\\n- Keep production, pilot-ready, board-review, prototype, and in-progress states distinct.\\n- Keep enabled outcomes separate from solely caused outcomes.\\n- Never invent employers, titles, dates, users, clients, team size, direct reports, revenue, reliability, uptime, throughput, cost, time savings, adoption, or measured quality.\\n- Do not move metrics between employers or systems.\\n- Do not use an employer's domain as Lohith's fixed professional identity.\\n- Do not manufacture precision by multiplying uncertain assumptions.\\n- Do not restore removed evidence because a job description asks for it.\\n- When a fact exists but the best phrasing does not, reconstruct a strong sentence. When the fact does not exist, do not create it.\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 16,
+      "end": 142
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-canonical",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "classification": "existing source content; not a new factual assertion",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:17.793+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

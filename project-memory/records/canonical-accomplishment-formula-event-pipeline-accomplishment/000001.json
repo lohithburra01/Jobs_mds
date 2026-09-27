@@ -1,0 +1,63 @@
+{
+  "id": "canonical-accomplishment-formula-event-pipeline-accomplishment",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "formula.event_pipeline.accomplishment",
+  "summary": "Demonstrate the distinct work and result in Event-driven production and publishing pipeline.",
+  "body": "{\n  \"id\": \"formula.event_pipeline.accomplishment\",\n  \"system_id\": \"formula.event_pipeline\",\n  \"purpose\": \"Demonstrate the distinct work and result in Event-driven production and publishing pipeline.\",\n  \"fact_ids\": [\n    \"formula.event_pipeline.problem.1\",\n    \"formula.event_pipeline.action.2\",\n    \"formula.event_pipeline.output.3\",\n    \"formula.event_pipeline.outcome.4\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"formula_dream.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1289,
+      "end": 1300
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-formula-event-pipeline",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-event-pipeline-problem-1",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-event-pipeline-action-2",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-event-pipeline-output-3",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-event-pipeline-outcome-4",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-formula-dream-boundary",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    }
+  ],
+  "original_id": "formula.event_pipeline.accomplishment",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:38.192+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

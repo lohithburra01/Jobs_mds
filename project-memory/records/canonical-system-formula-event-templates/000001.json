@@ -1,0 +1,45 @@
+{
+  "id": "canonical-system-formula-event-templates",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "System 3: Reusable event-template automation",
+  "summary": "System formula.event_templates: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## System 3: Reusable event-template automation\n\nBuilt parameterized templates connected to live event data so recurring publishing cycles could adapt to different dates, locations, results, statistics, and contextual material without being rebuilt each time.\n\nWorkflow:\n\n- Waited for results to reach the required state.\n- Pulled rankings, standings, timing, statistics, and commentary.\n- Applied the relevant event and location context to a reusable brand template.\n- Generated accompanying copy with AI.\n- Published the result across platforms without manual handling after setup.\n\nOutput and impact:\n\n- Replaced event-by-event recreation with a reusable data-driven workflow.\n- Converted repeated operating knowledge into a parameterized template.\n- Reduced dependence on a person remembering and executing each step of the publishing cycle.\n\nMaintainability evidence:\n\n- The workflow waits for an explicit data condition rather than relying on guesswork.\n- Variable event context is passed as data instead of hard-coded into a new workflow.\n- One maintained template supports repeated cycles.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"formula.event_templates.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"formula.event_templates.output.2\"\n  ],\n  \"outcome_fact_ids\": [\n    \"formula.event_templates.outcome.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"formula_dream.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1400,
+      "end": 1506
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-formula-dream",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "formula.event_templates",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "metric_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:21.305+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

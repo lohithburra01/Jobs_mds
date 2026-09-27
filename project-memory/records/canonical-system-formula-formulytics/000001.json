@@ -1,0 +1,45 @@
+{
+  "id": "canonical-system-formula-formulytics",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Personally attributable Formula Dream impact",
+  "summary": "System formula.formulytics: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Personally attributable Formula Dream impact\n\nThe following results belong to the Formulytics presence Lohith built and operated himself:\n\n- 200M+ cumulative Instagram views.\n- Roughly 20M Facebook views per month at peak.\n- 30K Instagram followers.\n\nThese figures supersede every older partial snapshot.\n\nDo not attribute Formula Neon main-brand account numbers to Lohith. Do not claim that automation alone caused every audience result. Safe framing connects the presence and automated operating system Lohith built and ran with the audience scale it supported.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"formula.formulytics.action.1\"\n  ],\n  \"output_fact_ids\": [],\n  \"outcome_fact_ids\": [\n    \"formula.formulytics.outcome.2\"\n  ],\n  \"metric_ids\": [\n    \"formula.instagram_views\",\n    \"formula.facebook_views\",\n    \"formula.instagram_followers\"\n  ],\n  \"boundary_ids\": [\n    \"formula_dream.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1586,
+      "end": 1655
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-formula-dream",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "formula.formulytics",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "output_fact_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:21.724+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

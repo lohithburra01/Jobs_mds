@@ -1,0 +1,44 @@
+{
+  "id": "canonical-fact-corominas-multi-tenant-output-3",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "corominas.multi_tenant.output.3",
+  "summary": "Converted client onboarding and variation into configuration instead of duplicated workflow logic.",
+  "body": "{\n  \"id\": \"corominas.multi_tenant.output.3\",\n  \"employer_id\": \"corominas\",\n  \"system_id\": \"corominas.multi_tenant\",\n  \"kind\": \"output\",\n  \"text\": \"Converted client onboarding and variation into configuration instead of duplicated workflow logic.\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 2341,
+      "end": 2394
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-corominas-multi-tenant",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "uses",
+      "to": "canonical-employer-corominas",
+      "reason": "Keep this evidence attached to its employer."
+    }
+  ],
+  "original_id": "corominas.multi_tenant.output.3",
+  "evidence_type": "output",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:24.032+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

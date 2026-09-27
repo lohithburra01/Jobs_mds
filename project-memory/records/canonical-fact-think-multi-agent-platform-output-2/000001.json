@@ -1,0 +1,44 @@
+{
+  "id": "canonical-fact-think-multi-agent-platform-output-2",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "think.multi_agent_platform.output.2",
+  "summary": "Separated specialized agent responsibilities within a shared platform direction.",
+  "body": "{\n  \"id\": \"think.multi_agent_platform.output.2\",\n  \"employer_id\": \"think_round\",\n  \"system_id\": \"think.multi_agent_platform\",\n  \"kind\": \"output\",\n  \"text\": \"Separated specialized agent responsibilities within a shared platform direction.\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 4326,
+      "end": 4362
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-think-multi-agent-platform",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "uses",
+      "to": "canonical-employer-think-round",
+      "reason": "Keep this evidence attached to its employer."
+    }
+  ],
+  "original_id": "think.multi_agent_platform.output.2",
+  "evidence_type": "output",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:33.206+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

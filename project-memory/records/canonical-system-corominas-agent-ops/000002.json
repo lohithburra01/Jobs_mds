@@ -1,0 +1,65 @@
+{
+  "id": "canonical-system-corominas-agent-ops",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Capability block 5: Multi-agent operational orchestration",
+  "summary": "System corominas.agent_ops: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Capability block 5: Multi-agent operational orchestration\n\nBuilt a domain-specific agent network across internal Slack channels. Agents handled routine client requests in their area, notified the team of client actions, and escalated a human ticket when a change risked affecting another system. Airtable served as the shared ledger for logged and queryable actions.\n\nOutput and impact:\n\n- Removed an engineering bottleneck for routine changes without removing human judgment from risky changes.\n- Replaced ad hoc status chasing with structured notifications and a queryable action history.\n- Created a clear division between routine autonomous handling and human escalation.\n\nMaintainability evidence:\n\n- Shared state is written to a ledger rather than held only in message context.\n- Cross-system risk triggers escalation instead of unrestricted agent action.\n- Operational channels make agent activity visible to the team.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"corominas.agent_ops.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"corominas.agent_ops.output.2\"\n  ],\n  \"outcome_fact_ids\": [\n    \"corominas.agent_ops.outcome.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 898,
+      "end": 978
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-corominas",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-agent-ops-action-1",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-agent-ops-output-2",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-agent-ops-outcome-3",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-corominas-boundary",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    }
+  ],
+  "original_id": "corominas.agent_ops",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "metric_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:37.060+00:00",
+  "change_reason": "Connect existing system evidence without inferring absent categories"
+}

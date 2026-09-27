@@ -1,0 +1,44 @@
+{
+  "id": "canonical-fact-think-safety-evaluation-outcome-3",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "think.safety_evaluation.outcome.3",
+  "summary": "Preserved conversational responsiveness while checking model output before it reached a vulnerable user.",
+  "body": "{\n  \"id\": \"think.safety_evaluation.outcome.3\",\n  \"employer_id\": \"think_round\",\n  \"system_id\": \"think.safety_evaluation\",\n  \"kind\": \"outcome\",\n  \"text\": \"Preserved conversational responsiveness while checking model output before it reached a vulnerable user.\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 4117,
+      "end": 4202
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-think-safety-evaluation",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "uses",
+      "to": "canonical-employer-think-round",
+      "reason": "Keep this evidence attached to its employer."
+    }
+  ],
+  "original_id": "think.safety_evaluation.outcome.3",
+  "evidence_type": "outcome",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:32.551+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

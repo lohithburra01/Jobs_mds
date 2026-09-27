@@ -1,0 +1,38 @@
+{
+  "id": "canonical-education",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Education",
+  "summary": "Existing education from canonical.yaml; retrieve this branch without reading employers.",
+  "body": "[\n  {\n    \"degree\": \"Master of Science - Data Science\",\n    \"school\": \"Stevens Institute of Technology\",\n    \"year\": \"2025\"\n  },\n  {\n    \"degree\": \"Bachelor of Technology - Mechanical Engineering\",\n    \"school\": \"JNTU K\",\n    \"year\": \"2022\"\n  }\n]",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 9,
+      "end": 14
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-canonical",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "classification": "existing source content; not a new factual assertion",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:17.613+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

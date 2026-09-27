@@ -1,0 +1,53 @@
+{
+  "id": "canonical-accomplishment-cognizant-data-quality-accomplishment",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "cognizant.data_quality.accomplishment",
+  "summary": "Demonstrate the distinct work and result in ## Data quality and maintainability foundation.",
+  "body": "{\n  \"id\": \"cognizant.data_quality.accomplishment\",\n  \"system_id\": \"cognizant.data_quality\",\n  \"purpose\": \"Demonstrate the distinct work and result in ## Data quality and maintainability foundation.\",\n  \"fact_ids\": [\n    \"cognizant.data_quality.action.1\",\n    \"cognizant.data_quality.output.2\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"cognizant.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 2222,
+      "end": 2230
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-cognizant-data-quality",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-cognizant-data-quality-action-1",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-cognizant-data-quality-output-2",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-cognizant-boundary",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    }
+  ],
+  "original_id": "cognizant.data_quality.accomplishment",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:43.182+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

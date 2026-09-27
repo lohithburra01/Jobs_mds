@@ -1,0 +1,78 @@
+{
+  "id": "canonical-accomplishment-corominas-multi-tenant-accomplishment",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "corominas.multi_tenant.accomplishment",
+  "summary": "Demonstrate the distinct work and result in Multi-tenant LLM pipeline architecture.",
+  "body": "{\n  \"id\": \"corominas.multi_tenant.accomplishment\",\n  \"system_id\": \"corominas.multi_tenant\",\n  \"purpose\": \"Demonstrate the distinct work and result in Multi-tenant LLM pipeline architecture.\",\n  \"fact_ids\": [\n    \"corominas.multi_tenant.problem.1\",\n    \"corominas.multi_tenant.action.2\",\n    \"corominas.multi_tenant.output.3\",\n    \"corominas.multi_tenant.outcome.4\"\n  ],\n  \"metric_ids\": [\n    \"corominas.clients\",\n    \"corominas.monthly_volume\",\n    \"corominas.growth_target\"\n  ],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 634,
+      "end": 648
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-corominas-multi-tenant",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-multi-tenant-problem-1",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-multi-tenant-action-2",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-multi-tenant-output-3",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-multi-tenant-outcome-4",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-metric-corominas-clients",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-metric-corominas-monthly-volume",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-metric-corominas-growth-target",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-corominas-boundary",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    }
+  ],
+  "original_id": "corominas.multi_tenant.accomplishment",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:34.987+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "canonical-boundaries",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Boundary directory",
+  "summary": "Directory of individually retrievable boundaries; use child links for actual evidence.",
+  "body": "This directory exposes existing typed records. Preserve source IDs, scope and qualifications; absent evidence stays absent.",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 5011,
+      "end": 5178
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-canonical",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-boundary-corominas-boundary",
+      "reason": "Read corominas.boundary separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-boundary-formula-dream-boundary",
+      "reason": "Read formula_dream.boundary separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-boundary-think-round-boundary",
+      "reason": "Read think_round.boundary separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-boundary-cognizant-boundary",
+      "reason": "Read cognizant.boundary separately."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:49.980+00:00",
+  "change_reason": "Add canonical child directory with readable names and exact retrieval routes",
+  "children": [
+    {
+      "id": "canonical-boundary-corominas-boundary",
+      "title": "corominas.boundary",
+      "summary": "## Corominas selection rule\n\nUse only two to four capability blocks in one resume. Choose the blocks that directly prove the job description's central buying criteria. Do not overload a three-month role by listing the entire system portfolio.\n\nEvery bullet should expose a transferable engineering pattern unless the job explicitly rewards the original operating domain. Reconstruct the work around multi-tenancy, validation, human control, orchestration, escalation, cost control, generated infrastructure, or hardening."
+    },
+    {
+      "id": "canonical-boundary-formula-dream-boundary",
+      "title": "formula_dream.boundary",
+      "summary": "## Formula Dream boundaries\n\nNever:\n\n- list Formula Neon as the employer;\n- split the integrated work into invented employers;\n- attribute the Formula Neon main account's growth to Lohith;\n- move Formulytics metrics to another employer or a future project;\n- claim exact revenue, conversion, retention, uptime, error rate, or time savings not recorded here;\n- describe the role as only content creation;\n- restore any deleted legacy evidence;\n- relabel the role's primary scaling stage as 1-to-10."
+    },
+    {
+      "id": "canonical-boundary-think-round-boundary",
+      "title": "think_round.boundary",
+      "summary": "## Think Round boundaries\n\nNever claim:\n\n- mental-health board approval;\n- clinical efficacy, diagnosis, treatment, or replacement of therapy;\n- production launch, adoption, user counts, health outcomes, or exact latency;\n- that unfinished agents were launched;\n- an unconfirmed regeneration or retry design;\n- an `Intern`, `Prompt Engineer`, or `Team Lead` title;\n- two separate Think Round jobs;\n- any deleted non-AI work from an older canonical.\n\nReference contact recorded for verification use only, not default resume display: Heidi, heidi@thinkround.org."
+    },
+    {
+      "id": "canonical-boundary-cognizant-boundary",
+      "title": "cognizant.boundary",
+      "summary": "## Cognizant boundaries\n\nNever claim:\n\n- an exact infrastructure-cost reduction;\n- a certification, duration, platform-specific metric, or new business outcome that is not supported;\n- later employer metrics, products, or responsibilities as Cognizant work;\n- an unconfirmed team size, business domain, client, dashboard count, uptime, or error rate;\n- a title other than Program Analyst."
+    }
+  ]
+}

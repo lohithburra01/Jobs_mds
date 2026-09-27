@@ -1,0 +1,44 @@
+{
+  "id": "canonical-fact-corominas-agent-ops-action-1",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "corominas.agent_ops.action.1",
+  "summary": "Built domain-specific agents across Slack with an Airtable ledger for queryable actions and human escalation for cross-system risk.",
+  "body": "{\n  \"id\": \"corominas.agent_ops.action.1\",\n  \"employer_id\": \"corominas\",\n  \"system_id\": \"corominas.agent_ops\",\n  \"kind\": \"action\",\n  \"text\": \"Built domain-specific agents across Slack with an Airtable ledger for queryable actions and human escalation for cross-system risk.\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 2776,
+      "end": 2811
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-corominas-agent-ops",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "uses",
+      "to": "canonical-employer-corominas",
+      "reason": "Keep this evidence attached to its employer."
+    }
+  ],
+  "original_id": "corominas.agent_ops.action.1",
+  "evidence_type": "action",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:26.295+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

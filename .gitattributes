@@ -1,1 +1,5 @@
 *.pdf binary
+
+# Evidence hashes cover exact bytes, including line endings.
+/project-memory/sources/** -text
+/canonical.yaml text eol=crlf

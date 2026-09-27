@@ -1,0 +1,90 @@
+{
+  "id": "canonical-employer-formula-dream",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Formula Dream",
+  "summary": "Employer formula_dream: 5 separately retrievable systems.",
+  "body": "{\n  \"id\": \"formula_dream\",\n  \"company\": \"Formula Dream\",\n  \"titles\": [\n    \"AI Automation Engineer\",\n    \"AI Automation Developer\"\n  ],\n  \"period\": \"Mar 2026 - Jun 2026\",\n  \"status_text\": \"Remote contract; primary stage 0-to-1.\",\n  \"boundary_ids\": [\n    \"formula_dream.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1144,
+      "end": 1655
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employers",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-formula-event-pipeline",
+      "reason": "Read System 1: Event-driven production and publishing pipeline separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-formula-workflow-generator",
+      "reason": "Read System 2: n8n workflow-generation system separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-formula-event-templates",
+      "reason": "Read System 3: Reusable event-template automation separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-formula-information-aggregation",
+      "reason": "Read System 4: Recurring information aggregation separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-formula-formulytics",
+      "reason": "Read Personally attributable Formula Dream impact separately."
+    }
+  ],
+  "original_id": "formula_dream",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:44.396+00:00",
+  "change_reason": "Add canonical child directory with readable names and exact retrieval routes",
+  "children": [
+    {
+      "id": "canonical-system-formula-event-pipeline",
+      "title": "System 1: Event-driven production and publishing pipeline",
+      "summary": "System formula.event_pipeline: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-formula-workflow-generator",
+      "title": "System 2: n8n workflow-generation system",
+      "summary": "System formula.workflow_generator: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-formula-event-templates",
+      "title": "System 3: Reusable event-template automation",
+      "summary": "System formula.event_templates: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-formula-information-aggregation",
+      "title": "System 4: Recurring information aggregation",
+      "summary": "System formula.information_aggregation: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-formula-formulytics",
+      "title": "Personally attributable Formula Dream impact",
+      "summary": "System formula.formulytics: original narrative, linked evidence and 1 accomplishment(s)."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "canonical-system-corominas-approval",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Capability block 4: Human-in-the-loop approval system",
+  "summary": "System corominas.approval: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Capability block 4: Human-in-the-loop approval system\n\nBuilt a client-facing dashboard and approval flow where clients could inspect a live-accurate preview, make inline edits, and publish. Client approval directly triggered publication and confirmation, removing the internal team as intermediary while preserving the final human decision.\n\nOutput and impact:\n\n- Reduced approval-to-publish time from days to under 60 seconds.\n- Turned the final decision into client self-service.\n- Consolidated pending approvals, published inventory, and operational information in one interface.\n\nMaintainability evidence:\n\n- The workflow has an explicit human control point before external publication.\n- Approval is a defined state transition rather than an informal message passed between teams.\n- The same approval contract works across clients.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"corominas.approval.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"corominas.approval.output.2\"\n  ],\n  \"outcome_fact_ids\": [\n    \"corominas.approval.outcome.3\"\n  ],\n  \"metric_ids\": [\n    \"corominas.approval_latency\"\n  ],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 816,
+      "end": 898
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-corominas",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "corominas.approval",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:19.944+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

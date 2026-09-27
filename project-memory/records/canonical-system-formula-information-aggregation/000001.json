@@ -1,0 +1,45 @@
+{
+  "id": "canonical-system-formula-information-aggregation",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "System 4: Recurring information aggregation",
+  "summary": "System formula.information_aggregation: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## System 4: Recurring information aggregation\n\nBuilt a recurring pipeline that gathered information from multiple community and web sources, including Reddit, Discord, Instagram, blogs, and other relevant endpoints.\n\nWorkflow and output:\n\n- Collected information from heterogeneous sources.\n- Processed and aggregated it into a usable information layer.\n- Refreshed that information inside the Formula Dream operation at an approximately daily cadence.\n\nImpact:\n\n- Replaced dependence on a single feed with a recurring multi-source ingestion process.\n- Created a consolidated information layer for product and content operations.\n\nDo not invent scraping methods, data volumes, ranking algorithms, or exact freshness guarantees.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"formula.information_aggregation.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"formula.information_aggregation.output.2\"\n  ],\n  \"outcome_fact_ids\": [\n    \"formula.information_aggregation.outcome.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"formula_dream.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1506,
+      "end": 1586
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-formula-dream",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "formula.information_aggregation",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "metric_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:21.518+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

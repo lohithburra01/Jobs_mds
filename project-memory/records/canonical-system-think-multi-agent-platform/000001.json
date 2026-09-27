@@ -1,0 +1,45 @@
+{
+  "id": "canonical-system-think-multi-agent-platform",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "ThinkLife multi-agent platform architecture",
+  "summary": "System think.multi_agent_platform: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## ThinkLife multi-agent platform architecture\n\n- Contributed to platform architecture supporting parallel development of specialized agents.\n- The platform covered healing, onboarding, FAQ, and storytelling use cases.\n- Zoe was one part of this broader architecture.\n- Storytelling, FAQ, and onboarding agents were under construction alongside Zoe.\n\nOutput and impact:\n\n- Established a structure that could support several specialized agents rather than one isolated chatbot.\n- Separated agent responsibilities across distinct use cases.\n- Moved Zoe to mental-health board review with the core engineering and safety flow implemented.\n\nMaintainability evidence:\n\n- Specialized responsibilities reduce the need for one unbounded agent to handle every task.\n- A shared platform direction supports parallel development without presenting unfinished agents as released products.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"think.multi_agent_platform.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"think.multi_agent_platform.output.2\"\n  ],\n  \"outcome_fact_ids\": [],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"think_round.boundary\"\n  ],\n  \"status_fact_ids\": [\n    \"think.multi_agent_platform.status.3\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1928,
+      "end": 2011
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-think-round",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "think.multi_agent_platform",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "outcome_fact_ids",
+    "metric_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:22.460+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

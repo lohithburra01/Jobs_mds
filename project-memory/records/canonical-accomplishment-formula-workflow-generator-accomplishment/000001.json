@@ -1,0 +1,68 @@
+{
+  "id": "canonical-accomplishment-formula-workflow-generator-accomplishment",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "formula.workflow_generator.accomplishment",
+  "summary": "Demonstrate the distinct work and result in n8n workflow-generation system.",
+  "body": "{\n  \"id\": \"formula.workflow_generator.accomplishment\",\n  \"system_id\": \"formula.workflow_generator\",\n  \"purpose\": \"Demonstrate the distinct work and result in n8n workflow-generation system.\",\n  \"fact_ids\": [\n    \"formula.workflow_generator.action.1\",\n    \"formula.workflow_generator.output.2\",\n    \"formula.workflow_generator.outcome.3\"\n  ],\n  \"metric_ids\": [\n    \"formula.workflows\",\n    \"formula.workflow_time\"\n  ],\n  \"boundary_ids\": [\n    \"formula_dream.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1388,
+      "end": 1400
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-formula-workflow-generator",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-workflow-generator-action-1",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-workflow-generator-output-2",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-workflow-generator-outcome-3",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-metric-formula-workflows",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-metric-formula-workflow-time",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-formula-dream-boundary",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    }
+  ],
+  "original_id": "formula.workflow_generator.accomplishment",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:38.623+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

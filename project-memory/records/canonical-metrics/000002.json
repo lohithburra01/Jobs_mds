@@ -1,0 +1,159 @@
+{
+  "id": "canonical-metrics",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Metric directory",
+  "summary": "Directory of individually retrievable metrics; use child links for actual evidence.",
+  "body": "This directory exposes existing typed records. Preserve source IDs, scope and qualifications; absent evidence stays absent.",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 4600,
+      "end": 5009
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-canonical",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-corominas-clients",
+      "reason": "Read corominas.clients separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-corominas-monthly-volume",
+      "reason": "Read corominas.monthly_volume separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-corominas-growth-target",
+      "reason": "Read corominas.growth_target separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-corominas-inference-cost",
+      "reason": "Read corominas.inference_cost separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-corominas-approval-latency",
+      "reason": "Read corominas.approval_latency separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-formula-workflows",
+      "reason": "Read formula.workflows separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-formula-workflow-time",
+      "reason": "Read formula.workflow_time separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-formula-instagram-views",
+      "reason": "Read formula.instagram_views separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-formula-facebook-views",
+      "reason": "Read formula.facebook_views separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-formula-instagram-followers",
+      "reason": "Read formula.instagram_followers separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-cognizant-daily-rows",
+      "reason": "Read cognizant.daily_rows separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metric-cognizant-kpi-latency",
+      "reason": "Read cognizant.kpi_latency separately."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:49.751+00:00",
+  "change_reason": "Add canonical child directory with readable names and exact retrieval routes",
+  "children": [
+    {
+      "id": "canonical-metric-corominas-clients",
+      "title": "corominas.clients",
+      "summary": "200-client portfolio"
+    },
+    {
+      "id": "canonical-metric-corominas-monthly-volume",
+      "title": "corominas.monthly_volume",
+      "summary": "1,200+ pieces per month"
+    },
+    {
+      "id": "canonical-metric-corominas-growth-target",
+      "title": "corominas.growth_target",
+      "summary": "about 200 to 3,000 clients by 2030"
+    },
+    {
+      "id": "canonical-metric-corominas-inference-cost",
+      "title": "corominas.inference_cost",
+      "summary": "over 90% reduction"
+    },
+    {
+      "id": "canonical-metric-corominas-approval-latency",
+      "title": "corominas.approval_latency",
+      "summary": "days to under 60 seconds"
+    },
+    {
+      "id": "canonical-metric-formula-workflows",
+      "title": "formula.workflows",
+      "summary": "23+ workflows"
+    },
+    {
+      "id": "canonical-metric-formula-workflow-time",
+      "title": "formula.workflow_time",
+      "summary": "under 10 minutes"
+    },
+    {
+      "id": "canonical-metric-formula-instagram-views",
+      "title": "formula.instagram_views",
+      "summary": "200M+ cumulative Instagram views"
+    },
+    {
+      "id": "canonical-metric-formula-facebook-views",
+      "title": "formula.facebook_views",
+      "summary": "roughly 20M Facebook views per month at peak"
+    },
+    {
+      "id": "canonical-metric-formula-instagram-followers",
+      "title": "formula.instagram_followers",
+      "summary": "30K Instagram followers"
+    },
+    {
+      "id": "canonical-metric-cognizant-daily-rows",
+      "title": "cognizant.daily_rows",
+      "summary": "50M+ rows per day"
+    },
+    {
+      "id": "canonical-metric-cognizant-kpi-latency",
+      "title": "cognizant.kpi_latency",
+      "summary": "roughly 48 hours to roughly 2 hours"
+    }
+  ]
+}

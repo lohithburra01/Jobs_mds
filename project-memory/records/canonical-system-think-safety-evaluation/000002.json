@@ -1,0 +1,69 @@
+{
+  "id": "canonical-system-think-safety-evaluation",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Safety and evaluation architecture",
+  "summary": "System think.safety_evaluation: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Safety and evaluation architecture\n\nThe response path includes:\n\n1. Generate a candidate answer.\n2. Parse or check the answer.\n3. Pass it through a safety or evaluation gate.\n4. Release only an answer that passes.\n5. Withhold an answer that fails.\n6. Use bounded evaluation logic before delivery.\n\nImplemented safety concerns include:\n\n- harmful-content filtering;\n- crisis detection;\n- crisis-resource routing;\n- professional-boundary enforcement;\n- minor-user protections;\n- layered controls for vulnerable users.\n\nValid technical descriptions:\n\n- fail-closed response architecture;\n- safety gate before user delivery;\n- multi-stage validation;\n- evaluation loop before release;\n- bounded release of model output;\n- context-aware conversation with memory and confidence handling.\n\nOutput and impact:\n\n- Produced a working architecture in which model output is checked before reaching a vulnerable user.\n- Added crisis detection, resource routing, professional boundaries, and minor-user protections to the response path.\n- Preserved conversational responsiveness despite multiple safety and evaluation stages.\n\nMaintainability evidence:\n\n- Generation and release are separate stages.\n- Failed output is withheld by default.\n- Safety requirements are implemented as explicit gates and routing behavior rather than broad instructions alone.\n- Context, memory, and confidence are modeled as system concerns.\n- The response loop is bounded by evaluation and release conditions.\n\nDo not describe a specific regeneration or retry mechanism unless separately confirmed. Do not imply that the safety design proves clinical efficacy.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"think.safety_evaluation.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"think.safety_evaluation.output.2\"\n  ],\n  \"outcome_fact_ids\": [\n    \"think.safety_evaluation.outcome.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"think_round.boundary\"\n  ],\n  \"status_fact_ids\": [\n    \"think.safety_evaluation.status.4\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1744,
+      "end": 1928
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-think-round",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-think-safety-evaluation-action-1",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-think-safety-evaluation-output-2",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-think-safety-evaluation-outcome-3",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-think-round-boundary",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-think-safety-evaluation-status-4",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    }
+  ],
+  "original_id": "think.safety_evaluation",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "metric_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:41.102+00:00",
+  "change_reason": "Connect existing system evidence without inferring absent categories"
+}

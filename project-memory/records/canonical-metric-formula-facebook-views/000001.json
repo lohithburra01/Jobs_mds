@@ -1,0 +1,44 @@
+{
+  "id": "canonical-metric-formula-facebook-views",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "formula.facebook_views",
+  "summary": "roughly 20M Facebook views per month at peak",
+  "body": "{\n  \"id\": \"formula.facebook_views\",\n  \"employer_id\": \"formula_dream\",\n  \"system_id\": \"formula.formulytics\",\n  \"display_text\": \"roughly 20M Facebook views per month at peak\",\n  \"meaning\": \"Personally attributable Formulytics peak audience scale\",\n  \"status\": \"achieved\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 4902,
+      "end": 4930
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-formula-formulytics",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "uses",
+      "to": "canonical-employer-formula-dream",
+      "reason": "Keep this evidence attached to its employer."
+    }
+  ],
+  "original_id": "formula.facebook_views",
+  "evidence_type": "metric",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:37.433+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "canonical-metric-corominas-growth-target",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "corominas.growth_target",
+  "summary": "about 200 to 3,000 clients by 2030",
+  "body": "{\n  \"id\": \"corominas.growth_target\",\n  \"employer_id\": \"corominas\",\n  \"system_id\": \"corominas.multi_tenant\",\n  \"display_text\": \"about 200 to 3,000 clients by 2030\",\n  \"meaning\": \"Architecture-supported future growth target\",\n  \"status\": \"target\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 4674,
+      "end": 4710
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-corominas-multi-tenant",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "uses",
+      "to": "canonical-employer-corominas",
+      "reason": "Keep this evidence attached to its employer."
+    }
+  ],
+  "original_id": "corominas.growth_target",
+  "evidence_type": "metric",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:36.038+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

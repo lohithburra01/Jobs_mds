@@ -1,0 +1,58 @@
+{
+  "id": "canonical-accomplishment-think-multi-agent-platform-accomplishment",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "think.multi_agent_platform.accomplishment",
+  "summary": "Demonstrate the distinct work and result in ## ThinkLife multi-agent platform architecture.",
+  "body": "{\n  \"id\": \"think.multi_agent_platform.accomplishment\",\n  \"system_id\": \"think.multi_agent_platform\",\n  \"purpose\": \"Demonstrate the distinct work and result in ## ThinkLife multi-agent platform architecture.\",\n  \"fact_ids\": [\n    \"think.multi_agent_platform.action.1\",\n    \"think.multi_agent_platform.output.2\",\n    \"think.multi_agent_platform.status.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"think_round.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 2002,
+      "end": 2011
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-think-multi-agent-platform",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-think-multi-agent-platform-action-1",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-think-multi-agent-platform-output-2",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-think-multi-agent-platform-status-3",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-think-round-boundary",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    }
+  ],
+  "original_id": "think.multi_agent_platform.accomplishment",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:41.351+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

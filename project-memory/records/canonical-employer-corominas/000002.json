@@ -1,0 +1,110 @@
+{
+  "id": "canonical-employer-corominas",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Corominas Consulting",
+  "summary": "Employer corominas: 7 separately retrievable systems.",
+  "body": "{\n  \"id\": \"corominas\",\n  \"company\": \"Corominas Consulting\",\n  \"titles\": [\n    \"Manager, AI & Automation\"\n  ],\n  \"period\": \"Jun 2026 - Sep 2026\",\n  \"status_text\": \"Full-portfolio client-deliverable and approval cycle; broader workstreams had mixed completion states.\",\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 513,
+      "end": 1143
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employers",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-corominas-multi-tenant",
+      "reason": "Read Capability block 1: Multi-tenant LLM pipeline architecture separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-corominas-llm-harness",
+      "reason": "Read Capability block 2: LLM harness and cost control separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-corominas-quality-gate",
+      "reason": "Read Capability block 3: Deterministic quality gate separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-corominas-approval",
+      "reason": "Read Capability block 4: Human-in-the-loop approval system separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-corominas-agent-ops",
+      "reason": "Read Capability block 5: Multi-agent operational orchestration separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-corominas-generated-workflows",
+      "reason": "Read Capability block 6: Workflow infrastructure as generated code separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-system-corominas-security-response",
+      "reason": "Read Capability block 7: Security response and hardening separately."
+    }
+  ],
+  "original_id": "corominas",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:44.127+00:00",
+  "change_reason": "Add canonical child directory with readable names and exact retrieval routes",
+  "children": [
+    {
+      "id": "canonical-system-corominas-multi-tenant",
+      "title": "Capability block 1: Multi-tenant LLM pipeline architecture",
+      "summary": "System corominas.multi_tenant: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-corominas-llm-harness",
+      "title": "Capability block 2: LLM harness and cost control",
+      "summary": "System corominas.llm_harness: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-corominas-quality-gate",
+      "title": "Capability block 3: Deterministic quality gate",
+      "summary": "System corominas.quality_gate: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-corominas-approval",
+      "title": "Capability block 4: Human-in-the-loop approval system",
+      "summary": "System corominas.approval: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-corominas-agent-ops",
+      "title": "Capability block 5: Multi-agent operational orchestration",
+      "summary": "System corominas.agent_ops: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-corominas-generated-workflows",
+      "title": "Capability block 6: Workflow infrastructure as generated code",
+      "summary": "System corominas.generated_workflows: original narrative, linked evidence and 1 accomplishment(s)."
+    },
+    {
+      "id": "canonical-system-corominas-security-response",
+      "title": "Capability block 7: Security response and hardening",
+      "summary": "System corominas.security_response: original narrative, linked evidence and 1 accomplishment(s)."
+    }
+  ]
+}

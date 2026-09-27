@@ -1,0 +1,26 @@
+{
+  "id": "source-canonical-yaml",
+  "kind": "source",
+  "status": "reference",
+  "title": "Authoritative typed candidate evidence",
+  "summary": "Current canonical.yaml, schema version 3, referenced with exact hash and YAML ranges. Candidate facts remain in this one authoritative file.",
+  "body": "These context records expose existing evidence. They do not certify migrated facts as newly confirmed by Lohith. A subsequent canonical edit requires reviewing/updating affected source references; older record revisions remain preserved.",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1,
+      "end": 5522
+    }
+  ],
+  "links": [
+    {
+      "rel": "uses",
+      "to": "source-agreement-003",
+      "reason": "Read the agreed canonical hierarchy and separation from policy/run data."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:17.166+00:00",
+  "change_reason": "Add the actual typed canonical as a traceable source; existing source-canonical only points to the old short index"
+}

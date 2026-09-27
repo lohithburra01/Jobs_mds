@@ -1,0 +1,39 @@
+{
+  "id": "canonical-boundary-cognizant-boundary",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "cognizant.boundary",
+  "summary": "## Cognizant boundaries\n\nNever claim:\n\n- an exact infrastructure-cost reduction;\n- a certification, duration, platform-specific metric, or new business outcome that is not supported;\n- later employer metrics, products, or responsibilities as Cognizant work;\n- an unconfirmed team size, business domain, client, dashboard count, uptime, or error rate;\n- a title other than Program Analyst.",
+  "body": "{\n  \"id\": \"cognizant.boundary\",\n  \"scope_ids\": [\n    \"cognizant\"\n  ],\n  \"text\": \"## Cognizant boundaries\\n\\nNever claim:\\n\\n- an exact infrastructure-cost reduction;\\n- a certification, duration, platform-specific metric, or new business outcome that is not supported;\\n- later employer metrics, products, or responsibilities as Cognizant work;\\n- an unconfirmed team size, business domain, client, dashboard count, uptime, or error rate;\\n- a title other than Program Analyst.\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 5142,
+      "end": 5178
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-boundaries",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "cognizant.boundary",
+  "evidence_type": "boundary",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:34.766+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

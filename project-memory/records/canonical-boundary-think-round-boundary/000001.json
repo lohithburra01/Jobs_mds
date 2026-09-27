@@ -1,0 +1,39 @@
+{
+  "id": "canonical-boundary-think-round-boundary",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "think_round.boundary",
+  "summary": "## Think Round boundaries\n\nNever claim:\n\n- mental-health board approval;\n- clinical efficacy, diagnosis, treatment, or replacement of therapy;\n- production launch, adoption, user counts, health outcomes, or exact latency;\n- that unfinished agents were launched;\n- an unconfirmed regeneration or retry design;\n- an `Intern`, `Prompt Engineer`, or `Team Lead` title;\n- two separate Think Round jobs;\n- any deleted non-AI work from an older canonical.\n\nReference contact recorded for verification use only, not default resume display: Heidi, heidi@thinkround.org.",
+  "body": "{\n  \"id\": \"think_round.boundary\",\n  \"scope_ids\": [\n    \"think_round\"\n  ],\n  \"text\": \"## Think Round boundaries\\n\\nNever claim:\\n\\n- mental-health board approval;\\n- clinical efficacy, diagnosis, treatment, or replacement of therapy;\\n- production launch, adoption, user counts, health outcomes, or exact latency;\\n- that unfinished agents were launched;\\n- an unconfirmed regeneration or retry design;\\n- an `Intern`, `Prompt Engineer`, or `Team Lead` title;\\n- two separate Think Round jobs;\\n- any deleted non-AI work from an older canonical.\\n\\nReference contact recorded for verification use only, not default resume display: Heidi, heidi@thinkround.org.\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 5087,
+      "end": 5141
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-boundaries",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "think_round.boundary",
+  "evidence_type": "boundary",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:34.537+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

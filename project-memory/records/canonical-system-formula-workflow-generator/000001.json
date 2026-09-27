@@ -1,0 +1,44 @@
+{
+  "id": "canonical-system-formula-workflow-generator",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "System 2: n8n workflow-generation system",
+  "summary": "System formula.workflow_generator: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## System 2: n8n workflow-generation system\n\nBuilt a system on top of n8n in which Claude generated complete, importable workflow JSON already aligned with Lohith's established credential conventions.\n\nWorkflow and output:\n\n- Described the intended automation at the workflow level.\n- Generated the complete n8n definition rather than manually assembling every step in the interface.\n- Imported the definition into the existing credential setup.\n- Reused the approach across two production systems.\n- Built 23+ workflows.\n- Reduced idea-to-running-workflow time to under 10 minutes.\n\nMaintainability evidence:\n\n- Repeated workflow structure lives in a reusable generation pattern.\n- Credential conventions and workflow structure remain consistent across generated definitions.\n- A system-level change can be made in the generation approach instead of repeated manually in many workflows.\n\nDo not move the `23+ workflows` or `under 10 minutes` figures to another employer.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"formula.workflow_generator.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"formula.workflow_generator.output.2\"\n  ],\n  \"outcome_fact_ids\": [\n    \"formula.workflow_generator.outcome.3\"\n  ],\n  \"metric_ids\": [\n    \"formula.workflows\",\n    \"formula.workflow_time\"\n  ],\n  \"boundary_ids\": [\n    \"formula_dream.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1300,
+      "end": 1400
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-formula-dream",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "formula.workflow_generator",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:21.092+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

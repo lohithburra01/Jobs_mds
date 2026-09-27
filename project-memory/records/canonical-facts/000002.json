@@ -1,0 +1,609 @@
+{
+  "id": "canonical-facts",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Typed fact directory",
+  "summary": "Directory of individually retrievable facts; use child links for actual evidence.",
+  "body": "This directory exposes existing typed records. Preserve source IDs, scope and qualifications; absent evidence stays absent.",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 2232,
+      "end": 4598
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-canonical",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-multi-tenant-problem-1",
+      "reason": "Read corominas.multi_tenant.problem.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-multi-tenant-action-2",
+      "reason": "Read corominas.multi_tenant.action.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-multi-tenant-output-3",
+      "reason": "Read corominas.multi_tenant.output.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-multi-tenant-outcome-4",
+      "reason": "Read corominas.multi_tenant.outcome.4 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-llm-harness-action-1",
+      "reason": "Read corominas.llm_harness.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-llm-harness-output-2",
+      "reason": "Read corominas.llm_harness.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-llm-harness-outcome-3",
+      "reason": "Read corominas.llm_harness.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-quality-gate-action-1",
+      "reason": "Read corominas.quality_gate.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-quality-gate-output-2",
+      "reason": "Read corominas.quality_gate.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-quality-gate-outcome-3",
+      "reason": "Read corominas.quality_gate.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-approval-action-1",
+      "reason": "Read corominas.approval.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-approval-output-2",
+      "reason": "Read corominas.approval.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-approval-outcome-3",
+      "reason": "Read corominas.approval.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-agent-ops-action-1",
+      "reason": "Read corominas.agent_ops.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-agent-ops-output-2",
+      "reason": "Read corominas.agent_ops.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-agent-ops-outcome-3",
+      "reason": "Read corominas.agent_ops.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-generated-workflows-action-1",
+      "reason": "Read corominas.generated_workflows.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-generated-workflows-output-2",
+      "reason": "Read corominas.generated_workflows.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-generated-workflows-outcome-3",
+      "reason": "Read corominas.generated_workflows.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-security-response-action-1",
+      "reason": "Read corominas.security_response.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-security-response-output-2",
+      "reason": "Read corominas.security_response.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-security-response-outcome-3",
+      "reason": "Read corominas.security_response.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-event-pipeline-problem-1",
+      "reason": "Read formula.event_pipeline.problem.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-event-pipeline-action-2",
+      "reason": "Read formula.event_pipeline.action.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-event-pipeline-output-3",
+      "reason": "Read formula.event_pipeline.output.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-event-pipeline-outcome-4",
+      "reason": "Read formula.event_pipeline.outcome.4 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-workflow-generator-action-1",
+      "reason": "Read formula.workflow_generator.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-workflow-generator-output-2",
+      "reason": "Read formula.workflow_generator.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-workflow-generator-outcome-3",
+      "reason": "Read formula.workflow_generator.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-event-templates-action-1",
+      "reason": "Read formula.event_templates.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-event-templates-output-2",
+      "reason": "Read formula.event_templates.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-event-templates-outcome-3",
+      "reason": "Read formula.event_templates.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-information-aggregation-action-1",
+      "reason": "Read formula.information_aggregation.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-information-aggregation-output-2",
+      "reason": "Read formula.information_aggregation.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-information-aggregation-outcome-3",
+      "reason": "Read formula.information_aggregation.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-formulytics-action-1",
+      "reason": "Read formula.formulytics.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-formula-formulytics-outcome-2",
+      "reason": "Read formula.formulytics.outcome.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-think-context-memory-action-1",
+      "reason": "Read think.context_memory.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-think-context-memory-output-2",
+      "reason": "Read think.context_memory.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-think-context-memory-outcome-3",
+      "reason": "Read think.context_memory.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-think-context-memory-status-4",
+      "reason": "Read think.context_memory.status.4 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-think-safety-evaluation-action-1",
+      "reason": "Read think.safety_evaluation.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-think-safety-evaluation-output-2",
+      "reason": "Read think.safety_evaluation.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-think-safety-evaluation-outcome-3",
+      "reason": "Read think.safety_evaluation.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-think-safety-evaluation-status-4",
+      "reason": "Read think.safety_evaluation.status.4 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-think-multi-agent-platform-action-1",
+      "reason": "Read think.multi_agent_platform.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-think-multi-agent-platform-output-2",
+      "reason": "Read think.multi_agent_platform.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-think-multi-agent-platform-status-3",
+      "reason": "Read think.multi_agent_platform.status.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-cognizant-ingestion-action-1",
+      "reason": "Read cognizant.ingestion.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-cognizant-ingestion-output-2",
+      "reason": "Read cognizant.ingestion.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-cognizant-ingestion-outcome-3",
+      "reason": "Read cognizant.ingestion.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-cognizant-kpi-latency-action-1",
+      "reason": "Read cognizant.kpi_latency.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-cognizant-kpi-latency-outcome-2",
+      "reason": "Read cognizant.kpi_latency.outcome.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-cognizant-aws-etl-action-1",
+      "reason": "Read cognizant.aws_etl.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-cognizant-aws-etl-outcome-2",
+      "reason": "Read cognizant.aws_etl.outcome.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-cognizant-data-quality-action-1",
+      "reason": "Read cognizant.data_quality.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-cognizant-data-quality-output-2",
+      "reason": "Read cognizant.data_quality.output.2 separately."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:45.349+00:00",
+  "change_reason": "Add canonical child directory with readable names and exact retrieval routes",
+  "children": [
+    {
+      "id": "canonical-fact-corominas-multi-tenant-problem-1",
+      "title": "corominas.multi_tenant.problem.1",
+      "summary": "A 200-client operation needed repeatable delivery without client-specific code branches."
+    },
+    {
+      "id": "canonical-fact-corominas-multi-tenant-action-2",
+      "title": "corominas.multi_tenant.action.2",
+      "summary": "Built a configuration-driven, multi-tenant LLM pipeline from intake through validation, approval, publication, confirmation, and state tracking."
+    },
+    {
+      "id": "canonical-fact-corominas-multi-tenant-output-3",
+      "title": "corominas.multi_tenant.output.3",
+      "summary": "Converted client onboarding and variation into configuration instead of duplicated workflow logic."
+    },
+    {
+      "id": "canonical-fact-corominas-multi-tenant-outcome-4",
+      "title": "corominas.multi_tenant.outcome.4",
+      "summary": "Rolled the client-deliverable and approval cycle across the full 200-client portfolio while retaining exception handling and final approval."
+    },
+    {
+      "id": "canonical-fact-corominas-llm-harness-action-1",
+      "title": "corominas.llm_harness.action.1",
+      "summary": "Built provider-independent LLM orchestration with sub-agent techniques, prompt caching, context management, loop reduction, and memory optimization."
+    },
+    {
+      "id": "canonical-fact-corominas-llm-harness-output-2",
+      "title": "corominas.llm_harness.output.2",
+      "summary": "Separated model-provider calls from orchestration so a model change became configuration rather than a workflow rewrite."
+    },
+    {
+      "id": "canonical-fact-corominas-llm-harness-outcome-3",
+      "title": "corominas.llm_harness.outcome.3",
+      "summary": "Reduced inference cost by more than 90 percent, from dollar-scale to cent-scale per operation, without quality regression."
+    },
+    {
+      "id": "canonical-fact-corominas-quality-gate-action-1",
+      "title": "corominas.quality_gate.action.1",
+      "summary": "Built a deterministic validation layer between generation and human review for format, completeness, factual consistency, and structure."
+    },
+    {
+      "id": "canonical-fact-corominas-quality-gate-output-2",
+      "title": "corominas.quality_gate.output.2",
+      "summary": "Withheld failed output and made prompt or model changes comparable against stable checks."
+    },
+    {
+      "id": "canonical-fact-corominas-quality-gate-outcome-3",
+      "title": "corominas.quality_gate.outcome.3",
+      "summary": "Automated routine validation while preserving final human judgment."
+    },
+    {
+      "id": "canonical-fact-corominas-approval-action-1",
+      "title": "corominas.approval.action.1",
+      "summary": "Built a client-facing preview, inline-editing, approval, publication, and confirmation flow."
+    },
+    {
+      "id": "canonical-fact-corominas-approval-output-2",
+      "title": "corominas.approval.output.2",
+      "summary": "Made approval a defined client-controlled state transition rather than an informal team handoff."
+    },
+    {
+      "id": "canonical-fact-corominas-approval-outcome-3",
+      "title": "corominas.approval.outcome.3",
+      "summary": "Reduced approval-to-publish time from days to under 60 seconds."
+    },
+    {
+      "id": "canonical-fact-corominas-agent-ops-action-1",
+      "title": "corominas.agent_ops.action.1",
+      "summary": "Built domain-specific agents across Slack with an Airtable ledger for queryable actions and human escalation for cross-system risk."
+    },
+    {
+      "id": "canonical-fact-corominas-agent-ops-output-2",
+      "title": "corominas.agent_ops.output.2",
+      "summary": "Separated routine autonomous requests from risky changes that required a human ticket."
+    },
+    {
+      "id": "canonical-fact-corominas-agent-ops-outcome-3",
+      "title": "corominas.agent_ops.outcome.3",
+      "summary": "Removed a routine engineering bottleneck and replaced ad hoc status chasing with visible notifications and durable history."
+    },
+    {
+      "id": "canonical-fact-corominas-generated-workflows-action-1",
+      "title": "corominas.generated_workflows.action.1",
+      "summary": "Built Python generators that emit and maintain workflow definitions as deterministic infrastructure."
+    },
+    {
+      "id": "canonical-fact-corominas-generated-workflows-output-2",
+      "title": "corominas.generated_workflows.output.2",
+      "summary": "Made workflow patterns reviewable, reproducible, and consistently regenerable."
+    },
+    {
+      "id": "canonical-fact-corominas-generated-workflows-outcome-3",
+      "title": "corominas.generated_workflows.outcome.3",
+      "summary": "Replaced repeated manual workflow editing with reusable generation logic."
+    },
+    {
+      "id": "canonical-fact-corominas-security-response-action-1",
+      "title": "corominas.security_response.action.1",
+      "summary": "Led a technical response to a third-party compromise by identifying the vector, auditing automation, sweeping the portfolio, and hardening the API surface."
+    },
+    {
+      "id": "canonical-fact-corominas-security-response-output-2",
+      "title": "corominas.security_response.output.2",
+      "summary": "Converted the portfolio sweep into a passive ongoing scanner and authored a standing security policy."
+    },
+    {
+      "id": "canonical-fact-corominas-security-response-outcome-3",
+      "title": "corominas.security_response.outcome.3",
+      "summary": "Turned a one-off incident investigation into an ongoing posture-monitoring control."
+    },
+    {
+      "id": "canonical-fact-formula-event-pipeline-problem-1",
+      "title": "formula.event_pipeline.problem.1",
+      "summary": "Completed media needed reliable multi-platform publication without manual handling."
+    },
+    {
+      "id": "canonical-fact-formula-event-pipeline-action-2",
+      "title": "formula.event_pipeline.action.2",
+      "summary": "Built an event-driven and scheduled pipeline across Python jobs, Google Drive, n8n, external APIs, grounded LLM generation, and publishing endpoints."
+    },
+    {
+      "id": "canonical-fact-formula-event-pipeline-output-3",
+      "title": "formula.event_pipeline.output.3",
+      "summary": "Added durable posted-state markers, scheduled recovery, retry backoff, strict JSON contracts, and diagnostic failure links."
+    },
+    {
+      "id": "canonical-fact-formula-event-pipeline-outcome-4",
+      "title": "formula.event_pipeline.outcome.4",
+      "summary": "Automated asset-to-publication handling while preventing duplicate publication and making failures diagnosable."
+    },
+    {
+      "id": "canonical-fact-formula-workflow-generator-action-1",
+      "title": "formula.workflow_generator.action.1",
+      "summary": "Built a Claude-assisted generator for complete importable n8n workflow JSON aligned with established credential conventions."
+    },
+    {
+      "id": "canonical-fact-formula-workflow-generator-output-2",
+      "title": "formula.workflow_generator.output.2",
+      "summary": "Reused the generation approach across two production systems and more than 23 workflows."
+    },
+    {
+      "id": "canonical-fact-formula-workflow-generator-outcome-3",
+      "title": "formula.workflow_generator.outcome.3",
+      "summary": "Reduced idea-to-running-workflow time to under 10 minutes."
+    },
+    {
+      "id": "canonical-fact-formula-event-templates-action-1",
+      "title": "formula.event_templates.action.1",
+      "summary": "Built parameterized templates that wait for live event state and combine results, statistics, commentary, context, AI-generated copy, and publishing."
+    },
+    {
+      "id": "canonical-fact-formula-event-templates-output-2",
+      "title": "formula.event_templates.output.2",
+      "summary": "Passed changing event context as data through one maintained template."
+    },
+    {
+      "id": "canonical-fact-formula-event-templates-outcome-3",
+      "title": "formula.event_templates.outcome.3",
+      "summary": "Replaced event-by-event recreation with a reusable data-driven workflow."
+    },
+    {
+      "id": "canonical-fact-formula-information-aggregation-action-1",
+      "title": "formula.information_aggregation.action.1",
+      "summary": "Built a recurring pipeline that collected and processed information from heterogeneous community and web sources."
+    },
+    {
+      "id": "canonical-fact-formula-information-aggregation-output-2",
+      "title": "formula.information_aggregation.output.2",
+      "summary": "Created a consolidated information layer refreshed at an approximately daily cadence."
+    },
+    {
+      "id": "canonical-fact-formula-information-aggregation-outcome-3",
+      "title": "formula.information_aggregation.outcome.3",
+      "summary": "Replaced dependence on a single feed with recurring multi-source ingestion."
+    },
+    {
+      "id": "canonical-fact-formula-formulytics-action-1",
+      "title": "formula.formulytics.action.1",
+      "summary": "Built and operated the Formulytics presence and its automated operating system."
+    },
+    {
+      "id": "canonical-fact-formula-formulytics-outcome-2",
+      "title": "formula.formulytics.outcome.2",
+      "summary": "Supported audience scale of 200M+ cumulative Instagram views, roughly 20M monthly Facebook views at peak, and 30K Instagram followers."
+    },
+    {
+      "id": "canonical-fact-think-context-memory-action-1",
+      "title": "think.context_memory.action.1",
+      "summary": "Built a context-aware LLM conversation system with persistent memory, confidence handling, ACE context, and personalized behavior."
+    },
+    {
+      "id": "canonical-fact-think-context-memory-output-2",
+      "title": "think.context_memory.output.2",
+      "summary": "Combined Python, FastAPI, asynchronous services, APIs, orchestration, and multi-provider evaluation in a retained-context conversation path."
+    },
+    {
+      "id": "canonical-fact-think-context-memory-outcome-3",
+      "title": "think.context_memory.outcome.3",
+      "summary": "Produced a core architecture suitable for continued developer work and pilot preparation."
+    },
+    {
+      "id": "canonical-fact-think-context-memory-status-4",
+      "title": "think.context_memory.status.4",
+      "summary": "The product remained under mental-health board review and was not clinically validated or approved."
+    },
+    {
+      "id": "canonical-fact-think-safety-evaluation-action-1",
+      "title": "think.safety_evaluation.action.1",
+      "summary": "Built a bounded fail-closed response path that generates, parses, evaluates, and releases only output that passes safety checks."
+    },
+    {
+      "id": "canonical-fact-think-safety-evaluation-output-2",
+      "title": "think.safety_evaluation.output.2",
+      "summary": "Implemented harmful-content filtering, crisis detection and routing, professional boundaries, minor-user protections, and layered controls."
+    },
+    {
+      "id": "canonical-fact-think-safety-evaluation-outcome-3",
+      "title": "think.safety_evaluation.outcome.3",
+      "summary": "Preserved conversational responsiveness while checking model output before it reached a vulnerable user."
+    },
+    {
+      "id": "canonical-fact-think-safety-evaluation-status-4",
+      "title": "think.safety_evaluation.status.4",
+      "summary": "The safety design was ready for review and pilot preparation; it did not establish clinical efficacy."
+    },
+    {
+      "id": "canonical-fact-think-multi-agent-platform-action-1",
+      "title": "think.multi_agent_platform.action.1",
+      "summary": "Contributed to platform architecture for parallel development of healing, onboarding, FAQ, and storytelling agents."
+    },
+    {
+      "id": "canonical-fact-think-multi-agent-platform-output-2",
+      "title": "think.multi_agent_platform.output.2",
+      "summary": "Separated specialized agent responsibilities within a shared platform direction."
+    },
+    {
+      "id": "canonical-fact-think-multi-agent-platform-status-3",
+      "title": "think.multi_agent_platform.status.3",
+      "summary": "Zoe reached board review; the other specialized agents were still under construction."
+    },
+    {
+      "id": "canonical-fact-cognizant-ingestion-action-1",
+      "title": "cognizant.ingestion.action.1",
+      "summary": "Built automated Python, SQL, Apache Spark, and PySpark-style data-ingestion pipelines."
+    },
+    {
+      "id": "canonical-fact-cognizant-ingestion-output-2",
+      "title": "cognizant.ingestion.output.2",
+      "summary": "Fed downstream KPI and analytics workflows with production-scale transformed data."
+    },
+    {
+      "id": "canonical-fact-cognizant-ingestion-outcome-3",
+      "title": "cognizant.ingestion.outcome.3",
+      "summary": "Maintained ingestion at more than 50 million rows per day."
+    },
+    {
+      "id": "canonical-fact-cognizant-kpi-latency-action-1",
+      "title": "cognizant.kpi_latency.action.1",
+      "summary": "Optimized the path from source data through downstream KPI delivery."
+    },
+    {
+      "id": "canonical-fact-cognizant-kpi-latency-outcome-2",
+      "title": "cognizant.kpi_latency.outcome.2",
+      "summary": "Reduced data-to-KPI latency from roughly 48 hours to roughly 2 hours."
+    },
+    {
+      "id": "canonical-fact-cognizant-aws-etl-action-1",
+      "title": "cognizant.aws_etl.action.1",
+      "summary": "Optimized ETL workflows using AWS S3, Lambda, and Glue."
+    },
+    {
+      "id": "canonical-fact-cognizant-aws-etl-outcome-2",
+      "title": "cognizant.aws_etl.outcome.2",
+      "summary": "Reduced infrastructure cost measurably without a confirmed exact percentage or amount."
+    },
+    {
+      "id": "canonical-fact-cognizant-data-quality-action-1",
+      "title": "cognizant.data_quality.action.1",
+      "summary": "Used data validation and pipeline testing with explicit transformations and downstream KPI dependencies."
+    },
+    {
+      "id": "canonical-fact-cognizant-data-quality-output-2",
+      "title": "cognizant.data_quality.output.2",
+      "summary": "Built production experience in throughput, cloud ETL, distributed processing, and maintainable data contracts."
+    }
+  ]
+}

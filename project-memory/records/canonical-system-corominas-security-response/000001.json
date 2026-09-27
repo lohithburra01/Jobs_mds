@@ -1,0 +1,45 @@
+{
+  "id": "canonical-system-corominas-security-response",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Capability block 7: Security response and hardening",
+  "summary": "System corominas.security_response: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Capability block 7: Security response and hardening\n\nAfter a third-party system in the portfolio was compromised, Lohith led the technical response. He identified the attack vector, audited the automation layer the same day to rule it out with evidence, swept the wider portfolio for the exposure, converted the sweep into a passive ongoing scanner, closed findings in the automation's own API surface, and authored the standing security policy.\n\nOutput and impact:\n\n- Turned a one-off incident investigation into an ongoing posture-monitoring control.\n- Produced evidence that separated the compromised third-party path from the automation layer.\n- Converted incident findings into API hardening and a reusable operating policy.\n\nBinding boundary:\n\n- This was response and hardening, not prevention.\n- Use `responded to`, `audited`, `swept`, or `hardened`.\n- Never say Lohith prevented, pre-empted, or detected the breach early.\n- Lohith flagged and escalated client remediation; he did not remediate the compromised client site himself.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"corominas.security_response.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"corominas.security_response.output.2\"\n  ],\n  \"outcome_fact_ids\": [\n    \"corominas.security_response.outcome.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1058,
+      "end": 1143
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-corominas",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "corominas.security_response",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "metric_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:20.500+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

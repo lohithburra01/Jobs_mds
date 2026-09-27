@@ -1,0 +1,63 @@
+{
+  "id": "canonical-accomplishment-cognizant-ingestion-accomplishment",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "cognizant.ingestion.accomplishment",
+  "summary": "Demonstrate the distinct work and result in ## Automated data ingestion and processing.",
+  "body": "{\n  \"id\": \"cognizant.ingestion.accomplishment\",\n  \"system_id\": \"cognizant.ingestion\",\n  \"purpose\": \"Demonstrate the distinct work and result in ## Automated data ingestion and processing.\",\n  \"fact_ids\": [\n    \"cognizant.ingestion.action.1\",\n    \"cognizant.ingestion.output.2\",\n    \"cognizant.ingestion.outcome.3\"\n  ],\n  \"metric_ids\": [\n    \"cognizant.daily_rows\"\n  ],\n  \"boundary_ids\": [\n    \"cognizant.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 2076,
+      "end": 2087
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-cognizant-ingestion",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-cognizant-ingestion-action-1",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-cognizant-ingestion-output-2",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-cognizant-ingestion-outcome-3",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-metric-cognizant-daily-rows",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-cognizant-boundary",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    }
+  ],
+  "original_id": "cognizant.ingestion.accomplishment",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:41.793+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

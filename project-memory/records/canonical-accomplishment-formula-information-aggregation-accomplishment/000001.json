@@ -1,0 +1,58 @@
+{
+  "id": "canonical-accomplishment-formula-information-aggregation-accomplishment",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "formula.information_aggregation.accomplishment",
+  "summary": "Demonstrate the distinct work and result in Recurring information aggregation.",
+  "body": "{\n  \"id\": \"formula.information_aggregation.accomplishment\",\n  \"system_id\": \"formula.information_aggregation\",\n  \"purpose\": \"Demonstrate the distinct work and result in Recurring information aggregation.\",\n  \"fact_ids\": [\n    \"formula.information_aggregation.action.1\",\n    \"formula.information_aggregation.output.2\",\n    \"formula.information_aggregation.outcome.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"formula_dream.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1576,
+      "end": 1586
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-formula-information-aggregation",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-information-aggregation-action-1",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-information-aggregation-output-2",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-formula-information-aggregation-outcome-3",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-formula-dream-boundary",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    }
+  ],
+  "original_id": "formula.information_aggregation.accomplishment",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:39.516+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

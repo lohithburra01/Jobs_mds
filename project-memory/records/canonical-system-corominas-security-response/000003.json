@@ -1,0 +1,107 @@
+{
+  "id": "canonical-system-corominas-security-response",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Capability block 7: Security response and hardening",
+  "summary": "System corominas.security_response: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Capability block 7: Security response and hardening\n\nAfter a third-party system in the portfolio was compromised, Lohith led the technical response. He identified the attack vector, audited the automation layer the same day to rule it out with evidence, swept the wider portfolio for the exposure, converted the sweep into a passive ongoing scanner, closed findings in the automation's own API surface, and authored the standing security policy.\n\nOutput and impact:\n\n- Turned a one-off incident investigation into an ongoing posture-monitoring control.\n- Produced evidence that separated the compromised third-party path from the automation layer.\n- Converted incident findings into API hardening and a reusable operating policy.\n\nBinding boundary:\n\n- This was response and hardening, not prevention.\n- Use `responded to`, `audited`, `swept`, or `hardened`.\n- Never say Lohith prevented, pre-empted, or detected the breach early.\n- Lohith flagged and escalated client remediation; he did not remediate the compromised client site himself.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"corominas.security_response.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"corominas.security_response.output.2\"\n  ],\n  \"outcome_fact_ids\": [\n    \"corominas.security_response.outcome.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1058,
+      "end": 1143
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-corominas",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-security-response-action-1",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-security-response-output-2",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-security-response-outcome-3",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-corominas-boundary",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-security-response-action-1",
+      "reason": "Read corominas.security_response.action.1 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-security-response-output-2",
+      "reason": "Read corominas.security_response.output.2 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-fact-corominas-security-response-outcome-3",
+      "reason": "Read corominas.security_response.outcome.3 separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-accomplishment-corominas-security-response-accomplishment",
+      "reason": "Read corominas.security_response.accomplishment separately."
+    }
+  ],
+  "original_id": "corominas.security_response",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "metric_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 3,
+  "updated_at": "2026-09-27T08:18:46.737+00:00",
+  "change_reason": "Add canonical child directory with readable names and exact retrieval routes",
+  "children": [
+    {
+      "id": "canonical-fact-corominas-security-response-action-1",
+      "title": "corominas.security_response.action.1",
+      "summary": "Led a technical response to a third-party compromise by identifying the vector, auditing automation, sweeping the portfolio, and hardening the API surface."
+    },
+    {
+      "id": "canonical-fact-corominas-security-response-output-2",
+      "title": "corominas.security_response.output.2",
+      "summary": "Converted the portfolio sweep into a passive ongoing scanner and authored a standing security policy."
+    },
+    {
+      "id": "canonical-fact-corominas-security-response-outcome-3",
+      "title": "corominas.security_response.outcome.3",
+      "summary": "Turned a one-off incident investigation into an ongoing posture-monitoring control."
+    },
+    {
+      "id": "canonical-accomplishment-corominas-security-response-accomplishment",
+      "title": "corominas.security_response.accomplishment",
+      "summary": "Demonstrate the distinct work and result in Security response and hardening."
+    }
+  ]
+}

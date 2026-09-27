@@ -1,0 +1,58 @@
+{
+  "id": "canonical-accomplishment-corominas-generated-workflows-accomplishment",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "corominas.generated_workflows.accomplishment",
+  "summary": "Demonstrate the distinct work and result in Workflow infrastructure as generated code.",
+  "body": "{\n  \"id\": \"corominas.generated_workflows.accomplishment\",\n  \"system_id\": \"corominas.generated_workflows\",\n  \"purpose\": \"Demonstrate the distinct work and result in Workflow infrastructure as generated code.\",\n  \"fact_ids\": [\n    \"corominas.generated_workflows.action.1\",\n    \"corominas.generated_workflows.output.2\",\n    \"corominas.generated_workflows.outcome.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 1048,
+      "end": 1058
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-corominas-generated-workflows",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-generated-workflows-action-1",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-generated-workflows-output-2",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-generated-workflows-outcome-3",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-corominas-boundary",
+      "reason": "Resolve this compatible fact, metric or boundary before writing or checking the accomplishment."
+    }
+  ],
+  "original_id": "corominas.generated_workflows.accomplishment",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:37.289+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

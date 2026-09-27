@@ -1,0 +1,39 @@
+{
+  "id": "canonical-boundary-formula-dream-boundary",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "formula_dream.boundary",
+  "summary": "## Formula Dream boundaries\n\nNever:\n\n- list Formula Neon as the employer;\n- split the integrated work into invented employers;\n- attribute the Formula Neon main account's growth to Lohith;\n- move Formulytics metrics to another employer or a future project;\n- claim exact revenue, conversion, retention, uptime, error rate, or time savings not recorded here;\n- describe the role as only content creation;\n- restore any deleted legacy evidence;\n- relabel the role's primary scaling stage as 1-to-10.",
+  "body": "{\n  \"id\": \"formula_dream.boundary\",\n  \"scope_ids\": [\n    \"formula_dream\"\n  ],\n  \"text\": \"## Formula Dream boundaries\\n\\nNever:\\n\\n- list Formula Neon as the employer;\\n- split the integrated work into invented employers;\\n- attribute the Formula Neon main account's growth to Lohith;\\n- move Formulytics metrics to another employer or a future project;\\n- claim exact revenue, conversion, retention, uptime, error rate, or time savings not recorded here;\\n- describe the role as only content creation;\\n- restore any deleted legacy evidence;\\n- relabel the role's primary scaling stage as 1-to-10.\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 5038,
+      "end": 5086
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-boundaries",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "formula_dream.boundary",
+  "evidence_type": "boundary",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:18:34.304+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

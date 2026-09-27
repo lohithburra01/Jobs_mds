@@ -1,0 +1,65 @@
+{
+  "id": "canonical-system-corominas-generated-workflows",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Capability block 6: Workflow infrastructure as generated code",
+  "summary": "System corominas.generated_workflows: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Capability block 6: Workflow infrastructure as generated code\n\nTreated workflow definitions as generated infrastructure rather than hand-built interface state. Python generators emit and maintain workflow definitions. When an orchestration pattern changes, the generator changes and dependent workflows can be regenerated.\n\nOutput and impact:\n\n- Replaced repeated manual workflow editing with reusable generation logic.\n- Allowed pattern changes to propagate without individually rebuilding many configurations.\n- Made new workflow patterns a generator change rather than a sequence of interface edits.\n\nMaintainability evidence:\n\n- The source of truth is deterministic code rather than scattered manual configuration.\n- Repeated structures can be changed consistently.\n- Infrastructure becomes reviewable and reproducible.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"corominas.generated_workflows.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"corominas.generated_workflows.output.2\"\n  ],\n  \"outcome_fact_ids\": [\n    \"corominas.generated_workflows.outcome.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 978,
+      "end": 1058
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-corominas",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-generated-workflows-action-1",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-generated-workflows-output-2",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-generated-workflows-outcome-3",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-corominas-boundary",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    }
+  ],
+  "original_id": "corominas.generated_workflows",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "metric_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:37.535+00:00",
+  "change_reason": "Connect existing system evidence without inferring absent categories"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "canonical-metric-cognizant-daily-rows",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "cognizant.daily_rows",
+  "summary": "50M+ rows per day",
+  "body": "{\n  \"id\": \"cognizant.daily_rows\",\n  \"employer_id\": \"cognizant\",\n  \"system_id\": \"cognizant.ingestion\",\n  \"display_text\": \"50M+ rows per day\",\n  \"meaning\": \"Production ingestion scale\",\n  \"status\": \"achieved\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 4960,
+      "end": 4987
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-cognizant-ingestion",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "uses",
+      "to": "canonical-employer-cognizant",
+      "reason": "Keep this evidence attached to its employer."
+    }
+  ],
+  "original_id": "cognizant.daily_rows",
+  "evidence_type": "metric",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:37.898+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "canonical-employer-corominas",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Corominas Consulting",
+  "summary": "Employer corominas: 7 separately retrievable systems.",
+  "body": "{\n  \"id\": \"corominas\",\n  \"company\": \"Corominas Consulting\",\n  \"titles\": [\n    \"Manager, AI & Automation\"\n  ],\n  \"period\": \"Jun 2026 - Sep 2026\",\n  \"status_text\": \"Full-portfolio client-deliverable and approval cycle; broader workstreams had mixed completion states.\",\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ]\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 513,
+      "end": 1143
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employers",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "corominas",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:19.162+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

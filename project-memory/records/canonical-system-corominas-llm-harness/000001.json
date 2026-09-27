@@ -1,0 +1,44 @@
+{
+  "id": "canonical-system-corominas-llm-harness",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Capability block 2: LLM harness and cost control",
+  "summary": "System corominas.llm_harness: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Capability block 2: LLM harness and cost control\n\nBuilt a harness around LLM inference rather than coupling the workflow directly to one model call. Used sub-agent techniques, prompt caching, context-window management, loop reduction, and memory optimization. The orchestration is model-agnostic, so changing the underlying model is a configuration change rather than a rewrite.\n\nOutput and impact:\n\n- Reduced inference cost by over 90% without quality regression.\n- Reduced per-operation cost from dollar-scale to cent-scale.\n- Separated orchestration from provider-specific calls so model changes did not require rebuilding the workflow.\n\nMaintainability evidence:\n\n- Provider abstraction limits the blast radius of a model change.\n- Context and memory are deliberately managed instead of allowed to grow without control.\n- Loop reduction improves both cost and predictability.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"corominas.llm_harness.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"corominas.llm_harness.output.2\"\n  ],\n  \"outcome_fact_ids\": [\n    \"corominas.llm_harness.outcome.3\"\n  ],\n  \"metric_ids\": [\n    \"corominas.inference_cost\"\n  ],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 648,
+      "end": 730
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-corominas",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    }
+  ],
+  "original_id": "corominas.llm_harness",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:19.576+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

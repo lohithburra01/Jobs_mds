@@ -1,0 +1,44 @@
+{
+  "id": "canonical-fact-formula-information-aggregation-output-2",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "formula.information_aggregation.output.2",
+  "summary": "Created a consolidated information layer refreshed at an approximately daily cadence.",
+  "body": "{\n  \"id\": \"formula.information_aggregation.output.2\",\n  \"employer_id\": \"formula_dream\",\n  \"system_id\": \"formula.information_aggregation\",\n  \"kind\": \"output\",\n  \"text\": \"Created a consolidated information layer refreshed at an approximately daily cadence.\"\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 3682,
+      "end": 3716
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-system-formula-information-aggregation",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "uses",
+      "to": "canonical-employer-formula-dream",
+      "reason": "Keep this evidence attached to its employer."
+    }
+  ],
+  "original_id": "formula.information_aggregation.output.2",
+  "evidence_type": "output",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:17:30.454+00:00",
+  "change_reason": "Expose one existing canonical evidence unit for selective retrieval; preserve facts and source"
+}

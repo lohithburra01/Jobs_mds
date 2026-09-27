@@ -1,0 +1,65 @@
+{
+  "id": "canonical-system-corominas-quality-gate",
+  "kind": "canonical_context",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Capability block 3: Deterministic quality gate",
+  "summary": "System corominas.quality_gate: original narrative, linked evidence and 1 accomplishment(s).",
+  "body": "## Capability block 3: Deterministic quality gate\n\nBuilt a validation layer between generation and human review. Generated artifacts pass through deterministic checks for format, completeness, factual consistency, and structural requirements. The enforcement layer is separate from the prompt.\n\nOutput and impact:\n\n- Automated routine validation before output reached a human.\n- Made prompt changes and model swaps comparable against consistent standards.\n- Reduced dependence on manual spot-checking while preserving final human judgment.\n\nMaintainability evidence:\n\n- Generation and evaluation are separate systems.\n- Stable validation rules provide regression protection when model behavior changes.\n- Failed output is withheld instead of released because the model sounded confident.\n\nDo not imply that human approval disappeared.\n\nSaved typed references:\n{\n  \"problem_fact_ids\": [],\n  \"input_fact_ids\": [],\n  \"action_fact_ids\": [\n    \"corominas.quality_gate.action.1\"\n  ],\n  \"output_fact_ids\": [\n    \"corominas.quality_gate.output.2\"\n  ],\n  \"outcome_fact_ids\": [\n    \"corominas.quality_gate.outcome.3\"\n  ],\n  \"metric_ids\": [],\n  \"boundary_ids\": [\n    \"corominas.boundary\"\n  ],\n  \"status_fact_ids\": []\n}",
+  "sources": [
+    {
+      "path": "canonical.yaml",
+      "sha256": "e12eb46328af6e9d5fde3f32c96c642fa7331b3dad07b7ffe29f5bbc9d2ef687",
+      "start": 730,
+      "end": 816
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "canonical-employer-corominas",
+      "reason": "Read the parent context and sibling directory."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Read the authoritative typed evidence; source hash detects subsequent edits."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply current evidence, retrofit and writing rules."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-quality-gate-action-1",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-quality-gate-output-2",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-fact-corominas-quality-gate-outcome-3",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    },
+    {
+      "rel": "depends_on",
+      "to": "canonical-boundary-corominas-boundary",
+      "reason": "Resolve this typed evidence reference; retain its scope and status."
+    }
+  ],
+  "original_id": "corominas.quality_gate",
+  "missing_evidence_categories": [
+    "problem_fact_ids",
+    "input_fact_ids",
+    "metric_ids",
+    "status_fact_ids"
+  ],
+  "note": "Empty categories record current source gaps; no new facts were inferred.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:18:36.117+00:00",
+  "change_reason": "Connect existing system evidence without inferring absent categories"
+}
