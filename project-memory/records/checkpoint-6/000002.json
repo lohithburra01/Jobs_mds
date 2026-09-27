@@ -1,0 +1,26 @@
+{
+  "id": "checkpoint-6",
+  "kind": "checkpoint",
+  "title": "Run one actual JD end to end",
+  "summary": "Produce resume PDF, letter PDF, JSON, portable context and an inspectable report; Lohith judges the result.",
+  "body": "2026-09-27: moved up as a baseline run (change-baseline-jd-first). Run the current app as-is on one real JD Lohith chooses; show him the resume, letter and report; record his reaction as the to-do list for checkpoint-4. The full end-to-end acceptance still depends on checkpoint-3 and checkpoint-5.",
+  "status": "in_progress",
+  "links": [
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-3"
+    },
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-5"
+    },
+    {
+      "rel": "changed_by",
+      "to": "change-baseline-jd-first"
+    }
+  ],
+  "next_action": "Ask Lohith for the JD, state expected cost, get a go-ahead, then run once and show the output.",
+  "revision": 2,
+  "updated_at": "2026-09-27T19:54:42.316+00:00",
+  "change_reason": "Apply change-baseline-jd-first"
+}

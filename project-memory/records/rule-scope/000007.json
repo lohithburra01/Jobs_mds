@@ -1,0 +1,32 @@
+{
+  "id": "rule-scope",
+  "kind": "rule",
+  "title": "Current authorization and model independence",
+  "summary": "Current work: checkpoint-6 baseline run of one real JD (moved up 2026-09-27 by change-baseline-jd-first). Give five brief points; wait for feedback before dependent work. Confirm JD and cost before any paid run. No deployment, push or credit purchase is implied.",
+  "body": "Memory harness accepted 2026-09-27. checkpoint-1 step 1 done; step 2 is Lohith's in his own Codex setup. Lohith approved moving the baseline real-JD run up so his judgment of real output drives resume work. Standing communication preferences apply.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Read the latest authorization when deciding whether to continue the saved task."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-communication-request-2026-09-26",
+      "reason": "Latest user instruction narrows how to continue the saved work."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-harness-first-2026-09-26",
+      "reason": "Latest explicit priority answer authorizes harness completion."
+    }
+  ],
+  "revision": 7,
+  "updated_at": "2026-09-27T19:54:44.157+00:00",
+  "change_reason": "Apply change-baseline-jd-first"
+}

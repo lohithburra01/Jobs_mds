@@ -1,0 +1,30 @@
+{
+  "id": "change-baseline-jd-first",
+  "kind": "change",
+  "status": "accepted",
+  "title": "Run one real JD as a baseline before further tooling",
+  "summary": "Checkpoint order changed: after checkpoint-1 step 1, a baseline run of the current app on one real JD comes next; Lohith's judgment of that output drives later resume work.",
+  "body": "Reason: work since checkpoint-0 built tooling (memory, hooks, supervisor) without improving the resume builder; AI-written tests do not give Lohith confidence, only real output he judges does. Change: checkpoint-6 is moved up as a BASELINE run of the current app as-is (its dependencies on checkpoint-3 and -5 are relaxed for this baseline only; the full end-to-end acceptance still depends on them). checkpoint-1 step 2 (real Codex task through the supervisor) is left to Lohith in his own Codex setup and does not block. All other checkpoints keep their order. Not ditched: the checkpoint system stays; this change is recorded to avoid drift. Paid model run: confirm JD and expected cost with Lohith immediately before running.",
+  "links": [
+    {
+      "rel": "affects",
+      "to": "checkpoint-6"
+    },
+    {
+      "rel": "affects",
+      "to": "checkpoint-1"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Record plan changes with reason; keep old versions."
+    }
+  ],
+  "acceptance": {
+    "user_statement": "Okay, I, I like the plan to, you know, change uh, the things inside the checkpoint system.",
+    "source": "Lohith in Claude Code chat, 2026-09-27"
+  },
+  "revision": 1,
+  "updated_at": "2026-09-27T19:54:41.728+00:00",
+  "change_reason": "Record approved checkpoint reorder"
+}
