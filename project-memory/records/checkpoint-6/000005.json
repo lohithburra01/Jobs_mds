@@ -1,0 +1,26 @@
+{
+  "id": "checkpoint-6",
+  "kind": "checkpoint",
+  "title": "Run one actual JD end to end",
+  "summary": "Produce resume PDF, letter PDF, JSON, portable context and an inspectable report; Lohith judges the result.",
+  "body": "2026-09-27: moved up as a baseline run (change-baseline-jd-first). Run the current app as-is on one real JD Lohith chooses; show him the resume, letter and report; record his reaction as the to-do list for checkpoint-4. The full end-to-end acceptance still depends on checkpoint-3 and checkpoint-5.\n2026-09-27: Lohith supplied the Scaleway Internal AI JD, preserved at project-memory/scratch/scaleway-baseline-jd.txt. Paid run has not started. Read-only inspection found existing configuration uses DeepSeek V3.1 plus Jev 1.13 with an 80-HTTP-attempt ceiling and no dollar cap. Historical completed v2 runs reported about USD 0.045; the sole inspected v3 run stopped at USD 0.0323, so completed v3 cost is unverified. Current v3 path does not generate chat_context.md; assess this as a baseline gap.\n2026-09-27: Lohith requested a better DeepSeek model, suggesting V4 Pro, and explicitly approved price: 'im okay with any price btw, just go ahead from me with respect to price.' Use pinned deepseek/deepseek-v4-pro-0813 for this baseline, keeping Jev and the existing pipeline. OpenRouter listing confirms availability and structured outputs. This supersedes the pending cost-approval step for this run.\n2026-09-27 execution: config writer changed to deepseek/deepseek-v4-pro-0813. Saved run jobs/scaleway-baseline-jd-20260927T201846801536Z stopped after 3 connection failures, with zero recorded successful responses and USD 0 reported. Elevated network resume was rejected by automatic approval review: price/model authorization recognized, but explicit consent required to transmit JD and personal resume/profile data to OpenRouter. Do not retry by another route; request the specific data-transfer consent. Existing unrelated dirty work preserved.",
+  "status": "in_progress",
+  "links": [
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-3"
+    },
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-5"
+    },
+    {
+      "rel": "changed_by",
+      "to": "change-baseline-jd-first"
+    }
+  ],
+  "next_action": "Ask explicit consent to send the supplied JD and canonical resume/profile data to OpenRouter and its model providers for Jev/DeepSeek generation; after consent, resume the existing saved job with network permission and inspect results.",
+  "revision": 5,
+  "updated_at": "2026-09-27T20:19:46.608+00:00",
+  "change_reason": "Save authorized model change, stopped run and explicit automatic-review block"
+}

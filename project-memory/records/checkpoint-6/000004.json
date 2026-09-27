@@ -1,0 +1,26 @@
+{
+  "id": "checkpoint-6",
+  "kind": "checkpoint",
+  "title": "Run one actual JD end to end",
+  "summary": "Produce resume PDF, letter PDF, JSON, portable context and an inspectable report; Lohith judges the result.",
+  "body": "2026-09-27: moved up as a baseline run (change-baseline-jd-first). Run the current app as-is on one real JD Lohith chooses; show him the resume, letter and report; record his reaction as the to-do list for checkpoint-4. The full end-to-end acceptance still depends on checkpoint-3 and checkpoint-5.\n2026-09-27: Lohith supplied the Scaleway Internal AI JD, preserved at project-memory/scratch/scaleway-baseline-jd.txt. Paid run has not started. Read-only inspection found existing configuration uses DeepSeek V3.1 plus Jev 1.13 with an 80-HTTP-attempt ceiling and no dollar cap. Historical completed v2 runs reported about USD 0.045; the sole inspected v3 run stopped at USD 0.0323, so completed v3 cost is unverified. Current v3 path does not generate chat_context.md; assess this as a baseline gap.\n2026-09-27: Lohith requested a better DeepSeek model, suggesting V4 Pro, and explicitly approved price: 'im okay with any price btw, just go ahead from me with respect to price.' Use pinned deepseek/deepseek-v4-pro-0813 for this baseline, keeping Jev and the existing pipeline. OpenRouter listing confirms availability and structured outputs. This supersedes the pending cost-approval step for this run.",
+  "status": "in_progress",
+  "links": [
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-3"
+    },
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-5"
+    },
+    {
+      "rel": "changed_by",
+      "to": "change-baseline-jd-first"
+    }
+  ],
+  "next_action": "Set writer to DeepSeek V4 Pro 0813, run supplied Scaleway JD once, inspect generated outputs and reported cost, save result for Lohith review.",
+  "revision": 4,
+  "updated_at": "2026-09-27T20:18:44.909+00:00",
+  "change_reason": "Record explicit writer upgrade and paid-run authorization before execution"
+}
