@@ -1,0 +1,26 @@
+{
+  "id": "checkpoint-6",
+  "kind": "checkpoint",
+  "title": "Run one actual JD end to end",
+  "summary": "Produce resume PDF, letter PDF, JSON, portable context and an inspectable report; Lohith judges the result.",
+  "body": "2026-09-27: moved up as a baseline run (change-baseline-jd-first). Run the current app as-is on one real JD Lohith chooses; show him the resume, letter and report; record his reaction as the to-do list for checkpoint-4. The full end-to-end acceptance still depends on checkpoint-3 and checkpoint-5.\n2026-09-27: Lohith supplied the Scaleway Internal AI JD, preserved at project-memory/scratch/scaleway-baseline-jd.txt. Paid run has not started. Read-only inspection found existing configuration uses DeepSeek V3.1 plus Jev 1.13 with an 80-HTTP-attempt ceiling and no dollar cap. Historical completed v2 runs reported about USD 0.045; the sole inspected v3 run stopped at USD 0.0323, so completed v3 cost is unverified. Current v3 path does not generate chat_context.md; assess this as a baseline gap.\n2026-09-27: Lohith requested a better DeepSeek model, suggesting V4 Pro, and explicitly approved price: 'im okay with any price btw, just go ahead from me with respect to price.' Use pinned deepseek/deepseek-v4-pro-0813 for this baseline, keeping Jev and the existing pipeline. OpenRouter listing confirms availability and structured outputs. This supersedes the pending cost-approval step for this run.\n2026-09-27 execution: config writer changed to deepseek/deepseek-v4-pro-0813. Saved run jobs/scaleway-baseline-jd-20260927T201846801536Z stopped after 3 connection failures, with zero recorded successful responses and USD 0 reported. Elevated network resume was rejected by automatic approval review: price/model authorization recognized, but explicit consent required to transmit JD and personal resume/profile data to OpenRouter. Do not retry by another route; request the specific data-transfer consent. Existing unrelated dirty work preserved.\n2026-09-27: In direct response to the explicit question about sending the JD and saved resume/profile data to OpenRouter and its model providers, Lohith said 'yes approved'. Both data transfer and paid execution are now explicitly authorized for this baseline run.\n2026-09-27 (recorded by Claude Code after Codex hit its usage limit): Codex made the writer output budget configurable (writer_max_tokens 32000, writer_reasoning_effort low) after V4 Pro returned empty output at 5000 tokens, and started run 2: jobs/scaleway-baseline-jd-20260927T202451669539Z. RESULT: STOPPED at 20:30:54 UTC in the first stage (reading the JD), before any writing or PDF. Cost USD 0.035, 15 HTTP calls. Error: 'JD v3 interpretation still needs review after three bounded drafts'. The reviewer (Jev) rejected all three JD extractions: draft 0 omitted 14 JD passages; draft 1 filed six soft skills under the bare heading 'SOFT SKILLS:' as their quote, and 4 were judged unfaithful; draft 2 fixed that but dropped context passages (DSI organization, promoting sovereign cloud internally, AI Tooling Engineering, Business-side AI Toolers, autonomy and building a team from 2027). The drafts oscillated instead of converging. The run log saves only the error type, not its message (visibility gap). Codex then edited harness/skills.py and tests/test_skills_v3.py at about 20:54 UTC, mixed into older uncommitted changes to the same file; that work is unfinished, uncommitted and unreviewed (its 7 tests pass). The full test suite is flaky: 114 pass in clean runs, but 1-3 different tests failed in some runs; cause not identified. Codex hooks logged no events during its session (Codex live hook delivery still unproven).\n2026-09-27 run 3 after change-jd-reading-convergence (Lohith chose option A): jobs/scaleway-baseline-jd-20260927T212933686504Z STOPPED again at JD reading, USD 0.070, 17 HTTP calls; no resume. Drafts now converge: 13 -> 1 -> 2 failed checks (run 2: 14 -> 4 -> 6). Remaining blocker is a checker contradiction: the reviewer flags the company-context sentence 'As Scaleway continues to grow, we are strengthening our IT & Information Systems (DSI) organization...' as MISSING when omitted (draft 1), then judges it unfaithful as a work component when included (draft 2), which also dropped 'You will work closely with multiple teams across Scaleway, including:'. Total baseline spend so far about USD 0.105.",
+  "status": "in_progress",
+  "links": [
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-3"
+    },
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-5"
+    },
+    {
+      "rel": "changed_by",
+      "to": "change-baseline-jd-first"
+    }
+  ],
+  "next_action": "Lohith decides how to get past the last one-to-two reviewer flags (see chat options); do not rerun until he chooses.",
+  "revision": 8,
+  "updated_at": "2026-09-27T21:33:09.482+00:00",
+  "change_reason": "Record run 3 result and remaining checker contradiction"
+}
