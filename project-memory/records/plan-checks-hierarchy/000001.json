@@ -1,0 +1,39 @@
+{
+  "id": "plan-checks-hierarchy",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-checks",
+  "title": "Four review paths → document consistency",
+  "summary": "Skill term → group → Skills section.",
+  "body": "Skill term → group → Skills section.\n\nExperience bullet: meaning, clarity, evidence, scope, JD purpose → employer breadth/distinctness/scope → Experience section.\n\nProject bullet: local scope/workflow/output/clarity → coherent whole project.\n\nSummary sentence / letter paragraph: purpose/specificity/clarity → whole summary / whole letter.\n\nCompleted section results → final visible application: consistency, coverage and unnecessary repetition.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-checks",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-010",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 359,
+      "end": 410
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:26.142+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

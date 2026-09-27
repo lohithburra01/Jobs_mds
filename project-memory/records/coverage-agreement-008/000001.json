@@ -1,0 +1,197 @@
+{
+  "id": "coverage-agreement-008",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 8: source-to-topic coverage",
+  "summary": "9 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-008-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 294,
+        "end": 294
+      },
+      "destinations": [
+        "plan-project-agreement",
+        "plan-canonical-prototype-pattern",
+        "plan-application-document-structure",
+        "module-project"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-008-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 296,
+        "end": 296
+      },
+      "destinations": [
+        "plan-project-agreement",
+        "plan-canonical-prototype-pattern",
+        "plan-application-document-structure",
+        "module-project"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-008-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 298,
+        "end": 298
+      },
+      "destinations": [
+        "plan-project-agreement",
+        "plan-canonical-prototype-pattern",
+        "plan-application-document-structure",
+        "module-project"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-008-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 300,
+        "end": 310
+      },
+      "destinations": [
+        "plan-project-agreement",
+        "plan-canonical-prototype-pattern",
+        "plan-application-document-structure",
+        "module-project"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-008-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 312,
+        "end": 312
+      },
+      "destinations": [
+        "plan-project-agreement",
+        "plan-canonical-prototype-pattern",
+        "plan-application-document-structure",
+        "module-project"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-008-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 314,
+        "end": 314
+      },
+      "destinations": [
+        "plan-project-agreement",
+        "plan-canonical-prototype-pattern",
+        "plan-application-document-structure",
+        "module-project"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-008-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 316,
+        "end": 317
+      },
+      "destinations": [
+        "plan-project-agreement",
+        "plan-canonical-prototype-pattern",
+        "plan-application-document-structure",
+        "module-project"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-008-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 319,
+        "end": 319
+      },
+      "destinations": [
+        "plan-project-agreement",
+        "plan-canonical-prototype-pattern",
+        "plan-application-document-structure",
+        "module-project"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-008-clause-009",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 321,
+        "end": 321
+      },
+      "destinations": [
+        "plan-project-agreement",
+        "plan-canonical-prototype-pattern",
+        "plan-application-document-structure",
+        "module-project"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 294,
+      "end": 322
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-008",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-project-agreement",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-prototype-pattern",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-application-document-structure",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-project",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:20.156+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

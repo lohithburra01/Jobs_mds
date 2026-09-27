@@ -1,0 +1,60 @@
+{
+  "id": "plan-coding-verification",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-coding-task-contract",
+  "title": "Verification → evidence for your review",
+  "summary": "Python: files exist; matching code revision; commands really ran; references preserved; allowed scope and limits.",
+  "body": "Python: files exist; matching code revision; commands really ran; references preserved; allowed scope and limits.\n\nJev: narrow obligations with actual evidence; SATISFIED / VIOLATED / INSUFFICIENT_EVIDENCE.\n\nExample: removed bullet still counted? final selected content used? requirement weakened? unrelated behavior changed?\n\nJev does not execute commands, grant scope expansion or certify arbitrary code from a diff.\n\nMissing evidence calls for that evidence, not a rewrite. Technical results are separate from your acceptance.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-task-contract",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-016",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-017",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 703,
+      "end": 744
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 745,
+      "end": 768
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:33.330+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

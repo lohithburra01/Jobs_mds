@@ -1,0 +1,99 @@
+{
+  "id": "coverage-agreement-022",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 22: source-to-topic coverage",
+  "summary": "4 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-022-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 876,
+        "end": 876
+      },
+      "destinations": [
+        "plan-history-numbered-feedback",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-022-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 878,
+        "end": 897
+      },
+      "destinations": [
+        "plan-history-numbered-feedback",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "historical sequencing or feedback; current scope and later amendments govern"
+    },
+    {
+      "id": "agreement-022-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 899,
+        "end": 899
+      },
+      "destinations": [
+        "plan-history-numbered-feedback",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "historical sequencing or feedback; current scope and later amendments govern"
+    },
+    {
+      "id": "agreement-022-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 901,
+        "end": 901
+      },
+      "destinations": [
+        "plan-history-numbered-feedback",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "historical sequencing or feedback; current scope and later amendments govern"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 876,
+      "end": 903
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-022",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-history-numbered-feedback",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-history-agreement-amendments",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:25.704+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

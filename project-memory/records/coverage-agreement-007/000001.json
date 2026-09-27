@@ -1,0 +1,220 @@
+{
+  "id": "coverage-agreement-007",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 7: source-to-topic coverage",
+  "summary": "10 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-007-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 258,
+        "end": 258
+      },
+      "destinations": [
+        "skills-taxonomy",
+        "module-skills",
+        "skills-term-checks",
+        "skills-group-checks"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-007-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 260,
+        "end": 260
+      },
+      "destinations": [
+        "skills-taxonomy",
+        "module-skills",
+        "skills-term-checks",
+        "skills-group-checks"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-007-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 262,
+        "end": 262
+      },
+      "destinations": [
+        "skills-taxonomy",
+        "module-skills",
+        "skills-term-checks",
+        "skills-group-checks"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-007-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 264,
+        "end": 275
+      },
+      "destinations": [
+        "skills-taxonomy",
+        "module-skills",
+        "skills-term-checks",
+        "skills-group-checks"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-007-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 277,
+        "end": 277
+      },
+      "destinations": [
+        "skills-taxonomy",
+        "module-skills",
+        "skills-term-checks",
+        "skills-group-checks"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-007-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 279,
+        "end": 279
+      },
+      "destinations": [
+        "skills-term-checks",
+        "module-skills",
+        "skills-taxonomy",
+        "skills-group-checks"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-007-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 281,
+        "end": 286
+      },
+      "destinations": [
+        "skills-term-checks",
+        "module-skills",
+        "skills-taxonomy",
+        "skills-group-checks"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-007-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 288,
+        "end": 288
+      },
+      "destinations": [
+        "skills-taxonomy",
+        "module-skills",
+        "skills-term-checks",
+        "skills-group-checks"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-007-clause-009",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 290,
+        "end": 290
+      },
+      "destinations": [
+        "skills-section-checks",
+        "module-skills",
+        "skills-taxonomy",
+        "skills-term-checks",
+        "skills-group-checks"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-007-clause-010",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 292,
+        "end": 292
+      },
+      "destinations": [
+        "skills-section-checks",
+        "module-skills",
+        "skills-taxonomy",
+        "skills-term-checks",
+        "skills-group-checks"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 258,
+      "end": 293
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-007",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "skills-taxonomy",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-skills",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "skills-term-checks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "skills-group-checks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "skills-section-checks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:19.791+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

@@ -1,0 +1,291 @@
+{
+  "id": "coverage-agreement",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Complete agreement coverage directory",
+  "summary": "All 29 preserved agreement sections and 326 paragraph ranges have explicit semantic destinations or historical/formatting dispositions.",
+  "body": "Open the section needed for exact clause-to-topic mapping. Both application design and coding-context design are represented. Latest user amendments live in current rule records, whose linked sources take precedence. The evidence hierarchy is separately linked from module-canonical to actual canonical.yaml records.",
+  "links": [
+    {
+      "rel": "child",
+      "to": "coverage-agreement-001",
+      "reason": "Inspect section 1 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-002",
+      "reason": "Inspect section 2 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-003",
+      "reason": "Inspect section 3 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-004",
+      "reason": "Inspect section 4 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-005",
+      "reason": "Inspect section 5 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-006",
+      "reason": "Inspect section 6 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-007",
+      "reason": "Inspect section 7 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-008",
+      "reason": "Inspect section 8 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-009",
+      "reason": "Inspect section 9 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-010",
+      "reason": "Inspect section 10 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-011",
+      "reason": "Inspect section 11 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-012",
+      "reason": "Inspect section 12 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-013",
+      "reason": "Inspect section 13 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-014",
+      "reason": "Inspect section 14 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-015",
+      "reason": "Inspect section 15 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-016",
+      "reason": "Inspect section 16 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-017",
+      "reason": "Inspect section 17 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-018",
+      "reason": "Inspect section 18 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-019",
+      "reason": "Inspect section 19 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-020",
+      "reason": "Inspect section 20 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-021",
+      "reason": "Inspect section 21 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-022",
+      "reason": "Inspect section 22 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-023",
+      "reason": "Inspect section 23 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-024",
+      "reason": "Inspect section 24 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-025",
+      "reason": "Inspect section 25 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-026",
+      "reason": "Inspect section 26 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-027",
+      "reason": "Inspect section 27 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-028",
+      "reason": "Inspect section 28 coverage and its semantic destinations."
+    },
+    {
+      "rel": "child",
+      "to": "coverage-agreement-029",
+      "reason": "Inspect section 29 coverage and its semantic destinations."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Latest user participation rules apply."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-scope",
+      "reason": "Latest harness-first priority applies."
+    },
+    {
+      "rel": "uses",
+      "to": "module-canonical",
+      "reason": "Inspect actual candidate evidence individually."
+    }
+  ],
+  "children": [
+    {
+      "id": "coverage-agreement-001",
+      "title": "Agreement section 1"
+    },
+    {
+      "id": "coverage-agreement-002",
+      "title": "Agreement section 2"
+    },
+    {
+      "id": "coverage-agreement-003",
+      "title": "Agreement section 3"
+    },
+    {
+      "id": "coverage-agreement-004",
+      "title": "Agreement section 4"
+    },
+    {
+      "id": "coverage-agreement-005",
+      "title": "Agreement section 5"
+    },
+    {
+      "id": "coverage-agreement-006",
+      "title": "Agreement section 6"
+    },
+    {
+      "id": "coverage-agreement-007",
+      "title": "Agreement section 7"
+    },
+    {
+      "id": "coverage-agreement-008",
+      "title": "Agreement section 8"
+    },
+    {
+      "id": "coverage-agreement-009",
+      "title": "Agreement section 9"
+    },
+    {
+      "id": "coverage-agreement-010",
+      "title": "Agreement section 10"
+    },
+    {
+      "id": "coverage-agreement-011",
+      "title": "Agreement section 11"
+    },
+    {
+      "id": "coverage-agreement-012",
+      "title": "Agreement section 12"
+    },
+    {
+      "id": "coverage-agreement-013",
+      "title": "Agreement section 13"
+    },
+    {
+      "id": "coverage-agreement-014",
+      "title": "Agreement section 14"
+    },
+    {
+      "id": "coverage-agreement-015",
+      "title": "Agreement section 15"
+    },
+    {
+      "id": "coverage-agreement-016",
+      "title": "Agreement section 16"
+    },
+    {
+      "id": "coverage-agreement-017",
+      "title": "Agreement section 17"
+    },
+    {
+      "id": "coverage-agreement-018",
+      "title": "Agreement section 18"
+    },
+    {
+      "id": "coverage-agreement-019",
+      "title": "Agreement section 19"
+    },
+    {
+      "id": "coverage-agreement-020",
+      "title": "Agreement section 20"
+    },
+    {
+      "id": "coverage-agreement-021",
+      "title": "Agreement section 21"
+    },
+    {
+      "id": "coverage-agreement-022",
+      "title": "Agreement section 22"
+    },
+    {
+      "id": "coverage-agreement-023",
+      "title": "Agreement section 23"
+    },
+    {
+      "id": "coverage-agreement-024",
+      "title": "Agreement section 24"
+    },
+    {
+      "id": "coverage-agreement-025",
+      "title": "Agreement section 25"
+    },
+    {
+      "id": "coverage-agreement-026",
+      "title": "Agreement section 26"
+    },
+    {
+      "id": "coverage-agreement-027",
+      "title": "Agreement section 27"
+    },
+    {
+      "id": "coverage-agreement-028",
+      "title": "Agreement section 28"
+    },
+    {
+      "id": "coverage-agreement-029",
+      "title": "Agreement section 29"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:28.771+00:00",
+  "change_reason": "Complete original-agreement coverage directory for review"
+}

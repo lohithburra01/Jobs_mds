@@ -1,0 +1,32 @@
+{
+  "id": "plan-canonical-root-fields",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-canonical-observed-schema",
+  "title": "Root, identity and administrative fields",
+  "summary": "Root: schema_version, source_archive, source_archive_sha256, profile, education, identity, administrative, policies, employers, facts, metrics, boundaries, prototype_pattern, migration.",
+  "body": "Root: schema_version, source_archive, source_archive_sha256, profile, education, identity, administrative, policies, employers, facts, metrics, boundaries, prototype_pattern, migration.\n\nprofile: name, phone, location. education[]: degree, school, year.\n\nidentity: professional_spine, career_progression, maintainability, claim_boundaries.\n\nadministrative: citizenship, immigration_status, relocation, work_authorization_rules, known_technology_examples.\n\npolicies: stack_retrofit, max_bullets_per_employer, include_independent_project.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-canonical-observed-schema",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "map-two-layer-plan",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    }
+  ],
+  "children": [],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:26:48.108+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

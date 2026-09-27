@@ -1,0 +1,37 @@
+{
+  "id": "plan-jd-requirement-shape",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-jd",
+  "title": "Represent meaningful JD requirements",
+  "summary": "Each requirement carries the original passage, plain interpretation, priority, meaningful child components, named technologies and unresolved interpretation.",
+  "body": "Each requirement carries the original passage, plain interpretation, priority, meaningful child components, named technologies and unresolved interpretation. Separate distinct obligations such as retrieval, tool use and approval; do not create a requirement for every verb or noun.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 162,
+      "end": 212
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-jd",
+      "reason": "Read the component boundary and related behaviors."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-005",
+      "reason": "Read the exact rule and examples."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply active evidence and document requirements."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:09.373+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

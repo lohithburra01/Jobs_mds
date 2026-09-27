@@ -1,0 +1,85 @@
+{
+  "id": "plan-canonical-system-contract",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-canonical-employer-contract",
+  "title": "Employer → systems / initiatives",
+  "summary": "Each system has its own purpose and original narrative, preserving the surrounding meaning. Do not combine unrelated initiatives.",
+  "body": "Each system has its own purpose and original narrative, preserving the surrounding meaning. Do not combine unrelated initiatives.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-canonical-employer-contract",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-003",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "child",
+      "to": "plan-canonical-fact-contract",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-canonical-metric-contract",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-canonical-boundary-contract",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-canonical-accomplishment-contract",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-canonical-provenance-contract",
+      "reason": "Open this separately readable topic."
+    }
+  ],
+  "children": [
+    {
+      "id": "plan-canonical-fact-contract",
+      "summary": "System → typed facts"
+    },
+    {
+      "id": "plan-canonical-metric-contract",
+      "summary": "System → metrics"
+    },
+    {
+      "id": "plan-canonical-boundary-contract",
+      "summary": "System → boundaries"
+    },
+    {
+      "id": "plan-canonical-accomplishment-contract",
+      "summary": "System → distinct accomplishments"
+    },
+    {
+      "id": "plan-canonical-provenance-contract",
+      "summary": "Each fact / accomplishment → source passage"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 32,
+      "end": 123
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:26:45.468+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

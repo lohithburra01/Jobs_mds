@@ -1,0 +1,47 @@
+{
+  "id": "plan-context-session-entry",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-coding-context",
+  "title": "1 · New session → orient both the agent and you",
+  "summary": "Read NOW.md / MEMORY.md → run start → current checkpoint + essential active rules.",
+  "body": "Read NOW.md / MEMORY.md → run start → current checkpoint + essential active rules.\n\nExplain goal, completed stages, current task and next action in plain language, assuming no chat context.\n\nOpen only current component and needed children; follow named links for more detail.\n\nA question asks for an explanation; it must not silently become an implementation request.\n\nStanding communication rule: briefly state context, plan, done, why it matters and next; give a specific review ask and wait for the feedback needed for dependent work. Read rule-collaboration for the latest wording.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-context",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "blueprint-semantic-context-graph",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    },
+    {
+      "rel": "based_on",
+      "to": "decision-modular-temporal-memory",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    }
+  ],
+  "children": [],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:30.814+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

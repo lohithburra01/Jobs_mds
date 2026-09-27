@@ -1,0 +1,60 @@
+{
+  "id": "plan-application-data",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-application",
+  "title": "A · Three separate kinds of application data",
+  "summary": "A · Three separate kinds of application data",
+  "body": "Directory of individually retrievable child records. Follow the child matching the current question.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-application",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "map-two-layer-plan",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    },
+    {
+      "rel": "child",
+      "to": "module-canonical",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-application-policy-separation",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-application-run-data",
+      "reason": "Open this separately readable topic."
+    }
+  ],
+  "children": [
+    {
+      "id": "module-canonical",
+      "summary": "Canonical · Your work, split into linked records"
+    },
+    {
+      "id": "plan-application-policy-separation",
+      "summary": "Policy · Rules stay separate from facts"
+    },
+    {
+      "id": "plan-application-run-data",
+      "summary": "Run data · One application, kept separate"
+    }
+  ],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:26:43.788+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

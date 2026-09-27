@@ -1,0 +1,71 @@
+{
+  "id": "module-jd",
+  "kind": "module",
+  "title": "JD interpretation",
+  "summary": "Preserve original passages; decompose requirements with narrow options. Do not let repeated extraction failure prevent all writing.",
+  "body": "Planned boundary: receives Original job description; produces Passage-level requirements and unresolved passages. Owns Understanding this JD and preserving its source text. Must preserve: Do not infer candidate facts; preserve original JD and disclose unresolved passages. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-005"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "child",
+      "to": "plan-jd-agreement",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-jd-source-preservation",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-jd-requirement-shape",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-jd-unresolved-fallback",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    }
+  ],
+  "revision": 3,
+  "updated_at": "2026-09-27T08:27:14.017+00:00",
+  "change_reason": "Add detailed agreement navigation to existing component without changing its contract",
+  "contract": {
+    "receives": "Original job description",
+    "produces": "Passage-level requirements and unresolved passages",
+    "owns": "Understanding this JD and preserving its source text",
+    "must_preserve": "Do not infer candidate facts; preserve original JD and disclose unresolved passages",
+    "status": "planned boundary, not verified implementation"
+  },
+  "children": [
+    {
+      "id": "plan-jd-agreement",
+      "title": "B · JD → traceable requirements",
+      "summary": "Save exact text and hash → Python passage IDs and offsets → account for every nonblank source span."
+    },
+    {
+      "id": "plan-jd-source-preservation",
+      "title": "Preserve exact JD passages",
+      "summary": "Save exact JD text and hash."
+    },
+    {
+      "id": "plan-jd-requirement-shape",
+      "title": "Represent meaningful JD requirements",
+      "summary": "Each requirement carries the original passage, plain interpretation, priority, meaningful child components, named technologies and unresolved interpretation."
+    },
+    {
+      "id": "plan-jd-unresolved-fallback",
+      "title": "Retain unresolved JD content without repeated extraction",
+      "summary": "If interpretation is incomplete or invalid, retain the original passage and mark it unresolved in the brief."
+    }
+  ],
+  "migration_status": "Detailed plan topics are stored for human review; application contract/enforcement is unchanged."
+}

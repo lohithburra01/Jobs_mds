@@ -1,0 +1,69 @@
+{
+  "id": "plan-canonical-observed-schema",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Existing YAML · field structure and system directory",
+  "summary": "Observed stored schema, not proof that all content is correctly extracted or used.",
+  "body": "Observed stored schema, not proof that all content is correctly extracted or used.\n\nPolicies currently live inside canonical.yaml; conceptual separation does not imply separate physical files are implemented.\n\nIdentity and administrative values include prose. Technology examples are not yet a normalized tool-node inventory.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-canonical",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "map-two-layer-plan",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    },
+    {
+      "rel": "child",
+      "to": "plan-canonical-root-fields",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-canonical-work-fields",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-canonical-evidence-fields",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-canonical-system-directory",
+      "reason": "Open this separately readable topic."
+    }
+  ],
+  "children": [
+    {
+      "id": "plan-canonical-root-fields",
+      "summary": "Root, identity and administrative fields"
+    },
+    {
+      "id": "plan-canonical-work-fields",
+      "summary": "Employer, system and accomplishment fields"
+    },
+    {
+      "id": "plan-canonical-evidence-fields",
+      "summary": "Evidence, source and migration fields"
+    },
+    {
+      "id": "plan-canonical-system-directory",
+      "summary": "Employer → current system IDs"
+    }
+  ],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:26:47.767+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

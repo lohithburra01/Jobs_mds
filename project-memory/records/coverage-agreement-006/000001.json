@@ -1,0 +1,261 @@
+{
+  "id": "coverage-agreement-006",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 6: source-to-topic coverage",
+  "summary": "13 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-006-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 213,
+        "end": 213
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-006-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 215,
+        "end": 215
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-006-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 217,
+        "end": 217
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-006-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 219,
+        "end": 225
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-006-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 227,
+        "end": 227
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-006-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 229,
+        "end": 233
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-006-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 235,
+        "end": 235
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-006-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 237,
+        "end": 237
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-006-clause-009",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 239,
+        "end": 243
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-006-clause-010",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 245,
+        "end": 245
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-006-clause-011",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 247,
+        "end": 252
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-006-clause-012",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 254,
+        "end": 254
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-006-clause-013",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 256,
+        "end": 256
+      },
+      "destinations": [
+        "plan-selection-agreement",
+        "plan-canonical-employer-contract",
+        "plan-application-document-structure",
+        "module-selection"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 213,
+      "end": 257
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-006",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-selection-agreement",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-employer-contract",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-application-document-structure",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-selection",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:19.451+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

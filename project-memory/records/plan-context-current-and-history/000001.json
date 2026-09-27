@@ -1,0 +1,47 @@
+{
+  "id": "plan-context-current-and-history",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-context-record-structure",
+  "title": "Current state separate from dated history",
+  "summary": "Current active rules remain applicable even when a newer topic gets attention.",
+  "body": "Current active rules remain applicable even when a newer topic gets attention.\n\nExplicit supersedes links replace a decision; a timestamp alone does not.\n\nRecord meaningful decisions, feedback and outcomes before dependent work; not every conversational sentence.\n\nRoutine event logs remain separate from compact current records. Local logs survive local sessions but are not automatically in a Git clone.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-context-record-structure",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "blueprint-semantic-context-graph",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    },
+    {
+      "rel": "based_on",
+      "to": "decision-modular-temporal-memory",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    }
+  ],
+  "children": [],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:32.701+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "module-rendering",
+  "kind": "module",
+  "title": "Rendering and visible coverage",
+  "summary": "One or two pages. Calculate coverage from final visible content. Do not shorten the letter to fix resume overflow. Preserve renderer/public JSON where possible.",
+  "body": "Planned boundary: receives Approved document JSON/text blocks and fixed candidate fields; produces Resume and letter PDFs with final visible text. Owns PDF layout and truthful coverage measured after layout. Must preserve: Allow one or two pages; do not remove useful content merely for one-page fit. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-011"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-023"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-writing"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-checks"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    },
+    {
+      "rel": "child",
+      "to": "plan-rendering-agreement",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-rendering-content-priority",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-rendering-final-visible-review",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    }
+  ],
+  "revision": 3,
+  "updated_at": "2026-09-27T08:27:16.166+00:00",
+  "change_reason": "Add detailed agreement navigation to existing component without changing its contract",
+  "contract": {
+    "receives": "Approved document JSON/text blocks and fixed candidate fields",
+    "produces": "Resume and letter PDFs with final visible text",
+    "owns": "PDF layout and truthful coverage measured after layout",
+    "must_preserve": "Allow one or two pages; do not remove useful content merely for one-page fit",
+    "status": "planned boundary, not verified implementation"
+  },
+  "children": [
+    {
+      "id": "plan-rendering-agreement",
+      "title": "F · Render and inspect one or two pages",
+      "summary": "Measure with actual renderer typography and flowables; preserve all mandatory sections and useful content."
+    },
+    {
+      "id": "plan-rendering-content-priority",
+      "title": "Keep useful content in one or two readable pages",
+      "summary": "One or two pages, including a page and a half, are acceptable."
+    },
+    {
+      "id": "plan-rendering-final-visible-review",
+      "title": "Verify the actual rendered document",
+      "summary": "Render and inspect actual typography, flow and final pagination."
+    }
+  ],
+  "migration_status": "Detailed plan topics are stored for human review; application contract/enforcement is unchanged."
+}

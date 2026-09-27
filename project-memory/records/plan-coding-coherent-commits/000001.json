@@ -1,0 +1,60 @@
+{
+  "id": "plan-coding-coherent-commits",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-coding-context",
+  "title": "6 · Record → refresh tracker → one coherent commit",
+  "summary": "Commit meaningful design/behavior/checkpoint changes separately; do not bundle unrelated fixes.",
+  "body": "Commit meaningful design/behavior/checkpoint changes separately; do not bundle unrelated fixes.\n\nLabel with task/issue plus short problem, change, evidence and scope. Git supplies ID/time.\n\nTrace: task → issue/example → change → commit → application run.\n\nPreserve starting checkpoint; label unfinished work honestly; update current state/next action before a new session.\n\nKeep credentials and private generated application payloads out of Git; link local evidence.\n\nPR only when useful/authorized; a local commit does not require publication. Revert a specific change when appropriate.\n\nTemporal here means versioned history over time, not installing the Temporal platform.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-context",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-026",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-027",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1127,
+      "end": 1182
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1183,
+      "end": 1199
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:34.957+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

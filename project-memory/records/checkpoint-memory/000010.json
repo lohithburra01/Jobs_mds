@@ -1,0 +1,64 @@
+{
+  "id": "checkpoint-memory",
+  "kind": "checkpoint",
+  "title": "Prepare this project for a fresh chat",
+  "summary": "Lohith chose harness first. Storage/retrieval exist; detailed agreement migration, canonical navigation and robustness verification remain. Complete these and give a clear result for human review.",
+  "body": "Finish the saved blueprint using existing versioned records. Preserve exact sources, source-to-rule coverage, named links and component indexes for both application and coding-context layers. Check real failure/recovery behavior with existing dedicated tests and targeted evidence. Keep reports brief with context, plan, done, why it matters and next; explain the concrete result before requesting acceptance.",
+  "status": "in_progress",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "uses",
+      "to": "state-existing-code"
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded"
+    },
+    {
+      "rel": "uses",
+      "to": "blueprint-semantic-context-graph"
+    },
+    {
+      "rel": "uses",
+      "to": "map-two-layer-plan"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Latest continuation instruction supersedes waiting for another plan restatement."
+    },
+    {
+      "rel": "uses",
+      "to": "tracker-semantic-migration",
+      "reason": "Read component progress and next action."
+    },
+    {
+      "rel": "uses",
+      "to": "module-skills",
+      "reason": "Inspect the current component result."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-skills",
+      "reason": "Review exact Skills source coverage."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Use standing five-point update and wait for feedback before advancing this checkpoint."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-harness-first-2026-09-26",
+      "reason": "Priority question answered: finish the harness first."
+    }
+  ],
+  "next_action": "Audit remaining agreement coverage and robustness, complete canonical evidence navigation and remaining semantic components one at a time, then verify fresh-session retrieval and present the harness for review.",
+  "revision": 10,
+  "updated_at": "2026-09-26T21:17:08.679+00:00",
+  "change_reason": "Resume harness completion after Lohith’s explicit priority choice"
+}

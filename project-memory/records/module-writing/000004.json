@@ -1,0 +1,111 @@
+{
+  "id": "module-writing",
+  "kind": "module",
+  "title": "Writing blocks",
+  "summary": "Each block owns its instructions, resolved evidence and revision history. Follow-up recommends coordinated initial drafting then bounded block repairs; separate initial calls are not settled.",
+  "body": "Planned boundary: receives Resolved evidence and selected work; skills; project brief; produces Separately identified resume and letter text blocks. Owns Readable JD-specific writing and block ownership. Must preserve: Fixed employers, dates and restrictions stay intact; number of initial model calls is not implied by block ownership. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-009"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-selection"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-skills"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-project"
+    },
+    {
+      "rel": "child",
+      "to": "plan-writing-agreement",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-writing-block-records",
+      "reason": "Read this separately owned design topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-writing-resume-blocks",
+      "reason": "Read this separately owned design topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-writing-letter-blocks",
+      "reason": "Read this separately owned design topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-writing-vagueness-diagnosis",
+      "reason": "Read this separately owned design topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-writing-initial-call-choice",
+      "reason": "Read this separately owned design topic."
+    }
+  ],
+  "revision": 4,
+  "updated_at": "2026-09-27T08:38:32.017+00:00",
+  "change_reason": "Expose every owned semantic topic in its component directory",
+  "contract": {
+    "receives": "Resolved evidence and selected work; skills; project brief",
+    "produces": "Separately identified resume and letter text blocks",
+    "owns": "Readable JD-specific writing and block ownership",
+    "must_preserve": "Fixed employers, dates and restrictions stay intact; number of initial model calls is not implied by block ownership",
+    "status": "planned boundary, not verified implementation"
+  },
+  "children": [
+    {
+      "id": "plan-writing-agreement",
+      "title": "D · Fill the resume and letter with owned text blocks",
+      "summary": "Current design recommendation: one coordinated initial writing request, then independent block repairs. Separate ownership does not mean a model call for every block."
+    },
+    {
+      "id": "plan-writing-block-records",
+      "title": "Each writing unit has its own record",
+      "summary": "Block ID; parent employer/section; assigned point; resolved evidence; JD responsibility; technology placement; writing instruction; current text; check results; revision history."
+    },
+    {
+      "id": "plan-writing-resume-blocks",
+      "title": "Resume blocks",
+      "summary": "Summary: professional identity, relevant systems and scope in a developed short paragraph."
+    },
+    {
+      "id": "plan-writing-letter-blocks",
+      "title": "Cover-letter blocks",
+      "summary": "Opening: specific role connected to relevant work."
+    },
+    {
+      "id": "plan-writing-vagueness-diagnosis",
+      "title": "Distinguish missing evidence, wrong selection, weak prose and a bad evaluator rule",
+      "summary": "When a sentence is vague, inspect whether good evidence was written weakly, evidence was absent from the brief, the wrong accomplishment was selected, or the evaluator applied a bad rule."
+    },
+    {
+      "id": "plan-writing-initial-call-choice",
+      "title": "Separate block ownership from the number of model requests",
+      "summary": "Each block must have its own instructions, evidence, checks and revision history."
+    }
+  ],
+  "migration_status": "Detailed plan topics are stored for human review; application contract/enforcement is unchanged."
+}

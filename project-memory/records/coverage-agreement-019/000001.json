@@ -1,0 +1,155 @@
+{
+  "id": "coverage-agreement-019",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 19: source-to-topic coverage",
+  "summary": "8 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-019-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 797,
+        "end": 797
+      },
+      "destinations": [
+        "plan-coding-resource-limits",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-019-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 799,
+        "end": 799
+      },
+      "destinations": [
+        "plan-coding-resource-limits",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-019-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 801,
+        "end": 807
+      },
+      "destinations": [
+        "plan-coding-resource-limits",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-019-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 809,
+        "end": 809
+      },
+      "destinations": [
+        "plan-coding-resource-limits",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-019-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 811,
+        "end": 811
+      },
+      "destinations": [
+        "plan-coding-resource-limits",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-019-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 813,
+        "end": 821
+      },
+      "destinations": [
+        "plan-coding-resource-limits",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-019-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 823,
+        "end": 823
+      },
+      "destinations": [
+        "plan-coding-resource-limits",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-019-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 825,
+        "end": 825
+      },
+      "destinations": [
+        "plan-coding-resource-limits",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 797,
+      "end": 826
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-019",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-coding-resource-limits",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-coding-task-contract",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:24.579+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

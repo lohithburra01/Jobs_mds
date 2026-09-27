@@ -1,0 +1,39 @@
+{
+  "id": "plan-coding-repeated-failure-stop",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-coding-feedback-diagnosis",
+  "title": "Stop a repair path after two attempts fail for the same reason",
+  "summary": "Attach a complaint to the exact output revision and bullets, inspect writer evidence and clarity judgments, distinguish missing packet, wrong selection, weak prose and false evaluator approval, then correct the earliest demonstrated cause.",
+  "body": "Attach a complaint to the exact output revision and bullets, inspect writer evidence and clarity judgments, distinguish missing packet, wrong selection, weak prose and false evaluator approval, then correct the earliest demonstrated cause. Replay the example and previously acceptable examples and show before/after. If two attempts fail for the same reason, stop that repair path and return its evidence for a design decision. The original named escalation model is superseded; the two-failure threshold should not be blurred into unlimited retries.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-feedback-diagnosis",
+      "reason": "Return to the owning contract."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-018",
+      "reason": "Read the original paragraph and its qualification."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Apply latest authority; named models and historical next actions do not bind current work."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 769,
+      "end": 796
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:37.246+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "checkpoint-memory",
+  "kind": "checkpoint",
+  "title": "Prepare this project for a fresh chat",
+  "summary": "Memory harness ready for review: complete agreement navigation, detailed candidate evidence, verified integrity/recovery and saved communication rules. App and worker-controller proof are later checkpoints.",
+  "body": "Built: 87 plan topics; all 29 original sections mapped; individual retrieval for four employers, 19 systems, 57 facts, 12 metrics, four boundaries and 19 accomplishments. Verified: 17 dedicated tests pass; invalid sources rejected; damaged current/history records reported; correct Windows source text; stale concurrent writes rejected; fresh-process navigation to exact evidence works. Limits: no application output proof, no automatic worker-controller enforcement claim, live hooks unverified. Explain five brief points with a concrete ask. Acceptance is pending.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "uses",
+      "to": "state-existing-code"
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded"
+    },
+    {
+      "rel": "uses",
+      "to": "blueprint-semantic-context-graph"
+    },
+    {
+      "rel": "uses",
+      "to": "map-two-layer-plan"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Latest continuation instruction supersedes waiting for another plan restatement."
+    },
+    {
+      "rel": "uses",
+      "to": "tracker-semantic-migration",
+      "reason": "Read component progress and next action."
+    },
+    {
+      "rel": "uses",
+      "to": "module-skills",
+      "reason": "Inspect the current component result."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-skills",
+      "reason": "Review exact Skills source coverage."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Use standing five-point update and wait for feedback before advancing this checkpoint."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-harness-first-2026-09-26",
+      "reason": "Priority question answered: finish the harness first."
+    },
+    {
+      "rel": "uses",
+      "to": "plan-application",
+      "reason": "Read application design."
+    },
+    {
+      "rel": "uses",
+      "to": "plan-coding-context",
+      "reason": "Read coding-context design."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-agreement",
+      "reason": "Inspect full coverage."
+    },
+    {
+      "rel": "uses",
+      "to": "verification-harness-completion",
+      "reason": "Inspect verification and limits."
+    }
+  ],
+  "next_action": "Show Lohith the actual harness result and ask for feedback or acceptance, then wait. After acceptance, follow checkpoint-1 (control coding work); do not jump into a paid application run.",
+  "revision": 11,
+  "updated_at": "2026-09-27T08:38:35.315+00:00",
+  "change_reason": "Save ready-for-review state and exact human review point"
+}

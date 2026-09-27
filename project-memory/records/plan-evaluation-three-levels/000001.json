@@ -1,0 +1,38 @@
+{
+  "id": "plan-evaluation-three-levels",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-evaluation",
+  "title": "Distinguish software checks, evaluator accuracy and product quality",
+  "summary": "Evaluate mechanical correctness, Jev judgment accuracy and actual product quality separately.",
+  "body": "Evaluate mechanical correctness, Jev judgment accuracy and actual product quality separately. Mechanical checks cover shape, fixed identities, references and layout. Evaluator calibration examines false approvals, false rejections, uncertainty and disagreement. Human-readable usefulness and JD tailoring must be judged from actual outputs. Existing evaluation tooling with Python/Jev adapters is the intended starting point.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 575,
+      "end": 629
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-evaluation",
+      "reason": "Read the component boundary and related behaviors."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-014",
+      "reason": "Read the exact rule and examples."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply active evidence and document requirements."
+    }
+  ],
+  "children": [],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:43.108+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rule-scope",
+  "kind": "rule",
+  "title": "Current authorization and model independence",
+  "summary": "Memory harness implemented and verified for review. Give five brief points and concrete results; wait for feedback/acceptance before coding controls. No app run, deployment, push or credit purchase is implied.",
+  "body": "The harness-first priority has been carried out for the memory checkpoint. Keep it in review until Lohith accepts. Next planned checkpoint: control coding work; its existing controller remains unproved. Standing communication preferences apply to future sessions.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Read the latest authorization when deciding whether to continue the saved task."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-communication-request-2026-09-26",
+      "reason": "Latest user instruction narrows how to continue the saved work."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-harness-first-2026-09-26",
+      "reason": "Latest explicit priority answer authorizes harness completion."
+    }
+  ],
+  "revision": 5,
+  "updated_at": "2026-09-27T08:38:35.663+00:00",
+  "change_reason": "Move harness-first work to human review without advancing the app"
+}

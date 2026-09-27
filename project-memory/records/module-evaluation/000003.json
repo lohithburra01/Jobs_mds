@@ -1,0 +1,63 @@
+{
+  "id": "module-evaluation",
+  "kind": "module",
+  "title": "Evaluate against user-visible examples",
+  "summary": "Use saved examples and inspect actual output; passing self-written checks is not proof of resume quality. User feedback must point to the changed behavior.",
+  "body": "Planned boundary: receives Rendered PDFs; application JSON; Lohith's feedback; produces Visible review findings and changes to pursue. Owns Assess actual application output against the JD and readable writing. Must preserve: Internal checks alone cannot mark the resume good or accepted. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-014"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-017"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-018"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-rendering"
+    },
+    {
+      "rel": "child",
+      "to": "plan-evaluation-agreement",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-evaluation-three-levels",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    }
+  ],
+  "revision": 3,
+  "updated_at": "2026-09-27T08:27:17.288+00:00",
+  "change_reason": "Add detailed agreement navigation to existing component without changing its contract",
+  "contract": {
+    "receives": "Rendered PDFs; application JSON; Lohith's feedback",
+    "produces": "Visible review findings and changes to pursue",
+    "owns": "Assess actual application output against the JD and readable writing",
+    "must_preserve": "Internal checks alone cannot mark the resume good or accepted",
+    "status": "planned boundary, not verified implementation"
+  },
+  "children": [
+    {
+      "id": "plan-evaluation-agreement",
+      "title": "I · Check software, evaluator and actual product separately",
+      "summary": "Mechanical correctness: structure, identities, references and layout constraints."
+    },
+    {
+      "id": "plan-evaluation-three-levels",
+      "title": "Distinguish software checks, evaluator accuracy and product quality",
+      "summary": "Evaluate mechanical correctness, Jev judgment accuracy and actual product quality separately."
+    }
+  ],
+  "migration_status": "Detailed plan topics are stored for human review; application contract/enforcement is unchanged."
+}

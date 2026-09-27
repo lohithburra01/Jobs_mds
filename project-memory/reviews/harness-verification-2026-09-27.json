@@ -1,0 +1,37 @@
+{
+  "integrity": {
+    "records": 448,
+    "problems": [],
+    "limit": "Checks record integrity, not correctness of the plan or quality of the application."
+  },
+  "canonical_counts": {
+    "employers": 4,
+    "systems": 19,
+    "facts": 57,
+    "metrics": 12,
+    "boundaries": 4,
+    "accomplishments": 19
+  },
+  "semantic_topics": 87,
+  "agreement_sections": 29,
+  "source_passages": 326,
+  "every_nonblank_agreement_line_accounted_for": true,
+  "contracts_unchanged": true,
+  "fresh_process_route": [
+    "module-canonical",
+    "canonical-employer-corominas",
+    "canonical-system-corominas-multi-tenant",
+    "canonical-fact-corominas-multi-tenant-problem-1"
+  ],
+  "concurrency": {
+    "writers": 8,
+    "accepted": 1,
+    "stale_rejected": 7,
+    "final_revision": 2
+  },
+  "limitations": [
+    "Semantic interpretation awaits Lohith review.",
+    "Application output and worker-controller enforcement were not exercised.",
+    "Live tool hooks remain unverified; semantic decisions are saved explicitly."
+  ]
+}

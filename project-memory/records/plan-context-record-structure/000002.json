@@ -1,0 +1,93 @@
+{
+  "id": "plan-context-record-structure",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-coding-context",
+  "title": "2 · Split the stored context by responsibility",
+  "summary": "2 · Split the stored context by responsibility",
+  "body": "Directory of individually retrievable child records. Follow the child matching the current question.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-context",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "blueprint-semantic-context-graph",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    },
+    {
+      "rel": "based_on",
+      "to": "decision-modular-temporal-memory",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    },
+    {
+      "rel": "child",
+      "to": "plan-context-root-index",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-context-component-record",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-context-record-contract",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-context-storage-retrieval",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-context-current-and-history",
+      "reason": "Open this separately readable topic."
+    }
+  ],
+  "children": [
+    {
+      "id": "plan-context-root-index",
+      "summary": "Project root → small map"
+    },
+    {
+      "id": "plan-context-component-record",
+      "summary": "Component → children → detail"
+    },
+    {
+      "id": "plan-context-record-contract",
+      "summary": "Every context record"
+    },
+    {
+      "id": "plan-context-storage-retrieval",
+      "summary": "Portable storage and retrieval"
+    },
+    {
+      "id": "plan-context-current-and-history",
+      "summary": "Current state separate from dated history"
+    }
+  ],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:00.365+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

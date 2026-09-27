@@ -1,0 +1,87 @@
+{
+  "id": "module-checks",
+  "kind": "module",
+  "title": "Jev and deterministic checks",
+  "summary": "Python checks structure; Jev asks narrow semantic questions using complete inputs. Item results feed group then section then document checks.",
+  "body": "Planned boundary: receives Draft blocks; corresponding resolved facts; JD passages; produces Item, group, section and document findings. Owns Narrow Jev semantic questions plus deterministic structural checks. Must preserve: Each check receives actual evidence and returns a finding, not new prose. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-010"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-016"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-writing"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-jd"
+    },
+    {
+      "rel": "child",
+      "to": "plan-checks-agreement",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-checks-hierarchy",
+      "reason": "Read this separately owned design topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-checks-decision-record",
+      "reason": "Read this separately owned design topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-checks-final-visible-coverage",
+      "reason": "Read this separately owned design topic."
+    }
+  ],
+  "revision": 4,
+  "updated_at": "2026-09-27T08:38:32.385+00:00",
+  "change_reason": "Expose every owned semantic topic in its component directory",
+  "contract": {
+    "receives": "Draft blocks; corresponding resolved facts; JD passages",
+    "produces": "Item, group, section and document findings",
+    "owns": "Narrow Jev semantic questions plus deterministic structural checks",
+    "must_preserve": "Each check receives actual evidence and returns a finding, not new prose",
+    "status": "planned boundary, not verified implementation"
+  },
+  "children": [
+    {
+      "id": "plan-checks-agreement",
+      "title": "E · Review from the smallest item upwards",
+      "summary": "Independent questions within a level can share one Jev request. Parent levels consume completed child results."
+    },
+    {
+      "id": "plan-checks-hierarchy",
+      "title": "Four review paths → document consistency",
+      "summary": "Skill term → group → Skills section."
+    },
+    {
+      "id": "plan-checks-decision-record",
+      "title": "Save each judgment",
+      "summary": "Item, dimension, exact question and answer choices, supplied evidence, selected answer, model/policy versions, input hash, cache state and affected output IDs."
+    },
+    {
+      "id": "plan-checks-final-visible-coverage",
+      "title": "Coverage must refer to final visible sentences",
+      "summary": "Explicit / partial / implied / missing / uncertain."
+    }
+  ],
+  "migration_status": "Detailed plan topics are stored for human review; application contract/enforcement is unchanged."
+}

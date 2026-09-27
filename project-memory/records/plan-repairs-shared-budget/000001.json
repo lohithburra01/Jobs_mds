@@ -1,0 +1,38 @@
+{
+  "id": "plan-repairs-shared-budget",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-repairs",
+  "title": "Bound the shared generation and repair budget",
+  "summary": "Normal budget: one JD extraction, one complete application draft and at most two shared repair rounds.",
+  "body": "Normal budget: one JD extraction, one complete application draft and at most two shared repair rounds. Malformed application attempts consume the same writing allowance. Do not loop until a model says PASS.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 454,
+      "end": 485
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-repairs",
+      "reason": "Read the component boundary and related behaviors."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-012",
+      "reason": "Read the exact rule and examples."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply active evidence and document requirements."
+    }
+  ],
+  "children": [],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:41.437+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

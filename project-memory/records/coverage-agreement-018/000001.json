@@ -1,0 +1,155 @@
+{
+  "id": "coverage-agreement-018",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 18: source-to-topic coverage",
+  "summary": "8 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-018-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 769,
+        "end": 769
+      },
+      "destinations": [
+        "plan-coding-feedback-diagnosis",
+        "plan-coding-repeated-failure-stop"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-018-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 771,
+        "end": 771
+      },
+      "destinations": [
+        "plan-coding-feedback-diagnosis",
+        "plan-coding-repeated-failure-stop"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-018-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 773,
+        "end": 773
+      },
+      "destinations": [
+        "plan-coding-feedback-diagnosis",
+        "plan-coding-repeated-failure-stop"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-018-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 775,
+        "end": 775
+      },
+      "destinations": [
+        "plan-coding-feedback-diagnosis",
+        "plan-coding-repeated-failure-stop"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-018-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 777,
+        "end": 789
+      },
+      "destinations": [
+        "plan-coding-feedback-diagnosis",
+        "plan-coding-repeated-failure-stop"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-018-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 791,
+        "end": 791
+      },
+      "destinations": [
+        "plan-coding-feedback-diagnosis",
+        "plan-coding-repeated-failure-stop"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-018-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 793,
+        "end": 793
+      },
+      "destinations": [
+        "plan-coding-feedback-diagnosis",
+        "plan-coding-repeated-failure-stop"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-018-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 795,
+        "end": 795
+      },
+      "destinations": [
+        "plan-coding-feedback-diagnosis",
+        "plan-coding-repeated-failure-stop"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 769,
+      "end": 796
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-018",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-coding-feedback-diagnosis",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-coding-repeated-failure-stop",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:24.193+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

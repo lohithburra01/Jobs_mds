@@ -1,0 +1,43 @@
+{
+  "id": "plan-rendering-final-visible-review",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-rendering",
+  "title": "Verify the actual rendered document",
+  "summary": "Render and inspect actual typography, flow and final pagination.",
+  "body": "Render and inspect actual typography, flow and final pagination. Keep mandatory sections; never remove an employer or independent project to make fitting easy, shorten the letter to solve resume overflow, pad content to fill space or claim coverage from removed text. Use the later two-page content-priority rule; final visible text is authoritative for coverage.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 411,
+      "end": 453
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-rendering",
+      "reason": "Read the component boundary and related behaviors."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-011",
+      "reason": "Read the exact rule and examples."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply active evidence and document requirements."
+    },
+    {
+      "rel": "uses",
+      "to": "plan-rendering-content-priority",
+      "reason": "Later two-page amendment governs content and layout decisions."
+    }
+  ],
+  "children": [],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:42.774+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "plan-application-brief",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-application",
+  "title": "C · Select work → assemble the complete writing brief",
+  "summary": "C · Select work → assemble the complete writing brief",
+  "body": "Directory of individually retrievable child records. Follow the child matching the current question.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-application",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "map-two-layer-plan",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    },
+    {
+      "rel": "child",
+      "to": "module-selection",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-writing-resolved-evidence",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "module-skills",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "module-project",
+      "reason": "Open this separately readable topic."
+    }
+  ],
+  "children": [
+    {
+      "id": "module-selection",
+      "summary": "Select accomplishments for each employer"
+    },
+    {
+      "id": "plan-writing-resolved-evidence",
+      "summary": "Resolve IDs → actual evidence text"
+    },
+    {
+      "id": "module-skills",
+      "summary": "Skills → each term → each group → whole section"
+    },
+    {
+      "id": "module-project",
+      "summary": "Independent project → explicit workflow"
+    }
+  ],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:26:51.363+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

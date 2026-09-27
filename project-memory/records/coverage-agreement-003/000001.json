@@ -1,0 +1,594 @@
+{
+  "id": "coverage-agreement-003",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 3: source-to-topic coverage",
+  "summary": "18 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-003-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 32,
+        "end": 32
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-003-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 34,
+        "end": 34
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 36,
+        "end": 36
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 38,
+        "end": 38
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 40,
+        "end": 44
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 46,
+        "end": 46
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 48,
+        "end": 48
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 50,
+        "end": 78
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-009",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 80,
+        "end": 80
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-010",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 82,
+        "end": 95
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-011",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 97,
+        "end": 97
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-012",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 99,
+        "end": 99
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-013",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 101,
+        "end": 101
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-014",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 103,
+        "end": 103
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-015",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 105,
+        "end": 105
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-016",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 107,
+        "end": 118
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-017",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 120,
+        "end": 120
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-003-clause-018",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 122,
+        "end": 122
+      },
+      "destinations": [
+        "plan-canonical-agreement",
+        "module-canonical",
+        "plan-canonical-profile-education",
+        "plan-canonical-professional-identity",
+        "plan-canonical-employer-contract",
+        "plan-canonical-system-contract",
+        "plan-canonical-fact-contract",
+        "plan-canonical-metric-contract",
+        "plan-canonical-boundary-contract",
+        "plan-canonical-accomplishment-contract",
+        "plan-canonical-provenance-contract",
+        "plan-canonical-prototype-pattern",
+        "plan-application-policy-separation",
+        "plan-application-run-data",
+        "plan-writing-resolved-evidence"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 32,
+      "end": 123
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-003",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-agreement",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-canonical",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-profile-education",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-professional-identity",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-employer-contract",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-system-contract",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-fact-contract",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-metric-contract",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-boundary-contract",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-accomplishment-contract",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-provenance-contract",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-prototype-pattern",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-application-policy-separation",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-application-run-data",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-writing-resolved-evidence",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:18.385+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

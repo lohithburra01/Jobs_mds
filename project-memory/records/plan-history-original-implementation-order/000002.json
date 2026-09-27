@@ -1,0 +1,39 @@
+{
+  "id": "plan-history-original-implementation-order",
+  "kind": "subcomponent",
+  "status": "historical",
+  "owner": "plan-history-agreement-amendments",
+  "title": "Preserve the former implementation sequence without treating it as current authorization",
+  "summary": "The historical nine-step order was minimal event/stopping controls; complete resolved evidence; placement/selection/project; JD passage preservation; early coherent draft; sequential review/layout/final coverage; evaluator calibration; instrumented Stibo run; McKesson check.",
+  "body": "The historical nine-step order was minimal event/stopping controls; complete resolved evidence; placement/selection/project; JD passage preservation; early coherent draft; sequential review/layout/final coverage; evaluator calibration; instrumented Stibo run; McKesson check. Preserve its evidence expectations and expose writing at step five. This is historical sequencing; current checkpoint and latest user instruction control work. Define acceptance examples before each implementation rather than fitting them to its output.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-history-agreement-amendments",
+      "reason": "Return to the owning contract."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-020",
+      "reason": "Read the original paragraph and its qualification."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Apply latest authority; named models and historical next actions do not bind current work."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 827,
+      "end": 848
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:07.201+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

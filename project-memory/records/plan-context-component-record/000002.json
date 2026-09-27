@@ -1,0 +1,47 @@
+{
+  "id": "plan-context-component-record",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-context-record-structure",
+  "title": "Component → children → detail",
+  "summary": "Each component: purpose, ownership, inputs, outputs, status and index of child summaries.",
+  "body": "Each component: purpose, ownership, inputs, outputs, status and index of child summaries.\n\nEach child: one coherent rule, requirement, design decision or task; enough standalone explanation to make sense without chat.\n\nNamed routes explain when to follow: part_of / depends_on / uses / based_on / supersedes.\n\nShared rules/facts are linked rather than copied into every branch.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-context-record-structure",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "blueprint-semantic-context-graph",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    },
+    {
+      "rel": "based_on",
+      "to": "decision-modular-temporal-memory",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    }
+  ],
+  "children": [],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:01.038+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

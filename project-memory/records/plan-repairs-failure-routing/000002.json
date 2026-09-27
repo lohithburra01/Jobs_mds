@@ -1,0 +1,37 @@
+{
+  "id": "plan-repairs-failure-routing",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-repairs",
+  "title": "Repair the demonstrated cause in the affected scope",
+  "summary": "Missing evidence means fix assembly; wrong skill group means regroup; misplaced technology means fix placement; weak prose means rewrite that sentence with evidence; duplication means replace/remove weaker content; missing coverage means find eligible evidence.",
+  "body": "Missing evidence means fix assembly; wrong skill group means regroup; misplaced technology means fix placement; weak prose means rewrite that sentence with evidence; duplication means replace/remove weaker content; missing coverage means find eligible evidence. Overflow affects the resume, not the letter. Ambiguity preserves the draft and reports uncertainty. Provider timeout preserves progress and follows transport policy.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 454,
+      "end": 485
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-repairs",
+      "reason": "Read the component boundary and related behaviors."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-012",
+      "reason": "Read the exact rule and examples."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply active evidence and document requirements."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:11.861+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

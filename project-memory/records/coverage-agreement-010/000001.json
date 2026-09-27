@@ -1,0 +1,243 @@
+{
+  "id": "coverage-agreement-010",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 10: source-to-topic coverage",
+  "summary": "10 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-010-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 359,
+        "end": 359
+      },
+      "destinations": [
+        "plan-checks-agreement",
+        "skills-term-checks",
+        "skills-group-checks",
+        "module-checks",
+        "plan-checks-hierarchy",
+        "plan-checks-decision-record"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-010-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 361,
+        "end": 383
+      },
+      "destinations": [
+        "plan-checks-agreement",
+        "skills-term-checks",
+        "skills-group-checks",
+        "module-checks",
+        "plan-checks-hierarchy",
+        "plan-checks-decision-record"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-010-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 385,
+        "end": 385
+      },
+      "destinations": [
+        "plan-checks-agreement",
+        "skills-term-checks",
+        "skills-group-checks",
+        "module-checks",
+        "plan-checks-hierarchy",
+        "plan-checks-decision-record"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-010-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 387,
+        "end": 387
+      },
+      "destinations": [
+        "plan-checks-agreement",
+        "skills-term-checks",
+        "skills-group-checks",
+        "module-checks",
+        "plan-checks-hierarchy",
+        "plan-checks-decision-record"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-010-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 389,
+        "end": 389
+      },
+      "destinations": [
+        "plan-checks-agreement",
+        "skills-term-checks",
+        "skills-group-checks",
+        "module-checks",
+        "plan-checks-hierarchy",
+        "plan-checks-decision-record"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-010-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 391,
+        "end": 391
+      },
+      "destinations": [
+        "plan-checks-agreement",
+        "skills-term-checks",
+        "skills-group-checks",
+        "module-checks",
+        "plan-checks-hierarchy",
+        "plan-checks-decision-record"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-010-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 393,
+        "end": 403
+      },
+      "destinations": [
+        "plan-checks-agreement",
+        "skills-term-checks",
+        "skills-group-checks",
+        "module-checks",
+        "plan-checks-hierarchy",
+        "plan-checks-decision-record"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-010-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 405,
+        "end": 405
+      },
+      "destinations": [
+        "plan-checks-agreement",
+        "skills-term-checks",
+        "skills-group-checks",
+        "module-checks",
+        "plan-checks-hierarchy",
+        "plan-checks-decision-record"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-010-clause-009",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 407,
+        "end": 407
+      },
+      "destinations": [
+        "plan-checks-agreement",
+        "skills-term-checks",
+        "skills-group-checks",
+        "module-checks",
+        "plan-checks-hierarchy",
+        "plan-checks-decision-record"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-010-clause-010",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 409,
+        "end": 409
+      },
+      "destinations": [
+        "plan-checks-agreement",
+        "skills-term-checks",
+        "skills-group-checks",
+        "module-checks",
+        "plan-checks-hierarchy",
+        "plan-checks-decision-record"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 359,
+      "end": 410
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-010",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-checks-agreement",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "skills-term-checks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "skills-group-checks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-checks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-checks-hierarchy",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-checks-decision-record",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:20.926+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

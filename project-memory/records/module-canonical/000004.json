@@ -1,0 +1,140 @@
+{
+  "id": "module-canonical",
+  "kind": "module",
+  "title": "Canonical evidence",
+  "summary": "Canonical evidence is selectively readable through profile, identity, project pattern, employers, systems, facts, metrics, boundaries and accomplishments. The application contract remains planned.",
+  "body": "Planned boundary: receives Candidate evidence and user corrections; produces Typed evidence records and resolved fact text. Owns Candidate facts, restrictions and authorized retrofit policy. Must preserve: Preserve employers, dates and original evidence; an added fact does not by itself change the record schema. Inspect actual code before claiming this boundary is already enforced.\nContext migration exposes existing canonical.yaml records with exact source ranges. Empty evidence categories stay explicit. These records do not constitute fresh human confirmation of migrated content.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-003"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "child",
+      "to": "canonical-profile",
+      "reason": "Read Profile and contact separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-education",
+      "reason": "Read Education separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-identity",
+      "reason": "Read Professional identity separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-prototype-pattern",
+      "reason": "Read Independent project pattern separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-administrative",
+      "reason": "Read Administrative source context separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-employers",
+      "reason": "Read Employer directory separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-facts",
+      "reason": "Read Typed fact directory separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-metrics",
+      "reason": "Read Metric directory separately."
+    },
+    {
+      "rel": "child",
+      "to": "canonical-boundaries",
+      "reason": "Read Boundary directory separately."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-canonical-yaml",
+      "reason": "Authoritative typed data exposed by the new evidence navigation."
+    },
+    {
+      "rel": "child",
+      "to": "plan-canonical-agreement",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    }
+  ],
+  "revision": 4,
+  "updated_at": "2026-09-27T08:27:13.658+00:00",
+  "change_reason": "Add detailed agreement navigation to existing component without changing its contract",
+  "contract": {
+    "receives": "Candidate evidence and user corrections",
+    "produces": "Typed evidence records and resolved fact text",
+    "owns": "Candidate facts, restrictions and authorized retrofit policy",
+    "must_preserve": "Preserve employers, dates and original evidence; an added fact does not by itself change the record schema",
+    "status": "planned boundary, not verified implementation"
+  },
+  "children": [
+    {
+      "id": "canonical-profile",
+      "title": "Profile and contact",
+      "summary": "Existing profile and contact from canonical.yaml; retrieve this branch without reading employers."
+    },
+    {
+      "id": "canonical-education",
+      "title": "Education",
+      "summary": "Existing education from canonical.yaml; retrieve this branch without reading employers."
+    },
+    {
+      "id": "canonical-identity",
+      "title": "Professional identity",
+      "summary": "Existing professional identity from canonical.yaml; retrieve this branch without reading employers."
+    },
+    {
+      "id": "canonical-prototype-pattern",
+      "title": "Independent project pattern",
+      "summary": "Existing independent project pattern from canonical.yaml; retrieve this branch without reading employers."
+    },
+    {
+      "id": "canonical-administrative",
+      "title": "Administrative source context",
+      "summary": "Existing administrative source context from canonical.yaml; retrieve this branch without reading employers."
+    },
+    {
+      "id": "canonical-employers",
+      "title": "Employer directory",
+      "summary": "Directory of individually retrievable employers; use child links for actual evidence."
+    },
+    {
+      "id": "canonical-facts",
+      "title": "Typed fact directory",
+      "summary": "Directory of individually retrievable facts; use child links for actual evidence."
+    },
+    {
+      "id": "canonical-metrics",
+      "title": "Metric directory",
+      "summary": "Directory of individually retrievable metrics; use child links for actual evidence."
+    },
+    {
+      "id": "canonical-boundaries",
+      "title": "Boundary directory",
+      "summary": "Directory of individually retrievable boundaries; use child links for actual evidence."
+    },
+    {
+      "id": "plan-canonical-agreement",
+      "title": "Canonical · Your work, split into linked records",
+      "summary": "The agreed physical starting point is one authoritative canonical.yaml containing typed records. Separate records do not require competing copies of the same facts."
+    }
+  ],
+  "migration_status": "Detailed plan topics are stored for human review; application contract/enforcement is unchanged."
+}

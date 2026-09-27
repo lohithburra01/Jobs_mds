@@ -1,0 +1,152 @@
+{
+  "id": "plan-application",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "project",
+  "title": "Layer 1 · The application that creates your documents",
+  "summary": "Input: a pasted JD plus your canonical and application policies.",
+  "body": "Input: a pasted JD plus your canonical and application policies.\n\nOutput: resume PDF, cover-letter PDF, application JSON, portable chat context, coverage/issues and trace.\n\nRoutine generation asks no approval questions. Missing setup information identifies the exact field to edit.",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-001",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-021",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-029",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "part_of",
+      "to": "project",
+      "reason": "Return to this topic’s owning component."
+    },
+    {
+      "rel": "child",
+      "to": "plan-application-data",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "module-jd",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-application-brief",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "module-writing",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "module-checks",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "module-rendering",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "module-repairs",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "module-observability",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "module-evaluation",
+      "reason": "Open this separately readable topic."
+    },
+    {
+      "rel": "child",
+      "to": "plan-application-deliverables",
+      "reason": "Open this separately readable topic."
+    }
+  ],
+  "children": [
+    {
+      "id": "plan-application-data",
+      "summary": "A · Three separate kinds of application data"
+    },
+    {
+      "id": "module-jd",
+      "summary": "B · JD → traceable requirements"
+    },
+    {
+      "id": "plan-application-brief",
+      "summary": "C · Select work → assemble the complete writing brief"
+    },
+    {
+      "id": "module-writing",
+      "summary": "D · Fill the resume and letter with owned text blocks"
+    },
+    {
+      "id": "module-checks",
+      "summary": "E · Review from the smallest item upwards"
+    },
+    {
+      "id": "module-rendering",
+      "summary": "F · Render and inspect one or two pages"
+    },
+    {
+      "id": "module-repairs",
+      "summary": "G · Targeted repairs with a shared limit"
+    },
+    {
+      "id": "module-observability",
+      "summary": "H · Application visibility, stopping and replay"
+    },
+    {
+      "id": "module-evaluation",
+      "summary": "I · Check software, evaluator and actual product separately"
+    },
+    {
+      "id": "plan-application-deliverables",
+      "summary": "J · Deliver the package with an honest status"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1,
+      "end": 13
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 849,
+      "end": 875
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1223,
+      "end": 1238
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:26:43.462+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

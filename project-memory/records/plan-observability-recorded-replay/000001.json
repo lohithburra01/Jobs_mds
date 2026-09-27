@@ -1,0 +1,39 @@
+{
+  "id": "plan-observability-recorded-replay",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-observability",
+  "title": "Snapshot versions and replay recorded responses",
+  "summary": "Save inputs/configuration, prompt/rubric/model versions and before/after artifacts.",
+  "body": "Save inputs/configuration, prompt/rubric/model versions and before/after artifacts. Recorded-response replay diagnoses deterministic code without repeated model calls. A running timer is not evidence of progress: repeated identical outputs, unchanged failures or exhausted repair allowance require an explicit stop. These are small execution-record extensions, not four platforms.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-observability",
+      "reason": "Return to the owning contract."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-027",
+      "reason": "Read the original paragraph and its qualification."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Apply latest authority; named models and historical next actions do not bind current work."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1183,
+      "end": 1199
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:38.864+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

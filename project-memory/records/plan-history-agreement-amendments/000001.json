@@ -1,0 +1,93 @@
+{
+  "id": "plan-history-agreement-amendments",
+  "kind": "subcomponent",
+  "status": "historical",
+  "owner": "plan-coding-context",
+  "title": "8 · Preserved history and amendments",
+  "summary": "Original model-locked coding diagram is historical; no mandatory Astra/Sol/Terra handoff.",
+  "body": "Original model-locked coding diagram is historical; no mandatory Astra/Sol/Terra handoff.\n\nOne-page-only fitting and expensive subset selection are superseded by one/two-page content priority.\n\nOriginal implementation ordering is retained for reference; current checkpoint records control the current task.\n\nSeparate block ownership is retained; one coordinated initial call remains the recommendation, not a proven quality result.\n\nUser feedback is preserved verbatim, including questions and provisional acceptance; not every recommendation becomes implementation evidence.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-context",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-020",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-022",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-023",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-029",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 827,
+      "end": 848
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 876,
+      "end": 903
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 904,
+      "end": 928
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 929,
+      "end": 1034
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1223,
+      "end": 1238
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:35.593+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

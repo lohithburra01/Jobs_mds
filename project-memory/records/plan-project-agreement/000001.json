@@ -1,0 +1,44 @@
+{
+  "id": "plan-project-agreement",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-project",
+  "title": "Independent project → explicit workflow",
+  "summary": "Purpose tied to a JD capability; relationship to your work and authorized prototype pattern.",
+  "body": "Purpose tied to a JD capability; relationship to your work and authorized prototype pattern.\n\nInput → concrete steps → technologies with specific roles → inspectable output → validation.\n\nExplicit local/independent scale; confirmed GitHub pattern without invented repository URL.\n\nJev evaluates relevance; Python selects by purpose, not the first employer/candidate.\n\nWriter produces a concrete title and normally two complementary bullets: behavior, then output/validation.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-project",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "plan-canonical-prototype-pattern",
+      "reason": "Retrieve authorized project pattern"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-008",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 294,
+      "end": 322
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:24.324+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

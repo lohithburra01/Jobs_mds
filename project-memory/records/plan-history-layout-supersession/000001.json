@@ -1,0 +1,39 @@
+{
+  "id": "plan-history-layout-supersession",
+  "kind": "subcomponent",
+  "status": "historical",
+  "owner": "plan-history-agreement-amendments",
+  "title": "Keep two-page content priority and retire one-page subset optimization",
+  "summary": "The user amendment replaces one-page-only fitting: one, one-and-a-half or two pages are acceptable, with readable fonts/spacing and no stranded employer headings.",
+  "body": "The user amendment replaces one-page-only fitting: one, one-and-a-half or two pages are acceptable, with readable fonts/spacing and no stranded employer headings. Keep useful content and at most four bullets per employer. If three pages occur inspect formatting, duplication and verbose wording first; preserve and report a still-oversized draft instead of silently deleting accomplishments. Source 011 final-visible coverage and document-specific repair rules remain active, while its elaborate one-page subset search is retired.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-history-agreement-amendments",
+      "reason": "Return to the owning contract."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-023",
+      "reason": "Read the original paragraph and its qualification."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Apply latest authority; named models and historical next actions do not bind current work."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 904,
+      "end": 928
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:38.539+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

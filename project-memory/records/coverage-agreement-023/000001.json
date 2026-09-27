@@ -1,0 +1,258 @@
+{
+  "id": "coverage-agreement-023",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 23: source-to-topic coverage",
+  "summary": "10 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-023-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 904,
+        "end": 904
+      },
+      "destinations": [
+        "plan-rendering-content-priority",
+        "plan-application-policy-separation",
+        "plan-application-document-structure",
+        "module-selection",
+        "module-rendering",
+        "plan-history-agreement-amendments",
+        "plan-history-layout-supersession"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-023-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 906,
+        "end": 906
+      },
+      "destinations": [
+        "plan-rendering-content-priority",
+        "plan-application-policy-separation",
+        "plan-application-document-structure",
+        "module-selection",
+        "module-rendering",
+        "plan-history-agreement-amendments",
+        "plan-history-layout-supersession"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-023-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 908,
+        "end": 908
+      },
+      "destinations": [
+        "plan-rendering-content-priority",
+        "plan-application-policy-separation",
+        "plan-application-document-structure",
+        "module-selection",
+        "module-rendering",
+        "plan-history-agreement-amendments",
+        "plan-history-layout-supersession"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-023-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 910,
+        "end": 910
+      },
+      "destinations": [
+        "plan-rendering-content-priority",
+        "plan-application-policy-separation",
+        "plan-application-document-structure",
+        "module-selection",
+        "module-rendering",
+        "plan-history-agreement-amendments",
+        "plan-history-layout-supersession"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-023-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 912,
+        "end": 912
+      },
+      "destinations": [
+        "plan-rendering-content-priority",
+        "plan-application-policy-separation",
+        "plan-application-document-structure",
+        "module-selection",
+        "module-rendering",
+        "plan-history-agreement-amendments",
+        "plan-history-layout-supersession"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-023-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 914,
+        "end": 919
+      },
+      "destinations": [
+        "plan-rendering-content-priority",
+        "plan-application-policy-separation",
+        "plan-application-document-structure",
+        "module-selection",
+        "module-rendering",
+        "plan-history-agreement-amendments",
+        "plan-history-layout-supersession"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-023-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 921,
+        "end": 921
+      },
+      "destinations": [
+        "plan-rendering-content-priority",
+        "plan-application-policy-separation",
+        "plan-application-document-structure",
+        "module-selection",
+        "module-rendering",
+        "plan-history-agreement-amendments",
+        "plan-history-layout-supersession"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-023-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 923,
+        "end": 923
+      },
+      "destinations": [
+        "plan-rendering-content-priority",
+        "plan-application-policy-separation",
+        "plan-application-document-structure",
+        "module-selection",
+        "module-rendering",
+        "plan-history-agreement-amendments",
+        "plan-history-layout-supersession"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-023-clause-009",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 925,
+        "end": 925
+      },
+      "destinations": [
+        "plan-rendering-content-priority",
+        "plan-application-policy-separation",
+        "plan-application-document-structure",
+        "module-selection",
+        "module-rendering",
+        "plan-history-agreement-amendments",
+        "plan-history-layout-supersession"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-023-clause-010",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 927,
+        "end": 927
+      },
+      "destinations": [
+        "plan-rendering-content-priority",
+        "plan-application-policy-separation",
+        "plan-application-document-structure",
+        "module-selection",
+        "module-rendering",
+        "plan-history-agreement-amendments",
+        "plan-history-layout-supersession"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 904,
+      "end": 928
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-023",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-rendering-content-priority",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-application-policy-separation",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-application-document-structure",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-selection",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-rendering",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-history-agreement-amendments",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-history-layout-supersession",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:26.072+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

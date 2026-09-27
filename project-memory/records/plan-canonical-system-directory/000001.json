@@ -1,0 +1,32 @@
+{
+  "id": "plan-canonical-system-directory",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-canonical-observed-schema",
+  "title": "Employer → current system IDs",
+  "summary": "corominas → corominas.multi_tenant; corominas.llm_harness; corominas.quality_gate; corominas.approval; corominas.agent_ops; corominas.generated_workflows; corominas.security_response.",
+  "body": "corominas → corominas.multi_tenant; corominas.llm_harness; corominas.quality_gate; corominas.approval; corominas.agent_ops; corominas.generated_workflows; corominas.security_response.\n\nformula_dream → formula.event_pipeline; formula.workflow_generator; formula.event_templates; formula.information_aggregation; formula.formulytics.\n\nthink_round → think.context_memory; think.safety_evaluation; think.multi_agent_platform.\n\ncognizant → cognizant.ingestion; cognizant.kpi_latency; cognizant.aws_etl; cognizant.data_quality.\n\nEach system currently has one accomplishment: <system-id>.accomplishment.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-canonical-observed-schema",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "map-two-layer-plan",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    }
+  ],
+  "children": [],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:21.350+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

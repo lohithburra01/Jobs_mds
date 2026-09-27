@@ -1,0 +1,149 @@
+{
+  "id": "tracker-semantic-migration",
+  "kind": "tracker",
+  "title": "Component-by-component semantic migration",
+  "status": "review",
+  "summary": "Memory migration ready for review: 87 plan topics, 29 agreement sections/326 passages, and individual canonical evidence. Reliability checks passed; acceptance is pending.",
+  "body": "Latest user instruction authorizes one coherent component at a time, with source reading, visible result, memory/tracker update and commit. Review does not mean user acceptance. Canonical is selected next because it is the blueprint's other explicit example and its requested deep decomposition remains missing; this ordering is an execution choice, not a new application requirement. The complete two-layer map still contains unmigrated coding-context branches.",
+  "components": [
+    {
+      "id": "module-skills",
+      "status": "review",
+      "coverage": "coverage-skills"
+    },
+    {
+      "id": "module-canonical",
+      "status": "review"
+    },
+    {
+      "id": "module-jd",
+      "status": "review"
+    },
+    {
+      "id": "module-selection",
+      "status": "review"
+    },
+    {
+      "id": "module-project",
+      "status": "review"
+    },
+    {
+      "id": "module-writing",
+      "status": "review"
+    },
+    {
+      "id": "module-checks",
+      "status": "review"
+    },
+    {
+      "id": "module-rendering",
+      "status": "review"
+    },
+    {
+      "id": "module-repairs",
+      "status": "review"
+    },
+    {
+      "id": "module-observability",
+      "status": "review"
+    },
+    {
+      "id": "module-evaluation",
+      "status": "review"
+    }
+  ],
+  "coding_context_status": "Design records populated and linked; separate worker-controller enforcement is not certified.",
+  "next_action": "Show Lohith five clear points and concrete examples. Wait for feedback/acceptance before advancing to checkpoint-1, control of coding work.",
+  "links": [
+    {
+      "rel": "uses",
+      "to": "module-skills",
+      "reason": "Inspect the completed pilot component."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-skills",
+      "reason": "Check the pilot source coverage."
+    },
+    {
+      "rel": "uses",
+      "to": "module-canonical",
+      "reason": "Next selected component; retrieve its contract before proceeding."
+    },
+    {
+      "rel": "uses",
+      "to": "blueprint-semantic-context-graph",
+      "reason": "Preserve migration scope and required record shape."
+    },
+    {
+      "rel": "uses",
+      "to": "map-two-layer-plan",
+      "reason": "Locate remaining application and coding-context branches."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Authority to continue without another plan restatement."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Standing communication and feedback requirement applies to the next component."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-harness-first-2026-09-26",
+      "reason": "Current priority is approved; continue the saved harness work."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-agreement",
+      "reason": "Review all source coverage."
+    },
+    {
+      "rel": "uses",
+      "to": "verification-harness-completion",
+      "reason": "Read observed verification and limits."
+    }
+  ],
+  "revision": 5,
+  "updated_at": "2026-09-27T08:38:33.930+00:00",
+  "change_reason": "All planned memory branches populated; present actual result for human review",
+  "verification": {
+    "date": "2026-09-26",
+    "integrity": "doctor: 204 records, zero problems; all current source hashes and links valid.",
+    "coverage": "13 clause groups resolve to records and hash-checked source ranges; all substantive Skills clauses covered.",
+    "retrieval": "Fresh CLI processes followed module-skills -> skills-term-checks -> module-jd and retrieved exact source-agreement-007.",
+    "contract": "module-skills revision 3 contract equals revision 2; application code unchanged by this component migration.",
+    "startup": "start names Skills review, Canonical next and continuation authorization; view refreshed.",
+    "source_review": "Independent read-only review of four children, module index and coverage against relevant original passages: no actionable findings.",
+    "limits": "Memory integrity and interpretation only. No application run or enforcement validation; no user acceptance."
+  },
+  "coding_context_topics": [
+    "plan-coding-context",
+    "plan-context-session-entry",
+    "plan-context-record-structure",
+    "plan-context-root-index",
+    "plan-context-component-record",
+    "plan-context-record-contract",
+    "plan-context-storage-retrieval",
+    "plan-context-current-and-history",
+    "plan-coding-task-contract",
+    "plan-coding-verification",
+    "plan-coding-resource-limits",
+    "plan-coding-feedback-diagnosis",
+    "plan-context-human-participation",
+    "plan-coding-observability",
+    "plan-coding-coherent-commits",
+    "plan-context-checkpoint-directory",
+    "plan-coding-controller-routing",
+    "plan-coding-frozen-reference",
+    "plan-coding-repeated-failure-stop"
+  ],
+  "additional_application_topics": [
+    "plan-application-policy-separation",
+    "plan-application-run-data",
+    "plan-application-deliverables",
+    "plan-application-known-defects"
+  ]
+}

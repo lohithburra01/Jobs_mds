@@ -1,0 +1,467 @@
+{
+  "id": "coverage-agreement-013",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 13: source-to-topic coverage",
+  "summary": "21 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-013-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 486,
+        "end": 486
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-013-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 488,
+        "end": 488
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 490,
+        "end": 491
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 493,
+        "end": 493
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 495,
+        "end": 495
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 497,
+        "end": 497
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 499,
+        "end": 512
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 514,
+        "end": 514
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-009",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 516,
+        "end": 516
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-010",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 518,
+        "end": 542
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-011",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 544,
+        "end": 544
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-012",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 546,
+        "end": 546
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-013",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 548,
+        "end": 548
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-014",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 550,
+        "end": 557
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-015",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 559,
+        "end": 559
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-016",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 561,
+        "end": 563
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-017",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 565,
+        "end": 565
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-018",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 567,
+        "end": 567
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-019",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 569,
+        "end": 569
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-020",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 571,
+        "end": 571
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-013-clause-021",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 573,
+        "end": 573
+      },
+      "destinations": [
+        "plan-observability-agreement",
+        "plan-application-run-data",
+        "plan-observability-event-record",
+        "plan-observability-live-view",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-observability"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 486,
+      "end": 574
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-013",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-observability-agreement",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-application-run-data",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-observability-event-record",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-observability-live-view",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-observability-deadlines",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-observability-post-run",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-coding-observability",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:22.058+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

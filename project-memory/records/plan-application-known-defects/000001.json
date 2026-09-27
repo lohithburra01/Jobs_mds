@@ -1,0 +1,39 @@
+{
+  "id": "plan-application-known-defects",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "state-existing-code",
+  "title": "Known application defects are historical findings, not current certification",
+  "summary": "Preserve all nine inspected defects: unresolved writer evidence; unresolved evaluator evidence; functional tool default and first-three truncation; first-candidate generic project; prematurely combined parent checks; candidate-based coverage before layout; overflow repair crossing documents; extraction regeneration; canned prose and decisions mistaken for quality evidence.",
+  "body": "Preserve all nine inspected defects: unresolved writer evidence; unresolved evaluator evidence; functional tool default and first-three truncation; first-candidate generic project; prematurely combined parent checks; candidate-based coverage before layout; overflow repair crossing documents; extraction regeneration; canned prose and decisions mistaken for quality evidence. The first substantive app correction is complete evidence in writer and evaluator inputs. These are earlier findings, not proof they remain unchanged today; inspect actual code before claiming or repairing them.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "state-existing-code",
+      "reason": "Return to the owning contract."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-002",
+      "reason": "Read the original paragraph and its qualification."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Apply latest authority; named models and historical next actions do not bind current work."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 14,
+      "end": 31
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:35.924+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

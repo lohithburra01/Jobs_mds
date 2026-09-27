@@ -1,0 +1,55 @@
+{
+  "id": "plan-selection-agreement",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-selection",
+  "title": "Select accomplishments for each employer",
+  "summary": "Jev checks work relevance, exact requirement support, specificity, duplicate pairs and technology placement.",
+  "body": "Jev checks work relevance, exact requirement support, specificity, duplicate pairs and technology placement.\n\nSupport: direct / partial / adjacent / no support / uncertain.\n\nPython selects central work first, distinct supporting work next, concrete evidence, then removes genuine repetition.\n\nOlder employers can receive substantial space. Recency does not automatically dominate.\n\nRecord a reason for every exclusion. Use the two-page amendment rather than the retired one-page subset optimization.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-selection",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "module-canonical",
+      "reason": "Retrieve the matching work records"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-006",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-023",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 213,
+      "end": 257
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 904,
+      "end": 928
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:23.434+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

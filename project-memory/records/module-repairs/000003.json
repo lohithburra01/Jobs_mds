@@ -1,0 +1,87 @@
+{
+  "id": "module-repairs",
+  "kind": "module",
+  "title": "Bounded repairs",
+  "summary": "Target the failed block with its evidence and neighbors; reject edits to other IDs; recheck affected dependencies; at most two shared repair rounds in saved proposal.",
+  "body": "Planned boundary: receives Localized findings; draft blocks; measured layout; produces Bounded block revisions or an unresolved issue. Owns Repair only the affected text or input. Must preserve: Do not regenerate unrelated blocks; stop after agreed repair bounds. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-012"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-writing"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-checks"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-rendering"
+    },
+    {
+      "rel": "child",
+      "to": "plan-repairs-agreement",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-repairs-shared-budget",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-repairs-failure-routing",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-repairs-cache-invalidation",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    }
+  ],
+  "revision": 3,
+  "updated_at": "2026-09-27T08:27:16.515+00:00",
+  "change_reason": "Add detailed agreement navigation to existing component without changing its contract",
+  "contract": {
+    "receives": "Localized findings; draft blocks; measured layout",
+    "produces": "Bounded block revisions or an unresolved issue",
+    "owns": "Repair only the affected text or input",
+    "must_preserve": "Do not regenerate unrelated blocks; stop after agreed repair bounds",
+    "status": "planned boundary, not verified implementation"
+  },
+  "children": [
+    {
+      "id": "plan-repairs-agreement",
+      "title": "G · Targeted repairs with a shared limit",
+      "summary": "Budget: one extraction, one complete draft, at most two shared repair rounds. Malformed drafts consume the same writing allowance."
+    },
+    {
+      "id": "plan-repairs-shared-budget",
+      "title": "Bound the shared generation and repair budget",
+      "summary": "Normal budget: one JD extraction, one complete application draft and at most two shared repair rounds."
+    },
+    {
+      "id": "plan-repairs-failure-routing",
+      "title": "Repair the demonstrated cause in the affected scope",
+      "summary": "Missing evidence means fix assembly; wrong skill group means regroup; misplaced technology means fix placement; weak prose means rewrite that sentence with evidence; duplication means replace/remove weaker content; missing coverage means find eligible evidence."
+    },
+    {
+      "id": "plan-repairs-cache-invalidation",
+      "title": "Invalidate only checks affected by a changed block",
+      "summary": "A changed bullet invalidates its own checks, its employer, related requirements and document consistency."
+    }
+  ],
+  "migration_status": "Detailed plan topics are stored for human review; application contract/enforcement is unchanged."
+}

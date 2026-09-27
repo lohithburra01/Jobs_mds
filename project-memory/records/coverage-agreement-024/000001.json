@@ -1,0 +1,567 @@
+{
+  "id": "coverage-agreement-024",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 24: source-to-topic coverage",
+  "summary": "22 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-024-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 929,
+        "end": 929
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-024-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 931,
+        "end": 931
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 933,
+        "end": 933
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 935,
+        "end": 935
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 937,
+        "end": 937
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 939,
+        "end": 942
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 944,
+        "end": 944
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 946,
+        "end": 946
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-009",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 948,
+        "end": 948
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-010",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 950,
+        "end": 950
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-011",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 952,
+        "end": 952
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-012",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 954,
+        "end": 986
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-013",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 988,
+        "end": 988
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-014",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 990,
+        "end": 990
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-015",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 992,
+        "end": 1003
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-016",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1005,
+        "end": 1005
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-017",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1007,
+        "end": 1007
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-018",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1009,
+        "end": 1025
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-019",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1027,
+        "end": 1027
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-020",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1029,
+        "end": 1029
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-021",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1031,
+        "end": 1031
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-024-clause-022",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1033,
+        "end": 1033
+      },
+      "destinations": [
+        "plan-writing-initial-call-choice",
+        "plan-canonical-profile-education",
+        "skills-group-checks",
+        "module-writing",
+        "plan-writing-block-records",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "module-checks",
+        "module-repairs",
+        "plan-history-agreement-amendments"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 929,
+      "end": 1034
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-writing-initial-call-choice",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-profile-education",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "skills-group-checks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-writing",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-writing-block-records",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-writing-resume-blocks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-writing-letter-blocks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-checks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-repairs",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-history-agreement-amendments",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:26.471+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

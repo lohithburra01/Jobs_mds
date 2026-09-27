@@ -1,0 +1,32 @@
+{
+  "id": "rule-scope",
+  "kind": "rule",
+  "title": "Current authorization and model independence",
+  "summary": "Finish the project-memory harness first. Complete the agreed semantic records and verify reliable retrieval, integrity and recovery. Include Lohith with brief five-point updates and concrete results for his feedback. Application work remains a later checkpoint.",
+  "body": "The latest harness-first instruction resolves the prior priority choice. Continue the already agreed memory blueprint; do not ask that choice again. Save meaningful progress and one coherent change per commit. Present any material design change for review; no technical test or commit constitutes user acceptance.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Read the latest authorization when deciding whether to continue the saved task."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-communication-request-2026-09-26",
+      "reason": "Latest user instruction narrows how to continue the saved work."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-harness-first-2026-09-26",
+      "reason": "Latest explicit priority answer authorizes harness completion."
+    }
+  ],
+  "revision": 4,
+  "updated_at": "2026-09-26T21:17:08.492+00:00",
+  "change_reason": "Lohith answered the priority question: finish a robust harness first"
+}

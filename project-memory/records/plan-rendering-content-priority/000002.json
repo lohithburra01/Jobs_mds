@@ -1,0 +1,37 @@
+{
+  "id": "plan-rendering-content-priority",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-rendering",
+  "title": "Keep useful content in one or two readable pages",
+  "summary": "One or two pages, including a page and a half, are acceptable.",
+  "body": "One or two pages, including a page and a half, are acceptable. Preserve useful content, maximum four bullets per employer, readable fonts/spacing and sensible breaks. If a draft reaches three pages, inspect formatting, duplication and verbosity first. If it still exceeds two, preserve it and report the problem. This replaces the old one-page requirement and complicated subset selection.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 904,
+      "end": 928
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-rendering",
+      "reason": "Read the component boundary and related behaviors."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-023",
+      "reason": "Read the exact rule and examples."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply active evidence and document requirements."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:12.564+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

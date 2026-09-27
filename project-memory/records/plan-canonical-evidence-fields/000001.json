@@ -1,0 +1,32 @@
+{
+  "id": "plan-canonical-evidence-fields",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-canonical-observed-schema",
+  "title": "Evidence, source and migration fields",
+  "summary": "fact: id, employer_id, system_id, kind, text, source_refs[]. Kinds: problem/input/action/output/outcome/status.",
+  "body": "fact: id, employer_id, system_id, kind, text, source_refs[]. Kinds: problem/input/action/output/outcome/status.\n\nmetric: id, employer_id, system_id, display_text, meaning, status, source_refs[]. Status: achieved/target/derived.\n\nboundary: id, scope_ids[], text, source_refs[].\n\nSourceRef: archive_sha256, start_line, end_line, quote.\n\nprototype_pattern: statement, local_scope, publication_status, source_session_note, restrictions[], metric_ids[].\n\nmigration: start_line, end_line, destination_ids[], disposition (structured/archived/superseded).",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-canonical-observed-schema",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "map-two-layer-plan",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    }
+  ],
+  "children": [],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:21.045+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

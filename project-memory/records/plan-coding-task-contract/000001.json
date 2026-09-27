@@ -1,0 +1,71 @@
+{
+  "id": "plan-coding-task-contract",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-coding-context",
+  "title": "3 · One bounded coding task at a time",
+  "summary": "Record the user requirement, exact failure/example, expected behavior, relevant component and allowed files.",
+  "body": "Record the user requirement, exact failure/example, expected behavior, relevant component and allowed files.\n\nPreserve evaluation/reference version, required evidence, stop conditions and paused checkpoint before editing.\n\nRead relevant graph branches rather than replaying the entire chat. Do not silently change settled scope.\n\nImplementation result = diff, actual command results, examples and failures; a completion message alone is not acceptance.\n\nEarlier Astra/Sol/Terra assignments are historical. Roles may be performed by any capable selected agent; extra agents are not mandatory.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-context",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-015",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-017",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-019",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 630,
+      "end": 702
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 745,
+      "end": 768
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 797,
+      "end": 826
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:33.018+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

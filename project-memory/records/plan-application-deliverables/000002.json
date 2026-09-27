@@ -1,0 +1,39 @@
+{
+  "id": "plan-application-deliverables",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-application",
+  "title": "J · Deliver the package with an honest status",
+  "summary": "Resume PDF; cover-letter PDF; application JSON; portable context; readable coverage/issues; trace/revisions.",
+  "body": "Resume PDF; cover-letter PDF; application JSON; portable context; readable coverage/issues; trace/revisions.\n\nPortable context: JD, generated text, relevant canonical excerpts, retrofit policy and outstanding issues.\n\nDraft = checks pending. Ready under configured checks = configured checks completed, not a guarantee of recruiter response.\n\nReview required = named unresolved issues. Stopped = last checkpoint and reason.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-application",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-021",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 849,
+      "end": 875
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:26:59.318+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

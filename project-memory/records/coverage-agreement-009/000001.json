@@ -1,0 +1,313 @@
+{
+  "id": "coverage-agreement-009",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 9: source-to-topic coverage",
+  "summary": "12 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-009-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 323,
+        "end": 323
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-009-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 325,
+        "end": 325
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-009-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 327,
+        "end": 334
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-009-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 336,
+        "end": 336
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-009-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 338,
+        "end": 338
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-009-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 340,
+        "end": 340
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-009-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 342,
+        "end": 344
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-009-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 346,
+        "end": 346
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-009-clause-009",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 348,
+        "end": 348
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-009-clause-010",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 350,
+        "end": 353
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-009-clause-011",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 355,
+        "end": 355
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-009-clause-012",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 357,
+        "end": 357
+      },
+      "destinations": [
+        "plan-writing-agreement",
+        "plan-canonical-professional-identity",
+        "plan-application-document-structure",
+        "plan-writing-resolved-evidence",
+        "module-writing",
+        "plan-writing-resume-blocks",
+        "plan-writing-letter-blocks",
+        "plan-writing-vagueness-diagnosis"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 323,
+      "end": 358
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-009",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-writing-agreement",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-canonical-professional-identity",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-application-document-structure",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-writing-resolved-evidence",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-writing",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-writing-resume-blocks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-writing-letter-blocks",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-writing-vagueness-diagnosis",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:20.559+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "plan-coding-feedback-diagnosis",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-coding-context",
+  "title": "4 · Feedback or new idea → controlled update",
+  "summary": "Attach feedback to exact output/revision and affected node; preserve the paused task.",
+  "body": "Attach feedback to exact output/revision and affected node; preserve the paused task.\n\nInspect evidence, selection, writer input and judgments. Diagnose the earliest demonstrated failure.\n\nChange the smallest relevant record/module; inspect linked dependencies and actual interfaces for downstream effects.\n\nExplain consequential cross-component changes before expanding scope. Do not quietly rewrite unrelated checkpoints.\n\nReplay the affected example, compare before/after, protect previously acceptable examples.\n\nRepeated failure stops the same repair path; bring the evidence back for a design decision, without a required model brand.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-context",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-018",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 769,
+      "end": 796
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:33.975+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

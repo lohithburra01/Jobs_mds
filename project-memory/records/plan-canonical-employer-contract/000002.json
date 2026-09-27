@@ -1,0 +1,60 @@
+{
+  "id": "plan-canonical-employer-contract",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Employers → each employer has its own branch",
+  "summary": "Stable employer ID, company, titles, dates and employment status. All four employers remain in the resume.",
+  "body": "Stable employer ID, company, titles, dates and employment status. All four employers remain in the resume.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-canonical",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-003",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-006",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "child",
+      "to": "plan-canonical-system-contract",
+      "reason": "Open this separately readable topic."
+    }
+  ],
+  "children": [
+    {
+      "id": "plan-canonical-system-contract",
+      "summary": "Employer → systems / initiatives"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 32,
+      "end": 123
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 213,
+      "end": 257
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:26:45.111+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

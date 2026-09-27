@@ -1,0 +1,39 @@
+{
+  "id": "plan-history-numbered-feedback",
+  "kind": "subcomponent",
+  "status": "historical",
+  "owner": "plan-history-agreement-amendments",
+  "title": "Preserve provisional feedback and substantive amendments",
+  "summary": "The numbered feedback includes provisional positive reactions rather than unconditional proof of implementation.",
+  "body": "The numbered feedback includes provisional positive reactions rather than unconditional proof of implementation. Substantive requests were one-or-two-page content priority; separately owned writing units and a clear process explanation; concrete observability choices across both layers; small contextual commits; and explanation of the human role. Later follow-up sections 023-029 explain these. Do not treat the old reusable-anchor ambition as authority for a general framework: current project-specific scope applies.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-history-agreement-amendments",
+      "reason": "Return to the owning contract."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-022",
+      "reason": "Read the original paragraph and its qualification."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Apply latest authority; named models and historical next actions do not bind current work."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 876,
+      "end": 903
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:07.590+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

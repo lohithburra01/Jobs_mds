@@ -1,0 +1,39 @@
+{
+  "id": "plan-writing-vagueness-diagnosis",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-writing",
+  "title": "Distinguish missing evidence, wrong selection, weak prose and a bad evaluator rule",
+  "summary": "When a sentence is vague, inspect whether good evidence was written weakly, evidence was absent from the brief, the wrong accomplishment was selected, or the evaluator applied a bad rule.",
+  "body": "When a sentence is vague, inspect whether good evidence was written weakly, evidence was absent from the brief, the wrong accomplishment was selected, or the evaluator applied a bad rule. Only weak wording over good evidence primarily calls for prompt repair. Word ranges guide writing rather than trigger rejection loops; a useful mechanism/output need not carry a numerical metric.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-writing",
+      "reason": "Return to the owning contract."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-009",
+      "reason": "Read the original paragraph and its qualification."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Apply latest authority; named models and historical next actions do not bind current work."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 323,
+      "end": 358
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:36.253+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

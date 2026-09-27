@@ -1,0 +1,45 @@
+{
+  "id": "verification-harness-completion",
+  "kind": "evidence",
+  "status": "review",
+  "title": "Memory harness completion and reliability evidence",
+  "summary": "17 dedicated tests pass; 29 agreement sections mapped; actual canonical evidence is individually retrievable; fresh-process navigation and concurrent-write rejection passed.",
+  "body": "Fixed invalid source metadata accepted on save, out-of-bounds references, historical corruption omitted by doctor, and doubled CRLF output on Windows. Regression checks failed first and now pass. Record loading validates shape. Doctor checks every revision structurally and current source bytes. Explicit old-source retrieval still checks its hash. Eight concurrent writers produced one success and seven stale rejections, final revision 2. Source attributes preserve canonical bytes across checkouts. Live hook delivery remains unverified. Application generation and automatic worker-controller enforcement are later checkpoints. User acceptance is pending.",
+  "commands": [
+    "python -m unittest discover -s tests -p test_project_memory*.py",
+    "powershell -NoProfile -File scripts/project-memory.ps1 doctor",
+    "powershell -NoProfile -File scripts/project-memory.ps1 show canonical-system-corominas-multi-tenant",
+    "powershell -NoProfile -File scripts/project-memory.ps1 source source-agreement-023"
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-harness-first-2026-09-26",
+      "reason": "Authority to complete and strengthen this harness."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-agreement",
+      "reason": "Review original clause destinations."
+    },
+    {
+      "rel": "uses",
+      "to": "module-canonical",
+      "reason": "Inspect the evidence hierarchy."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-observations",
+      "reason": "Keep live-hook limits visible."
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/reviews/harness-verification-2026-09-27.json",
+      "sha256": "c2ef7f0036667592873d01a6b9aa7e00612d4ba47006a8de49ac2b35eb81cc5a"
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:38:33.571+00:00",
+  "change_reason": "Save observed verification and material limits for human review"
+}

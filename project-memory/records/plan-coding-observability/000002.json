@@ -1,0 +1,65 @@
+{
+  "id": "plan-coding-observability",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-coding-context",
+  "title": "5 · Observe the coding work and connect it to runs",
+  "summary": "Task/requirement version → agent/session → commands/diff → verification/judgments → commit/result.",
+  "body": "Task/requirement version → agent/session → commands/diff → verification/judgments → commit/result.\n\nAn application run records the code version, connecting this development timeline to the separate application timeline.\n\nLive status: task/model, outstanding work, elapsed/deadline, attempts, evidence and last saved result.\n\nAfterwards: exact changed files, why, results, unresolved issues and next action.\n\nUse local journals as durable records. Automatic tool capture needs a host-specific adapter; shared semantic records remain portable.\n\nCodex hook configuration exists but live delivery was not established. Other tools do not inherit Codex hooks.\n\nNo hidden reasoning capture. Save decisions explicitly; event hooks cannot infer their meaning.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-context",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "module-observability",
+      "reason": "Separate application-run visibility"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-013",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-025",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 486,
+      "end": 574
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1035,
+      "end": 1126
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:04.114+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

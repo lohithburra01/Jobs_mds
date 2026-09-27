@@ -1,0 +1,71 @@
+{
+  "id": "plan-coding-context",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "project",
+  "title": "Layer 2 · The external context used by you and the coding agent",
+  "summary": "The application is what we build. This layer stores how it is designed, where work stands, what changed and the evidence.",
+  "body": "The application is what we build. This layer stores how it is designed, where work stands, what changed and the evidence.\n\nAny capable CLI/agent can read the same local records and use the Python tool. No required model and no reliance on this conversation.\n\nA small startup pointer opens the graph. A full plan archive is evidence, not the default context loaded every session.",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-001",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-015",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-029",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "part_of",
+      "to": "project",
+      "reason": "Return to this topic’s owning component."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1,
+      "end": 13
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 630,
+      "end": 702
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1223,
+      "end": 1238
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:30.496+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

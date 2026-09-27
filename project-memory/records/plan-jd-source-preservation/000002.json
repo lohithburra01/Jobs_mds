@@ -1,0 +1,37 @@
+{
+  "id": "plan-jd-source-preservation",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-jd",
+  "title": "Preserve exact JD passages",
+  "summary": "Save exact JD text and hash.",
+  "body": "Save exact JD text and hash. Python assigns passage IDs and offsets and accounts for every nonblank span. Jev classifies passages as work, qualification, technology, company context, mixed or uncertain. One extraction call proposes requirements; Python verifies source quotes/IDs and Jev checks interpretation against those original passages.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 162,
+      "end": 212
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-jd",
+      "reason": "Read the component boundary and related behaviors."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-005",
+      "reason": "Read the exact rule and examples."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply active evidence and document requirements."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:09.007+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

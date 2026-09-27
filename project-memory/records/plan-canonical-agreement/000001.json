@@ -1,0 +1,39 @@
+{
+  "id": "plan-canonical-agreement",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-canonical",
+  "title": "Canonical · Your work, split into linked records",
+  "summary": "The agreed physical starting point is one authoritative canonical.yaml containing typed records. Separate records do not require competing copies of the same facts.",
+  "body": "The agreed physical starting point is one authoritative canonical.yaml containing typed records. Separate records do not require competing copies of the same facts.\n\nThe context graph must also expose these branches individually. Opening Canonical must not force a model to read all employers and systems.\n\nOnly your factual additions/corrections change canonical facts. A JD or generated sentence never becomes a fact automatically.\n\nSplit by coherent meaning. Keep connected workflow actions together; separate genuinely distinct accomplishments.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-canonical",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-003",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 32,
+      "end": 123
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:16.972+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

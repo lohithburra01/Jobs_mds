@@ -1,0 +1,73 @@
+{
+  "id": "module-selection",
+  "kind": "module",
+  "title": "Work selection",
+  "summary": "Fit is based on work responsibilities and scope; tool retrofit is allowed. Avoid mechanical recency and bullet quotas.",
+  "body": "Planned boundary: receives Canonical evidence; interpreted JD; produces Chosen relevant work with resolved evidence. Owns Match work responsibilities to the JD. Must preserve: Tool overlap alone does not determine fit. Inspect actual code before claiming this boundary is already enforced.",
+  "status": "review",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-006"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-004"
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-canonical"
+    },
+    {
+      "rel": "depends_on",
+      "to": "module-jd"
+    },
+    {
+      "rel": "child",
+      "to": "plan-selection-agreement",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-selection-judgments",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    },
+    {
+      "rel": "child",
+      "to": "plan-selection-order-and-exclusions",
+      "reason": "Read this separately retrievable part of the agreed component design."
+    }
+  ],
+  "revision": 3,
+  "updated_at": "2026-09-27T08:27:14.364+00:00",
+  "change_reason": "Add detailed agreement navigation to existing component without changing its contract",
+  "contract": {
+    "receives": "Canonical evidence; interpreted JD",
+    "produces": "Chosen relevant work with resolved evidence",
+    "owns": "Match work responsibilities to the JD",
+    "must_preserve": "Tool overlap alone does not determine fit",
+    "status": "planned boundary, not verified implementation"
+  },
+  "children": [
+    {
+      "id": "plan-selection-agreement",
+      "title": "Select accomplishments for each employer",
+      "summary": "Jev checks work relevance, exact requirement support, specificity, duplicate pairs and technology placement."
+    },
+    {
+      "id": "plan-selection-judgments",
+      "title": "Judge work support before prose",
+      "summary": "For each accomplishment Jev evaluates work relevance, exact requirement support, specificity, duplication and functional tool placement using actual evidence."
+    },
+    {
+      "id": "plan-selection-order-and-exclusions",
+      "title": "Select distinct useful work and explain exclusions",
+      "summary": "Python first covers central work, adds distinct supporting work, prefers concrete evidence and removes genuine repetition."
+    }
+  ],
+  "migration_status": "Detailed plan topics are stored for human review; application contract/enforcement is unchanged."
+}

@@ -1,0 +1,44 @@
+{
+  "id": "plan-jd-agreement",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-jd",
+  "title": "B · JD → traceable requirements",
+  "summary": "Save exact text and hash → Python passage IDs and offsets → account for every nonblank source span.",
+  "body": "Save exact text and hash → Python passage IDs and offsets → account for every nonblank source span.\n\nIn parallel: Jev passage classification and one structured extraction request.\n\nClassification: work, qualification, technology, company context, mixed or uncertain.\n\nPython verifies quotes/IDs; Jev checks the interpretation against original passages.\n\nEach requirement: source passage, interpretation, priority, meaningful child components, named technologies, unresolved interpretation.\n\nInvalid/missing interpretation → retain original passage and mark unresolved; do not repeatedly regenerate extraction.\n\nCompound requirements remain unresolved until their meaningful components are accounted for.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-jd",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "module-selection",
+      "reason": "Use requirements to select work"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-005",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 162,
+      "end": 212
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:22.852+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

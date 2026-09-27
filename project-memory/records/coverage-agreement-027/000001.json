@@ -1,0 +1,182 @@
+{
+  "id": "coverage-agreement-027",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 27: source-to-topic coverage",
+  "summary": "6 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-027-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1183,
+        "end": 1183
+      },
+      "destinations": [
+        "plan-observability-recorded-replay",
+        "plan-application-run-data",
+        "plan-observability-live-view",
+        "plan-observability-tools",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-coherent-commits"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-027-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1185,
+        "end": 1185
+      },
+      "destinations": [
+        "plan-observability-recorded-replay",
+        "plan-application-run-data",
+        "plan-observability-live-view",
+        "plan-observability-tools",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-coherent-commits"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-027-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1187,
+        "end": 1192
+      },
+      "destinations": [
+        "plan-observability-recorded-replay",
+        "plan-application-run-data",
+        "plan-observability-live-view",
+        "plan-observability-tools",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-coherent-commits"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-027-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1194,
+        "end": 1194
+      },
+      "destinations": [
+        "plan-observability-recorded-replay",
+        "plan-application-run-data",
+        "plan-observability-live-view",
+        "plan-observability-tools",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-coherent-commits"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-027-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1196,
+        "end": 1196
+      },
+      "destinations": [
+        "plan-observability-recorded-replay",
+        "plan-application-run-data",
+        "plan-observability-live-view",
+        "plan-observability-tools",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-coherent-commits"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-027-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 1198,
+        "end": 1198
+      },
+      "destinations": [
+        "plan-observability-recorded-replay",
+        "plan-application-run-data",
+        "plan-observability-live-view",
+        "plan-observability-tools",
+        "plan-observability-deadlines",
+        "plan-observability-post-run",
+        "plan-coding-coherent-commits"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1183,
+      "end": 1199
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-027",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-observability-recorded-replay",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-application-run-data",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-observability-live-view",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-observability-tools",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-observability-deadlines",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-observability-post-run",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-coding-coherent-commits",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:27.606+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

@@ -1,0 +1,228 @@
+{
+  "id": "coverage-agreement-005",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 5: source-to-topic coverage",
+  "summary": "12 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-005-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 162,
+        "end": 162
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-005-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 164,
+        "end": 184
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-005-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 186,
+        "end": 186
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-005-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 188,
+        "end": 193
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-005-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 195,
+        "end": 195
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-005-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 197,
+        "end": 197
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-005-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 199,
+        "end": 199
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-005-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 201,
+        "end": 203
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-005-clause-009",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 205,
+        "end": 205
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-005-clause-010",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 207,
+        "end": 207
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-005-clause-011",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 209,
+        "end": 209
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "preserved in linked semantic topics; implementation status remains separate"
+    },
+    {
+      "id": "agreement-005-clause-012",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 211,
+        "end": 211
+      },
+      "destinations": [
+        "plan-jd-agreement",
+        "module-jd",
+        "plan-checks-final-visible-coverage"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 162,
+      "end": 212
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-005",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-jd-agreement",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "module-jd",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-checks-final-visible-coverage",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:19.094+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

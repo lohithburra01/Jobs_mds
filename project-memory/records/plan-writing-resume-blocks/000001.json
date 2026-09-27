@@ -1,0 +1,50 @@
+{
+  "id": "plan-writing-resume-blocks",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-writing",
+  "title": "Resume blocks",
+  "summary": "Summary: professional identity, relevant systems and scope in a developed short paragraph.",
+  "body": "Summary: professional identity, relevant systems and scope in a developed short paragraph.\n\nEach of four employers: up to four distinct accomplishments, each with mechanism and output/result.\n\nProject: concrete independent workflow, output and validation.\n\nA number is optional; supported specific actions are essential.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-writing",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-009",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 323,
+      "end": 358
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 929,
+      "end": 1034
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:25.231+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

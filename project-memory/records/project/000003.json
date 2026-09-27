@@ -1,0 +1,82 @@
+{
+  "id": "project",
+  "kind": "project",
+  "title": "Local job-application builder",
+  "summary": "Paste a JD and receive a readable tailored resume PDF, cover-letter PDF, application JSON and reusable chat context.",
+  "body": "The application is being built using this memory harness. Read current rules/checkpoint first. plan-application and plan-coding-context expose selected topics; module-canonical exposes actual evidence. Source archives and older maps are evidence, not current execution instructions. Current focus is human review of the completed memory harness.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "rule",
+      "to": "rule-scope"
+    },
+    {
+      "rel": "rule",
+      "to": "rule-collaboration"
+    },
+    {
+      "rel": "rule",
+      "to": "rule-memory"
+    },
+    {
+      "rel": "rule",
+      "to": "rule-changes"
+    },
+    {
+      "rel": "rule",
+      "to": "rule-application"
+    },
+    {
+      "rel": "rule",
+      "to": "rule-observations"
+    },
+    {
+      "rel": "plan",
+      "to": "source-agreement"
+    },
+    {
+      "rel": "decision",
+      "to": "decision-superseded"
+    },
+    {
+      "rel": "decision",
+      "to": "decision-modular-temporal-memory"
+    },
+    {
+      "rel": "directory",
+      "to": "plan-application",
+      "reason": "Read application design by component."
+    },
+    {
+      "rel": "directory",
+      "to": "plan-coding-context",
+      "reason": "Read coding process and memory rules."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-agreement",
+      "reason": "Trace original passages."
+    },
+    {
+      "rel": "uses",
+      "to": "verification-harness-completion",
+      "reason": "Read what was checked."
+    }
+  ],
+  "focus": "checkpoint-memory",
+  "checkpoints": [
+    "checkpoint-0",
+    "checkpoint-memory",
+    "checkpoint-1",
+    "checkpoint-2",
+    "checkpoint-3",
+    "checkpoint-4",
+    "checkpoint-5",
+    "checkpoint-6",
+    "checkpoint-7",
+    "checkpoint-8"
+  ],
+  "revision": 3,
+  "updated_at": "2026-09-27T08:38:34.957+00:00",
+  "change_reason": "Add live directories and verified harness evidence to the root"
+}

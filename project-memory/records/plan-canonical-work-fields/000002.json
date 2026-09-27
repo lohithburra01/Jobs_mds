@@ -1,0 +1,32 @@
+{
+  "id": "plan-canonical-work-fields",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-canonical-observed-schema",
+  "title": "Employer, system and accomplishment fields",
+  "summary": "employer: id, company, titles[], period, status_text, boundary_ids[], systems[].",
+  "body": "employer: id, company, titles[], period, status_text, boundary_ids[], systems[].\n\nsystem: id, narrative, source_refs[], problem_fact_ids[], input_fact_ids[], action_fact_ids[], output_fact_ids[], outcome_fact_ids[], status_fact_ids[], metric_ids[], boundary_ids[], accomplishments[].\n\naccomplishment: id, system_id, purpose, fact_ids[], metric_ids[], boundary_ids[].\n\nInventory: 4 employers, 19 systems, 19 accomplishments, 57 facts, 12 metrics, 4 boundaries, 2 education entries, 63 migration mappings.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-canonical-observed-schema",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "map-two-layer-plan",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    }
+  ],
+  "children": [],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:26:48.448+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "plan-context-checkpoint-directory",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-coding-context",
+  "title": "7 · Current project checkpoints",
+  "summary": "Agree what the application must produce — accepted",
+  "body": "The authoritative checkpoint list and active focus live in project. Read each linked checkpoint for current status and next action. This directory deliberately does not duplicate changing statuses.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-context",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "blueprint-semantic-context-graph",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    },
+    {
+      "rel": "based_on",
+      "to": "decision-modular-temporal-memory",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    },
+    {
+      "rel": "uses",
+      "to": "checkpoint-0",
+      "reason": "Read current checkpoint status; user acceptance is recorded separately."
+    },
+    {
+      "rel": "uses",
+      "to": "checkpoint-memory",
+      "reason": "Read current checkpoint status; user acceptance is recorded separately."
+    },
+    {
+      "rel": "uses",
+      "to": "checkpoint-1",
+      "reason": "Read current checkpoint status; user acceptance is recorded separately."
+    },
+    {
+      "rel": "uses",
+      "to": "checkpoint-2",
+      "reason": "Read current checkpoint status; user acceptance is recorded separately."
+    },
+    {
+      "rel": "uses",
+      "to": "checkpoint-3",
+      "reason": "Read current checkpoint status; user acceptance is recorded separately."
+    },
+    {
+      "rel": "uses",
+      "to": "checkpoint-4",
+      "reason": "Read current checkpoint status; user acceptance is recorded separately."
+    },
+    {
+      "rel": "uses",
+      "to": "checkpoint-5",
+      "reason": "Read current checkpoint status; user acceptance is recorded separately."
+    },
+    {
+      "rel": "uses",
+      "to": "checkpoint-6",
+      "reason": "Read current checkpoint status; user acceptance is recorded separately."
+    },
+    {
+      "rel": "uses",
+      "to": "checkpoint-7",
+      "reason": "Read current checkpoint status; user acceptance is recorded separately."
+    },
+    {
+      "rel": "uses",
+      "to": "checkpoint-8",
+      "reason": "Read current checkpoint status; user acceptance is recorded separately."
+    }
+  ],
+  "children": [],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:35.278+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

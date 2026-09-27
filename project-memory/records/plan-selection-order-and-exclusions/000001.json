@@ -1,0 +1,38 @@
+{
+  "id": "plan-selection-order-and-exclusions",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-selection",
+  "title": "Select distinct useful work and explain exclusions",
+  "summary": "Python first covers central work, adds distinct supporting work, prefers concrete evidence and removes genuine repetition.",
+  "body": "Python first covers central work, adds distinct supporting work, prefers concrete evidence and removes genuine repetition. Record a reason for each excluded candidate. All four employers remain; maximum four bullets each, no mandatory quota and no eight-total cap. Older roles can get substantial space; recency does not automatically dominate. Apply the later two-page content-priority amendment to layout.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 213,
+      "end": 257
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-selection",
+      "reason": "Read the component boundary and related behaviors."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-006",
+      "reason": "Read the exact rule and examples."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply active evidence and document requirements."
+    }
+  ],
+  "children": [],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:40.482+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

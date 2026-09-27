@@ -1,0 +1,72 @@
+{
+  "id": "plan-application-run-data",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-application-data",
+  "title": "Run data · One application, kept separate",
+  "summary": "Original JD/hash; requirement interpretations; evidence selection and omission reasons; skills and project brief.",
+  "body": "Original JD/hash; requirement interpretations; evidence selection and omission reasons; skills and project brief.\n\nWriter inputs, saved text blocks, revisions, check results, final artifacts and unresolved issues.\n\nInput/configuration/prompt/rubric/model versions; request/response references; code version.\n\nRun history does not bloat the canonical.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-application-data",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-003",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-013",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-021",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-027",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 32,
+      "end": 123
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 486,
+      "end": 574
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 849,
+      "end": 875
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1183,
+      "end": 1199
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:22.552+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

@@ -1,0 +1,273 @@
+{
+  "id": "coverage-agreement-015",
+  "kind": "coverage",
+  "status": "review",
+  "title": "Agreement section 15: source-to-topic coverage",
+  "summary": "15 exact source passages mapped to semantic topics, with historical/superseded wording identified.",
+  "body": "Paragraph ranges are an audit index, not standalone semantic records. The linked topic records are the normal reading route. Source preservation plus mapping makes omissions inspectable; only Lohith can accept the interpretation.",
+  "clauses": [
+    {
+      "id": "agreement-015-clause-001",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 630,
+        "end": 630
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "source heading or separator"
+    },
+    {
+      "id": "agreement-015-clause-002",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 632,
+        "end": 632
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-003",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 634,
+        "end": 658
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-004",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 660,
+        "end": 660
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-005",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 662,
+        "end": 665
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-006",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 667,
+        "end": 667
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-007",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 669,
+        "end": 673
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-008",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 675,
+        "end": 675
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-009",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 677,
+        "end": 679
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-010",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 681,
+        "end": 681
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-011",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 683,
+        "end": 689
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-012",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 691,
+        "end": 691
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-013",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 693,
+        "end": 697
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-014",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 699,
+        "end": 699
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "role/control behavior preserved; named-model assignment superseded by decision-superseded"
+    },
+    {
+      "id": "agreement-015-clause-015",
+      "source": {
+        "path": "project-memory/sources/source-agreement.txt",
+        "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+        "start": 701,
+        "end": 701
+      },
+      "destinations": [
+        "plan-coding-controller-routing",
+        "plan-coding-context",
+        "plan-coding-task-contract"
+      ],
+      "disposition": "source heading or separator"
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 630,
+      "end": 702
+    }
+  ],
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-agreement-015",
+      "reason": "Read the exact original section."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-coding-controller-routing",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-coding-context",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "covers",
+      "to": "plan-coding-task-contract",
+      "reason": "Read the semantic destination for these source clauses."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Resolve historical wording against later explicit instructions."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:27:22.835+00:00",
+  "change_reason": "Account for every source paragraph without treating historical instructions as current authority"
+}

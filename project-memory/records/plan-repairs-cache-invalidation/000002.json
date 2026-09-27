@@ -1,0 +1,42 @@
+{
+  "id": "plan-repairs-cache-invalidation",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-repairs",
+  "title": "Invalidate only checks affected by a changed block",
+  "summary": "A changed bullet invalidates its own checks, its employer, related requirements and document consistency.",
+  "body": "A changed bullet invalidates its own checks, its employer, related requirements and document consistency. Other employers’ unchanged bullet checks stay cached. Cache identity includes evidence, text, question, policy and model, not just the bullet ID. The later block-repair rule supplies neighbors as read-only context and Python rejects edits to unauthorized IDs.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 454,
+      "end": 485
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-repairs",
+      "reason": "Read the component boundary and related behaviors."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-012",
+      "reason": "Read the exact rule and examples."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply active evidence and document requirements."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024",
+      "reason": "Later block repair ownership and protected-neighbor clarification."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:12.221+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

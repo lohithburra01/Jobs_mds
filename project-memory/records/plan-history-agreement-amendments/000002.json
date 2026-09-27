@@ -1,0 +1,124 @@
+{
+  "id": "plan-history-agreement-amendments",
+  "kind": "subcomponent",
+  "status": "historical",
+  "owner": "plan-coding-context",
+  "title": "8 · Preserved history and amendments",
+  "summary": "Original model-locked coding diagram is historical; no mandatory Astra/Sol/Terra handoff.",
+  "body": "Original model-locked coding diagram is historical; no mandatory Astra/Sol/Terra handoff.\n\nOne-page-only fitting and expensive subset selection are superseded by one/two-page content priority.\n\nOriginal implementation ordering is retained for reference; current checkpoint records control the current task.\n\nSeparate block ownership is retained; one coordinated initial call remains the recommendation, not a proven quality result.\n\nUser feedback is preserved verbatim, including questions and provisional acceptance; not every recommendation becomes implementation evidence.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-context",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-020",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-022",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-023",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-029",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "child",
+      "to": "plan-history-original-implementation-order",
+      "reason": "Read this topic within the component."
+    },
+    {
+      "rel": "child",
+      "to": "plan-history-numbered-feedback",
+      "reason": "Read this topic within the component."
+    },
+    {
+      "rel": "child",
+      "to": "plan-history-layout-supersession",
+      "reason": "Read this topic within the component."
+    }
+  ],
+  "children": [
+    {
+      "id": "plan-history-original-implementation-order",
+      "title": "Preserve the former implementation sequence without treating it as current authorization",
+      "summary": "The historical nine-step order was minimal event/stopping controls; complete resolved evidence; placement/selection/project; JD passage preservation; early coherent draft; sequential review/layout/final coverage; evaluator calibration; instrumented Stibo run; McKesson check."
+    },
+    {
+      "id": "plan-history-numbered-feedback",
+      "title": "Preserve provisional feedback and substantive amendments",
+      "summary": "The numbered feedback includes provisional positive reactions rather than unconditional proof of implementation."
+    },
+    {
+      "id": "plan-history-layout-supersession",
+      "title": "Keep two-page content priority and retire one-page subset optimization",
+      "summary": "The user amendment replaces one-page-only fitting: one, one-and-a-half or two pages are acceptable, with readable fonts/spacing and no stranded employer headings."
+    }
+  ],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 827,
+      "end": 848
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 876,
+      "end": 903
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 904,
+      "end": 928
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 929,
+      "end": 1034
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 1223,
+      "end": 1238
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:05.183+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

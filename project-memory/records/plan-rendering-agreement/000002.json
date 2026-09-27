@@ -1,0 +1,71 @@
+{
+  "id": "plan-rendering-agreement",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-rendering",
+  "title": "F · Render and inspect one or two pages",
+  "summary": "Measure with actual renderer typography and flowables; preserve all mandatory sections and useful content.",
+  "body": "Measure with actual renderer typography and flowables; preserve all mandatory sections and useful content.\n\nKeep readable fonts/spacing and prevent stranded headings. No silent font shrinking.\n\nIf three pages: inspect formatting, duplication and verbose wording first. If still too long, preserve draft and report it.\n\nNever remove the project or employer; never shorten the letter to solve resume overflow.\n\nUse actual PDF pagination/page images; text judgments cannot certify layout.\n\nFinal rendering/repair changes feed back into final-text coverage. The old one-page subset search is superseded.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-rendering",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "plan-checks-final-visible-coverage",
+      "reason": "Recheck final visible text"
+    },
+    {
+      "rel": "uses",
+      "to": "module-repairs",
+      "reason": "Local repair if necessary"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-011",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-014",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-023",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 411,
+      "end": 453
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 575,
+      "end": 629
+    },
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 904,
+      "end": 928
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:26:55.934+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

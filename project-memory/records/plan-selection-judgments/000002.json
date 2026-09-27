@@ -1,0 +1,37 @@
+{
+  "id": "plan-selection-judgments",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-selection",
+  "title": "Judge work support before prose",
+  "summary": "For each accomplishment Jev evaluates work relevance, exact requirement support, specificity, duplication and functional tool placement using actual evidence.",
+  "body": "For each accomplishment Jev evaluates work relevance, exact requirement support, specificity, duplication and functional tool placement using actual evidence. Support choices are Direct, Partial, Adjacent, No support and Uncertain. Selection precedes prose generation.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 213,
+      "end": 257
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-selection",
+      "reason": "Read the component boundary and related behaviors."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-006",
+      "reason": "Read the exact rule and examples."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply active evidence and document requirements."
+    }
+  ],
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:10.107+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

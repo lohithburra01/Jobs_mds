@@ -1,0 +1,39 @@
+{
+  "id": "plan-writing-initial-call-choice",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-writing",
+  "title": "Separate block ownership from the number of model requests",
+  "summary": "Each block must have its own instructions, evidence, checks and revision history.",
+  "body": "Each block must have its own instructions, evidence, checks and revision history. The recommendation is one coordinated initial draft with independent block repairs, because it gives the writer application context. That is a recommendation, not proven superior writing. Separate initial section writers remain a later experiment requiring actual output comparisons. One shared Jev API can serve separate questions and one writing model can serve restricted repairs; separate boxes do not require separate model deployments or eight configurations.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-writing",
+      "reason": "Return to the owning contract."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-024",
+      "reason": "Read the original paragraph and its qualification."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Apply latest authority; named models and historical next actions do not bind current work."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 929,
+      "end": 1034
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:38.216+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

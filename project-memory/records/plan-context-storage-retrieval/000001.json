@@ -1,0 +1,47 @@
+{
+  "id": "plan-context-storage-retrieval",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-context-record-structure",
+  "title": "Portable storage and retrieval",
+  "summary": "Authoritative versioned JSON records; SQLite is a rebuildable search/relationship index.",
+  "body": "Authoritative versioned JSON records; SQLite is a rebuildable search/relationship index.\n\nCLI: start/context, show, source, search, impact, put, timeline, doctor, view.\n\nPreserved source text → exact passages. Old revisions stay reachable but are not all loaded.\n\nUse tracker-semantic-migration and coverage-agreement for current migration progress; do not treat this design record as a live status snapshot.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-context-record-structure",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "blueprint-semantic-context-graph",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    },
+    {
+      "rel": "based_on",
+      "to": "decision-modular-temporal-memory",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    }
+  ],
+  "children": [],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:32.386+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

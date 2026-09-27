@@ -1,0 +1,38 @@
+{
+  "id": "plan-project-evidence-boundaries",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "module-project",
+  "title": "Preserve independent project scope",
+  "summary": "Do not borrow employer revenue, client scale or deployment claims for the independent project.",
+  "body": "Do not borrow employer revenue, client scale or deployment claims for the independent project. Do not invent dates or repository links or require an exhaustive project inventory. Use the confirmed GitHub pattern and authorized local working pattern.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 294,
+      "end": 322
+    }
+  ],
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "module-project",
+      "reason": "Read the component boundary and related behaviors."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-008",
+      "reason": "Read the exact rule and examples."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply active evidence and document requirements."
+    }
+  ],
+  "children": [],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:41.111+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

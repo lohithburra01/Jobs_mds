@@ -1,0 +1,49 @@
+{
+  "id": "plan-coding-resource-limits",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-coding-task-contract",
+  "title": "Resource and stop rules",
+  "summary": "Small context; one task per worker; no recursive spawning or repeated model status polling.",
+  "body": "Small context; one task per worker; no recursive spawning or repeated model status polling.\n\nFocused checks for a local change; broader regression at integration.\n\nOriginal proposed worker deadline: 20 minutes, with saved progress; not certified as enforced.\n\nNo automatic restart or credit purchase. Record attempts, waiting/execution time and available usage.\n\nAccount allowance is separate from per-task usage; no invented credit accounting.\n\nThe development view also identifies the active agent/model, current task, execution versus waiting time, attempts, design escalations and latest saved result. Earlier model-specific escalation names are historical. None of these planned controller limits is certified by the memory migration.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-task-contract",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-019",
+      "reason": "Read exact agreement wording and later amendments before changing this behavior."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-changes",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 797,
+      "end": 826
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 2,
+  "updated_at": "2026-09-27T08:27:03.086+00:00",
+  "change_reason": "Connect semantic children and named cross-component routes after all targets exist"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "plan-coding-frozen-reference",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-coding-task-contract",
+  "title": "Preserve the requirement and acceptance reference before implementation",
+  "summary": "Before implementation preserve the user requirement, reproduced failure, expected behavior, evaluation version, allowed files/subsystem, required evidence and stop conditions.",
+  "body": "Before implementation preserve the user requirement, reproduced failure, expected behavior, evaluation version, allowed files/subsystem, required evidence and stop conditions. A worker may add tests but cannot silently change that reference. Reference changes are proposed design changes, never a way to relabel a failure as a pass. Worker completion is a submission; controller evidence checks and specified evaluations establish technical readiness, and Lohith separately accepts the result.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-coding-task-contract",
+      "reason": "Return to the owning contract."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-agreement-017",
+      "reason": "Read the original paragraph and its qualification."
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded",
+      "reason": "Apply latest authority; named models and historical next actions do not bind current work."
+    }
+  ],
+  "children": [],
+  "sources": [
+    {
+      "path": "project-memory/sources/source-agreement.txt",
+      "sha256": "7957029ebaa245e8baeb3a6d745891445458a163e41d05ac77e7ab1863d24f69",
+      "start": 745,
+      "end": 768
+    }
+  ],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:36.920+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}

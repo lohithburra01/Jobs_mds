@@ -1,0 +1,32 @@
+{
+  "id": "plan-application-brief",
+  "kind": "subcomponent",
+  "status": "review",
+  "owner": "plan-application",
+  "title": "C · Select work → assemble the complete writing brief",
+  "summary": "C · Select work → assemble the complete writing brief",
+  "body": "Directory of individually retrievable child records. Follow the child matching the current question.",
+  "links": [
+    {
+      "rel": "part_of",
+      "to": "plan-application",
+      "reason": "Return to the owning branch and its sibling index."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-application",
+      "reason": "Apply the current shared rule; older wording in preserved sources may be superseded."
+    },
+    {
+      "rel": "based_on",
+      "to": "map-two-layer-plan",
+      "reason": "Retrieve design provenance; this map branch has no direct agreement section ID."
+    }
+  ],
+  "children": [],
+  "sources": [],
+  "evidence_limit": "Design/context migration only; source provenance does not certify application or worker-controller implementation.",
+  "revision": 1,
+  "updated_at": "2026-09-27T08:26:23.142+00:00",
+  "change_reason": "Migrate one meaningful plan topic with preserved source and current authority"
+}
