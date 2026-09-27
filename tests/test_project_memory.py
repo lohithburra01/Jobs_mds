@@ -10,7 +10,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 CLI = ROOT / "scripts" / "project_memory.py"
 sys.path.insert(0, str(ROOT))
-from project_memory.store import Store
+from project_memory.store import Store, digest
 
 
 class MemoryTests(unittest.TestCase):
@@ -124,6 +124,81 @@ class MemoryTests(unittest.TestCase):
         rows = store.timeline(4)
         self.assertEqual(rows[0]["kind"], "after")
         self.assertTrue(any(r["kind"] == "damaged_event" for r in rows))
+
+    def test_invalid_source_references_are_rejected_before_saving(self):
+        source = self.root / "agreement.txt"
+        source.write_text("First\nSecond\n", encoding="utf-8")
+        valid = dict(path="agreement.txt", sha256=digest(source.read_bytes()), start=1, end=2)
+        invalid = [None, {}, dict(valid, path=None), dict(valid, path=""),
+                   dict(valid, sha256=None), dict(valid, sha256="not-a-hash"),
+                   dict(valid, sha256="0" * 64), dict(valid, start=0),
+                   dict(valid, start=True), dict(valid, start="1"),
+                   dict(valid, end=1.5), dict(valid, start=2, end=1),
+                   dict(valid, start=99, end=100), dict(valid, end=3)]
+        for index, reference in enumerate(invalid):
+            with self.subTest(reference=reference):
+                record = self.record("invalid-source-" + str(index), sources=[reference])
+                result = self.put(record, ok=False)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertNotIn("Traceback", result.stderr)
+                self.assertFalse((self.root / "project-memory/records" / record["id"]).exists())
+        self.put(self.record("valid-source", sources=[valid]))
+        self.assertEqual(self.cli("source", "valid-source").stdout, "First\nSecond\n\n")
+
+    def test_source_retrieval_rejects_invalid_line_ranges(self):
+        source = self.root / "agreement.txt"
+        source.write_text("First\nSecond\n", encoding="utf-8")
+        valid = dict(path="agreement.txt", sha256=digest(source.read_bytes()))
+        for bounds in ({"start": 0}, {"start": 2, "end": 1}, {"end": 3}, {"start": 99}):
+            with self.subTest(bounds=bounds), self.assertRaises(ValueError):
+                Store(self.root).source_text(dict(valid, **bounds))
+
+    def test_doctor_reports_corrupt_historical_revision(self):
+        record = self.record("task-1")
+        self.put(record)
+        self.put(dict(record, summary="Current readable version"), 1)
+        old = self.root / "project-memory/records/task-1/000001.json"
+        old.write_text('{"broken":', encoding="utf-8")
+        result = self.cli("doctor", ok=False)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("000001.json", json.loads(result.stdout)["problems"][0])
+        self.assertEqual(json.loads(self.cli("show", "task-1").stdout)["revision"], 2)
+
+    def test_doctor_reports_malformed_current_and_historical_records(self):
+        malformed = [[], {}, {"id": "wrong-record"},
+                     dict(self.record("task-1"), revision=1, sources=[{"path": "missing.txt"}]),
+                     dict(self.record("task-1"), revision=1, links=[None])]
+        for value in malformed:
+            for revision in (1, 2):
+                with self.subTest(value=value, revision=revision):
+                    directory = self.root / "project-memory/records/task-1"
+                    directory.mkdir(parents=True, exist_ok=True)
+                    for number in (1, 2):
+                        item = dict(self.record("task-1"), revision=number)
+                        if number == revision:
+                            item = value
+                        (directory / f"{number:06d}.json").write_text(json.dumps(item), encoding="utf-8")
+                    result = self.cli("doctor", ok=False)
+                    self.assertEqual(result.returncode, 1, result.stderr)
+                    self.assertTrue(json.loads(result.stdout)["problems"])
+                    self.assertNotIn("Traceback", result.stderr)
+                    if revision == 2:
+                        shown = self.cli("show", "task-1", ok=False)
+                        self.assertEqual(shown.returncode, 2)
+                        self.assertNotIn("Traceback", shown.stderr)
+
+    def test_doctor_keeps_superseded_source_revisions_as_history(self):
+        source = self.root / "agreement.txt"
+        source.write_text("Original\nMore lines\n", encoding="utf-8")
+        old_reference = dict(path="agreement.txt", sha256=digest(source.read_bytes()), start=1, end=2)
+        record = self.record("task-1", sources=[old_reference])
+        self.put(record)
+        source.write_text("Replacement\n", encoding="utf-8")
+        new_reference = dict(path="agreement.txt", sha256=digest(source.read_bytes()), start=1, end=1)
+        self.put(dict(record, sources=[new_reference]), 1)
+        self.assertEqual(json.loads(self.cli("doctor").stdout)["problems"], [])
+        with self.assertRaises(ValueError):
+            Store(self.root).source_text(old_reference)
 
 
 if __name__ == "__main__":

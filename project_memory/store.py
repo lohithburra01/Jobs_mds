@@ -84,7 +84,9 @@ class Store:
         if not files:
             raise UnknownRecord("Unknown record: " + ident)
         file = directory / f"{revision:06d}.json" if revision else files[-1]
-        return json.loads(file.read_text(encoding="utf-8"))
+        record = json.loads(file.read_text(encoding="utf-8"))
+        self._validate_record_shape(record, ident, int(file.stem))
+        return record
 
     def all(self):
         return [self.get(p.name) for p in sorted((self.home / "records").iterdir())
@@ -111,6 +113,7 @@ class Store:
 
     def put(self, data, expected_revision, reason):
         data = dict(data)
+        self._validate_record_shape(data)
         ident = self.validate_id(data.get("id"))
         if not reason.strip():
             raise ValueError("Explain why this record is changing.")
@@ -139,7 +142,7 @@ class Store:
                     raise ValueError("Links require a relationship and a different target.")
                 self.get(edge["to"])
             for source in data.get("sources", []):
-                self.path(source["path"])
+                self.source_text(source)
             if data["kind"] == "project":
                 self.get(data["focus"])
                 for checkpoint in data.get("checkpoints", []):
@@ -159,11 +162,53 @@ class Store:
             self._event("record_updated", reason, ident, revision=actual + 1)
         return data
 
+    def _validate_source(self, source):
+        if not isinstance(source, dict):
+            raise ValueError("Source reference must be an object.")
+        if not isinstance(source.get("path"), str) or not source["path"].strip():
+            raise ValueError("Source reference needs a path.")
+        self.path(source["path"])
+        if not isinstance(source.get("sha256"), str) or not re.fullmatch(r"[0-9a-f]{64}", source["sha256"]):
+            raise ValueError("Source reference needs a SHA-256 hash.")
+        for field in ("start", "end"):
+            if field in source and (type(source[field]) is not int or source[field] < 1):
+                raise ValueError("Source " + field + " must be a positive line number.")
+        if source.get("end", source.get("start", 1)) < source.get("start", 1):
+            raise ValueError("Source end must not precede start.")
+
+    def _validate_record_shape(self, data, ident=None, revision=None):
+        if not isinstance(data, dict):
+            raise ValueError("Record must be an object.")
+        self.validate_id(data.get("id"))
+        if ident is not None and data["id"] != ident:
+            raise ValueError("Record ID does not match its directory.")
+        if revision is not None and (type(data.get("revision")) is not int or data["revision"] != revision):
+            raise ValueError("Record revision does not match its filename.")
+        for field in ("kind", "title", "summary"):
+            if not isinstance(data.get(field), str) or not data[field].strip():
+                raise ValueError("Missing " + field)
+        if not isinstance(data.get("body", ""), str):
+            raise ValueError("Record body must be text.")
+        for field in ("links", "sources"):
+            if not isinstance(data.get(field, []), list):
+                raise ValueError("Record " + field + " must be a list.")
+        for edge in data.get("links", []):
+            if not isinstance(edge, dict) or not isinstance(edge.get("rel"), str) or not edge["rel"].strip():
+                raise ValueError("Link requires a relationship.")
+            self.validate_id(edge.get("to"))
+            if edge["to"] == data["id"]:
+                raise ValueError("Link must target a different record.")
+        for source in data.get("sources", []):
+            self._validate_source(source)
+
     def source_text(self, source):
+        self._validate_source(source)
         raw = self.path(source["path"]).read_bytes()
         if digest(raw) != source["sha256"]:
             raise ValueError("Source changed: " + source["path"] + "; review/reimport before relying on its old line ranges.")
         lines = raw.decode("utf-8-sig").splitlines(keepends=True)
+        if source.get("start", 1) > len(lines) or source.get("end", len(lines)) > len(lines):
+            raise ValueError("Source line range exceeds file length: " + source["path"])
         return "".join(lines[source.get("start", 1)-1:source.get("end", len(lines))])
 
     def rebuild(self):
@@ -233,10 +278,17 @@ class Store:
         records = []
         for path in sorted((self.home / "records").iterdir()):
             if path.is_dir():
-                try:
-                    records.append(self.get(path.name))
-                except (ValueError, OSError) as exc:
-                    problems.append(path.name + ": incomplete or damaged record: " + str(exc))
+                revisions = sorted(path.glob("[0-9]*.json"))
+                if not revisions:
+                    problems.append(path.name + ": no saved revisions")
+                for saved in revisions:
+                    try:
+                        record = json.loads(saved.read_text(encoding="utf-8"))
+                        self._validate_record_shape(record, path.name, int(saved.stem))
+                        if saved == revisions[-1]:
+                            records.append(record)
+                    except (ValueError, OSError) as exc:
+                        problems.append(path.name + "/" + saved.name + ": incomplete or damaged record: " + str(exc))
                 if any(path.glob("*.tmp")):
                     problems.append(path.name + ": interrupted temporary write retained for inspection")
         known = {r["id"] for r in records}

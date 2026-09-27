@@ -1,0 +1,23 @@
+{
+  "id": "change-memory-integrity",
+  "kind": "change",
+  "status": "review",
+  "title": "Reject invalid sources and expose damaged record history",
+  "summary": "Source metadata and line bounds are checked before save; malformed records fail cleanly; doctor inspects old revisions; Windows source output no longer doubles line breaks.",
+  "body": "Reproduced failures before changing code. Dedicated tests now pass: 17 total across memory store and hooks. Invalid source path/hash/bounds cannot create a new record. Corrupt historical records are reported while a valid current version remains readable. Old source hashes remain retrievable/checked without treating a legitimately replaced live source as structural corruption of history. Account usage ended the helper agents; final fixes and verification were completed in the main task. No application behavior change.",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-harness-first-2026-09-26",
+      "reason": "User requested robust harness completion."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-memory",
+      "reason": "Preserve history and source provenance."
+    }
+  ],
+  "revision": 1,
+  "updated_at": "2026-09-27T08:40:21.971+00:00",
+  "change_reason": "Record the root causes, fixes and observed tests as one coherent reliability change"
+}

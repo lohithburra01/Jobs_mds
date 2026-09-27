@@ -88,7 +88,8 @@ def main():
 
 if __name__ == "__main__":
     if hasattr(sys.stdout, "reconfigure"):
-        sys.stdout.reconfigure(encoding="utf-8")
+        # Source text may already contain CRLF; avoid translating it a second time.
+        sys.stdout.reconfigure(encoding="utf-8", newline="")
         sys.stderr.reconfigure(encoding="utf-8")
     try:
         sys.exit(main())

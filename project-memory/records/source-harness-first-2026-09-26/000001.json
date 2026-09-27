@@ -1,0 +1,20 @@
+{
+  "id": "source-harness-first-2026-09-26",
+  "kind": "source",
+  "status": "reference",
+  "title": "Lohith chooses a robust harness first",
+  "summary": "Finish the harness before application work; include Lohith and explain what changed properly.",
+  "body": "Exact latest user instruction. It answers the pending priority question; standing concise five-point communication and user review still apply.",
+  "sources": [
+    {
+      "path": "project-memory/sources/source-harness-first-2026-09-26.txt",
+      "sha256": "47a7f31ed4c2c20cef869bb4bd4431f3596116ce5ce9dab376aa475595cbc274",
+      "start": 1,
+      "end": 1
+    }
+  ],
+  "links": [],
+  "revision": 1,
+  "updated_at": "2026-09-26T21:17:08.305+00:00",
+  "change_reason": "Preserve explicit harness-first decision before dependent work"
+}
