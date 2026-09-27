@@ -1,11 +1,11 @@
 ﻿Goal,"Paste a JD and receive a readable tailored resume PDF, cover-letter PDF, application JSON and reusable chat context.",,
-Where we are,"Existing devcontrol code needs inspection; its final proof is pending. Current memory setup supplies continuity and observation, not proof of all old worker controls.",,
-Next,"Show Lohith what the existing devcontrol work does and what is proven, agree the bounded task, then wait.",,
+Where we are,"Step 1 done (review): the supervisor now enforces its rules in all ten deliberate-failure cases, with fixture workers and no model calls. Real-task proof (Sol) and application visibility remain.",,
+Next,"Report step-1 results to Lohith in five points; ask before step 2 (real Sol task, uses paid model allowance).",,
 
 Checkpoint,What this achieves,Status,Next action
 Agree what the application must produce,The detailed twenty-point discussion and later amendments are preserved. The application output is not yet accepted.,accepted,
 Prepare this project for a fresh chat,"Memory harness accepted: complete agreement navigation, detailed candidate evidence, verified integrity/recovery, saved communication rules, shared by Codex and Claude Code.",accepted,Done. Continue at checkpoint-1.
-Control the coding work,"Existing devcontrol code needs inspection; its final proof is pending. Current memory setup supplies continuity and observation, not proof of all old worker controls.",in_progress,"Show Lohith what the existing devcontrol work does and what is proven, agree the bounded task, then wait."
+Control the coding work,"Step 1 done (review): the supervisor now enforces its rules in all ten deliberate-failure cases, with fixture workers and no model calls. Real-task proof (Sol) and application visibility remain.",in_progress,"Report step-1 results to Lohith in five points; ask before step 2 (real Sol task, uses paid model allowance)."
 Demonstrate one small coding task,"Show an actual bounded change, its evidence and history before trusting the coding workflow.",,Discuss the bounded task with Lohith when this checkpoint becomes current.
 See inside an application run,"Make stage, request, time, saved output and failure visible. This is application instrumentation, not the coding hooks.",,Discuss the bounded task with Lohith when this checkpoint becomes current.
 Improve the resume builder,"Repair resolved evidence, selection, skills, projects, writing, hierarchy and final layout according to the agreement.",,Discuss the bounded task with Lohith when this checkpoint becomes current.

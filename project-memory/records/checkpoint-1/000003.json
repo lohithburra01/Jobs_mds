@@ -1,0 +1,18 @@
+{
+  "id": "checkpoint-1",
+  "kind": "checkpoint",
+  "title": "Control the coding work",
+  "summary": "Existing devcontrol code needs inspection; its final proof is pending. Current memory setup supplies continuity and observation, not proof of all old worker controls.",
+  "body": "Became current 2026-09-27 after Lohith accepted checkpoint-memory. Uncommitted work already exists in the folder: devcontrol/, CODING-CONTROLS.md, CONTROL-TEST-RESULTS.md, RECOVERY-PLAN.md, scripts/dev-control.ps1, tests/test_devcontrol*.py. It has not been reviewed or accepted. 2026-09-27 authorization (Lohith): 'you may go ahead with the current checkpoint work, I wont disturb you with questions.' Bounded task: fix the two failing devcontrol controls (success claimed without any check; verifier writing outside scope), run the ten step-1 deliberate-failure cases with local fake workers only, and record observed results in CONTROL-TEST-RESULTS.md. Excluded: real Sol task, paid model calls, application runs. Clarified with Lohith: the supervisor enforces rules (scope, deadline, stop, frozen checks), not quality; quality acceptance stays with Lohith on real output.",
+  "status": "in_progress",
+  "links": [
+    {
+      "rel": "depends_on",
+      "to": "state-existing-code"
+    }
+  ],
+  "next_action": "Do the bounded task above; then report results in five points.",
+  "revision": 3,
+  "updated_at": "2026-09-27T19:30:54.318+00:00",
+  "change_reason": "Record Lohith's authorization and bounded task scope for checkpoint-1"
+}
