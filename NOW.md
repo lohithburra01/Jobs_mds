@@ -14,8 +14,8 @@ the agreement. Review is not user acceptance.
 
 Memory harness accepted 2026-09-27 (checkpoint-memory). Codex and Claude Code
 share it (change-claude-hooks). Current: checkpoint-1, control the coding work.
-First show Lohith what the uncommitted devcontrol work does and what is proven,
-agree one bounded task, then wait.
+Step 1 (supervisor rule tests) done and committed; see checkpoint-1. Next: ask
+Lohith before step 2 (one real Sol task, uses paid model allowance).
 
 The previous NOW.md is preserved verbatim under source-old-now in the graph.
 No model name is required. Do not replay the chat or read all archives.
