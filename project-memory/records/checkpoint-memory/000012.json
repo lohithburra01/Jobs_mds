@@ -1,0 +1,93 @@
+{
+  "id": "checkpoint-memory",
+  "kind": "checkpoint",
+  "title": "Prepare this project for a fresh chat",
+  "summary": "Memory harness accepted: complete agreement navigation, detailed candidate evidence, verified integrity/recovery, saved communication rules, shared by Codex and Claude Code.",
+  "body": "Built: 87 plan topics; all 29 original sections mapped; individual retrieval for four employers, 19 systems, 57 facts, 12 metrics, four boundaries and 19 accomplishments. Verified: 17 dedicated tests pass; invalid sources rejected; damaged current/history records reported; correct Windows source text; stale concurrent writes rejected; fresh-process navigation to exact evidence works. Limits: no application output proof, no automatic worker-controller enforcement claim, live Codex hook delivery unverified. Claude Code joined the same memory on 2026-09-27 (change-claude-hooks); live claude_hook events observed. Accepted by Lohith 2026-09-27.",
+  "status": "accepted",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "uses",
+      "to": "state-existing-code"
+    },
+    {
+      "rel": "uses",
+      "to": "decision-superseded"
+    },
+    {
+      "rel": "uses",
+      "to": "blueprint-semantic-context-graph"
+    },
+    {
+      "rel": "uses",
+      "to": "map-two-layer-plan"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Latest continuation instruction supersedes waiting for another plan restatement."
+    },
+    {
+      "rel": "uses",
+      "to": "tracker-semantic-migration",
+      "reason": "Read component progress and next action."
+    },
+    {
+      "rel": "uses",
+      "to": "module-skills",
+      "reason": "Inspect the current component result."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-skills",
+      "reason": "Review exact Skills source coverage."
+    },
+    {
+      "rel": "uses",
+      "to": "rule-collaboration",
+      "reason": "Use standing five-point update and wait for feedback before advancing this checkpoint."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-harness-first-2026-09-26",
+      "reason": "Priority question answered: finish the harness first."
+    },
+    {
+      "rel": "uses",
+      "to": "plan-application",
+      "reason": "Read application design."
+    },
+    {
+      "rel": "uses",
+      "to": "plan-coding-context",
+      "reason": "Read coding-context design."
+    },
+    {
+      "rel": "uses",
+      "to": "coverage-agreement",
+      "reason": "Inspect full coverage."
+    },
+    {
+      "rel": "uses",
+      "to": "verification-harness-completion",
+      "reason": "Inspect verification and limits."
+    },
+    {
+      "rel": "uses",
+      "to": "change-claude-hooks",
+      "reason": "Claude Code wiring added before acceptance."
+    }
+  ],
+  "next_action": "Done. Continue at checkpoint-1.",
+  "acceptance": {
+    "user_statement": "yes, accept it and move to checkpoint-1",
+    "source": "Lohith in Claude Code chat, 2026-09-27: 'yes, accept it and move to checkpoint-1'"
+  },
+  "revision": 12,
+  "updated_at": "2026-09-27T19:13:19.255+00:00",
+  "change_reason": "Record Lohith acceptance of the memory harness"
+}

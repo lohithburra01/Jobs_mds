@@ -1,0 +1,18 @@
+{
+  "id": "checkpoint-1",
+  "kind": "checkpoint",
+  "title": "Control the coding work",
+  "summary": "Existing devcontrol code needs inspection; its final proof is pending. Current memory setup supplies continuity and observation, not proof of all old worker controls.",
+  "body": "Became current 2026-09-27 after Lohith accepted checkpoint-memory. Uncommitted work already exists in the folder: devcontrol/, CODING-CONTROLS.md, CONTROL-TEST-RESULTS.md, RECOVERY-PLAN.md, scripts/dev-control.ps1, tests/test_devcontrol*.py. It has not been reviewed or accepted.",
+  "status": "in_progress",
+  "links": [
+    {
+      "rel": "depends_on",
+      "to": "state-existing-code"
+    }
+  ],
+  "next_action": "Show Lohith what the existing devcontrol work does and what is proven, agree the bounded task, then wait.",
+  "revision": 2,
+  "updated_at": "2026-09-27T19:13:21.492+00:00",
+  "change_reason": "Make checkpoint-1 current and list existing unreviewed work"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rule-scope",
+  "kind": "rule",
+  "title": "Current authorization and model independence",
+  "summary": "Memory harness accepted 2026-09-27. Current work: checkpoint-1, control the coding work. Give five brief points and concrete results; wait for feedback before dependent work. No app run, deployment, push or credit purchase is implied.",
+  "body": "Lohith accepted checkpoint-memory on 2026-09-27 and authorized moving to checkpoint-1. Start by reviewing the existing uncommitted devcontrol work with him; its controller remains unproved. Standing communication preferences apply to future sessions.",
+  "status": "active",
+  "links": [
+    {
+      "rel": "based_on",
+      "to": "source-current-request"
+    },
+    {
+      "rel": "based_on",
+      "to": "source-component-continuation-2026-09-26",
+      "reason": "Read the latest authorization when deciding whether to continue the saved task."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-communication-request-2026-09-26",
+      "reason": "Latest user instruction narrows how to continue the saved work."
+    },
+    {
+      "rel": "based_on",
+      "to": "source-harness-first-2026-09-26",
+      "reason": "Latest explicit priority answer authorizes harness completion."
+    }
+  ],
+  "revision": 6,
+  "updated_at": "2026-09-27T19:13:20.420+00:00",
+  "change_reason": "Move authorization from harness review to checkpoint-1"
+}
