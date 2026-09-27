@@ -1,0 +1,26 @@
+{
+  "id": "checkpoint-6",
+  "kind": "checkpoint",
+  "title": "Run one actual JD end to end",
+  "summary": "Produce resume PDF, letter PDF, JSON, portable context and an inspectable report; Lohith judges the result.",
+  "body": "2026-09-27: moved up as a baseline run (change-baseline-jd-first). Run the current app as-is on one real JD Lohith chooses; show him the resume, letter and report; record his reaction as the to-do list for checkpoint-4. The full end-to-end acceptance still depends on checkpoint-3 and checkpoint-5.\n2026-09-27: Lohith supplied the Scaleway Internal AI JD, preserved at project-memory/scratch/scaleway-baseline-jd.txt. Paid run has not started. Read-only inspection found existing configuration uses DeepSeek V3.1 plus Jev 1.13 with an 80-HTTP-attempt ceiling and no dollar cap. Historical completed v2 runs reported about USD 0.045; the sole inspected v3 run stopped at USD 0.0323, so completed v3 cost is unverified. Current v3 path does not generate chat_context.md; assess this as a baseline gap.",
+  "status": "in_progress",
+  "links": [
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-3"
+    },
+    {
+      "rel": "depends_on",
+      "to": "checkpoint-5"
+    },
+    {
+      "rel": "changed_by",
+      "to": "change-baseline-jd-first"
+    }
+  ],
+  "next_action": "Obtain approval for one paid Scaleway baseline run using current app. Explain historical cost evidence, uncertain completed-v3 cost, request ceiling and missing portable context output. Then run once, inspect PDFs and report actual results and gaps.",
+  "revision": 3,
+  "updated_at": "2026-09-27T20:15:43.799+00:00",
+  "change_reason": "Save supplied baseline JD and pre-run inspection; awaiting paid-run approval"
+}
