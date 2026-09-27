@@ -1,5 +1,7 @@
 {
   "writer_model": "deepseek/deepseek-v4-pro-0813",
+  "writer_max_tokens": 32000,
+  "writer_reasoning_effort": "low",
   "classifier_model": "typesafe/jev-1.13",
   "writing_version": 3,
   "max_repairs": 2,

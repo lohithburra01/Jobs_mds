@@ -113,10 +113,13 @@ class OpenRouter:
         self.store.save()
 
     def create(self, instructions: str, payload: dict) -> dict:
-        body = {"model": self.config["writer_model"], "temperature": .3, "max_tokens": 5000,
+        body = {"model": self.config["writer_model"], "temperature": .3,
+            "max_tokens": self.config.get("writer_max_tokens", 5000),
             "response_format": {"type": "json_object"},
             "messages": [{"role": "system", "content": instructions},
                          {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}]}
+        if self.config.get("writer_reasoning_effort") is not None:
+            body["reasoning"] = {"effort": self.config["writer_reasoning_effort"]}
         result = self._call("https://openrouter.ai/api/v1/chat/completions", body)
         try:
             content = result["choices"][0]["message"]["content"]
